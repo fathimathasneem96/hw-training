@@ -1,0 +1,37 @@
+[
+  {
+    "id": "11",
+    "name": "Alice",
+    "age": "27",
+    "email": "alice@example.com",
+    "skills": "Python,SQL"
+  },
+  {
+    "id": "12",
+    "name": "Bob",
+    "age": "29",
+    "email": "bob@example.com",
+    "skills": "Java,C++"
+  },
+  {
+    "id": "13",
+    "name": "Charlie",
+    "age": "35",
+    "email": "charlie@example.com",
+    "skills": "JavaScript,HTML,CSS"
+  },
+  {
+    "id": "14",
+    "name": "Teena",
+    "age": "26",
+    "email": "teena@example.com",
+    "skills": "Python,HTML"
+  },
+  {
+    "id": "15",
+    "name": "James",
+    "age": "32",
+    "email": "james@example.com",
+    "skills": "Java,SQL"
+  }
+]

@@ -1,0 +1,6 @@
+id,name,age,email,skills
+11,Alice,27,alice@example.com,"Python,SQL"
+12,Bob,29,bob@example.com,"Java,C++"
+13,Charlie,35,charlie@example.com,"JavaScript,HTML,CSS"
+14,Teena,26,teena@example.com,"Python,HTML"
+15,James,32,james@example.com,"Java,SQL"
