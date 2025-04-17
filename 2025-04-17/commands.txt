@@ -1,0 +1,17 @@
+commands to install and uninstall scrapy using apt: 
+    sudo apt update
+    sudo apt install python3-scrapy
+    scrapy   #to show whether scrapy installed or not
+    sudo apt remove python3-scrapy
+
+Commands to install and uninstall scrapy using pip:
+    pip install scrapy
+    pip show scrapy  #to show whether scrapy installed or not
+    pip uninstall scarpy
+
+Commands to Create a Python3 virtual environment and install scrapy:
+    sudo apt install python3-venv      #nstalls the python3-venv package 
+    python3 -m venv scrapyenv           #create a virtual environment named scrapyenv
+    source scrapyenv/bin/activate       #activate scrapyenv
+    pip install scrapy
+    pip show scrapy
