@@ -1,0 +1,1 @@
+Hii, this is my first file created using nano. nano is simple terminal based text editor. It is easy to use.
