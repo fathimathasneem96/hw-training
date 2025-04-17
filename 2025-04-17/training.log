@@ -5,3 +5,5 @@ Learned IDE-Sublime text, Virtual environment
 Installed and uninstalled scrapy using apt
 Installed and uninstalled scrapy using pip
 Edited and saved a file using nano.
+Installed sublime text and run python code to print "hello world"
+Created a Python3 virtual environment named scrapyenv and installed scrapy
