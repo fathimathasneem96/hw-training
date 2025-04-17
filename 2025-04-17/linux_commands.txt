@@ -1,1 +1,11 @@
-
+pwd - print working directory (returns current working directory)
+ls  - list contents(files and folders) of current directory
+cd folder_name   - Navigate between directories (to change directory)
+cd..   - Exit from current directory
+cd /   - to change to root directory
+rm   - to remove or delete file
+mkdir   - to create new folder
+rmdir   - to delete empty folder
+rm -r foldername   - to delete non empty folder
+clear   - to clear the screen
+man  - to know more about any command, acts as tutorial
