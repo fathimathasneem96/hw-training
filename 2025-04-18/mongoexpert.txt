@@ -1,0 +1,6 @@
+sudo apt install mongo-tools
+mongoexport --db=companyDB --collection=employees --out=employees.json
+ls employees.*    Output will be employees.json
+ongoexport --db=companyDB --collection=employees --type=csv --fields=empId,name,department,salary,IsActive --out=employees.csv
+ls employees.*
+  Output will be employees.csv  employees.json
