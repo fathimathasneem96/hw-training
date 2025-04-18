@@ -1,0 +1,26 @@
+use companyDB
+db.createCollection("employees")
+show collections
+db.employees.insert(
+{ "empId":101,
+"name":"Ravi",
+"department":"IT",
+"salary":75000,
+ "IsActive":true
+}
+)
+
+db.employees.insertMany( [ {"empId":102, "name":"Alice", "department":"Sales", "salary":50000, "IsActive":true}, {"empId":103, "name":"John", "department":"HR", "salary":80000, "IsActive":true}, {"empId":104, "name":"Aysha", "department":"IT", "salary":65000, "IsActive":false}, {"empId":105, "name":"Thomas", "department":"Finance", "salary":70000, "IsActive":true}, { "empId":106, "name":"Kavya", "department":"Marketing", "salary":65000, "IsActive":false}, { "empId":107, "name":"Afsal", "department":"IT", "salary":80000, "IsActive":true}])
+
+db.employees.find().pretty()
+
+#update IT employees salary by 10% increase.
+db.employees.updateMany(
+ { department: "IT" },
+ { $mul: { salary: 1.10 } }
+)
+
+#Delete the record of any employee who is marked as IsActive: false.
+db.employees.deleteOne({ IsActive: false })
+
+db.employees.find().pretty()
