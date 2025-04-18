@@ -2,3 +2,4 @@ Meeting with Ramesh discussed about some topics and gave new topics and tasks fo
 Finished task 2A (Built a student record system that uses multiple data types and logic, using python, which included record of four students and stored as student_record.py)
 Finished task 2B (Simulated a simple inventory and shopping cart system, that is ,grocery store-data organiser)
 Done insert, bulk insert, update, delete using mongodb shell.
+Done code for exporting mongodb document to JSON and CSV files.
