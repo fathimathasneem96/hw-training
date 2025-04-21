@@ -1,0 +1,45 @@
+Using Update to change department of Afsal from IT to Sales:
+{
+  $set: { department:"Sales"
+
+  },
+}
+
+
+Using Update Increase salary of all employees in "Sales" by 10,000 using Update Many
+{
+  $inc: {
+  "salary":10000
+  },
+}
+
+
+Aggregation – Department-wise Salary Stats  -- Click on aggregation, then create new stage;
+$group
+{
+  _id: "$department",
+  avgSalary: { $avg: "$salary" },
+  maxSalary: { $max: "$salary" },
+  minSalary: { $min: "$salary" }
+}
+
+
+Aggregation – Filter + Sort-- employees with salary > 50000 $sort by salary descending:
+$match
+{ 
+  "salary": { "$gt": 50000 }    
+}
+$sort
+{
+    "salary": -1
+}
+
+
+Aggregation – Project Fields --display Only name, salary, and department, Add a new computed field: annualSalary = salary * 12:
+$project
+{
+  "name": 1,
+  "salary": 1,
+  "department": 1,
+  "annualSalary": { "$multiply": [ "$salary", 12 ] }
+}
