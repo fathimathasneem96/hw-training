@@ -8,7 +8,7 @@ To find employees who joined after 2022-01-01: { joinedDate: { $gt: new Date("20
 Combine conditions:
 {
   $and: [
-    { isActive: true },
+    { IsActive: true },
     {
       $or: [
         { department: "HR" },
