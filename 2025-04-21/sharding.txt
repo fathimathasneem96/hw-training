@@ -1,0 +1,17 @@
+Sharding in mongodb:
+Sharding is the process of splitting large datasets across multiple servers or machines.
+MongoDB uses sharding to support horizontal scaling, that isdata is divided into smaller parts called shards, which are distributed across multiple shard servers.
+Improves read/write performance. Also Allows you to scale out by adding more machines.
+
+
+Replica set:
+A replica set is a group of MongoDB servers that maintain the same data (a copy of database) to ensure high availability and redundancy.
+
+
+Primary node and secondary node:
+Primary node:
+    • The main node in a replica set that handles write operations (receive all write operations). 
+    • There is only one primary in a replica set at a time.
+    • Automatically elected if current one fails.
+Secondary node: 
+They replicate or sync data from the primary node. Used for read operations or failover if the primary node fails.
