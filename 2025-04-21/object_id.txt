@@ -1,0 +1,18 @@
+Object Id:
+An ObjectId is the default unique identifier (_id) used by MongoDB for documents.
+It’s a 12-byte hexadecimal value. 
+First 4 bytes is timestamp, which shows creation time of the object, next 5 bytes are machine identifier ( machine+process ID) and the last 3 bytes are counter which ensures uniqueness 
+
+
+ObjectId to timestamp:
+newObjectId = ObjectId()
+Output:  ObjectId('6805ea4b1dad035fadd861e0')
+newObjectId.getTimestamp()
+output: ISODate('2025-04-21T06:48:43.000Z')
+
+Timestamp to object Id:
+let date = new Date('2025-04-21T06:48:43.000Z');
+test> let timestamp = Math.floor(date.getTime() / 1000).toString(16);
+test> let objectId = ObjectId(timestamp + "0000000000000000");
+test> print(objectId);
+ObjectId('6805ea4b0000000000000000')
