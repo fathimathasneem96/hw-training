@@ -6,3 +6,4 @@ Querying: FIltered data using query in filter bar. Filtered data using combined 
 CRUD Operations:Using Update document, updated department of an employee, increased salaries of all empoyees in Sales department by 10000. Using Delete , deleted one employee document and deleted all employees whose are in inactive state.
 Aggregation pipeline builder: Created Aggregation – Department-wise Salary Stats. Created Aggregation-filter and sort. Created Aggregation – Project Fields. 
 Analysed schema,Created index on department and salary
+Inserted new field in the mongodb collection and updated values  using  mongodb
