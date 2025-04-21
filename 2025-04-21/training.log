@@ -2,3 +2,4 @@ Mongodb dumping and restore:Created a full database dump of companyDB using mong
 Indexing: Created a single field index on the department field. Created a compound index on department and salary. Displayed all indexes in collection using .getIndexess()
 Created basic understanding short explanation notes on the topics sharding in MongoDB, replica set, primary node and secondary node
 Obtained an objectId from an object. Then converted the objectId into timestamp, then converted the timestamp into objectId. 
+Querying: FIltered data using query in filter bar. Filtered data using combined conditions.
