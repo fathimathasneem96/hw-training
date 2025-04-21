@@ -2,7 +2,6 @@ In top of documents tab type queries(filter bar).
 To Find all employees from the "HR" department : { department: "HR" }
 To find employees with salary greater than 50000: { salary: { $gt: 50000 } }
 To find employees who joined after 2022-01-01: { joinedDate: { $gt: new Date("2022-01-01") } }
-(No results since there is no field joinedDate in the document).
 
 
 
