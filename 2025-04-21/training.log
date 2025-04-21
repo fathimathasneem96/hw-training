@@ -1,1 +1,1 @@
-
+Mongodb dumping and restore:Created a full database dump of companyDB using mongodump, Dropped the companyDB database from MongoDB. Used mongorestore and restored the database from the dump created for companyDB. Import a sample employee data JSON or CSV into a new collection called importedEmployees.
