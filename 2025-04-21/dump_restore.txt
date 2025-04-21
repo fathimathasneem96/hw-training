@@ -1,0 +1,26 @@
+Dump(backup): 
+mongodump --db=companyDB –out=companyDB_backup
+ls companyDB_backup/companyDB/    #list all dumps
+
+output: employees.bson  employees.metadata.json  prelude.json
+
+
+drop companyDB:
+use companyDB
+db.dropDatabase()
+show dbs
+
+Restore companyDB using mongorestore:
+mongorestore --db=companyDB companyDB_backup/companyDB
+verification:-
+show dbs
+use companyDB
+db.employees.find().pretty()
+
+
+Import a sample employee data JSON or CSV into a new collection called importedEmployees.:
+Created new json file named employee.json using nano. Then,
+mongoimport --db=companyDB --collection=importedEmployees --file=employee.json –jsonArray
+
+Created new csv file named employee.csv using nano. Then,
+mongoimport --db=companyDB --collection=importedEmployees --type=csv --file=employee.csv --headerline
