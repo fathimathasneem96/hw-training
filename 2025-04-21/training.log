@@ -7,3 +7,4 @@ CRUD Operations:Using Update document, updated department of an employee, increa
 Aggregation pipeline builder: Created Aggregation – Department-wise Salary Stats. Created Aggregation-filter and sort. Created Aggregation – Project Fields. 
 Analysed schema,Created index on department and salary
 Inserted new field in the mongodb collection and updated values  using  mongodb
+Learned some python and mongodb cases
