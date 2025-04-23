@@ -1,0 +1,3 @@
+Data QA (Quality Assurance) is the process of ensuring data accuracy, completeness, reliability, and consistency before it is used for analysis, reporting, or machine learning.
+Common Data QA Activities:Data validation,Schema checking ,Consistency checks (e.g., same customer ID must mean same info),Duplicate detection, Missing value analysis,Business rule testing 
+Popular
