@@ -3,5 +3,9 @@ Common types of QA are, software QA, Data QA and Process QA.
 Software QA focuses onapplications and systems
 Data QA ensures the quality of data in systems /pipelines.Data QA (Quality Assurance) is the process of ensuring data accuracy, completeness, reliability, and consistency before it is used for analysis, reporting, or machine learning.
 Process QA ensuring processes and workflows are optimized and documented.
-Common Data QA Activities:Data validation,Schema checking ,Consistency checks ,Duplicate detection, Missing value analysis,Business rule testing 
-Data validation 
+Common Data QA Activities:Data validation,Schema checking ,Consistency checks ,Duplicate detection, Missing value analysis,Business rule testing ,uniquenenss check
+Data validation - Ensure correct column names, data types, and structures.
+Missing value analysis- identify and handle missing and null values.
+Uniqueness check - ensures primary key column
+Business rule testing- apply domain specific logic
+Duplicate deletion- Remove duplicates
