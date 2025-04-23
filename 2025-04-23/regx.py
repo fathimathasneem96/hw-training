@@ -51,6 +51,19 @@ text = "My backup number is 9876543210."
 print(re.findall(pattern, text))  
 Output:['9876543210']
 
+#validate name
+import re
+def is_valid_name(name):
+    pattern = r"^[A-Za-z]+([ -][A-Za-z]+)*$"
+    return re.fullmatch(pattern, name) is not None
+print(is_valid_name("John Doe"))        # True
+print(is_valid_name("Anne-Marie"))  # True
+print(is_valid_name("1234"))            # False
+Output: True
+True
+False
+
+
 #Email
 import re
 def is_valid_email(email):
@@ -78,20 +91,6 @@ pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
 emails = re.findall(pattern, text)
 print(emails)
 Output: ['support@example.com', 'sales@example.co.uk']
-
-
-
-#validate name
-import re
-def is_valid_name(name):
-    pattern = r"^[A-Za-z]+([ -][A-Za-z]+)*$"
-    return re.fullmatch(pattern, name) is not None
-print(is_valid_name("John Doe"))        # True
-print(is_valid_name("Anne-Marie"))  # True
-print(is_valid_name("1234"))            # False
-Output: True
-True
-False
 
 
 #search
