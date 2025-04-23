@@ -61,3 +61,26 @@ user.name+tag@example.co.uk is valid
 invalid-email.com is invalid
 user@.com is invalid
 ​
+
+#extracting mail address from text
+import re
+text = "Please contact us at support@example.com or sales@example.co.uk for more information."
+pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
+emails = re.findall(pattern, text)
+print(emails)
+Output: ['support@example.com', 'sales@example.co.uk']
+
+
+
+#validate name
+import re
+def is_valid_name(name):
+    pattern = r"^[A-Za-z]+([ '-][A-Za-z]+)*$"
+    return re.fullmatch(pattern, name) is not None
+print(is_valid_name("John Doe"))        # True
+print(is_valid_name("Anne-Marie"))  # True
+print(is_valid_name("1234"))            # False
+Output: True
+True
+False
+
