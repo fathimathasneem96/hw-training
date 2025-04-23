@@ -75,7 +75,7 @@ Output: ['support@example.com', 'sales@example.co.uk']
 #validate name
 import re
 def is_valid_name(name):
-    pattern = r"^[A-Za-z]+([ '-][A-Za-z]+)*$"
+    pattern = r"^[A-Za-z]+([ -][A-Za-z]+)*$"
     return re.fullmatch(pattern, name) is not None
 print(is_valid_name("John Doe"))        # True
 print(is_valid_name("Anne-Marie"))  # True
