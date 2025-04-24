@@ -1,0 +1,2 @@
+Tools used for data QA are:
+  -Pandera  : It is python+Pandas library. Used for Statistical type-checking and validation of dataframes. 
