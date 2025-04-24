@@ -1,2 +1,6 @@
 Tools used for data QA are:
-  -Pandera  : It is python+Pandas library. Used for Statistical type-checking and validation of dataframes. 
+  Pandera  : It is python+Pandas library. Used for Statistical type-checking and validation of dataframes. pandera provides three validation backends: pandas, pyspark, and polars.
+  Great expectations  : It is a python based open source library used for validating, documenting and profiling the data set.First step is to define rules(expectations). Then validate if the data meets expectations. Then document data.
+  Deequ (by AWS) : It is written in Scala. Open source library built by Amazon by defining unit testson large scale datasets using Apache spark.
+  Apache Griffin  : Used in big data ecosystems like Hadoop, Spark, Kafka, or Hive.
+  Pytest+Pandas  : Simple python test using pytest. Perform unit test on data pipelines.pytest is combined with pandas to validate data content
