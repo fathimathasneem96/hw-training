@@ -1,1 +1,45 @@
-
+QA stands for Quality Assurance. 
+It's a systematic process used to ensure that a product or service meets specified requirements and standards, aiming to prevent defects and improve overall quality.
+In QA, validation is the process of checking whether data, software, or systems meet predefined standards and requirements to ensure accuracy, consistency, and reliability.
+Also validation aims to deliver a high-quality product that meets user expectations and industry standards,verifying it's fit for intended use.
+Data QA refers to the process of proactively ensuring that data is accurate, complete, reliable, and consistent before they are used for analytics and reporting.
+In case of data QA, validation 
+    ensures that the data is clean, accurate and complete. 
+    it confirms the expected schemas and formats.
+    ensures that there are no anomalies, inconsistencies and missing values
+Steps to validate a data set:
+    1. Load the data set
+    2. Verify the data set
+    3. Now perform basic validation checks like,
+        are there any missing values (check null values) and duplicates (multiple times same data occur),delete duplicate values
+        check data types (eg:-If there is age, check it is int)
+        check for unique keys (Is there primary key)
+        check range of data values (eg; if age, check it is between some specified age)
+        Check the data formats for email, date etc.(check whether mail is in valid email format, date are in specified format)
+        Check schema (check column names and types)
+    4. Summarize the results
+Purposes of data validation are:
+    Catch errors early
+    Ensure data quality
+    prevent system failures
+If a data set is given and needs to verify it by, if there are url, open it and check whether the data in the data set and in the url opened page are same.It is simple way for verification.
+In case of a product data set validation, should ensure that the fields like product id, product name, category, price, availability etc are present and they are not null values, below given datas are getting from a product data set validation.
+    Ensures that the product id unique. 
+    Ensures that data types, that is the field price is float or decimal, availability is boolean etc)
+    Ensures that the category is from a set of known categories.
+    Ensures that the product name should be in a specified format.
+    If there are urls,date and email, ensure that they are in specified format.
+Advantages of validation:
+    Improves data quality
+    Supports better decision making
+    Prevents system failures
+    Saves time and cost
+    Increases trust in data
+    Early anomaly detection
+Disadvantages of validation:
+    Needs maintenance as data changes
+    defining validation rules and setting up tools can take time.
+    Over tight rules may delete good data
+    requires deep knowledge on the data 
+    May not catch everything
+There are common data qa tools that is used for validation like pandera, great expectations, deequ, Apache Griffin, pytest+pandas etc.
