@@ -1,2 +1,3 @@
 Learned What is QA, QA validation, steps for data validation, purpose of validation, advantages and disadvantages of validation
-Done qa of urls of a dataset using regex
+Done qa of urls validation of a dataset in json (haraj_ksa) using regex
+Gave a data set in json(wasalt_ksa), verified urls and done qa of urls validation for the dataset using regex
