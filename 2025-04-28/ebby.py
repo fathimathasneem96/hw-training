@@ -25,7 +25,7 @@ invalid_profiles.to_csv('invalid_profiles.csv', index=False)
 print(f"Checked {len(df)} records. Found {len(invalid_profiles)} invalid profile URLs.")
 
 
-#define fields you want to check
+#define fields want to check
 required_fields = ['first_name', 'last_name', 'office_name', 'title', 'description', 
                    'image_url', 'address', 'city', 'state', 'country', 'zipcode', 'office_phone_numbers',
                    'agent_phone_numbers', 'email', 'profile_url', 'website','social']
