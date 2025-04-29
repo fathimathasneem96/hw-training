@@ -1,2 +1,7 @@
 Obtained a data set in json (realliving_realestate_2025). verified fields of the dataset. Found howmany entries are missing in each field. Also done profile url validation.
 Obtained a data set in json (codewellbanker_us_2025). verified fields of the dataset. Found number of entries missing in each field. Also done profile url validation.
+Obtained data set in json (ewm_2025). Verified fields of entries by opening  profile urls.Listed out number of entries missing for each field. Done profile url validation using python code
+Done verification of fields on new data set in json (iowarealty_2025). Also done profile urls validation using python code
+Done verification of fields on the data set in json (realtysouth_2025). Also done validation for profile urls using python code 
+Obtained a data set in json(royallepage_2025). Started verification of fields
+Meeting with Revathy discussed about the given tasks and how didi it. Gave correct instructions to do tasks. Assigned new tasks.
