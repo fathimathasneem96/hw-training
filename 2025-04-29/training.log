@@ -1,1 +1,2 @@
-
+Obtained a data set in json (realliving_realestate_2025). verified fields of the dataset. Found howmany entries are missing in each field. Also done profile url validation.
+Obtained a data set in json (codewellbanker_us_2025). verified fields of the dataset. Found number of entries missing in each field. Also done profile url validation.
