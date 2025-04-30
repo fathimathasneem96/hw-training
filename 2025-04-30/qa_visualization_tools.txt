@@ -1,0 +1,22 @@
+QA Visualization Tools are used to identify and track visual regressions, represent bugs, and performance data in visual formats like graphs, dashboards, heatmaps, and reports. 
+Some visualization tools are below:
+i) Percy: Percy is a visual testing and review tool that helps teams detect and manage visual UI regressions automatically. It's particularly useful for front-end teams.
+  Advantages: 
+      Visual Regression Testing
+      CI/CD Integration
+      Cross-Browser Testing
+  Disadvantages: 
+      Paid tool with limits on snapshot usage in free tier
+      Not a full-featured QA platform—focused only on visual testing
+      Requires proper test environment setup to avoid inconsistent screenshots
+
+ii) Allure report: Generate rich HTML reports for automated test execution. Best for Developers and QA engineers using automated testing frameworks
+    Advantages: 
+      Beautiful Visuals
+      Detailed Reporting
+      Framework Support
+    Disadvantages: 
+      No manual test support
+      Setup Required 
+      Doesn’t store test cases, only reports on execution
+
