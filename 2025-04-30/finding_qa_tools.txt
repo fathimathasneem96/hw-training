@@ -123,3 +123,7 @@ Disadvantages:
     May be expensive for startups or small teams
     Limited open source integrations
     cloud dependent
+
+
+Among these tools Robot framework is almost best for qa. Robot Framework is a Python-based, extensible keyword-driven automation framework for acceptance testing. It is Extendable with Python libraries like Pandas. With scripting efforts large data set validations can be done.
+
