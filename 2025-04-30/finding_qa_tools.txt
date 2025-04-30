@@ -1,0 +1,125 @@
+Testrigor: testRigor is an executable specification engine designed to allow anyone on your team to build, maintain and understand tests created and executed in plain English.
+Advantages:
+    provides core coverage
+    Reduces testing time
+    costs less
+    moves faster
+    provides maximum coverage
+Disadvantages:
+    Game testing is still not supported in testRigor.
+    Queued test suites can take time to execute if you are not buying more infrastructure from them
+    Test recorder scripts usually require review and tweaking
+
+
+Robot framework:  Robot Framework is a generic Python automation framework used for acceptance test-driven development. 
+his system has robust features such as human readable keywords, variables, test tagging and integration with external third party libraries. 
+Advantages:
+    Human-readable keywords, easy to start writing tests without coding knowledge
+    Capabilities can be extended with Python and Java libraries
+    Besides Selenium it supports numerous libraries
+    Compatible with any operating system
+    In comparison to other frameworks it has the shortest learning curve
+Disadvantages:
+    Lack of parallel test execution
+    Slower compared to other open source frameworks
+
+Functionize:  Functionize is a leading QA testing tool that uses AI to empower teams with end-to-end tests that self-heal and run at scale in the cloud.
+Advantages:
+    AI powered test creation
+    codeless test automation
+    cloud based and scalable
+    Cross browser and device testing
+    Analytics and reporting
+Disadvantages:
+    Cost is high
+    Limited offline/on-premise use
+    Limited community support
+    Less flexible for complex, code-based tests
+
+SonarQube:  SonarQube is a continuous inspection platform that helps teams track and improve the quality of their code. It is best for teams looking for a comprehensive solution for tracking and improving code quality.
+Advantages:
+    Integrations with popular programming languages and development environments
+    Customizable dashboards and reporting options
+Disadvantages:
+    May require some technical knowledge to set up and use
+    Can be more expensive than some competitors
+    False Positives - may generate false positives, requiring developers to spend time manually reviewing and validating reported issues.
+    Real-time feedback may not be as immediate as preferred, 
+    
+
+JIRA:  JIRA is a popular project management platform that features a range of tools for agile project management, including QA testing.
+Advantages:
+    Highly customizable
+    Strong integration ecosystem
+    Scalable for small to large teams
+    Advanced reporting and dashboards
+Disadvantages:
+    Complex to configure
+    Performance lag for large projects
+    Pricing increases with team size
+    Limited offline access
+
+Testsigma:  Testsigma is a cloud-based test automation platform designed to simplify automated testing using a low-code/no-code approach. It's ideal for web, mobile, and API testing, and supports CI/CD integration.
+Advantages:
+    No code automation
+    All in one platform
+    cloud based execution
+    CI?CD integration
+    Reusability and maintenance
+    Built in reporting and analytics
+Disadvantages:
+    Limited flexibility for advanced users
+    pricing can be expensive for small teams
+    Slow performance on very large data test suites
+
+katalon studio: Katalon Studio is a comprehensive test automation solution for web, API, mobile, and desktop applications. 
+Advantages:
+    All in one automation tool
+    User friendly interface
+    Supports multiple languages and framework
+    CI/CD integration
+    Built in reporting
+    Cross platform execution
+    Free plan available
+Disadvantages:
+    Low performance with large projects
+    Many advance feature require paid license
+    Not fully open source
+
+Applitools: Applitools is more than visual testing—deliver full end-to-end test automation, infused with AI at every step, so apps work perfectly and look flawless on every device and browser.
+Advantages:
+    Visual AI testing
+    Cross browser and cross device testing
+    Integrates with major frameworks
+    Easy maintenance
+    Detailed reporting
+    CI/CD friendly
+Disadvantages:
+    Free tier is limited in test runs and concurrency
+    Not a full automation solutions
+    test volume limits
+
+Mabl: Mabl is a cloud-based, low-code test automation platform that focuses on end-to-end (E2E) testing of web applications. It combines functional testing, visual testing, and performance monitoring into a unified solution designed for QA engineers and non-technical users alike.
+Advantages:
+    low code interface
+    Auto healing tests
+    cloud based platform
+    CI/CD integration
+    Unified testing
+    Cross browser testing
+Disadvantages:
+    can be expensive
+    Limited mobile support
+    Dependency on internet
+    Lack deep flexibility for complex test logic
+
+
+Accelq: ACCELQ is a cloud-based, AI-powered test automation platform that supports end-to-end automation across web, API, desktop, and mobile applications — without requiring heavy coding. It's designed to enable manual testers, developers, and QA engineers to automate tests with minimal effort.
+Advantages:
+    Codeless automation
+    CI,CD and DevOps integrations
+    Eliminates the need for separate test management tools.
+Disadvantages:
+    May be expensive for startups or small teams
+    Limited open source integrations
+    cloud dependent
