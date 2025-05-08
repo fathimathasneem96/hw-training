@@ -5,4 +5,5 @@ Done verification of the json dataset DataHut_AT_Fressnapf_PriceExtractions_2025
 Done verification of the json dataset DataHut_AT_Mpreis_PriceExtractions_20250506.CSV
 Meeting with Revathy discussed about qa checking and issues. Also gave instructions for doing qa updation in sheet
 Done verification on json dataset aqarmap_egp_2025_05_01.json
-Doing verification using sheet
+Done verification based on sheet for the dataset DataHut_AT_Mpreis_PriceExtractions_20250506.CSV
+Started doing verification based on sheet for the dataset DataHut_AT_Fressnapf_PriceExtractions_20250506.CSV
