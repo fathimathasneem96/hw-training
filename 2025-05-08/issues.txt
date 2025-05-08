@@ -1,0 +1,31 @@
+DataHut_AT_Fressnapf_PriceExtractions_20250506.CSV
+-----------------------------------------------
+Beutel is in site_shown_uom. But grammage_unit is stuck. 
+eg:https://www.fressnapf.at/p/perfect-fit-beutel-sterile-1-mit-huhn-6x750-g-1255999/
+Age is included in grammage_quantity. 
+eg: https://www.fressnapf.at/p/royal-canin-senior-ageing-12-2-kg-1003120019/
+
+
+DataHut_AT_Bipa_FullDump_20250508.CSV
+-------------------------------------
+no issues
+
+
+DataHut_AT_Interspar_FullDump_20250508.CSV
+-----------------------------------------
+'|' replaced with '\\|' in data values eg: https://www.interspar.at/shop/lebensmittel/all-in-complete-proteinriegel-chocolate-oat/p/2020004291172
+line 7288 -promotion_valid_upto is 30.12.9999
+promotion_valid_upto expired(06.05.2025) eg: https://www.interspar.at/shop/weinwelt/regio-gold-gemahlen/p/6799113SG
+line25104promotion_valid_upto expired(05.05.2025) eg: https://www.interspar.at/shop/weinwelt/martini-vibrante-alkoholfrei/p/2020003734687SG
+
+
+DataHut_AT_Bipa_FullDump_20250508.CSV
+-----------------------------------------
+no issues
+
+
+DataHut_AT_Interspar_FullDump_20250508.CSV
+-----------------------------------------
+Product name contains comma in site. eg: line 74, https://www.interspar.at/shop/haushalt/altzinkeimer-95-liter/p/2020004872616
+'|' replaced with '\\|'   eg: https://www.interspar.at/shop/lebensmittel/bens-original-express-risi-bisi/p/2020003291265
+Some entries have promotion_valid_upto 30.12.9999  eg:Line 5422,5551,5553 url: https://www.interspar.at/shop/haushalt/schlaraffenland-dekoration-zimtstangen-im-beutel-klein/p/2020001905027    promotion_valid_upto_expired (07.05.2025) eg: https://www.interspar.at/shop/lebensmittel/bedda-scheiben-bockhshornklee/p/2020003606649
