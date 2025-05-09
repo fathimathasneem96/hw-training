@@ -1,0 +1,32 @@
+nawy_egp_2025_05_01.json
+--------------------------------
+line 9,33 - title is different from site
+line 12 - max price is empty, but present in site
+
+
+bayut_uae_project_2025_05_01.json
+---------------------------------
+line 7 - "progress":"52% Completed", but in site 78% completed
+line 111 - "location":"Se7en city, Jumeirah lake towers jlt, Dubai" ,Seven city in site
+line 235 - "progress":"20% Completed" , but in site 47% completed
+
+
+DataHut_AT_Fressnapf_PriceExtractions_20250506.CSV
+---------------------------------------
+price format different, eg: price is 2.49 in data set, but 2,49 in site
+
+
+DataHut_AT_Dm_PriceExtractions_20250506.CSV
+---------------------------------------
+price format different
+
+
+DataHut_AT_Bipa_PriceExtractions_20250506.CSV
+----------------------------------------
+price format different
+line 6642, 20492, 20546,20555- regular price is different in site
+
+
+DataHut_AT_Mpreis_PriceExtractions_20250506.CSV
+----------------------------------------
+price format different
