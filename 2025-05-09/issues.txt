@@ -3,7 +3,6 @@ DataHut_AT_Fressnapf_FullDump_2025_05_08.CSV
 --------------------------------------------
 1.File name structure is different. DataHut_AT_Fressnapf_FullDump_2025_05_08.CSV
 2.dimensions not empty in 1 entry, line 10865. url:https://www.fressnapf.at/p/anione-klappe-fuer-offene-toilette-bella-1819106/
-1. site_shown_uom is 100 Bl, But grammage quantity is 1 stuck
 
 DataHut_AT_Bipa_PriceExtractions_20250509.CSV
 ---------------------------------------------
@@ -22,6 +21,16 @@ DatHut_AT_Mpreis_PriceExtractions_20250509.CSV
 2. issue with site_shown_uom,grammage_quantity and grammage_unit. eg:site_shown_uom is 3Pflan, But grammage quantity is 1 and grammage quantity is stuck in line 1824. url: https://www.mpreis.at/shop/p/nein-bio-pfluecksalat-mix-580430
 issue with site_shown_uom,grammage_quantity and grammage_unit. eg:site_shown_uom is NrL1++, But grammage quantity is 1 and grammage quantity is stuck in line 2280. url: https://www.mpreis.at/shop/p/schwarzkopf-blonde-extrem-aufheller-602806
 3. regular_price is present, but there is no two price for the entry with AKTION tag in site for lines 3769 and 7730. eg url: https://www.mpreis.at/shop/p/red-bull-energy-drink-tray-24x-025-liter-dose-109009
+
+DataHut_AT_Bipa_PriceExtractions_20250509.CSV
+---------------------------------------------
+no issues
+
+DataHut_AT_Billa_PriceExtractions_20250509.CSV
+---------------------------------------------
+1.site_shown_uom contain Beutel, but grammage_unit is not btl. eg: line 6919, site_shown_uom is 400 g Beutel but grammagea-unit is g
+2. line 8 selling price is 0
+3. line 346 site_shown_uom is per 1 kg, but in site it is Ab 0,45 kg. url: https://shop.billa.at/produkte/ja-natuerlich-hendl-oberkeulenfilet-00458765
 
 
 
