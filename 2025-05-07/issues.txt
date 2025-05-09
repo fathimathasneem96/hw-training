@@ -1,0 +1,15 @@
+dari_ae_2025_05_01.json
+---------------------------
+no issues
+
+
+aqarmap_egp_2025_05_01.json
+----------------------------
+depth values missing
+
+
+
+DataHut_AT_Mpreis_PriceExtractions_20250506.CSV
+------------------------------------------------
+site shown uom missing
+for 482 fields
