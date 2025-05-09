@@ -1,0 +1,30 @@
+
+DataHut_AT_Fressnapf_FullDump_2025_05_08.CSV
+--------------------------------------------
+1.File name structure is different. DataHut_AT_Fressnapf_FullDump_2025_05_08.CSV
+2.dimensions not empty in 1 entry, line 10865. url:https://www.fressnapf.at/p/anione-klappe-fuer-offene-toilette-bella-1819106/
+1. site_shown_uom is 100 Bl, But grammage quantity is 1 stuck
+
+DataHut_AT_Bipa_PriceExtractions_20250509.CSV
+---------------------------------------------
+no issues
+
+
+DataHut_AT_Dm_PriceExtractions_20250509.CSV
+---------------------------------------------
+1. issue with site_shown_uom,grammage_quantity and grammage_unit. eg:site_shown_uom is 100 Bl, But grammage quantity is 1 and grammage quantity is stuck in line 70. url: https://www.dm.at/soft-und-sicher-taschentuecher-box-4-lagig-sortiert-p4058172286643.html  
+2.some site_shown_uom contains comma and some contains dot eg:0,075 kg,3.5 g
+
+
+DatHut_AT_Mpreis_PriceExtractions_20250509.CSV
+----------------------------------------------
+1. site_shown_uom is missing for 488 fields
+2. issue with site_shown_uom,grammage_quantity and grammage_unit. eg:site_shown_uom is 3Pflan, But grammage quantity is 1 and grammage quantity is stuck in line 1824. url: https://www.mpreis.at/shop/p/nein-bio-pfluecksalat-mix-580430
+issue with site_shown_uom,grammage_quantity and grammage_unit. eg:site_shown_uom is NrL1++, But grammage quantity is 1 and grammage quantity is stuck in line 2280. url: https://www.mpreis.at/shop/p/schwarzkopf-blonde-extrem-aufheller-602806
+3. regular_price is present, but there is no two price for the entry with AKTION tag in site for lines 3769 and 7730. eg url: https://www.mpreis.at/shop/p/red-bull-energy-drink-tray-24x-025-liter-dose-109009
+
+
+
+DataHut_AT_Bipa_PriceExtractions_20250509.CSV
+---------------------------------------------
+no issues
