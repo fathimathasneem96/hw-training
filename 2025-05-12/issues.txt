@@ -1,0 +1,16 @@
+DataHut_AT_Interspar_PriceExtractions_20250509.CSV
+---------------------------------------------
+1. 1 entry has competitor_name 'intrspar' at line 74, others are interspar
+
+2. promotion_valid_upto is found as 30.12.9999 eg url: https://www.interspar.at/shop/haushalt/leuchtstern-warmweiss/p/2020004679758
+
+promotion_valid_upto is found as 09.10.2204 eg url: https://www.interspar.at/shop/haushalt/nabo-wandhalterung-easy-motion-400/p/2020004762146
+
+3. site_shown_uom and that of product_name are different.
+line 4- site_shown_uom is kg in data, but it is 1 KG in site. url: https://www.interspar.at/shop/lebensmittel/tann-schweine-schloegelsteak-mariniert/p/4726265
+site_shwn_uom is kg, but in site it is 150 G. url: https://www.interspar.at/shop/lebensmittel/spar-heringssalat-klassisch/p/2020005548107
+
+
+DataHut_AT_Mueller_PriceExtractions_20250509.CSV
+---------------------------------------------------
+line 78068 - extraction_date is 2025-04-09, others are 2025-05-09
