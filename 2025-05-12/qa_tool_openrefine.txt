@@ -1,0 +1,11 @@
+OpenRefine: it is a powerful, free, open-source tool designed for cleaning, transforming, and analyzing messy data, particularly useful for working with structured data like CSV, Excel, JSON.
+Advantages:
+   1.Efficient Data Cleaning and Transformation
+   2.Undo/Redo Functionality
+   3.OpenRefine operates entirely on the user's local machine, ensuring that sensitive data is not transmitted over the internet
+   4.Users can extend OpenRefine's functionality through extensions and integrate it with external web services
+Disadvantages:
+	1.Limited Support for Unstructured Data
+	2.Performance may degrade with very large datasets
+	3.Requires technical knowledge for advanced integrations
+	4.Lacks real-time collaboration features
