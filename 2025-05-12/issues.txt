@@ -16,11 +16,13 @@ DataHut_AT_Mueller_PriceExtractions_20250509.CSV
 line 78068 - extraction_date is 2025-04-09, others are 2025-05-09
 
 
+
 dubizzl_egp_2025_05_02.json
 ---------------------------------
 line 85122 - currency is missing,but present in site as EGP. url:https://www.dubizzle.com.eg/en/ad/شقتك-استلام-فوري-تشطيب-الترا-سوبر-لوكس-كمبوند-دجله-بالمز-ID204465553.html
 published_at date has 2 formats : yyyy-mm-dd and yyyy/mm/dd
 phone_number is blank for 18429 entries
-broker_display_name is missing for 626 entries
+broker_display_name is missing for 626 entries and broker is missing for 627 entries. That is line 44 has only broker_display_name.
 line 90995 - price is given as III, but in site it is 13445000. url: https://www.dubizzle.com.eg/en/ad/تاون-هاوس-بمساحه-ارض-ضخمه-300-متر-بدون-اي-تهدير-فيو-رائع-علي-مجري-السيل-اقساط-مدينتي-madinaty-ID501979566.html
+"furnished":"No", missing in site eg line 42920, url: https://www.dubizzle.com.eg/en/ad/للبيع-شقة-128-استلام-فوري-بحري-بفيو-مميز-علي-حمام-سباحة-في-الجولدن-سكوير-التجمع-الخامس-دايركت-علي-ومحور-بن-زايد-ID502000136.html
 
