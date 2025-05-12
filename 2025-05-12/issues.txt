@@ -14,3 +14,12 @@ site_shwn_uom is kg, but in site it is 150 G. url: https://www.interspar.at/shop
 DataHut_AT_Mueller_PriceExtractions_20250509.CSV
 ---------------------------------------------------
 line 78068 - extraction_date is 2025-04-09, others are 2025-05-09
+
+
+dubizzl_egp_2025_05_02.json
+---------------------------------
+line 85122 - currency is missing
+published_at date has 2 formats : yyyy-mm-dd and yyyy/mm/dd
+phone_number is blank for 18429 entries
+broker_display_name is missing for 626 entries
+line 90995 - price is given as III
