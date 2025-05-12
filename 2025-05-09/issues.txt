@@ -31,9 +31,7 @@ DataHut_AT_Billa_PriceExtractions_20250509.CSV
 1.site_shown_uom contain Beutel, but grammage_unit is not btl. eg: line 6919, site_shown_uom is 400 g Beutel but grammagea-unit is g
 2. line 8 selling price is 0
 3. line 346 site_shown_uom is per 1 kg, but in site it is Ab 0,45 kg. url: https://shop.billa.at/produkte/ja-natuerlich-hendl-oberkeulenfilet-00458765
+4.currency has values 'EUR' and 'eur'
 
 
 
-DataHut_AT_Bipa_PriceExtractions_20250509.CSV
----------------------------------------------
-no issues
