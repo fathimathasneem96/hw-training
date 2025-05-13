@@ -1,0 +1,8 @@
+DataHut_AT_Bipa_FullDump_20250515.CSV
+--------------------------------------
+Instock has values True and False
+
+
+DataHut_AT_Mpreis_FullDump_20250515.CSV
+--------------------------------------
+site_shown_uom missing for 459 entries
