@@ -11,3 +11,21 @@ DataHut_AT_Mpreis_FullDump_20250515.CSV
 1.site_shown_uom missing for 459 entries
 2.line 9989- grammage_quantity is given as 7, site_shown_uom is 0.7l url:https://www.mpreis.at/shop/p/ron-zacapa-solera-gran-reserva-no-23-0-122853
 
+DataHut_SI_Spar_PriceExtractions_20250513.CSV
+----------------------------------------
+product_name also included in site_shown_uom eg:line 6515. url: https://www.spar.si/online/zobna-nitka-pro-gum-health-colgate-total-50m/p/634345  
+
+
+DataHut_SI_Mercator_PriceExtractions_20250513.CSV
+----------------------------------------
+no issues
+
+
+DataHut_SI_Hitrinakup_PriceExtractions_20250513.CSV
+----------------------------------------
+Some site_shown_uom has dot separated values. eg line 8795. url:https://hitrinakup.com/izdelki/782727       
+
+
+DataHut_SI_Dm_PriceExtractions_20250513.CSV
+-----------------------------------------
+price_valid_from is different in data and site. eg: line 6226, price_valid_from is "02.08.2024", but in site it is "13.05.2025". url: https://www.dm.si/pupa-glos-za-ustnice-miss-pupa-400-ballerina-p8011607387984.html
