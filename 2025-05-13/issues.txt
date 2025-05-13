@@ -29,3 +29,7 @@ Some site_shown_uom has dot separated values. eg line 8795. url:https://hitrinak
 DataHut_SI_Dm_PriceExtractions_20250513.CSV
 -----------------------------------------
 price_valid_from is different in data and site. eg: line 6226, price_valid_from is "02.08.2024", but in site it is "13.05.2025". url: https://www.dm.si/pupa-glos-za-ustnice-miss-pupa-400-ballerina-p8011607387984.html
+
+DataHut_AT_Dm_PriceExtractions_20250513.CSV
+----------------------------------------
+For some entries site_shown_uom is dot separated and others are comma separated. For dot separated site_shown_uom is missing in site. eg:0.1 g, 0.004 kg. url eg:  https://www.dm.at/bh-cosmetics-augenbrauenstift-precision-icon-ebony-p5057566711838.html  
