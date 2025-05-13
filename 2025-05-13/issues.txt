@@ -2,7 +2,12 @@ DataHut_AT_Bipa_FullDump_20250515.CSV
 --------------------------------------
 Instock has values True and False
 
-
 DataHut_AT_Mpreis_FullDump_20250515.CSV
 --------------------------------------
 site_shown_uom missing for 459 entries
+
+DataHut_AT_Mpreis_FullDump_20250515.CSV
+--------------------------------------
+1.site_shown_uom missing for 459 entries
+2.line 9989- grammage_quantity is given as 7, site_shown_uom is 0.7l url:https://www.mpreis.at/shop/p/ron-zacapa-solera-gran-reserva-no-23-0-122853
+
