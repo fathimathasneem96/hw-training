@@ -1,1 +1,8 @@
 Done verification for the data set DataHut_AT_Fressnapf_PriceExtractions_20250513.CSV
+Done verification for the data set DataHut_AT_Interspar_FullDump_20250515.CSV
+Done verification for the data set DataHut_AT_Dm_FullDump_20250515.CSV
+Done verification for the data set DataHut_AT_Mpreis_FullDump_20250515.CSV
+Done verification for the data set DataHut_AT_Bipa_PriceExtractions_20250513.CSV
+Meeting with QA team discussed about finding QA properly, mistakes done for previous QA and gave instructions for doing QA properly. Also gave instructions for correct updation of training log.
+Training log updation
+Doing verification for the data set DataHut_AT_Mueller_PriceExtractions_20250514.CSV
