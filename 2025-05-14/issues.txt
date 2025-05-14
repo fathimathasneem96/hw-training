@@ -1,0 +1,9 @@
+DataHut_AT_Fressnapf_PriceExtractions_20250513.CSV
+----------------------------------------------------
+1.grammage_quantity contains comma, eg: 0,25 l. url: https://www.fressnapf.at/p/trixie-reisenapf-silikon-025l-1054981/
+
+2.age is included in grammage_quantity, eg: 10+3 kg. url: https://www.fressnapf.at/p/royal-canin-medium-ageing-10-3-kg-1002985009/
+
+3.site_shown_uom contains Beutel, but grammage_unit is not btl. eg: line 12169, site_shown_uom contains Beutel, but grammage_unit is g. url: https://www.fressnapf.at/p/leo-loewenkatz-matatabi-fruechte-silvervine-fruechte-20-gramm-beutel-1729604/
+
+4.promotion_description is present, but promotion_price is not the selling_price in data,but in site it is correct. eg: promotion_price is 35.99, but selling_price is 44.99. url: https://www.fressnapf.at/p/kittys-cuisine-adult-mixpaket-1267093/
