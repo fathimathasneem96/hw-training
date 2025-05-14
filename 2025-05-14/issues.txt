@@ -7,3 +7,39 @@ DataHut_AT_Fressnapf_PriceExtractions_20250513.CSV
 3.site_shown_uom contains Beutel, but grammage_unit is not btl. eg: line 12169, site_shown_uom contains Beutel, but grammage_unit is g. url: https://www.fressnapf.at/p/leo-loewenkatz-matatabi-fruechte-silvervine-fruechte-20-gramm-beutel-1729604/
 
 4.promotion_description is present, but promotion_price is not the selling_price in data,but in site it is correct. eg: promotion_price is 35.99, but selling_price is 44.99. url: https://www.fressnapf.at/p/kittys-cuisine-adult-mixpaket-1267093/
+
+
+
+DataHut_AT_Interspar_FullDump_20250515.CSV
+-----------------------------------------
+1.age_recommendations is not empty, eg line 2. url: https://www.interspar.at/shop/haushalt/100-spielbaelle-in-tragetasche/p/2020003205491
+
+2.'|' is replaced with '\\|'. eg url: https://www.interspar.at/shop/lebensmittel/abtei-a-z-komplett-depot-40-tabletten/p/2020003913402
+
+3.promotion_valid_upto expired in data and is missing in site. eg: 13.05.2025, 12.05.2025. url: https://www.interspar.at/shop/lebensmittel/krispel-sauvignon-blanc-steiermark-2024/p/2020001663125
+
+promotion_valid_upto is 30.12.9999. eg url: https://www.interspar.at/shop/haushalt/hofer-kerzen-adventstumpen-kranz-4-stueck/p/2020003888427
+
+
+
+DataHut_AT_Dm_FullDump_20250515.CSV
+-----------------------------------
+1. grammage_quantity is different in site and data. eg: grammage_quantity is 1 stuck in data, but 16 stuck in site. url: https://www.dm.at/softis-toilettenpapier-super-soft-4-lagig-p8004260498760.html
+
+2. site_shown_uom, grammage_quantity,grammage_unit different. eg: line 91 has site_shown_uom 1 600 Bl, grammage_quantity and grammage_unit is 1 stuck. url: https://www.dm.at/softis-toilettenpapier-super-soft-4-lagig-p8004260498760.html 
+
+
+DataHut_AT_Mpreis_FullDump_20250515.CSV
+--------------------------------------
+1.site_shown_uom is dot separated in data, but comma separated in site. eg: site_shown_uom in data is 4.8g, but in site it is 4,8g. url: https://www.mpreis.at/shop/p/labello-soft-rose-344802
+
+2.line 9989- grammage_quantity is given as 7, site_shown_uom is 0.7l. url: https://www.mpreis.at/shop/p/ron-zacapa-solera-gran-reserva-no-23-0-122853     
+
+3.site_shown_uom is given as '1'. url: https://www.mpreis.at/shop/p/tv-media-705800
+
+4.promotion_description is absent in data, but 'ab 2billiger' is present in site. eg url: https://www.mpreis.at/shop/p/knusperli-0-zuckerzusatz-pur-828209
+
+
+DataHut_AT_Bipa_PriceExtractions_20250513.CSV
+------------------------------------------
+no issues
