@@ -1,0 +1,76 @@
+DataHut_AT_Mueller_PriceExtractions_20250514.CSV
+--------------------------------------------
+1.csv is capital in dataset name. DataHut_AT_Mueller_PriceExtractions_20250514.CSV
+
+2.regular_price and selling_price are missing for 8 entries in data. eg:line 47198. url: https://www.mueller.at/p/frankenstein-70-das-ungeheuer-mit-der-feuerklaue-IPN3081456/?itemId=3081456 
+
+3.regular_price and selling_price missing in data, but present in site in line 3711. url: https://www.mueller.at/p/sieben-steelbook-limited-edition-IPN3074067/?itemId=3074067  
+
+
+DataHut_AT_Fressnapf_PriceExtractions_20250514.CSV
+---------------------------------------------
+1.site_shown_uom is comma separated in site, but dot separated in data. eg url: https://www.fressnapf.at/p/bosch-soft-huehnchen--banane-25-kg-1212195/
+
+2.grammage_quantity is taken wrong, that is age is included in grammage_quantity. eg: 12+400 g url: https://www.fressnapf.at/p/royal-canin-senior-ageing-12-400-g-1002862020/
+
+3.site_shown_uom contains beutel, but grammage_unit is not btl. eg: in line 4372, 2.8 kg Beutel is in site_shown_uom, but grammage_unit is 2.8 kg. url: https://www.fressnapf.at/p/beneful-purina-kleine-geniesser-mit-rind-und-gartengemuese-28-kg-beutel-1373941/
+
+4.grammage_quantity and grammage_unit taken wrong. eg: line 10653- product is capsule, quantity is 60 capsules, in data the grammage_quantity and grammage_unit is given as 50 kg. url: https://www.fressnapf.at/p/aniforte-zecken-schild-35-bis-50kg-fuer-grosse-hunde-60-kapseln-1444358/
+
+
+DataHut_AT_Billa_PriceExtractions_20250514.CSV
+--------------------------------------------
+1.both regular_price and selling_price are missing for 2 entries line 11920 and 11925 in both site and data. eg url: https://shop.billa.at/produkte/palmblattschale-schale-rund-15cm-00344645
+
+2.site_shown_uom is comma separated in site, but dot separated in data. eg:0.5 liter Dose in data, 0,5 liter Dose in site. url: https://shop.billa.at/produkte/goesser-naturradler-zitrone-00769944 
+
+3.site_shown_uom contains Beutel, but grammage_unit is not btl. eg: site_shown_uom 10 liter Beutel in line 2806 grammage_unit is l, 0.25 kg Beutel in line site_shown_uom , but grammage_unit is kg etc. url: https://shop.billa.at/produkte/lien-ying-reisnudelbandnudeln-00937492
+
+4.price_per_unit is taken as site_shown_uom. eg: per 1 kg, per 100g. url eg: https://shop.billa.at/produkte/staudinger-holzofen-kaesewurst-0031877
+
+5.AKTION tag and promotion_price is present in data, but absent in site and selling_price is taken wrong. eg:line 885,922,5446,5448. url: https://shop.billa.at/produkte/schaerdinger-streichgenuss-mit-rapsoel-00425425
+
+
+
+DataHut_AT_Interspar_FullDump_20250515.CSV
+-----------------------------------------
+1.age_recommendations is not empty, eg line 2. url: https://www.interspar.at/shop/haushalt/100-spielbaelle-in-tragetasche/p/2020003205491
+
+2.'|' is replaced with '\\|'. eg url: https://www.interspar.at/shop/lebensmittel/abtei-a-z-komplett-depot-40-tabletten/p/2020003913402
+
+3.promotion_valid_upto expired in data and is missing in site. eg: 13.05.2025, 12.05.2025. url: https://www.interspar.at/shop/lebensmittel/krispel-sauvignon-blanc-steiermark-2024/p/2020001663125
+
+promotion_valid_upto is 30.12.9999. eg url: https://www.interspar.at/shop/haushalt/hofer-kerzen-adventstumpen-kranz-4-stueck/p/2020003888427
+
+promotion_valid_upto is 09.10.2204, same shown in site. eg url: https://www.interspar.at/shop/haushalt/nabo-soundbar-sbw-100/p/2020004139573
+
+promotion_valid_upto is present in data but missing in site. eg: line 10058. url: https://www.interspar.at/shop/lebensmittel/canard-duchne-charles-vii-champagner-brut-ros/p/2384559
+
+4.brand is missing for 624 entries
+
+5.instock True and False
+
+
+DataHut_AT_Dm_FullDump_20250515.CSV
+-----------------------------------
+1. grammage_quantity is different in site and data. eg: grammage_quantity is 1 stuck in data, but 16 stuck in site. url: https://www.dm.at/softis-toilettenpapier-super-soft-4-lagig-p8004260498760.html
+
+2.site_shown_uom is comma separated in site, but dot separated in data. eg url:https://www.dm.at/koro-proteinriegel-schokolade-brownie-p4260654789119.html
+
+3.product_name is taken as site_shown_uom. eg: line 1632 url: https://www.dm.at/nur-die-bambus-kurzsocken-weiss-gr-39-42-2-paar-p4058401691491.html
+
+
+
+DataHut_AT_Mpreis_FullDump_20250515.CSV
+--------------------------------------
+1.site_shown_uom missing for 459 entries.
+
+2.site_shown_uom is dot separated in data, but comma separated in site. eg: line 9976 site_shown_uom in data is 4.8g, but in site it is 4,8g. url: https://www.mpreis.at/shop/p/labello-soft-rose-344802
+
+3.line 9989- grammage_quantity is given as 7, site_shown_uom is 0.7l. url: https://www.mpreis.at/shop/p/ron-zacapa-solera-gran-reserva-no-23-0-122853     
+
+4.site_shown_uom is given as '1'. url: https://www.mpreis.at/shop/p/tv-media-705800
+
+5.promotion_description is absent in data, but 'ab 2billiger' is present in site. eg url: https://www.mpreis.at/shop/p/knusperli-0-zuckerzusatz-pur-828209
+
+6.line 7584 invalid pdp-url : https://www.mpreis.at/shop/p/narzissen-in-keramiktiere-580595
