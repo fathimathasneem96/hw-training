@@ -97,3 +97,23 @@ product_name has no site_shown_uom in site. eg url: https://www.interspar.at/sho
 10.promotion_valid_upto is 09.10.2204. eg url: https://www.interspar.at/shop/haushalt/nabo-soundbar-sbw-100/p/2020004139573
 
 promotion_valid_upto is 30.12.9999. eg url: https://www.interspar.at/shop/haushalt/leuchtstern-warmweiss/p/2020004679796
+
+
+
+jumbo_nl_20250520.csv
+----------------------
+no issues
+
+aldi_nl_20250520.csv
+--------------------
+1.producthierarchy_level4 is not empty in 6 entries, promotion_valid_from is not empty in 5 entries, file_name_6 field is empty.
+
+2.2 prices available in data, but only one price in site in line 5,6,28,12,42,72,73,91,148,152. eg url: https://www.aldi.nl/product/volle-kwark-1217256.html
+
+3.promotion_valid_upto expired (2025-05-18).eg line 148 url: https://www.aldi.nl/product/cassis-of-cassis-zero-1224825.html
+
+new promotion_valid_upto is in site as 25.05. eg url: https://www.aldi.nl/product/kristal-helder-cranberry-1224263.html
+
+promotion is missing in data, but present in site, data has only one price and site has 2 prices which are different from data. url: https://www.aldi.nl/product/chips-1209619.html
+
+2 prices are present in site, but only one price in data in line 161,165,209 eg url: https://www.aldi.nl/product/kristal-helder-perzik--1224253.html
