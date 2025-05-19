@@ -1,0 +1,12 @@
+KNIME is a free, open-source data analytics platform that lets you build data workflows visually using a drag-and-drop interface — no coding required.
+It's used for Data cleaning and transformation, Data validation (QA),Machine learning etc.
+Advantages:
+1.No code/low-code visual interface
+2.Extensive node library
+3.open source tool
+4.flexible integration to many data sources
+5.reproducible and modular workflows
+Disadvantages:
+1.easy to start but advanced use has steep leaning curve
+2.advanced features require extensions or paid server
+3.Workflow interface can get crowded and hard to manage with many nodes.
