@@ -1,0 +1,99 @@
+DataHut_At_Interspar_FullDump_20250515.CSV
+---------------------------------------
+1.T is small in At. Given file name is DataHut_At_Interspar_FullDump_20250515.CSV
+
+2.age_recommendations is not empty. eg url: https://www.interspar.at/shop/haushalt/4rain-regenfass-dunkelbraun-abnehmbarer-deckel-250-l/p/2020004950260 
+
+3.file_name_1 is present for all entries, but image_url_1 is missing for 26 entries. eg url: https://www.interspar.at/shop/haushalt/4rain-regenfass-dunkelbraun-abnehmbarer-deckel-250-l/p/2020004950260
+
+4.unique_id duplicated. 2020003205491 in line 2 and 3. but different in site for line 3. url: https://www.interspar.at/shop/haushalt/100-spielbaelle-in-tragetasche/p/2020003205491
+
+5.wrong competitor_name. 'interespar'
+
+6.wrong extraction_date. '2025-04-15'
+
+7.grammage_quantity is comma separated. eg line 9378 grammage_quantity is 1,4. url: https://www.interspar.at/shop/lebensmittel/beneful-original-hundefutter-rind-gartengemuese/p/2020004178862
+
+8.site_shown_uom is only numbers eg:1, 12 eg url: https://www.interspar.at/shop/lebensmittel/simpex-basic-kleidersack-vakuum-1/p/2020001803514
+
+9.site_shown_uom is present in data as 2+1 Sparpack, but missing in site. url: https://www.interspar.at/shop/lebensmittel/vileda-glitzi-pur-active-topfreiniger-glitzi-puraktiv-2-1-sparpack/p/7799297
+
+10.product_name is taken as site_shown_uom. eg: line 19339. url: https://www.interspar.at/shop/lebensmittel/simpex-professional-springform-24-cm/p/2020004214997
+
+11.instock True and False
+
+12.| replaced by \\|. eg line 8546. url: https://www.interspar.at/shop/lebensmittel/all-in-complete-protein-mahlzeit-erdbeere/p/6686895
+
+13.selling_price and regular_price are not float with 2 decimal places. eg: line 634 price is given as 12. url: https://www.interspar.at/shop/haushalt/boompods-adapter-lightning-auf-aux/p/2020003445521
+
+14.price in data and site are in different formats. eg: line 26840, price is 1190 in data, but in site it is as 1.190 url: https://www.interspar.at/shop/weinwelt/promontory-2019/p/2020005231139
+
+15.promotion_valid_upto is 09.10.2204, same shown in site. eg: line 4078 url: https://www.interspar.at/shop/haushalt/nabo-soundbar-sbw-100/p/2020004139573
+
+promotion_valid_upto expired in data and is missing in site. eg 14.05.2025 url: https://www.interspar.at/shop/lebensmittel/barbecue-anzuender-64-stueck/p/2020005287846
+
+promotion_valid_upto is present in data but missing in site. eg: line 29447 url: https://www.interspar.at/shop/lebensmittel/mepal-trinkflasche-pop-up-paw-patrol-400ml/p/2020003337284
+
+promotion_valid_upto is 30.12.9999. eg url: https://www.interspar.at/shop/haushalt/hofer-kerzen-adventstumpen-1-2-3-4-4-stueck/p/2020003888366
+
+promotion_valid_from is present in data but missing in site. eg url: https://www.interspar.at/shop/lebensmittel/s-budget-tramezzini-aufstrich-ei/p/2020005415409
+
+16.price_per_unit is comma separated eg url: https://www.interspar.at/shop/lebensmittel/hubers-landhendl-puten-frankfurter/p/6176983 
+
+
+
+DataHut_AT_Billa_PriceExtraction_20250516.CSV
+----------------------------------------------
+1.s missing in PriceExtractions. file name is DataHut_AT_Billa_PriceExtraction_20250516.CSV
+
+2.product_name is given as product_names
+
+3.unique_id duplicated. 00-827690 in line 17 and 18. but different in site for line 17. url: https://shop.billa.at/produkte/ja-natuerlich-bio-eier-m-00820829
+
+4.site_shown_uom is missing for 1 entry. line 187 url: https://shop.billa.at/produkte/clever-muellsaecke-mit-zugband-60l-00904083
+
+5.grammage_unit is missing for 1 entry in line 1059.
+
+6.selling_price is missing for 1 entry. url: https://shop.billa.at/produkte/trolli-soft-eggies-00770895
+
+7.site_showm_uom contains Beutel, but grammage_unit is not btl. eg: site_shown_uom is 1 kg Beutel, grammage_unit is kg. url: https://shop.billa.at/produkte/billa-dinkelmehl-00736683
+
+site_shown_uom is dot separated in data, but comma separated in site. eg: line 397, site_shown_uom is 157.5 g Packung. url: https://shop.billa.at/produkte/milka-nussini-haselnuss-riegel-5er-00572931
+
+price_per_unit is taken as site_shown_uom. eg: per 1 kg, per 100g. url eg: https://shop.billa.at/produkte/clever-bananen-00258074 
+
+8.price is float, but not with 2 decimal places. eg: 1.3 url: https://shop.billa.at/produkte/villacher-radler-naturtrueb-00694128
+
+9.line 65-price_per_unit contains comma 1 Stk 0,21 €. url: https://shop.billa.at/produkte/clever-eier-aus-bodenhaltung-m-00312736
+
+10.AKTION tag is present in data, but missing in site and selling_price is taken wrong. eg: line 8. url: https://shop.billa.at/produkte/ja-natuerlich-maroni-gegart-0089479
+
+AKTION tag with single price, but regular_price and selling_price are taken same in line 31. url: https://shop.billa.at/produkte/hofstaedter-faschiertes-gemischt-00930169
+
+
+
+DataHut_AT_Interspar_PriceExtractions_20250516.CSV
+-------------------------------------------------
+1.product_name missing at line 14. url: https://www.interspar.at/shop/lebensmittel/enders-raeucherbox/p/2020004686435
+
+2.extraction_date wrong format yyyy/mm/dd
+
+3.grammage_quantity contains comma in line 113 as 0,5. url: https://www.interspar.at/shop/weinwelt/bonollo-grappa-di-amarone/p/4457688 
+
+4.grammage_unit is STK in line 12.url: https://www.interspar.at/shop/lebensmittel/donau-heftschoner-a4-gruen/p/522496
+
+5.site_shown_uom is Teebeutel, but grammage_unit is not btl.eg: line 359, site_shown_uom is 20 Teebeutel, grammage_unit is stuck. url: https://www.interspar.at/shop/lebensmittel/spar-naturpur-bio-fruechtepunsch-20-teebeutel/p/2020001975419
+
+6.product_name is taken as site_shown_uom. eg url: https://www.interspar.at/shop/lebensmittel/zyliss-spiralschneider/p/2020001857487
+
+7. product_name contain dot, while site_shown_uom contains comma eg:line 8. url: https://www.interspar.at/shop/lebensmittel/bormioli-rocco-einkochglas-fido-02l/p/8208194
+
+product_name has no site_shown_uom in site. eg url: https://www.interspar.at/shop/weinwelt/markowitsch-gerhard-gruener-veltliner-carnuntum-dac-2023/p/3880968
+
+8.selling_price is not float with 2 decimal places. eg: 11, 1.3. 
+
+9.price format different in data and site. eg:line 21754, price in data is 89900, but in site it is 89.900. url: https://www.interspar.at/shop/weinwelt/domaine-de-la-romane-conti-assortement-grand-cru-10er-holzkiste-2014/p/2020005011366
+
+10.promotion_valid_upto is 09.10.2204. eg url: https://www.interspar.at/shop/haushalt/nabo-soundbar-sbw-100/p/2020004139573
+
+promotion_valid_upto is 30.12.9999. eg url: https://www.interspar.at/shop/haushalt/leuchtstern-warmweiss/p/2020004679796
