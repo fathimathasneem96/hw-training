@@ -32,3 +32,9 @@ dirk_nl_20250520.csv
 2.price format different in data and site. eg: line 116, selling_price is 0.69 in data, but in site it is given as 69. url: https://www.dirk.nl/boodschappen/zuivel-kaas/overige-kazen/echte%20smeerkaas%20naturel%2020%2b/91136
 
 3.promorion_valid_from, promotion_valid_upto are in not correct format. eg in site it is 28 april, but in data 2025-04-28 url: https://www.dirk.nl/boodschappen/dranken-sap-koffie-thee/frisdranken/rockstar%20energy%20drink%20original/90651
+
+bayut_uae_project_2025_05_03.json
+--------------------------------
+1.project_status and progress are missing in site, present in data eg: line 1366- project_status is under construction, progress 80% completed, but site it is missing url: https://www.bayut.com/for-sale/off-plan/property/dubai/jumeirah-village-triangle-jvt/jvt-district-7/tranquil-wellness-tower
+
+2.progress updated as 60% completed for line 231 url: https://www.bayut.com/for-sale/off-plan/property/dubai/umm-suqeim/madinat-jumeirah-living/lamaa/lamaa-building-3
