@@ -1,0 +1,34 @@
+delhaize_nl_20250520.csv
+-----------------------
+1.line 941- There is no image for the entry
+
+2. promotion_valid_from, promotion_valid_upto are in not proper format. eg: 1/1/2026
+
+3.sites are access denied
+
+
+plus_nl_20250520.csv
+---------------------
+1.percentage_discount is not empty for 14 entries
+
+2.selling_price and promotion_price are different from site. eg: line 1201, price in data is 1.25, but in site it is 1.24. url: https://www.plus.nl/product/elephant-pretzel-tomatoes-herbs-stazak-160-g-712813
+
+3.promorion_valid_from, promotion_valid_upto are in not correct format. eg in site it is 14 mei, but in data 2025-05-14 url: https://www.plus.nl/product/heks-nkaas-vegan-bakje-200-g-268210
+
+4.no image for 19 entries. eg url: https://www.plus.nl/product/aw-rootbeer-blik-330-ml-944576  
+
+5.nutritional_values_information is given as {} for 24 entries, for those have no nutritional_values_information in site. eg url: https://www.plus.nl/product/plus-klaverland-jong-35-plakken-kg-200-g-472711
+
+
+ah_nl_20250520.csv
+-------------------
+Image field is empty for 1 entry in line 887. url: https://www.ah.nl/producten/product/wi595308/arla-bio-melk-en-ah-bio-bananen-pakket 
+
+
+dirk_nl_20250520.csv
+---------------------
+1.line 538- product is unavailable. url: https://www.dirk.nl/boodschappen/snacks-snoep/chips/pringles%20chips%20paprika/76235
+
+2.price format different in data and site. eg: line 116, selling_price is 0.69 in data, but in site it is given as 69. url: https://www.dirk.nl/boodschappen/zuivel-kaas/overige-kazen/echte%20smeerkaas%20naturel%2020%2b/91136
+
+3.promorion_valid_from, promotion_valid_upto are in not correct format. eg in site it is 28 april, but in data 2025-04-28 url: https://www.dirk.nl/boodschappen/dranken-sap-koffie-thee/frisdranken/rockstar%20energy%20drink%20original/90651
