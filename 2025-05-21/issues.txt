@@ -1,0 +1,38 @@
+dubizzle_uae_2025_05_03.json
+-----------------------------
+1.last_update is different in site and data. eg: line 6, last_update is 2025-05-15 in data, but in site it is 19th May 2025. url: https://dubai.dubizzle.com/property-for-sale/residential/villahouse/2025/3/24/single-row-twin-villa-large-built-up-2-267473/
+
+2.page lost. eg line 1885,4528 url: https://dubai.dubizzle.com/property-for-sale/residential/villahouse/2025/3/24/single-row-twin-villa-large-built-up-2-267473/
+
+3.published_at different in site and data. eg: line 602, last_update is 2025-05-10 in data, but in site it is 11th May 2025. url: https://dubai.dubizzle.com/property-for-sale/residential/villahouse/2025/4/10/park-view-close-to-the-pool-viewable-2-623137/
+
+4.rera_permit_number is sequence of zeros in both data and site. eg url: https://rak.dubizzle.com/property-for-sale/residential/villahouse/2025/3/14/class-finishes-5-br-villa-arabian-sea-v-11-195421/
+
+aqarmap_egp_2025_05_03.json
+---------------------------
+1.phone_number is +2010. eg url: https://aqarmap.com.eg/en/listing/5708638-for-rent-ismailia-qry-ljndwl/
+phone_number is +undefined1148273737 in line 7369. url: https://aqarmap.com.eg/en/listing/4282618-for-rent-cairo-el-shorouk-lmntq-lthny-neighbourhood-4/
+
+2.broker_display_name is aaa. url: https://aqarmap.com.eg/en/listing/5708638-for-rent-ismailia-qry-ljndwl/
+
+3.sites are unreachable.
+
+
+DataHut_AT_Mueller_PriceExtractions_20250521.CSV
+---------------------------------------------
+1.wrong name-csv capital. DataHut_AT_Mueller_PriceExtractions_20250521.CSV
+
+2.product is out of stock. eg url: https://www.mueller.at/p/noch-60873-modellwasser-250-ml-939497/?itemId=939497
+
+3.regular_price and selling_price missing for 10 entries in site and data, the products are out of stock. eg url: https://www.mueller.at/p/mad-PPN3099041/?itemId=3099041
+
+4.page not found. url: https://www.mueller.at/p/braun-rasierer-series-5-mbs5-2743787/?itemId=2743787
+
+
+DataHut_AT_Bipa_PriceExtractions_20250521.CSV
+-------------------------------------------
+1.price_per_unit in wrong format. eg: given as 1 kg 1.122.50 in data, 1 kg 1,122.50 in site. url: https://www.bipa.at/p/loctite-superkleber-fluessig/B3-498567
+
+2.breadcrumb contain > > in data, but in site it is > eg url: https://www.bipa.at/p/hipp-mama-bio-stilltee-mit-fenchel-anis-und-kuemmel/B3-539614
+
+3.dauretiefpreis promotion_description is present in site, but it is not given in data,only the discount value is given as promotion_description and there are 2 prices in site, only one price in data(regular_price and selling_price is same, which is the promotion_price). eg url: https://www.bipa.at/p/rituals-the-ritual-of-sakura-koerpercreme/B3-425863
