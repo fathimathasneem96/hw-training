@@ -1,0 +1,41 @@
+semonin_realtor_2025_05_05.json
+--------------------------------
+line 13 - last name is sequence of digits in dataset
+line 3,29,37,42,70,74,107,113,121,130,131,134,141,145,148,151,174,187,190,196,198,204,207,208,210,214,216,218,260,280,299,324,331,337,338,339,368,380,388,389 - office phone number is empty, but present in site
+line 6,36,107,118,130, 159,174,193,207,214,217,218,339 - more than one office names in site
+line 50,143,148,195,333,362 - agent phone number empty, but present in site
+line 144 - first name different 
+
+kw_set_3:
+
+century21_us_2025_05_05.json
+--------------------------------
+no issues
+
+
+ebby_2025_05_05.json
+--------------------------------
+no issues
+
+
+longandfoster_2025_05_05.json
+--------------------------------
+line 2054- email spelling case change
+
+
+longrealty_2025_05_05.json
+--------------------------------
+line 222 - email is different deom email in site
+
+
+robertsbrothers_2025_05_05.json
+--------------------------------
+no issues
+
+sutton_2025_05_05.json
+--------------------------------
+line 5- first name different and middle name is a sequence of numbers
+line 16 - "office_phone_numbers": ["000-000-0000"]
+line 46 - middle name missing in site
+line 1398 - first name missing in site
+line 4483 - office number is empty, but present in site
