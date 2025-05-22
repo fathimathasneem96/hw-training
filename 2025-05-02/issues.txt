@@ -1,0 +1,39 @@
+century21globa_2025_05_05.json
+-------------------------------
+Last digits of phone numbers in site are given as xxxxxx
+
+
+compass_2025_05_05.json
+--------------------------------
+line 21035 - 1 url in other urls is invalid
+
+
+firstweber_2025_05_05.json
+-------------------------------
+no issues
+
+
+home_realestate_2025_05_05.json
+--------------------------------
+Phone number formats are different
+"zipcode": "Street"
+"state": "O","zipcode": "Street"
+"state": "Circle", "zipcode": "of"
+"state": "", "zipcode": ""
+
+
+semonin_realtor_2025_05_05.json
+--------------------------------
+line 3,37,42,70,74,107,113,121,145,187,207,214,260,299,324,331,338,339,368,380,389 - office phone number is empty, but present in site
+line 6,36,107,159,207,214,339 - more than one office names in site
+line 50,333,362 - agent phone number empty, but present in site
+line 144 - first name different 
+
+
+sutton_2025_05_05.json
+--------------------------------
+line 5- first name different 
+line 16 - "office_phone_numbers": ["000-000-0000"]
+line 46 - middle name missing in site
+line 1398 - first name missing in site
+line 4483 - office number is empty, but present in site
