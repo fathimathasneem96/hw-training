@@ -74,5 +74,3 @@ site_shown_uom is missing in site, but taken as 1 db in data. eg url: https://be
 11.'|' in site replaced with '\\|' in product name and breadcrumb in line 10915 and 24032. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105006005
 
 12.image present in data, missing in site. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004020216891
-
-13.instock True and False
