@@ -1,0 +1,78 @@
+DataHut_AT_Mpreis_FullDump_20250522.CSV
+-------------------------------------
+1.file_name_1 and image_url_1 is also empty
+
+2.site_shown_uom missing for 474 entries.
+site_shown_uom is just numbers eg:1, 20 url: https://www.mpreis.at/shop/p/-starterset-cards-em-2024-presse1-808003.
+site_shown_uom is dot separated in data, comma separated in site. eg: 4.25g in data and 4,25g in site. url: https://www.mpreis.at/shop/p/blistex-lippenpflege-daily-lip-care-conditioner-313103
+
+3.grammage_quantity taken wrong in line 9640. grammage_quantity is 07 in data but 0.7 in site. url: https://www.mpreis.at/shop/p/zacapa-solera-gran-reserva-no-23-0-122853
+
+4.promotion_price,percentagediscount and promotion_description present in data, but missing in site. eg url: https://www.mpreis.at/shop/p/grabkerze-xl-weiss-mit-deckel-6er-289762
+
+promotion_price and promotion_description present in site, but missing in data. eg url: https://www.mpreis.at/shop/p/schwechater-bier-20x05l-kiste-103516
+
+promotion_price,percentage_discount and promotion_description taken wrong. eg: promotion_price and promotion_description is 0.50 and -49% in data, 0.84 and -15% in site. url: https://www.mpreis.at/shop/p/alnatura-bio-veganer-ei-ersatz-365684
+
+promotion_description taken wrong. eg: 1+1 gratis in data, ab 2billiger in site. url: https://www.mpreis.at/shop/p/erlebnissennerei-zillertal-almkaeser-aus-heumlich-45-235008
+
+5.product image is present in site, but missing in data. eg url: https://www.mpreis.at/shop/p/feldbacher-zwieback-zwieback-klassik-209402
+
+6.product_description and product image present in site, missing in data. eg url: https://www.mpreis.at/shop/p/jeden-tag-zwiebel-beutel-599975
+
+7.price taken wrong. price in data is 1.59, but in site it is 1.69. url: https://www.mpreis.at/shop/p/zwiebel-netz-599994
+
+8.price taken wrong, promotion present in data and missing in site. url: https://www.mpreis.at/shop/p/tchibo-cafissimo-caffe-crema-mild-vorratsbox-30-kapseln-149258
+
+
+DataHut_SI_Mercator_FullDump_20250522.CSV
+-----------------------------------------
+1.brand is '-' for 41 entries. eg url: https://mercatoronline.si/izdelek/18956955/mlada-pekinska-raca-brez-vratu-in-drobovine-zamrznjeno-cena-za-kg
+
+2.product_name is taken as site_shown_uom. eg: line 13271 url: https://mercatoronline.si/izdelek/16081411/zvezek-b5-crtni-lili-in-bine
+
+3.breadcrumb separated by > in data, / in site.
+
+4.promotion_valid_upto is missing in data, present in site eg: 11.08.2025 url: https://mercatoronline.si/izdelek/17907083/toast-s-semeni-tvojih-5-minut-500-g
+
+5.image present in data, missing in site. eg url: https://mercatoronline.si/izdelek/17418122/bacon-burger-kodila-zamrznjeno-160-g
+
+6.promotion_description is present, but regular_price is the selling_price. eg: promotion_description is Za imetnike Pika kartice 16% ceneje. url: https://mercatoronline.si/izdelek/19952842/tuna-v-olivnem-olju-ocean-145-g
+
+7.instructionforuse contain -,-1,, eg url: https://mercatoronline.si/izdelek/18301417/krof-z-marmelado-don-don-80-g
+
+8.ingredients is -1. eg url: https://mercatoronline.si/izdelek/472455/svinjska-domaca-mast-kodila-450-g
+
+9.instock True only
+
+
+DataHut_HU_Tesco_FullDump_20250522.CSV
+-------------------------------------
+1.brand, producthierarchy_level4, file_name_5, image_url_5 are not empty
+
+2.product_name taken wrong."асо étkezési lencse 500 g" in data, "Расо étkezési lencse 500 g" in site. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004009862681
+
+3.product is out of stock, but regular and promotion prices are present in data and missing in site url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105363503
+
+4.product_name is taken as site_shown_uom. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004120077999
+
+5.site_shown_uom taken wrong. eg: 5 x 42.5g 8,5 g-os csomag
+in data and 5 x 42.5g ℮ 8,5 g-os csomag in site. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004009190852
+
+site_shown_uom is missing in site, but taken as 1 db in data. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005100673912
+
+6.promotion missing in data,present in site as Clubcard Ar and promotion_valid_upto missing in data, present in site. eg: 2025.06.04 url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004020262072
+
+7.rating and review present in site, missing in data. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004121307099
+
+8.brand taken wrong. eg line 733, brand is LEGO in site, OTHER in data. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005100922346
+
+9.price is missing in data, present in site. eg line 2864, price in site is 1459. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105001668
+
+10.breadcrumb missing in site, present in data and given wrong product name in line 24018. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105006004
+
+11.'|' in site replaced with '\\|' in product name and breadcrumb in line 10915 and 24032. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105006005
+
+12.image present in data, missing in site. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004020216891
+
+13.instock True and False
