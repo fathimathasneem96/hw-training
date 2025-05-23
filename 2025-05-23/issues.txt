@@ -1,0 +1,53 @@
+DataHut_HU_Auchan_PriceExtractions_20250523.CSV
+-------------------------------------------
+1.product_name is 13510672. url: https://auchan.hu/shop/13510672.p-737989
+
+2.incorrect pdp_url for line 3841,36146. product missing in site for eg url: https://auchan.hu/shop/???-%C3%A9tkez%C3%A9si-bulgur-500-g.p-994515. But product is present in correct url: https://auchan.hu/shop/etkezesi-bulgur-500-g.p-994515. correct url for line 36146 is https://auchan.hu/shop/neipp-arnica-active-furdokristaly-60-g.p-657724
+
+3.grammage_quantity is 970766801. url: https://auchan.hu/shop/easycut-970766801-l-%C3%A1gv%C3%A1g%C3%B3-oll%C3%B3--+-metsz%C5%91oll%C3%B3.p-914556
+
+4.product_name is taken as site_sown_uom, but some part missing in site_shown_uom. eg: '/' missing in site_shown_uom,  url: https://auchan.hu/shop/honor-pad-x8a-wifi-4/64gb-sz%C3%BCrke.p-889315
+
+5.promotion_description present in data, missing in site, but discounted price is there eg url: https://auchan.hu/shop/carroten-kids-protect-plus-spf50-naptej-spray-arcra-%C3%A9s-testre-270-ml.p-935741
+
+6.promotion_valid_from,promotion_valid_upto format different. 2025.05.29. in site and 2025-05-29 in data. eg url: https://auchan.hu/shop/trust-21904-primo-univerz%C3%A1lis-laptop-t%C3%B6lt%C5%91-45w-fekete.p-799412
+
+
+DataHut_HU_Tesco_PriceExtractions_20250523.CSV
+--------------------------------------------
+1.product is out of stock,hence breadcrumb is missing in site. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005100680712
+
+2.grammage_quantity is taken from product_name. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005100504453
+
+3.grammage_quantity taken wrong, for some data it is in db,for some other it is in g or kg. eg: in site is 60 x 1250mg, but in data it is 60 db. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004020223837
+
+4.price missing in data, present in site. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004020306724
+
+5.Clubcard Ar promotion, promotion_valid_upto and price missing in data, but present in site eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105015435
+
+6.breadcrumb missing in site, present in data and contain unwanted characters in line 17464. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105006004
+
+7.'|' in site replaced with '\\|' in breadcrumb and '|' replaced with '\|' in product_name eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105006005
+
+
+DataHut_SI_Spar_PriceExtractions_20250523.CSV
+------------------------------------------
+site_shown_uom taken wrong. eg: 1500g in data, 1kg in site. url: https://www.spar.si/online/piscanec-z-drobovino-celi-spar-1kg/p/405796
+
+
+DataHut_SI_Dm_PriceExtractions_20250523.CSV
+--------------------------------------------
+1.product_name contain ml, but site_shown_uom and grammage_unit are in g. eg url: https://www.dm.si/balea-balzam-za-ustnice-s-peptidi-p4067796066982.html
+
+2.site_shown_uom contain dot separated and comma separated values, same in site. eg: 74,2g, 1.000ml.
+
+3.site_shown_uom is 1.000ml both in data and site, but looking into image in site  and logicallyit should be 1,000ml. url: https://www.dm.si/babylove-negovalna-kopel-sensitive-p4066447373417.html
+
+4.Error in site_shown_uom and grammage_quantity. 204 kos in product name and 240 kos in site_shown_uom. url: https://www.dm.si/pampers-harmonie-plenice-velikost-2-mesecno-pakiranje-4-8-kg-p8700216251259.html
+
+
+DataHut_SI_Hitrinakup_PriceExtractions_20250523.CSV
+-----------------------------------------------
+1.some unique_id contain letters too. eg: BUN7979
+
+2.price_per_unit missing in site, present in data. eg url: https://hitrinakup.com/izdelki/132404
