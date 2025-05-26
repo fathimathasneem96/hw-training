@@ -1,0 +1,70 @@
+DataHut_HU_Wolt_PriceExtractions_20250523.CSV
+-------------------------------------------
+1.unique_ids repeated,but item ids are different in site urls.
+
+2.site_shown_uom taken wrong. eg: 1l in data, but 1 l és 37,5 vol in site. url: https://wolt.com/hu/hun/gyor/venue/interspar-gyor/zubrowka-biala-vodka-37-5-1-l-itemid-67ad25b22bb097998d565de9
+
+3.site_shown_uom and grammage_unit are in g in site, but in kg in data. eg: 0.27kg in data, 270g in site url: https://wolt.com/hu/hun/budapest/venue/interspar-allee/regnum-fustolt-fott-darabolt-sertes-csaszarszalonna-itemid-66436ae11ea593b48552649b
+
+
+DataHut_AT_Fressnapf_PriceExtractions_20250526.CSV
+----------------------------------------------
+1.age is included in grammage_quantity. eg: 10+15 kg url: https://www.fressnapf.at/p/royal-canin-medium-ageing-10-15-kg-1003112018/
+
+2.size is included in grammage_quantity. eg: 60X90 50. url: https://www.fressnapf.at/p/anione-training-pads-60x90-50-stueck-1309637/
+
+3.product_name and site_shown_uom are dot separated in data, but comma separated in site. eg url: https://www.fressnapf.at/p/petlife-safebed-papierwolle-204-kg-1010211/
+
+4.grammage_unit taken wrong from name as size. eg: grammage_quantity is 1l, but L is size. grammage_unit should be stuck. url: https://www.fressnapf.at/p/anione-nager-holzbruecke-9-in-1-l-1073122003/
+
+5.site_shown_uom contains beutel, but grammage_unit is not btl. eg:2.8 kg Beutel is in site_shown_uom, but grammage_unit is 2.8 kg. url: https://www.fressnapf.at/p/beneful-purina-kleine-geniesser-mit-rind-und-gartengemuese-28-kg-beutel-1373941/ 
+
+6.grammage_quantity and grammage_unit taken wrong. eg: product is capsule, quantity is 60 capsules, in data the grammage_quantity and grammage_unit is given as 50 kg. url: https://www.fressnapf.at/p/aniforte-zecken-schild-35-bis-50kg-fuer-grosse-hunde-60-kapseln-1444358/
+
+7.promotion_description present in data, missing in site. eg: 3% url: https://www.fressnapf.at/p/hills-prescription-diet-digestive-care-id-lachs-12x85-g-1365618/
+
+8.'|' replaced with '\|' in breadcrumb. eg url: https://www.fressnapf.at/p/dogsn-tiger-fatzke--ente-112-kg-1753191/
+
+
+DataHut_AT_Dm_PriceExtractions_20250526.CSV
+--------------------------------------------
+site_shown_uom contain dot separated and comma separated values.For dot separated, site_shown_uom is missing in site. eg: 1.19g, 0,045kg. eg url: https://www.dm.at/artdeco-lipliner-soft-waterproof-131-perfect-fit-p4052136183351.html
+
+
+DataHut_AT_Bipa_PriceExtractions_20250526.CSV
+-------------------------------------------
+'AB 2 STUCK AKTION' tag is present in site eg url: https://www.bipa.at/p/listerine-total-care-extra-mild-mundspuelung/B3-439783
+
+
+DataHut_AT_Mpreis_PriceExtractions_20250526.CSV
+--------------------------------------------
+1.site_shown_uom missing for 502 entries
+
+2.site_shown_uom is number only.eg:'1' url: https://www.mpreis.at/shop/p/tv-media-705800
+
+3.site_shown_uom is dot separated in data, comma separated in site. eg: 154.8g url: https://www.mpreis.at/shop/p/ferrero-giotto-daenischer-butterkeks-36er-packung-143045
+
+4.site_shown_uom taken wrong. In the product image 240g, but site_shown_uom is 240kg. url: https://www.mpreis.at/shop/p/lorenz-erdnusslocken-classic-xxl-710895
+
+5.site_shown_uom taken wrong.eg:product_name has 0.5 Liter, but site_shown_uom is 500l. url: https://www.mpreis.at/shop/p/silberquelle-apfel-gespritzt-05-liter-106517
+
+6.price_per_unit is 0.00. eg:0.00€ /l url: https://www.mpreis.at/shop/p/jeden-tag-hygienespueler-306126
+
+
+DataHut_AT_Billa_PriceExtractions_20250526.CSV
+-------------------------------------------
+1.product is unavailable url: https://shop.billa.at/produkte/palmblattschale-schale-rund-15cm-00344645
+
+2.selling_price missing for 2 entries. eg url: https://shop.billa.at/produkte/trolli-soft-eggies-00770895
+
+3.site_shown_uom contains beutel, but grammage_unit is not btl.eg: 15 g Beutel, grammage_unit is g. url: https://shop.billa.at/produkte/billa-bio-roggensauerteig-getrocknet-00506698
+
+4.site_shown_uom contains Waschgang, grammage_unit is not wg. eg: 22 Waschgang Beutel, url: https://shop.billa.at/produkte/frosch-waschmittel-universal-00772746
+
+5.site_shown_uom is dot separated in data, comma separated in site. eg: 0.2kg stuck. url: https://shop.billa.at/produkte/al-amier-falafel-mix-00937646
+
+6.price_per_unit is taken as site_shown_uom. eg: per 1 kg, per 100g. url eg: https://shop.billa.at/produkte/clever-bananen-00258074
+
+7.product_name, site_shown_uom,price are taken wrong and promotion_description is absent in site. url: https://shop.billa.at/produkte/eskimo-magnum-double-gold-caramel-billionaire-00464896
+
+8.promotion_description contain 2+1 AKTION also in site. url: https://shop.billa.at/produkte/knorr-disney-suppe-avengers-tomate-00345074
