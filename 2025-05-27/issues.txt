@@ -32,4 +32,5 @@ bayut_uae_project_2025_05_04.json
 
 dari_ae_2025_05_04.json
 ------------------------
-phone number 2 is 020000000 in data, missing in site. url: https://www.dari.ae/en/app/directory/profession/HAMDAN%20ALI%20MOHAMED%20ALKHOORI?id=7062
+1.date formats are different in data and site.
+2.phone number 2 missing in site eg: phone number 2 is 020000000 in data, missing in site. url: https://www.dari.ae/en/app/directory/profession/HAMDAN%20ALI%20MOHAMED%20ALKHOORI?id=7062
