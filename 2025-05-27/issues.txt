@@ -1,0 +1,35 @@
+aqarmap_egp_2025_05_04.json
+---------------------------
+1.broker name is found as number. eg:01014909088 url: https://aqarmap.com.eg/en/listing/5584560-for-rent-cairo-el-haram-shareaa-el-haram/
+2.phone number is +undefined1552993258. eg url: https://aqarmap.com.eg/en/listing/5819945-for-rent-cairo-ain-shams-ain-shams-el-sharkia-el-eshrein-stt/
+3.phone number is +20. eg url: https://aqarmap.com.eg/en/listing/5915575-for-sale-alexandria-l-jmy-lbytsh-el-hay-st/
+4.bathrooms is 2د. eg url: https://aqarmap.com.eg/en/listing/5727128-for-sale-cairo-mokattam-lhdb-l-ly-shareaa-9/
+5.site is unreachable
+6.currency and price missing for many entries.
+
+
+dubizzle_egp_2025_05_04.json
+---------------------------
+1.ad is no longer available. eg url: https://www.dubizzle.com.eg/en/ad/enjoy-a-summer-vacation-all-year-in-installments-a-sea-view-chalet-for-sale-fully-finished-and-immediate-receipt-in-the-grove-sokhna-ID501344879.html
+2.broker name is .. url: https://www.dubizzle.com.eg/en/ad/%D9%84%D9%84%D8%A8%D9%8A%D8%B9-%D8%B4%D9%82%D8%A9-%D8%B1%D9%88%D9%81-%D8%A7%D9%84%D8%B9%D8%AC%D9%85%D9%8A-%D8%A7%D8%A8%D9%88-%D9%8A%D9%88%D8%B3%D9%81-ID204696917.html
+3.broker name is &&. url: https://www.dubizzle.com.eg/en/ad/%D8%B4%D9%82%D8%A9-%D9%84%D9%82%D8%B7%D8%A9-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-%D8%A7%D9%84%D9%81%D9%88%D8%B1%D9%8A-%D9%84%D8%B3%D8%B1%D8%B9%D8%A9-%D8%A7%D9%84%D8%A8%D9%8A%D8%B9-%D8%AC%D8%A7%D9%87%D8%B2%D8%A9-%D9%84%D9%84%D8%B3%D9%83%D9%86-ID204633499.html
+4.price taken wrong. eg: 6000 in data, 11000 in site. url: https://www.dubizzle.com.eg/en/ad/%D8%B4%D8%A7%D9%84%D9%8A%D8%A9-%D9%84%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1-%D9%81%D9%8A-%D9%84%D8%A7-%D9%81%D9%8A%D8%B3%D8%AA%D8%A7-%D9%A3-%D8%A7%D9%84%D8%B9%D9%8A%D9%86-%D8%A7%D9%84%D8%B3%D8%AE%D9%86%D8%A9-ID501908660.html
+5.price taken wrong. 12000 in data, 16000 in site url: https://www.dubizzle.com.eg/en/ad/%D9%81%D9%8A%D9%84%D8%A7-%D9%84%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B3%D8%AE%D9%86%D8%A9-%D8%AC%D8%A7%D8%B2-%D9%84%D9%8A%D8%AA%D9%84-%D9%81%D9%8A%D9%86%D8%B3-ID501908150.html
+6.broker name present in site, missing data. eg url: https://www.dubizzle.com.eg/en/ad/villa-for-sale-in-azha-north-view-on-sea-and-lagoon-ID501967169.html
+
+
+bayut_egp_2025_05_04.json
+-----------------------
+1.price per is weekly in data, daily in site. eg url: https://www.bayut.eg/en/property/details-502046989.html
+2.2 phone numbers in data, only 1 phone number in site. eg url: https://www.bayut.eg/en/property/details-502045576.html
+3.publised at date taken wrong. eg: 1 November 2024 in data, 2 November 2024 in site. url: https://www.bayut.eg/en/property/details-501165008.html
+
+
+bayut_uae_project_2025_05_04.json
+--------------------------------
+1.project_status and progress are missing in site, present in data eg: line 1388- project_status is under construction, progress 86% completed, but site it is missing url: hhttps://www.bayut.com/for-sale/off-plan/property/dubai/jumeirah-village-circle-jvc/jvc-district-17/the-east-crest
+2.progress is 100% completed in data, missing in site eg url: https://www.bayut.com/for-sale/off-plan/property/dubai/mina-rashid/seagate/seagate-building-2
+
+dari_ae_2025_05_04.json
+------------------------
+phone number 2 is 020000000 in data, missing in site. url: https://www.dari.ae/en/app/directory/profession/HAMDAN%20ALI%20MOHAMED%20ALKHOORI?id=7062
