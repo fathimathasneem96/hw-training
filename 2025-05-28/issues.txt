@@ -1,0 +1,87 @@
+DataHut_AT_Fressnapf_PriceExtractions_20250528.CSV
+---------------------------------------------
+1.price per unit is 4.49/kg and price is 4.49. But grammage quantity and unit is 1000kg. url: https://www.fressnapf.at/p/vitakraft-menu-vital-meerschweinchen-1000-kg-1004435/
+
+2.age is included in grammage quantity. eg:10+3 kg. url: https://www.fressnapf.at/p/royal-canin-medium-ageing-10-3-kg-1002985009/
+
+3.grammage quantity is 6X400 g in data, but 6X800g in site. url: https://www.fressnapf.at/p/aniforte-nassfutter-greenfieldturkey-pute-6-x-400-g-6x800-g-1422189/
+grammage quantity is 500g in data, 250g in site. url: https://www.fressnapf.at/p/aniforte-bierhefe-pulver-500g-250-g-1665877/
+
+4.size included in grammage quantity. eg: 60X90 50. url: https://www.fressnapf.at/p/anione-training-pads-60x90-50-stueck-1309637/
+
+5.site_shown_uom is dot separated in data, comma separated in site. eg url: https://www.fressnapf.at/p/purina-one-bifensis-adult-huhn--vollkorngetreide-57-kg-1396349/
+
+6.grammage_unit taken wrong from name as size. eg: grammage_quantity is 1l, but L is size. grammage_unit should be stuck. url: https://www.fressnapf.at/p/anione-nager-holzbruecke-9-in-1-l-1073122003/ 
+
+7.site shown uom contains beutel, grammage unit is not beutel. eg: 2.8 kg beutel url: https://www.fressnapf.at/p/beneful-purina-kleine-geniesser-mit-rind-und-gartengemuese-28-kg-beutel-1373941/
+
+8.promotion description missing in site eg: ~4% url: https://www.fressnapf.at/p/wow-adult-6x800g-rind-mit-karotte-1294863/
+
+
+DataHut_AT_Dm_PriceExtractions_20250528.CSV
+-----------------------------------------
+1.site shown uom dot separated in data, missing in site. eg url: https://www.dm.at/artdeco-concealer-perfect-teint-3-peach-p4019674049730.html
+
+2.site shown uom taken wrong. in site capacity is given 500 ml, but site shown uom is 500l. url: https://www.dm.at/denkmit-nachfuellflasche-mit-spruehkopf-nature-p4066447706741.html
+
+
+DataHut_AT_Bipa_PriceExtractions_20250528.CSV
+-------------------------------------------
+AKTION tag present in site with AB 2 STUCK, only one price available. eg url: https://www.bipa.at/p/listerine-total-care-extra-mild-mundspuelung/B3-439783
+
+
+DataHut_AT_Mueller_PriceExtractions_20250528.CSV
+-----------------------------------------------
+1.wrong name-csv capital.
+DataHut_AT_Mueller_PriceExtractions_20250528.CSV
+
+2.'|' replaced with '\|' in product name and breadcrumb. eg url: https://www.mueller.at/p/von-1-bis-10-alles-gesehen-das-zahlen-wimmelbuch-such-und-entdeckerbuch-ab-3-PPN3077323/?itemId=3077323
+
+3.regular price and selling price missing for 19 entries in both data and site.eg url: https://www.mueller.at/p/kiss-x-sis-vol-4-ova-2-IPN3075800/?itemId=3075800
+
+
+DataHut_AT_Billa_PriceExtractions_20250528.CSV
+---------------------------------------------
+1.site_shown_uom is dot separated in data, comma separated in site. eg: 0.5 liter Dose Einweg. url: https://shop.billa.at/produkte/wieselburger-gold-00769771
+
+2.site_shown_uom contains beutel, but grammage_unit is not btl.eg: 195 g Beutel, grammage_unit is g. url: https://shop.billa.at/produkte/nimm2-soft-00436191
+
+site_shown_uom contains Waschgang, grammage_unit is not wg. eg: 45 Waschgang Beutel, url: https://shop.billa.at/produkte/weisser-riese-riesenfrisch-00692622
+
+3.price_per_unit is taken as site_shown_uom. eg: per 1 kg, per 100g. url eg: https://shop.billa.at/produkte/radatz-krakauer-00440036
+
+
+DataHut_AT_Interspar_PriceExtractions_20250528.CSV
+----------------------------------------------
+1.site shown uom is number only. eg: 1 url: https://www.interspar.at/shop/lebensmittel/simpex-basic-kleidersack-vakuum-1/p/2020001803514
+
+2.page not found. eg url: https://www.interspar.at/shop/lebensmittel/error/?src=/shop/lebensmittel/simpex-color-supermesser-lila-11-cm-1/p/2020001919130
+
+3.product name contain dot in data, comma in site. eg url: https://www.interspar.at/shop/lebensmittel/isi-sodakapseln-84-g-10er/p/2020002345310
+
+4.site shown uom contain dot instead of comma in both data and site. eg: 3.000 ML MEHRWEG. url: https://www.interspar.at/shop/lebensmittel/ottakringer-wiener-original-wiener-original-6-x-05l/p/2758398
+
+5.regular price and selling price format different in site and data. eg: 5990.00 in data, 5.990 in site. url: https://www.interspar.at/shop/weinwelt/chteau-haut-brion-pessac-lognan-1er-grand-cru-class-imperial-2022/p/2020005707344
+
+6.promotion valid upto present in data, missing in site. eg url: https://www.interspar.at/shop/lebensmittel/wilkinson-rasierer-for-women-3-1-stueck/p/2020001337675
+
+promotion valid upto is 30.12.9999 in data and site eg url: https://www.interspar.at/shop/haushalt/wenzel-4er-set-spitzkerzen-250x23-mm-altrot/p/2020004719621
+
+promotion valid upto is 09.10.2204. eg url: https://www.interspar.at/shop/haushalt/nabo-soundbar-sbw-100/p/2020004139573
+
+7.site shown uom, grammage quantity, grammage unit, prices are taken wrong. url: https://www.interspar.at/shop/lebensmittel/vici-meeres-snacks-mit-cocktailsauce/p/7559709
+
+
+bayut_ksa_2025_06.json
+---------------------
+1.price and currency missing for 3 entries
+
+2.title is . url: https://www.bayut.sa/en/property/details-87538463.html
+
+3.title is _  url: https://www.bayut.sa/en/property/details-87592222.html
+
+4.published date different in site and data. eg: 17 January 2025 in data, 18 January 2025 in site. url: https://www.bayut.sa/en/property/details-87608042.html
+
+5.agent name is _. eg url: https://www.bayut.sa/en/property/details-87630054.html
+
+6.description is 'null'. url: https://www.bayut.sa/en/property/details-87496980.html
