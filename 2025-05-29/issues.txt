@@ -1,0 +1,57 @@
+DataHut_HU_Tesco_FullDump_20250529.CSV
+----------------------------------
+1.brand,producthierarchy_level4,file_name_5,image_url_5 are not empty.
+
+2.image present in site, missing in data. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005100501433
+
+3.product is instock and price present in data, instock is false and price missing in data. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004020330998
+
+4.product name taken wrong. 'асо étkezési lencse 500 g' in data, 'Расо étkezési lencse 500 g' in site. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004009862681
+
+5.site shown uom and grammage unit are taken wrong. eg: 1g in data and site. But price is for 1kg. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004005936454
+
+6.grammage quantity is 1kg and price per unit is 6290Ft/kg, but price is 6334.00, that is price for 1.01kg. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004002640194
+
+grammage quantity taken wrong. 800X800g in data and site. But price is for 800g only. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004010272233
+
+grammage quantity taken wrong eg: 1 db in data, but it is 0.1kg in site. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105000409
+
+7.product name taken wrong in producthierarchy_level4 and breadcrumb url:https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105006004
+
+8.'|' replaced with '\\|' in product name and producthierarchy_level4, and '\\\|' in breadcrumb.url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105006006
+
+
+DataHut_SI_Spar_FullDump_20250529.CSV
+-----------------------------------
+1.producthierarchy_level7 is also empty
+
+2.product name is number. url: https://www.spar.si/online/3831115342368/p/482287
+
+3.breadcrumb contain small letters instead of capital letters. eg:Domov > AKTUALNO > Štartaj Slovenija > 3. SEZONA > GRANOLA NEŽNA JAGODA, MOJA PRESNA GRANOLA, 230G. url: https://www.spar.si/online/granola-nezna-jagoda-moja-presna-granola-230g/p/556605
+
+4.instock True only
+
+5.netweight is number only. eg:1 url: https://www.spar.si/online/jajcni-liker-bombardino-1l/p/359844
+
+DataHut_SI_Hitrinakup_FullDump_20250529.CSV
+------------------------------------------
+1.grammage quantity taken wrong. eg: 500.1kg in data, 1kg in site. url: https://hitrinakup.com/izdelki/444793
+
+2.image missing in data, present in site. eg url: https://hitrinakup.com/izdelki/152789
+
+
+DataHut_CH_Denner_FullDump_20250529.CSV
+--------------------------------------
+1.unique id contain unwanted characters. eg: a956c15e-544e-4c92-9895-4a5c2d7cb345. url: https://www.denner.ch/de/aktionen-und-sortiment/auf-alle-biere-und-alle-mit-bbq-gekennzeichneten-produkte~pa956c15e-544e-4c92-9895-4a5c2d7cb345?variant=8dad9c0a-3c4b-42ac-9761-cc97df2dfc6b
+
+2.grammage quantity taken wrong. eg: 18.7 cl in data, 12 x 18.7 cl in site. url: https://www.denner.ch/de/weinshop/villa-pieri-primitivo-di-puglia-igt-pet~p057320
+same issue url: https://www.denner.ch/de/weinshop/freixenet-cordon-negro-cava-seco~p051452
+same issue url: https://www.denner.ch/de/aktionen-und-sortiment/zolla-salice-salentino-dop~p050746?variant=c30793b6-5b42-42b8-a94b-0530b6a27499
+
+grammage quantity taken wrong. eg: 2 X 160 g in data, 2 x 2 x 160 g in site. url: https://www.denner.ch/de/aktionen-und-sortiment/rio-mare-insalatissime-messicana-und-thunfisch~p033763?variant=53a447a9-b6e1-4c1e-ac1f-4927d60a62d2
+
+3.site shown uom is in Beutel, but grammage unit is stuck. eg: 20 Beutel. url: https://www.denner.ch/de/aktionen-und-sortiment/kingsc-bio-fruechtetee-hibiskus-lemon~p035808
+
+4.price format different. eg: 0.95 in data, -.95 in site url: https://www.denner.ch/de/aktionen-und-sortiment/denner-sugo-basilico~p029162?variant=0d021d66-1568-421b-b34b-1011f46bf6a0
+
+5.rating and review present in data, missing in site. eg url: https://www.denner.ch/de/weinshop/cable-car-californian-chardonnay-pet~p057322
