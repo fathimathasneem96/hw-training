@@ -1,0 +1,39 @@
+longandfoster_2025_06_05.json
+----------------------------
+office phone number is taken as agent phone number. eg url: https://www.longandfoster.com/ChristopherOBrien
+
+sutton_2025_06_05.json
+---------------------
+1.page not found error. eg url: https://sutton.com/ca/agent/paul-zettler-116218
+2.office phone number present in data, missing in site. eg url: https://www.sutton.com/ca/agent/diana-roman-92121
+3.line 1033, 1285, 1459, 2845, 3376, 3426, 3810, 3818, 5400 - address is ","
+4.state names are missing in site.
+5.line 4310 - first name is number
+6.line 5093 - website can't be reached. website: dainemontgomery.com
+7.line 382, 347, 1359 -office phone number is "000-000-0000"
+8.line 5013- office phone number is "000-0000-0000"
+9.line 640-office phone number is "00000000"
+10.line 1904-office phone number is "0000000000"
+11.line 2890-office phone number is "905-89"
+12.line 1393 - agent phone number is "Edison@edisonchua.com"
+
+
+iowarealty_2025_06_05.json
+------------------------
+line 73,74,101,213,214,305,306.424- office phone in site is taken as agent phone number
+
+
+robertsbrothers_2025_06_05.json
+---------------------------
+1.line 6- page not found error
+2.line 194 - description taken incomplete in data.
+3.line 112,113,139,141,178,188,193 - description present in site, missing in data
+
+
+home_realestate_2025_06_05.json
+------------------------------
+1.phone number format different. eg: (402) 436-4663 in site, 402-436-4663 in data.
+2.line 19,30,108 - description present in site, missing in data
+3.line 41,82,105,121,134,139 - state and zipcode present in site, missing in data
+4.line 39 - "zipcode":"of","state":"Circle"
+5."zipcode":"Street","state":"O" for 47 entries
