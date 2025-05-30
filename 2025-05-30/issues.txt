@@ -37,3 +37,4 @@ home_realestate_2025_06_05.json
 3.line 41,82,105,121,134,139 - state and zipcode present in site, missing in data
 4.line 39 - "zipcode":"of","state":"Circle"
 5."zipcode":"Street","state":"O" for 47 entries
+6.line 119- image in gif format
