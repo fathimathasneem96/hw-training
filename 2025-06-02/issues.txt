@@ -1,0 +1,53 @@
+bhgre_2025_06_05.json
+---------------------
+1.line 8824,40- page not found error 
+2.phone number format different in data and site. eg: +18503131411 in data, (850) 313-1411 in site.
+3.address contain Street in data, but it is St in site. eg url: https://www.bhgre.com/agent/detail/ca/berkeley/agents/frances-russell--veasey/aid-P00200000FDdrPId56abonsaSTe1Y4hY8qTe056h
+4.line 9953 - "last_name": "*"
+5.line 8190 - zipcode taken wrong. "zipcode": "07456" in data, 07436 in site.
+6.line 39- description present as 'Habla Espanol' in site, missing in data
+7.site contain more than 1 offices. eg:line 6459, 7184,6711,6726,1879
+8.line 7184,9134,9135,9136 - "address": "124 S. Maple Street" in data, "124 S Maple Way" in site
+9.line 10270- description contain unwanted characters
+10.address contain "Avenue" in data. "Ave" in site.eg: line 1564
+address contain "Drive" in data, "Dr" in site. eg: line 1304
+11.line 4046-phone number taken wrong as "+770414206056463"
+line 9118-phone number taken wrong as "+3085704218950"
+
+
+semonin_realtors_2025_06_05.json 
+-------------------------------
+1.site contain more than 1 offices. eg: line 2,7,13,18,20,25,39,60,86,128,140,179,231,235,247,251,268, 326,358
+2.line 16,73,181,233,256,264,266,286,312,335,341,382,386,388,396-agent phone number present in site,missing in data
+3.line 169-agent phone number in site is taken as office phone number in data
+4.line 66-name is "Shallcross Real Estate Group" in site, "Carrie Shallcross" in data.
+
+home_realestate_2025_06_05.json
+-------------------------------
+1.phone number format different. eg: (402) 436-4663 in site, 402-436-4663 in data.
+2.line 128 - description present in site, missing in data
+3.line 119- image in gif format and first name is taken as title name
+4.line 13,70,102-phone numbers are taken with description
+5.line 87-profile url given wrong. Doesn't redirect to required page
+6.line 121- description taken incomplete.
+7.line 1,2,4,5,6,7,8,9,10,11,12,14,16,17,18,20,21,22,25,26,28,29,31,33,35,38,40,41,42,43,46,47,49,52,53,54,55,57,59,60,61,63,64,65,66,67,68,69,71,72,73,75,76,77,78,79,80,83,84,88,89,90,93,94,95,96,99,100,101,103,106,107,109,109,110,111,112,114,116,117,119,120,122,123,124,125,126,127,129,130,131,132,133,135,136,137,139,141,142,144,148,149,150,151,153,154,155- description repeated twice in data.
+8.line 120-first name is taken as title name
+9.line 123,141-zipcode taken wrong. "68510" in data, "68506" in site.
+10.line 41,82,105,121,134,139-"state": "ne"
+11."state": "Ne" for 47 entries
+
+
+hepsiemlak_tur_2025_06.json
+--------------------------
+1.listing is not live. eg line 15,3970,3335,12891. url: https://www.hepsiemlak.com/en/ankara-kizilcahamam-ugurlu-kiralik/dag-evi/4367-6041
+2.currency is "TL" in data, "TRY" in site for many entries. eg url: https://www.hepsiemlak.com/en/mugla-bodrum-turkbuku-satilik/konutticaret/137085-35
+3.line 17490- number of bedrooms is "8+4 and above in data", "8+4" in site
+4.line 85228-latitute is negative value.
+5.line 70929- price change. "2149000.0" in data, "2199000" in site. url: https://www.hepsiemlak.com/en/afyonkarahisar-sandikli-fatih-satilik/imarli-konut/0-43538655
+
+
+DataHut_SI_Hitrinakup_PriceExtractions_20250602.CSV
+----------------------------------------------
+1.grammage quantity taken wrong. eg: 500.1kg in data, 1kg in site. url: https://hitrinakup.com/izdelki/444793
+2.price taken wrong. 13.49 in data, 13.99 in site. url: https://hitrinakup.com/izdelki/139981
+same issue: 2.19 in data, 2.22 in site. url: https://hitrinakup.com/izdelki/816138
