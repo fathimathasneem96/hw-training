@@ -33,3 +33,38 @@ realliving_realestate_2025_06_05.json
 4.line 6-office phone number missing
 5.lime 6,10-language present in data, missing in site.
 
+
+KW_SET_4/remax_us_2025_06_05.json
+------------------------------
+1.line 31931- invalid profile url. https://www.remax.com/real-estate-agents/shawn-wiser-fort-myers-fl/102169144
+2.middle names are present in data, but missing in site.
+ line 20170- "middle_name": "& Ron" in data and website, not in profile url.
+3.office name taken wrong- eg line 20731. office name in site is "RE/MAX Vision"
+line 2514 - "RE/MAX Westlake Partners" in data, "RE/MAX One" in site. url: https://www.remax.com/real-estate-agents/faye-daroeian-westlake-village-ca/100009199
+same issues line 9809, 19513,9115,14349,547,3573,2087,29337,14238,21192,4056,12990,14653,20946 
+4.agent phone number is "((30) 1) -916-" -line 7397
+agent phone number is "((81) 8) -388-" -line 15025
+5.social facebook profile is "https//:Facebook.com/debbiebeaver" in line 2579.
+
+
+KW_SET_4/century21_us_2025_06_05.json
+-------------------------------------
+1.office name taken wrong. 
+eg: line 2015,2770 -"office_name":"of CENTURY" in data, "MVP" in site 
+line 34161-"office_name": "Mizrahi Realty Real Estate Broker of CENTURY" in data, "Mizrahi Realty" in site.
+line 36941-"office_name": "Row of CENTURY" in data, "Professionals" in site
+line 32401- "office_name": "Legacy of CENTURY" in data, "Legacy" in site
+line 26181- "office_name": "Home Advisors Career Services of CENTURY" in data, "Home Advisors" in site
+2.title present in site, missing in data-line 31540
+3.agent phone number found as "7" both in data and site. eg url: https://www.century21.com/real-estate-agent/profile/seth-young-P25350743
+agent phone number "0" eg url: https://www.century21.com/real-estate-agent/profile/courtney-smith-P80125438
+
+
+KW_SET_4/ebby_2025_06_05.json
+------------------------------
+1.line 257, 258- duplication of data, except email missing in 258, but present in site
+2.line 1010- "title": "paulettegreenegroup.ebby.com"
+3.line 1479 - "country": "united states" 
+
+
+======================
