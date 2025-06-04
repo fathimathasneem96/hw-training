@@ -1,0 +1,35 @@
+Quality Assurance (QA)
+========================
+
+semonin_realtors_2025_06_05.json 
+-------------------------------
+1.site contain more than 1 offices. eg: line 2,7,13,18,20,25,39,60,86,128,140,179,231,235,247,251,268,326,358
+2.line 16,73,146,181,233,256,264,266,286,312,335,341,382,386,388,396-agent phone number present in site,missing in data
+3.line 169-agent phone number in site is taken as office phone number in data
+4.line 66-name is "Shallcross Real Estate Group" in site, "Carrie Shallcross" in data.
+
+
+harrynorman_2025_06_05.json
+-------------------------
+1.email is empty
+2.line 213- office address also included in description
+3.line 369,645,180,194,313,332,619,62- extra character "&amp" in title in data. eg: "Vice President, Relocation &amp; Business Development"
+4.title taken wrong in data. eg: "REALTOR&amp;reg;" line-422,636. profile_url eg: https://www.harrynorman.com/bio/lawandasales
+5.line 250-title taken incomplete. "Associate Broker | Career Services Manager" in site.
+
+
+kentwood_2025_06_05.json
+-----------------------
+1.agent phone number present in website, missing in data -line 47,91,204
+2.line 177-email,phone number, website, urls are included in description.
+3.city contains "Boulder" "Colorado Springs" "Denver" "Dillon" "Ft Collins"
+
+
+realliving_realestate_2025_06_05.json
+--------------------------------
+1.fields are not in order- "title" "office_name" "address" "city" "state" "zipcode" "profile_url" "languages" "description" "first_name" "middle_name" "last_name" "website" "email" "image_url" "agent_phone_numbers" "office_phone_numbers" "social" "country"
+2.state is "FL" in site
+3.office name is "Real Living Real Estate Solutions" in site. eg profile url: https://www.realliving.com/kristin-tsukamoto-real-estate-agent
+4.line 6-office phone number missing
+5.lime 6,10-language present in data, missing in site.
+
