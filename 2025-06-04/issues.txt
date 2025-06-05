@@ -58,6 +58,8 @@ line 26181- "office_name": "Home Advisors Career Services of CENTURY" in data, "
 2.title present in site, missing in data-line 31540
 3.agent phone number found as "7" both in data and site. eg url: https://www.century21.com/real-estate-agent/profile/seth-young-P25350743
 agent phone number "0" eg url: https://www.century21.com/real-estate-agent/profile/courtney-smith-P80125438
+4.website is "https://wwwhomesbypatti.com/"-line 5231
+website is "https://xxx/" -line 22099
 
 
 KW_SET_4/ebby_2025_06_05.json
