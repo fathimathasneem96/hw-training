@@ -1,0 +1,75 @@
+Quality Assurance (QA)
+========================
+
+DataHut_AT_Billa_FullDump_20250605.CSV
+------------------------------------
+1.retail_limit,file_name_1,file_name_2,file_name_3,file_name_4,file_name_5,file_name_6 are empty
+
+2.image urls are present, but file names are missing eg url: https://shop.billa.at/produkte/pfluegelmeier-pepis-rote-rueben-salat-00771708
+
+3.site showm uom contain Beutel, but grammage unit is not btl. eg: site shown uom is 0,25 kg Beutel and grammage unit is kg. url: https://shop.billa.at/produkte/lien-ying-reisnudelbandnudeln-00937492
+
+site shown uom contains Waschgang, but grammage unit is not wg. eg: site shown uom is 22 Waschgang Beutel, unit is stuck. url: https://shop.billa.at/produkte/frosch-waschmittel-universal-00772746
+
+4.breadcrumb contain '<' in site. eg url: https://shop.billa.at/produkte/coppenrath-und-wiese-feinste-sahne-stracciatellakirschtorte-00911830
+
+5.price per unit taken wrong. eg: 100 g 2.51 € in data, 100 g 2.57 € in site. url: https://shop.billa.at/produkte/ferrero-giotto-00407313
+
+6.promotion description present in data, missing in site and hence prices (including price per unit) are taken wrong. eg: ab 2 Packungen,AKTION in data. url: https://shop.billa.at/produkte/milka-nussini-haselnuss-riegel-5er-00572931
+
+7. price taken wrong. eg: 19.99 in data, 20.99 in site. url: https://shop.billa.at/produkte/hofstaedter-fair-zum-tier-hendl-innenfilet-00729749
+
+8.AKTION tag present in data, missing in site and prices are different. eg url: https://shop.billa.at/produkte/eduscho-espresso-classico-ganze-bohne-00890881
+
+9.promotion description present, but regular price, selling price and price was are same. eg url: https://shop.billa.at/produkte/billa-seiler-und-speer-lagerbier-00755425
+
+10."|" replaced with "\\|". eg url: https://shop.billa.at/produkte/kaiser-brust-caramellen-00887727
+
+
+DataHut_AT_Fressnapf_FullDump_20250605.CSV
+-----------------------------------------
+1.dimensions is not empty.
+file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.image urls are present, file names are empty.
+
+3.grammage unit taken wrong. eg: AniOne Nager-Holzbrücke 9 in 1 L, where L is size, but grammage unit is taken as l. url: https://www.fressnapf.at/p/anione-nager-holzbruecke-9-in-1-l-1073122003/
+
+4.grammage quantity taken wrong. eg: 1 000 kg in data and site, but price and price per unit are 4.49 and 4.49/kg. url: https://www.fressnapf.at/p/vitakraft-menu-vital-meerschweinchen-1000-kg-1004435/
+
+5.rating and review taken wrong. eg: 4.32 and 418 in data, 4.4 and 588 in site. url: https://www.fressnapf.at/p/hills-science-plan-perfect-digestion-adult-mit-huhn-und-reis-7-kg-1362244/
+
+
+DataHut_AT_Interspar_FullDump_20250605.CSV
+------------------------------------------
+1.age recommendations is not empty
+file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.instock True and False
+
+3.image urls are present, file names are empty.
+
+4.product name contain dot instead of comma. eg:0.7. url: https://www.interspar.at/shop/lebensmittel/1800-reposado-tequila/p/2020005005860
+
+5.site shown uom contains dot separated and comma separated values. eg:1.980 ML MEHRWEG, 0,036g. 
+
+6.site shown uom is number only. eg: '1' url: https://www.interspar.at/shop/lebensmittel/simpex-basic-kleidersack-vakuum-1/p/2020001803514
+
+7.price taken wrong. eg: 9.99 in data, 4.99 in site. url: https://www.interspar.at/shop/lebensmittel/nexa-lotte-moskito-staebchen-1-flasche-8-staebchen/p/2020004939357
+same issue: https://www.interspar.at/shop/lebensmittel/corona-extra-bier-6-x-0355l/p/2020004501806
+
+8.grammage quantity and unit are taken wrong. eg: 12x 1 l in data, price is 4.99 and price per unit is 4.99/stuck. Hence grammage quantity and unit will be 1 stuck. url: https://www.interspar.at/shop/lebensmittel/toppits-zipper-duo-packung-1l-und-3l-12x-1l-und-8x-3l/p/2020000701149
+
+9.site shown uom and product name contain dot instead of comma. eg: 2.130 ML MEHRWEG, but grammage quantity is 2130 ml. url: https://www.interspar.at/shop/lebensmittel/corona-extra-bier-6-x-0355l/p/2020004501806
+
+10.promotion valid upto expired eg: 02.06.2025 in data, but site has 31.12.2050. url: https://www.interspar.at/shop/haushalt/boltze-schriftzug-ostern-2-sortiert/p/2020004897572
+
+promotion valid upto expired and prices and promotion description taken wrong. eg: 03.06.2025. url: https://www.interspar.at/shop/weinwelt/ruffino-chianti-classico-docg-riserva-ducale-2021/p/8183255SG
+
+promotion valid upto expired eg: 04.06.2025. url: https://www.interspar.at/shop/haushalt/air-up-pods-apple/p/2020005701212
+
+promotion valid upto found as 09.10.2204 in both data and site. eg url: https://www.interspar.at/shop/haushalt/nabo-soundbar-sbw-100/p/2020004139573
+
+promotion valid upto found as 30.12.9999 in both data and site. eg url: https://www.interspar.at/shop/haushalt/hofer-kerzen-adventstumpen-kranz-4-stueck/p/2020003888427
+
+11.drained weight is comma separated. eg url: https://www.interspar.at/shop/lebensmittel/emmi-tete-de-moine-rosetten/p/2020005744608
