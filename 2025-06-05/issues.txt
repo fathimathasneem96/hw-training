@@ -73,3 +73,45 @@ promotion valid upto found as 09.10.2204 in both data and site. eg url: https://
 promotion valid upto found as 30.12.9999 in both data and site. eg url: https://www.interspar.at/shop/haushalt/hofer-kerzen-adventstumpen-kranz-4-stueck/p/2020003888427
 
 11.drained weight is comma separated. eg url: https://www.interspar.at/shop/lebensmittel/emmi-tete-de-moine-rosetten/p/2020005744608
+
+coldwellbankerinternational_2025_06_05.json
+-----------------------------------------
+1.fields are not in order
+2.phone number present in site, missing in data. eg: line 1887, profile url: https://www.coldwellbankerinternational.com/agent/Uc4eCYhf
+3.first name is dot both in site and data in line 919.
+4.zipcode is '2' for lines 2324,2325 and 2326.
+5.line 24- city is 'B'
+6.line 2732 -"agent_phone_numbers":["+52 +524151523197"]
+
+
+reecenichols_2025_06_05.json
+---------------------------
+1.line 36 -website taken wrong. The Cone Team's website is taken.
+2.line 23- office name is "ReeceNichols - Johnson County West" in site, missing in data.
+3.line 1509- description contain extra characters. profile url: https://www.reecenichols.com/bio/georgemedina
+4.line 12,80- description present in site, missing in data
+5.line 1370- email and agent phone number present in site, missing in data
+6.state 'MO' and 'KS' Only
+7.line 2420- "facebook_url":"http://Https://www/facebook.com/pandora/"
+8.line 866- title present in site and missing in data, description contains unwanted characters in the beginning.
+
+
+houlihanlawrence_2025_06_05.json
+------------------------------
+1.line 737- invalid image url
+2.state 'CT' and 'NY' only
+3.email found as "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" -line 5
+email found as "'https:/www.testimonialtree.com/widgets/?widgetid=48832&TeamID=1467420282" -line 353
+4.line 5- agent_phone_numbers":["914-328-8400  ext. 15222"]
+
+
+realtysouth_2025_06_05.json
+-------------------------
+1.line 650- extra characters in description like 'My Google Reviews              My Contact Info'
+2.profile url is not lead to profile. eg: line 571- https://www.realtysouth.com/roster/agents/58
+3."zipcode":"35071-0190" both in site and data. eg line 2
+4.line 196- "facebook_url":"httpswww.facebook.com/profile.php?id=61558680755814&mibextid=LQQJ4d"
+"other_urls":["https//www.youtube.com/@EdScott-HarbiCoRealtySouth"]
+
+====================
+
