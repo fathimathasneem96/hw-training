@@ -1,0 +1,42 @@
+Quality Assurance (QA)
+========================
+
+woodsbros_2025_06_05.json
+-----------------------
+1.line 104,166,167,168 - "languages":[[]] , profile url do not lead to profile page. eg url: https://www.woodsbros.com/roster/agents/18
+2.line 41,130,119,48,75,149 - language present in data, missing in site.
+3.line 78,98- image missing in site
+4.line 57-title and image missing in site
+5.line 103-description present in site, missing in data
+6.line 53- description not taken properly, profile url: https://louvillalobos.woodsbros.com/
+7.line 83- description contain extra characters "Read More Testimonials"
+8.line 153 - description taken incomplete. "HELLO." only taken. profile url: https://davidderun.woodsbros.com/
+9.line 13- spaces missing in description. profile url: https://www.sandraharder.com/
+10.line 93- "linkedin_url":"http://Byknows1"
+
+
+DataHut_HU_Wolt_PriceExtractions_20250606.CSV
+---------------------------------------
+1.site_shown_uom and grammage_unit are in g in site, but in kg in data. eg: 0.48kg in data, 480g in site. url: https://wolt.com/hu/hun/budapest/venue/interspar-allee/regnum-sertescomb-4-szelet-talcas-itemid-66436ae11ea593b4855264d2
+
+site shown uom is taken as 1.0kg in data,1kg in site. eg url: https://wolt.com/hu/hun/budapest/venue/interspar-allee/tanyasi-friss-csirke-szine-java-itemid-66c5851e4ce8f79271915d3b
+
+2.price taken wrong. eg: 10049.00 in data, 9999 in site. url: https://wolt.com/hu/hun/budapest/venue/interspar-allee/tatratea-eredeti-tea-likor-52-0-7-l-itemid-66c5851e4ce8f79271916ee9
+
+
+DataHut_HU_Tesco_PriceExtractions_20250606.CSV
+------------------------------------------
+1.breadcrumb contain unwanted characters. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105006004
+
+2.price present in site, missing in data. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105446819
+
+3.Clubcard Ar promotion, promotion valid upto and price missing in data, but present in site eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004003187452
+
+
+DataHut_SI_Dm_PriceExtractions_20250606.CSV
+------------------------------------------
+1.product name contains dot instead of comma in both data and site. eg: 1.030 ml url: https://www.dm.si/nana-cistilo-za-kuhinjo-in-razmascevanje-mandarina-polnilo-p3830000397247.html
+
+2.site shown uom and grammage quantity contains dot instead of comma in both data and site. eg: 1.500g , while checking price it should be 1,500 g. url: https://www.dm.si/lechat-excellence-sterilised-hrana-za-macke-piscanec-p8009470059817.html
+
+3.price valid from present in site, missing in data. eg url: https://www.dm.si/garnier-ambre-solaire-stik-za-zascito-pred-soncem-super-uv-zf-50-p3600542624602.html
