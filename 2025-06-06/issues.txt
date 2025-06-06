@@ -40,3 +40,46 @@ DataHut_SI_Dm_PriceExtractions_20250606.CSV
 2.site shown uom and grammage quantity contains dot instead of comma in both data and site. eg: 1.500g , while checking price it should be 1,500 g. url: https://www.dm.si/lechat-excellence-sterilised-hrana-za-macke-piscanec-p8009470059817.html
 
 3.price valid from present in site, missing in data. eg url: https://www.dm.si/garnier-ambre-solaire-stik-za-zascito-pred-soncem-super-uv-zf-50-p3600542624602.html
+
+DataHut_CH_Lidl_PriceExtractions_20250606.CSV
+-------------------------------------------
+1.site shown uom missing for 240 entries.
+
+2.date format different. eg: 5.6.2025 in data, 5.6 in site. eg url: https://www.lidl.ch/p/de-CH/knoblauch-lose-zum-aktuellen-tagespreis/p10037166
+
+3.breadcrumb taken wron, same hierarchylevel taken twice. eg: "Sortiment > Sortiment > Mineralwasser" url: https://sortiment.lidl.ch/de/catalog/product/view/id/12694/s/mineralwasser-0000001/category/54/
+
+
+machinerytrader_2025_06_06.csv
+----------------------------
+1.images present in site, but in data it is empty. eg url: https://www.machinerytrader.com/listing/for-sale/222817295/2019-caterpillar-972m-wheel-loaders
+
+2.company phone number format different. eg: +1 713-766-7070 in data, (713) 766-7070 in site, url: https://www.machinerytrader.com/listing/for-rent/190150793/2007-mantis-10010mx-telescopic-boom-crawler-cranes
+
+3.contact person taken wrong. eg: Sales Department in data, Anita Woodruff in site. url: https://www.machinerytrader.com/listing/for-rent/190150793/2007-mantis-10010mx-telescopic-boom-crawler-cranes
+
+4.Company phone number found as "+1 905-857-6200 ext. 1" for 8 rows. eg url: https://www.machinerytrader.com/listing/for-sale/226018547/2018-altec-dc47tr-mounted-on-2018-freightliner-business-class-m2-106-truck-mounted-digger-derricks-cranes
+
+5.color is "W". url: https://www.machinerytrader.com/listing/for-sale/215362729/1991-chevrolet-kodiak-c7500-fuel-trucks-slash-lube-trucks
+
+6.condition is used and year is 2026. url: https://www.machinerytrader.com/listing/for-sale/229808975/2026-xtreme-mfg-xr2450-d-telehandlers-lifts
+
+7.price values are comma separated
+
+8.WarrantyExpireDate over "7/12/24"
+
+========================
+
+Methods to optimize QA:
+-Define clear data quality metrics
+	> Remove duplicate records
+	> Remove empty field column to make memory efficient
+	> use regex to simplify and easy 
+	> define range of values like price>0
+	> define date formats
+-Do QA stage by stage
+	> Initially do overall checking like accuracy and completeness of data.
+	> Then go for detailed checking like values and checking urls
+-Monitor and record each issues
+-Learn from issues 
+
