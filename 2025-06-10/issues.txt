@@ -1,0 +1,38 @@
+Quality Assurance (QA)
+========================
+
+dubizzle_uae_2025_06_02.json
+--------------------------
+1.line 59315 - "agent_name":"6459923" 
+2."price_per":"Bi-Yearly" in data, Yearly in site. eg: line 12356,246664. url: https://dubai.dubizzle.com/property-for-rent/residential/apartmentflat/2025/5/25/2bed-burj-khalifa-view-downtown-views-2-2-346/
+3.page not found. eg: line 710, url: https://dubai.dubizzle.com/property-for-rent/short-term-daily/apartmentflat/2025/5/7/one-bedroom4-rose-park-hotel-monthly-re-2-140832/
+4.phone number different in data and site. eg:line 584
+5.phone number in different formats. eg: line 240853, "phone_number":"0553312008" in data, +971553312008 in site.
+
+
+dubizzle_egp_2025_06_02.json
+----------------------------
+1.price per present in site, missing in data, eg: line 15435. url: https://www.dubizzle.com.eg/en/ad/%D8%B4%D9%82%D9%87-%D9%84%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D9%8A%D9%88%D9%85%D9%8A-%D9%85%D9%86-%D9%85%D8%A7%D9%84%D9%83-%D9%85%D8%A8%D8%A7%D8%B4%D8%B1-%D9%84%D9%84%D8%B9%D8%A7%D8%A6%D9%84%D8%A7%D8%AA-ID198006166.html
+2.price taken wrong. eg:line 92080. 2000 in data, 1700 in site url: https://www.dubizzle.com.eg/en/ad/%D8%A7%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88-%D8%A8%D9%82%D8%B1%D9%8A%D8%A9-%D8%A8%D9%88%D8%B1%D8%AA%D9%88-%D8%AC%D9%88%D9%84%D9%81-%D9%85%D8%A7%D8%B1%D9%8A%D9%86%D8%A7-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A%D9%86-%D8%A7%D9%84%D8%B3%D8%A7%D8%AD%D9%84-%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A-ID204858751.html
+
+
+DataHut_AT_Mpreis_FullDump_20250612.CSV
+--------------------------------------
+1.file_name_1 is empty
+2.site shown uom missing for 441 entries
+3.grammage quantity taken wrong. eg: 07 l in data, 0.7l in site. url: https://www.mpreis.at/shop/p/zacapa-solera-gran-reserva-no-23-0-122853
+4.two prices present in data, but only one price in site(promotion price). eg url: https://www.mpreis.at/shop/p/ablinger-krakauer-12-stange-32617
+5.image_url_1 present, but file_name_1 is empty
+6.site shown uom and grammage unit taken wrong. eg 240kg, while checking price and image it should be 240g. url: https://www.mpreis.at/shop/p/lorenz-erdnusslocken-classic-xxl-710895
+same issue url: https://www.mpreis.at/shop/p/jeden-tag-hygienespueler-306126
+
+
+DataHut_AT_Fressnapf_FullDump_20250612.CSV
+----------------------------------------
+1.dimensions is not empty.
+file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+2.image urls are present, file names are empty
+3.grammage quantity taken wrong. eg: 1 000 kg in data, price is 4.49 and price per unit is 4.49/kg. url: https://www.fressnapf.at/p/vitakraft-menu-vital-meerschweinchen-1000-kg-1004435/
+4.grammage unit taken wrong. eg: AniOne Nager-Holzbrücke 9 in 1 L, where L is size, but grammage unit is taken as l. url: https://www.fressnapf.at/p/anione-nager-holzbruecke-9-in-1-l-1073122003/ 
+
+========================
