@@ -1,0 +1,15 @@
+Found QA tool-DataCleaner
+DataCleaner is an open-source data profiling, quality, and cleansing tool built in Java.
+
+Advantages:
+-open source and free
+-user friendly interface
+-Provides detailed data profiling capabilities like data statistics, pattern detection, and outlier identification.
+-Connects to various data sources
+-Data cleansing and transformation
+
+Disadvantages:
+-Some advanced features like automated cleansing is limited
+-The UI can feel somewhat dated compared to modern tools, and ongoing updates appear slow.
+-Does not have robust built-in scheduling or automation features for continuous data quality processes.
+-May struggle or become slow with very large datasets (multi-million rows)
