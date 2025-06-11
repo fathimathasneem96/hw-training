@@ -1,0 +1,60 @@
+Quality Assurance (QA)
+========================
+bayut_uae_2025_06_02.json
+-------------------------
+1."orn_number","bln_number","adm_number","3d_live","3d_image","2d_image","ded_number_2","ded_number_3","ded_number_4","trucheck_on","email","trubroker","rating","no_of_reviews","property_of_the_week" are additional fields.
+
+2.package type is premium, hot, superhot only.
+
+3.currency missing for 54 entries
+
+4.no longer available .eg url: https://www.bayut.com/property/details-11504582.html
+
+5.True check on date taken wrong. eg: 7 June 2025 on data, 10 June 2025 in site. url: https://www.bayut.com/property/details-11848480.html
+
+6.title is dot only. eg url: https://www.bayut.com/property/details-11584301.html
+
+7.brn registration number is "=" for 2691 entries.
+brn registration number is "MUHAMMAD SOHAIB SHAFIQUE MUHAMMAD" for 62 entries.
+brn registration number is "Al Bayti Real Estate" for 36 entries.
+brn registration number is "nothing" for 27 entries. eg url: https://www.bayut.com/property/details-9280018.html
+brn registration number is "Broker No.1669" for 8 entries. eg url: https://www.bayut.com/property/details-11155972.html
+
+8.ded number 2 is "DED" for 40 entries.eg url: https://www.bayut.com/property/details-11650174.html
+
+9.phone number taken wrong. eg:"+9710000000" url: https://www.bayut.com/property/details-11820101.html
+
+
+DataHut_AT_Mueller_FullDump_20250612.CSV
+---------------------------------------
+1.file_name_1,file_name_2,file_name_3,file_name_4,file_name_5,file_name_6 are also empty
+2.product description is paragraph
+3.image urls are present, file names are empty
+4.instock True and False
+5.promotion description present in data, missing in site and hence price variation. eg url:https://www.mueller.at/p/nici-stiftemaeppchen-tukan-2583084/?itemId=2583084
+
+
+DataHut_AT_Interspar_FullDump_20250612.CSV
+---------------------------------------
+1.age recommendations is not empty.
+file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+2.product description is paragraph
+3.instock True and False
+4.image urls are present, file names are empty.
+5.Logical error. eg: grammage quantity is 1 stuck and price per unit is 0.15 €/Stück, but price is 12.49. url: https://www.interspar.at/shop/lebensmittel/somat-all-in-1-geschirrspuel-tabs-lemon-lime-85-tabs/p/2020005027381
+
+6.grammage quantity taken wrong. eg: price per unit is 19.99 €/Stück, but grammage quantity and unit is 980 ml. url: https://www.interspar.at/shop/lebensmittel/cuitisan-frischhaltedose-980ml/p/2020003590566
+same issue url: https://www.interspar.at/shop/lebensmittel/knorr-snackbecher-bbq-chicken-61g/p/2020005421783
+
+7.product name taken wrong, site shown uom is not present with product name in site. eg url: https://www.interspar.at/shop/weinwelt/duclot-bordeaux-collection-9er-assortment-2018/p/2020005399099
+
+8.promotion valid upto is 09.10.2204. eg url: https://www.interspar.at/shop/haushalt/nabo-soundbar-sbw-100/p/2020004139573
+
+promotion valid upto expired but extended in site. eg: 10.06.2025 in data, 17.09.2025 in site. url: https://www.interspar.at/shop/haushalt/mepal-trinkflasche-pop-up-frozen-400ml/p/2020003337260
+
+promotion valid upto will expire today. 11.06.2025. eg url: https://www.interspar.at/shop/haushalt/american-tourister-air-move-spinner-black-75cm/p/2020004626547
+
+promotion valid upto is 30.12.9999. eg url: https://www.interspar.at/shop/haushalt/hofer-kerzen-adventstumpen-kranz-4-stueck/p/2020003888427
+
+9.site shown uom contain number only eg: '1' url: https://www.interspar.at/shop/lebensmittel/simpex-basic-kleidersack-vakuum-1/p/2020001803514
+========================
