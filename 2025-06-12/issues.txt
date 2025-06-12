@@ -1,0 +1,124 @@
+
+Quality Assurance (QA)
+========================
+
+machinerytrader_2025_06_11.csv
+--------------------------
+1. Two category columns. 'Category' and 'category'
+
+2.phone number format different in data and site. eg url: https://www.machinerytrader.com/listing/for-sale/244220731/2022-atlas-copco-xas950cd8-air-compressors
+
+3.Two fields 'VIN' and 'Vin'
+
+4.total 632 fields
+
+5.phone number contain extra characters. "+1 905-857-6200 ext. 1". eg url: https://www.machinerytrader.com/listing/for-sale/243327995/2005-ford-f550-xl-sd-dump-trucks
+
+6.kWPrimeRating has both dot separated and comma separated values. eg:635.2 kW, 1,135 kW
+
+7.color is "W" url: https://www.machinerytrader.com/listing/for-sale/215362729/1991-chevrolet-kodiak-c7500-fuel-trucks-slash-lube-trucks
+
+
+
+DataHut_AT_Fressnapf_FullDump_20250612.CSV
+-----------------------------------------
+1.dimensions is not empty.
+file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6,netcontent are empty.
+
+2.image urls are present, file names are empty
+
+3.grammage quantity taken wrong. eg: 1 000 kg in data, price is 4.49 and price per unit is 4.49/kg. url: https://www.fressnapf.at/p/vitakraft-menu-vital-meerschweinchen-1000-kg-1004435/ 
+
+4.grammage unit is in stuck, but price per unit is in kg. eg url: https://www.fressnapf.at/p/pedigree-dentastix-daily-oral-care-megapack-105stk-fuer-mittelgrosse-hunde-1322850/
+
+5.product name and site shown uom contain dot instead of comma. eg url: https://www.fressnapf.at/p/bosch-soft-mini-mixpaket-gefluegel-2-x-25kg-1311292/
+
+6.grammage quantity taken wrong. eg:3X250ml in data, but there are two 3X250 ml. url: https://www.fressnapf.at/p/smoothiedog-huhn-3x-250-ml--trinkpause-3x-250-ml-1707465/
+
+7.price taken wrong. grammage quantity is 4kg and price per unit is 19.49/kg. But price is 19.49. url: https://www.fressnapf.at/p/ardap-spot-on-fuer-kleintiere-von-1-4-kg-1201690/
+
+8.images are in png format
+
+
+DataHut_AT_Bipa_FullDump_20250612.CSV
+-------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty
+
+2.instock True and False
+
+3. "Dauertiefpreis" tag is present and there are multiple prices in data, missing in site. eg url: https://www.bipa.at/p/B3-434312
+
+4.promotion description present in site. missing in data. eg url: https://www.bipa.at/p/B3-304783
+
+5.AKTION tag present in site, missing in data. eg url: https://www.bipa.at/p/B3-266457
+same issue: https://www.bipa.at/p/B3-407847
+
+6.rating and review taken wrong. eg url: https://www.bipa.at/p/B3-472397
+
+7.image urls are present, file names are empty.
+
+
+DataHut_AT_Mpreis_FullDump_20250612.CSV
+-------------------------------------
+1.file_name_1 is empty
+
+2.site shown uom missing for 459 entries
+
+3.breadcrumb contain extra word in data. eg: (Einweg) eg url: https://www.mpreis.at/shop/p/vorarlberg-milch-vollmilch-laenger-frisch-35-89012
+
+4.grammage unit and price per unit are different. eg: grammage unit is in l, but price per unit is in stuck. eg url: https://www.mpreis.at/shop/p/zacapa-solera-gran-reserva-no-23-0-122853
+
+5.promotion description, percentage discount and promotion price present in data, missing in site. Also price per unit is different. eg url: https://www.mpreis.at/shop/p/ariel-3-in-1-pods-colorwaschmittel-19-waschgaenge-435576
+
+same issue. url: https://www.mpreis.at/shop/p/fewa-brilliant-black-fluessigwaschmittel-20-waschgaenge-315783
+
+6.site shown uom is dot separated in data, comma separated in site for 5 rows. eg: 4.25g url: https://www.mpreis.at/shop/p/blistex-lippenpflege-daily-lip-care-conditioner-313103
+
+7.grammage quantity taken wrong. eg: 07 l, but site shown uom is 0.7l. url: https://www.mpreis.at/shop/p/zacapa-solera-gran-reserva-no-23-0-122853
+
+8.Ab 2 Billiger promotion description present in site, missing in data eg url: https://www.mpreis.at/shop/p/eskimo-jolly-9er-packung-807507
+
+9.2+1 gratis promotion present in data, missing in site and hence price values are different. eg url: https://www.mpreis.at/shop/p/pampers-baby-dry-7-15kg-416494
+
+10.ab 12 billiger promotion present in data, missing in site and hence price variation is present. eg url: https://www.mpreis.at/shop/p/alpquell-mild-10-liter-420008
+
+11.image_url_1 present, but file_name_1 is empty 
+
+
+DataHut_AT_Mueller_FullDump_20250612.CSV
+----------------------------------------
+1.file_name_1,file_name_2,file_name_3,file_name_4,file_name_5,file_name_6 are also empty
+
+2.instock True and False
+
+3.image urls are present, file names are empty
+
+4.logical error. eg: grammage quantity 1722l and price per unit is 0.00 € / 1 l, but price is 5.95. url: https://www.mueller.at/p/lenor-weichspueler-orchidee-vanille-82wl-PPN3090864/?itemId=3090864
+
+5.product description is paragraph
+ 
+6.instructions is ,, eg url: https://www.mueller.at/p/seeberger-edel-nuss-mix-geroestet-gesalzen-994643/?itemId=994643
+
+7.color is - . eg url: https://www.mueller.at/p/benecos-natural-face-primer-2516858/?itemId=2516858
+
+
+DataHut_AT_Billa_FullDump_20250612.CSV
+------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6, retail_limit are empty
+
+2.image present in site, missing in data. eg url: https://shop.billa.at/produkte/jacobs-tassimo-cafe-au-lait-00891111
+
+3.image urls are present, file names are empty
+
+4.alchol by volume is dot separated in data, comma separated in site. eg:5.2 % url: https://shop.billa.at/produkte/100-blumen-1010-helles-00477001
+
+5.site shown uom contain beutel, but grammage unit is not btl. eg:500 g Beutel, unit is g. url: https://shop.billa.at/produkte/11er-frischkaese-taschen-00372578
+
+6.site shown uom and price per unit contain waschgang,but grammage unit is not wg. eg url: https://shop.billa.at/produkte/bi-home-vollwaschmittel-universal-00727233
+
+7.price taken wrong(logical error). eg: price per unit is 1 Stk 0.02 € and quantity is 260 stk, but price is 7.96. url: https://shop.billa.at/produkte/pampers-feuchttuecher-fresh-clean-00568411
+
+8.product description found as paragraph
+
+9.'|' replaced with '\\|' in data values. eg url: https://shop.billa.at/produkte/hoellinger-steirischer-apfelsaft-naturtrueb-00862403
+========================
