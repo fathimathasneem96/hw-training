@@ -1,0 +1,84 @@
+
+Quality Assurance (QA)
+========================
+
+DataHut_CH_Coop_FullDump_20250612.CSV
+-----------------------------------
+1.file_name_4, image_url_4, file_name_5, image_url_5, file_name_6, image_url_6 fields are also present.
+
+2.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are also empty
+
+3.image urls present, but file names are empty
+
+4.site shown uom missing for 4304 entries
+
+5.'|' replaced with '\|' in product name and breadcrumb. eg url: https://www.coop.ch/de/haushalt-tier/haushalt-kueche/grill-zubehoer/oecoplan-holzkohle-briketts--5-kg/p/6331368
+
+6.site shown uom is 12\|1ST in data, missing in site. url: https://www.coop.ch/de/baby-kind/spielwaren/kreativ/diy-knete/aladine-farbstift-mehrfarbig-12-stueck/p/4848043
+
+7.site shown uom is found as 1 StückST. eg url: https://www.coop.ch/de/baby-kind/spielwaren/puppen-pluesch/interactive-baby/p/7258369#tab=product-information-characteristics
+
+8.site shown uom is 1+1ST, but grammage quantity is 1 stuck. eg url: https://www.coop.ch/de/haushalt-tier/reinigung-putzen/schwaemme-lappen-buersten/buersten/super-clean-geschirrbuerste-mit-wechselkopf/p/6126045
+
+9.logical error. eg: grammage quantity is 1104 stuck and price per unit is 0.05/1ST, but price is 49.95. url: https://www.coop.ch/de/baby-kind/pflege/pflegetuecher-fuer-baby-kind/feuchttuecher-fuer-baby-kind/pampers-harmonie-new-baby-24x46-stueck/p/7102134
+
+10.grammage quantity and prices are taken wrong. eg url: https://www.coop.ch/de/lebensmittel/fleisch-fisch/abgepacktes-frischfleisch/schwein/bell-naturfarm-schweins-feierabendspiess-4-stueck-ca/p/6862816
+same issue: https://www.coop.ch/de/lebensmittel/fleisch-fisch/abgepacktes-frischfleisch/schwein/naturafarm-schweins-koteletten-3-stueck/p/5907239
+
+11.image present in site, missing in data. eg url: https://www.coop.ch/de/weine/alle-weine/schaumweine/cava-do-ars-collecta-blanc-de-blancs-reserva-codorniu/p/1019872002
+
+
+DataHut_CH_Migros_FullDump_20250612.CSV
+---------------------------------------
+1.producthierarchy_level5 is not empty.
+ file_name_1 is empty
+
+2.site shown uom missing for 6966 entries
+
+3.breadcrumb missing for 10 entries, hence producthierarchy levels are also missing
+
+4.product is not available online and hence grammage quantity, site shown uom and prices are missing in site. url: https://www.migros.ch/de/product/231502281000
+
+5.logical error.eg: price per unit is 0.01/m and site shown uom is 100m. But price 1.15. url: https://www.migros.ch/de/product/510410700000
+
+6.promotion description present as 70.– cheaper in site, missing in data. eg url: https://www.migros.ch/de/product/717478400000
+
+7.price present in data, missing in site. eg url: https://www.migros.ch/de/product/204500600000
+
+8.promotion valid from and promotion valid upto are present in site. empty in dat. eg url: https://www.migros.ch/de/product/153053000000
+
+9.promotion description present and promotion price is taken as regular and selling price, promotion price is empty eg url: https://www.migros.ch/de/product/241102765000
+
+10.promotion description present in data, missing in site. eg url: https://www.migros.ch/de/product/205355900000
+
+
+DataHut_CH_Lidl_FullDump_20250612.CSV
+-----------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are also empty
+
+2.site shown uom missing for 46 entries
+
+3.producthierarchy level1 is taken two times in breadcrumb. eg:Sortiment > Sortiment > Absolut Vodka. url: https://sortiment.lidl.ch/de/catalog/product/view/id/11903/s/absolut-vodka-5103300/category/54/#/
+
+4.instock True only.
+
+5.promotion valid from present in data, missing in site. eg url: https://sortiment.lidl.ch/de/catalog/product/view/id/16433/s/sparkling-lemon-0200276/category/54/#/
+
+6.promotion valid upto expired, 12.6.2025. eg url: https://sortiment.lidl.ch/de/catalog/product/view/id/11874/s/schweizer-chinakohl-0082910/category/54/#/
+
+7.promotion valid from and promotion valid upto format different. eg:18.6.2025 in data, 18.6 in site. url: https://www.lidl.ch/p/de-CH/easymaxx-kompakt-naehmaschine/p10037224
+
+8.image urls present, file names are empty
+
+
+DataHut_CH_Denner_FullDump_20250612.CSV
+-----------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, image_url_4 are also empty. producthierarchy_level7 is not empty
+
+2.promotion valid from and promotion valid upto present in data, missing in site. eg url: https://www.denner.ch/de/aktionen-und-sortiment/auf-alle-ip-suisse-produkte~p2c538c0d-c9e8-4fcf-b838-2ca632cb01b7?variant=4c98dce4-7e77-4723-9aa3-1aa3365a6c6f
+same issue: https://www.denner.ch/de/aktionen-und-sortiment/domherrenwein-fendant-aoc-valais~p050205?variant=bb2a7876-07b4-4341-ae11-3ed479c1dbb2
+
+3.grammage quantity and hence price taken wrong. eg: 75cl in data, 6X75cl in site. url: https://www.denner.ch/de/weinshop/c-chablis-aoc~p050518
+same issue: url: https://www.denner.ch/de/weinshop/aalto-do-ribera-del-duero~p057369
+
+========================
