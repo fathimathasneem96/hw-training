@@ -1,0 +1,11 @@
+Found QA tool-Kettle
+Advantages:
+-Wide Format & Source Support
+-Reusable and Modular
+-Data Cleansing & Transformation
+-open source and free
+-cross platform compatibility
+
+Disadvantages:
+-Steep learning curve
+-Limited built in data profiling
