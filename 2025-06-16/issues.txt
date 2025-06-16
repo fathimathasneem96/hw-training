@@ -1,0 +1,92 @@
+
+Quality Assurance (QA)
+========================
+
+DataHut_HU_Wolt_PriceExtractions_20250616.CSV
+-------------------------------------------
+1.site shown uom taken wrong. eg: 500 ml in data, 500 ml és 38 vol in site. url: https://wolt.com/hu/hun/budapest/venue/interspar-kerepesiut/zubrowka-biala-original-vodka-37-5-500-ml-itemid-66c5877676953f4db0800e20
+
+2.site_shown_uom and grammage_unit are in g in site, but in kg in data.  eg: 0.27kg in data, 270g in site. url: https://wolt.com/hu/hun/budapest/venue/interspar-allee/regnum-fustolt-fott-darabolt-sertes-csaszarszalonna-itemid-66436ae11ea593b48552649b
+
+
+DataHut_HU_Tesco_PriceExtractions_20250616.CSV
+---------------------------------------------
+1.grammage quantity and unit are taken wrong(logical error).eg: price is 1899 and price per unit 1899 Ft/db, but grammage quantity and unit is 0.95l. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005100645478
+
+2.grammage quantity and unit wrong eg: 2000g in data, 0.1kg in site. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004002639853
+same issue: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005100477147
+
+3.logical error. eg:grammage unit is in g, but pric per unit is in db. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105296842
+
+4.logical error. eg:price per unit is 2907 Ft/kg and grammage quantity is 935g, price is 1599Ft, but correct price is 2718 Ft. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005100241437
+
+5.grammage quantity and unit taken wrong. eg: 1db in data, 0.1kg in site. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105000409
+
+6.breadcrumb contain extra characters in data. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105006004
+
+
+DataHut_SI_Spar_PriceExtractions_20250616.CSV
+-------------------------------------------
+1.breadcrumb contain small letters in data, but captal letters in site. eg url: https://www.spar.si/online/tiramisu-con-savoiardi-spar-premium-500g/p/654275
+
+2.site shown uom is g and grammage quantity is 1 kos in data, 1KG in site. url: https://www.spar.si/online/zelje-mlado-1kg/p/663521
+
+3.logical error. eg: price per unit 0.01€/kos and grammage quantity is 500 kos, hence price should be 5, but price is 6.99. url: https://www.spar.si/online/pisarniski-papir-a4-spar-office-5001/p/290083
+
+4.logical error,grammage quantity taken wrong. price is 36.90, price per unit is 52.71/kos and grammage quantity in data is 1 kos. but while checking price grammage quantity should be 0.7l. url: https://www.spar.si/online/whisky-chivas-regal-07l2-kozarca/p/376201
+
+
+DataHut_SI_Mercator_PriceExtractions_20250616.CSV
+------------------------------------------------
+1.Pika promotion present but promotion price is not taken in data,only one price is present in data. eg: 1.99 in site, 2.49 in data. url: https://mercatoronline.si/izdelek/19627255/slani-cips-lay-apos-s-130-g
+
+2.grammage quantity taken wrong. eg:0.1l in data, 1l in site and according to price. url: https://mercatoronline.si/izdelek/19192109/gin-pink-beefeater-37-5-alkohola-0-1-l
+same issue: https://mercatoronline.si/izdelek/17365193/trdi-sir-kramar-cca-0-3-kg-pakirano-cena-za-kg
+
+3.logical error. eg:grammage quantity is 0.9l in data, but wile checking it will be 1 kos. url: https://mercatoronline.si/izdelek/19213706/loncek-snack-to-go-0-9-l
+
+
+DataHut_SI_Dm_PriceExtractions_20250616.CSV
+-----------------------------------------
+1.logical error, site shown uom, grammage quantity are taken wrong. eg:1.000ml in data, but while checking site and logically it should be 1000 ml. eg url: https://www.dm.si/babylove-naravna-mineralna-voda-brez-ogljikovega-dioksida-p4066447762983.html
+same issue for all site shown uom that are dot separated.
+
+2.product name contain dot instead of comma both in site and data. eg url: https://www.dm.si/pril-detergent-za-rocno-pomivanje-posode-lemon-super-ponudba-p9000101548891.html
+
+
+plus_nl_20250617.csv
+------------------
+1.promotion description present in site, missing in data. eg:1+1 GRATIS. url: https://www.plus.nl/product/spa-fruit-sparkling-mango-grapefruit-fles-1250-ml-310658
+
+2.price per unit taken wrong.eg: per kilo €14.99 in data, 9.99 PER KILO in site. url: https://www.plus.nl/product/plus-goudse-jong-belegen-48-945g-kg-945-g-946074
+
+3.promotion valid from and promotion valid upto date format different. eg: 11 juni in site, 2025-06-11 in data. eg url: https://www.plus.nl/product/plus-goudse-jong-belegen-48-945g-kg-945-g-946074
+
+
+dirk_nl_20250617.csv
+-------------------
+1.file_name_5, image_url_5 also empty
+
+2.price change found. eg: 0.98 in data, 98 in site, url: https://www.dirk.nl/boodschappen/zuivel-kaas/melk-karnemelk/melkunie%20halfvolle%20melk/6247
+
+3.promotion valid from promotion valid upto date format different. eg: 13 juni in site, 2025-06-13 in data. url: https://www.dirk.nl/boodschappen/snacks-snoep/chips/santa%20maria%20tortilla%20strips%20sweet%20chili/110128
+
+4.promotion valid upto taken wrong eg:2025-06-18 in data, 25 juni 2025 in site. url: https://www.dirk.nl/boodschappen/zuivel-kaas/overige-kazen/kroon%20van%20holland%20borrelstuk%20overjarig/107114
+
+
+jumbo_nl_20250617.csv
+-------------------
+1.file_name_6, image_url_6 are not empty
+
+2.price taken wrong. eg:14.74 in data, 1474 in site. url: https://www.jumbo.com/producten/mild-kaasplankje-beginnende-kaaseter-46-personen-443892STK
+
+3.promotion valid from, promotion valid upto present in data, missing in site. eg url: https://www.jumbo.com/producten/appelsientje-fruitdrink-appel-6x200ml-609206PAK
+
+4.logical error. eg: price per unit is 13.56/kilo and grammage quantity is 45g, but price is 12.20. url: https://www.jumbo.com/producten/croky-paprika-45-g-513026DSL
+same issue: https://www.jumbo.com/producten/croky-chips-naturel-45g-568487DSL
+
+5.grammage quantity taken wrong. eg: 500g in data, 250g in site. url: https://www.jumbo.com/producten/fattorie-garofalo-buffel-mozzarella-500-g-642246STK
+
+6.For 2 entries everything same except the price per unit are different. price per unit are 0.03/stuk, 25.27/kilo. urls: https://www.jumbo.com/producten/jumbo-emmentaler-kaas-45-plakken-150-g-693712STK, https://www.jumbo.com/producten/jumbo-emmentaler-kaas-45-plakken-150-g-397673STK
+
+========================
