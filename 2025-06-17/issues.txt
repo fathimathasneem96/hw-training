@@ -1,0 +1,108 @@
+Quality Assurance (QA)
+========================
+
+delhaize_nl_20250617.csv
+-----------------------
+1.product is out of stock, prices are missing in site, promotion valid from and promotion valid upto taken wrong. 15/6/2025 to 24/6/2025 in data, 16/6/2025 to 25/6/2025 on site for 3 rows. eg url: https://www.delhaize.be/nl/shop/Zuivel-kaas-en-plantaardige-alternatieven/Kaas/Kaas-in-sneden-en-smeerkaas/Kaas-in-sneden/Sneden-210G-5-1/p/F2015031700159580000
+
+2.There are 2 images in data, only one image in site and same image url and file name are given for 2 images in data. url: https://www.delhaize.be/nl/shop/Zuivel-kaas-en-plantaardige-alternatieven/Kaas/Kinderkaas/Snacking-Kaas-Original-12P-FP/p/F1984121100162570000
+
+
+aldi_nl_20250617.csv
+-------------------
+1.producthierarchy_level4, promotion_valid_from, promotion_description, image_url_6, file_name_6 are not empty
+
+2.Error found in pdp url (spaces occured). url: https://www.aldi.nl/product/cottage-cheese- -1221524.html 
+
+3.promotion valid from present in data, missing in site and price per unit present in site, missing in data. eg url: https://www.aldi.nl/product/red-bull-1216368.html
+same issue: https://www.aldi.nl/product/nacho-cheese-chips-1227707.html
+
+4.logical error. price per unit is kg = 22.5 and grammage quantity is 6X100g, but price is 2.25 (taken price for 100g). url: https://www.aldi.nl/product/vruchtenkwark-1225860.html
+same issue: https://www.aldi.nl/product/-8-pack-optifit-active-drink-1225756.html
+
+5.logical error. price per unit is l = 9.95 and grammage quantity is 6X200ml, but price is 1.99. url: https://www.aldi.nl/product/6-pack-yoghurtdrink-aardbei-of-rood-fruit-1218112.html
+
+6.promotion valid upto expired and hence promotion price missing in site. 2025-06-15. url: https://www.aldi.nl/product/goudse-komijnekaas-48---1226372.html
+
+7.promotion valid from present in data, missing in site. promotion valid upto and promotion price present in site, missing in data. eg url: https://www.aldi.nl/product/blauwe-kaas-1226177.html
+
+8.price taken wrong, promotion price and promotion valid upto present in site, missing in data. eg url: https://www.aldi.nl/product/goudse-kaas-48--jong-1226121.html
+
+9.promotion valid upto taken wrong. eg: 2025-06-26 in data, 27.06 in site. url: https://www.aldi.nl/product/--goudse-kaas-48--plakken-belegen-1226174.html
+same issue: https://www.aldi.nl/product/goudse-kaas-48--jong-belegen-1226221.html
+https://www.aldi.nl/product/goudse-kaas-48--jong-belegen-1226221.html
+https://www.aldi.nl/product/goudse-kaas-48---plakken-jong-vers-gesneden-1226171.html
+
+10.date format are different in data and site eg: 2025-06-27 in data, 27.06 in site eg url: https://www.aldi.nl/product/goudse-kaas-48--plakken-jong-belegen-1226173.html
+
+11.price per unit present in site, missing in data. eg url: https://www.aldi.nl/product/goudse-kaas-48--jong-1226222.html
+
+12.price per unit is not float with 2 decimal places. eg: kg = 10
+
+13.only one image is present in site, but three image urls and file names are in site with repetition of same image. url: https://www.aldi.nl/product/kaas-50--jong-belegen-1227216.html
+same issue: https://www.aldi.nl/product/goudse-komijnekaas-48---1226372.html
+
+14.6 images in data, 5 images in site and image 5 repeated in data. url: https://www.aldi.nl/product/chips-1209619.html
+
+
+DataHut_HU_Wolt_PriceExtractions_20250617.CSV
+---------------------------------------------
+1.site shown uom and grammage unit are in kg in data, g in site. eg: 0.23kg in data, 230g in site. url: https://wolt.com/hu/hun/budapest/venue/interspar-allee/spar-premium-lazacpisztrang-file-itemid-66436ae11ea593b485525da0
+
+2.site shown uom is 1.0kg in data, 1kg in site. eg url: https://wolt.com/hu/hun/budapest/venue/interspar-allee/tanyasi-friss-csirke-szine-java-itemid-66c5851e4ce8f79271915d3b
+
+
+DataHut_HU_Tesco_PriceExtractions_20250617.CSV
+---------------------------------------------
+1.Clubcard promotion present in site missing in data. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004020262072
+
+2.logical error. grammage quantity and site shown uom 0.7l is 70cl, but it is given as 0.7cl in both data and site. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004121257727
+
+3.grammage quantity taken wrong. eg: 50cl in data, and price is 899.00 and price per unit is 899Ft/db, Hence grammage quantity should be 1 db. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005114289684
+
+4.grammage quantity and unit taken from product name. eg: 2014g. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005100504453
+
+5.grammage quantity taken wrong. eg: 2000g in data, 0.1kg in site. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004005899162
+
+6.logical error. eg:price per unit is in db, but grammage unit is g. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004010230776
+
+7.grammage quantity taken wrong. eg: 800X800 g in data, 800g in site. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004010272233
+
+8.price taken wrong.eg: grammage quantity is 970g and price per unit is 6620 Ft/kg, but price is 2979 Ft. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004020296061
+
+9.grammage quantity taken wrong. eg: 1g in data, 1kg in site. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004005936454
+
+10.grammage quantity is 1 db in data, 0.1kg in site. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105000409
+
+11.breadcrumb contain extra characters in data. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105006004
+
+
+DataHut_DE_Knuspr_FullDump_20250617.CSV
+--------------------------------------
+1.breadcrumb missing for 2860 rows
+
+2.site shown uom contain Teebeutel and grammage quantity is stuck. eg: 1 Teebeutel. url: https://www.knuspr.de/13551-teekanne-karibische-mango
+
+3.site shown uom and price per unit are in Waschen, grammage unit is stuck. eg url: https://www.knuspr.de/91834-persil-discs-universal-1-292-kg-76-wl
+
+4.grammage quantity taken wrong. eg:2023l in data, 2.023l in site. url: https://www.knuspr.de/102687-tement-sauvignon-blanc-kalk-kreide-suedsteiermark-2024
+
+5.site shown uom contain number only and price per unit is in null. eg: site shown uom is 28 and price per unit is 3.54 €/null. url: https://www.knuspr.de/82199-elasten-trinkampullen
+
+6.promotion valid upto present in data, missing in site. eg: 1.7.2025. url: https://www.knuspr.de/32776-fresh-kitchen-spare-ribs-sous-vide
+
+7.promotion valid upto date format different. eg: 18.6.2026 in data, June 18th in site, no year mentioned. url: https://www.knuspr.de/81410-dr-oetker-schwarzer-kakao-zum-backen
+
+8.prices present in data, missing in site. eg url: https://www.knuspr.de/81415-dr-oetker-fuer-buchstaben-spass-bunter-mix
+
+9.images are in svg format. eg: https://cdn.knuspr.de/images/company/knuspr-placeholder.svg
+
+
+DataHut_DE_Flaschenpost_FullDump_20250617.CSV
+---------------------------------------------
+1.server error. eg url: https://www.flaschenpost.de/p/verschiedene-og-marken/bio-gartenkresse01
+
+2.price per unit contain two dots. eg: 36.900.00 €/kg url: https://www.flaschenpost.de/p/ostmann/ostmann-safran-gemahlen
+
+3.price per unit taken wrong. eg: 3.14 €/L in data, 2.86 €/L in site. url: https://www.flaschenpost.de/p/heineken/heineken
+same issue: https://www.flaschenpost.de/p/fuerst-von-metternich/fuerst-von-metternich-riesling-deutscher-qualitaetswein-rheingau
