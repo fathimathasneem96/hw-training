@@ -1,0 +1,102 @@
+
+Quality Assurance (QA)
+========================
+
+bayut_uae_2025_06_03.json
+----------------------
+1."orn_number","bln_number","adm_number","3d_live","3d_image","2d_image","ded_number_2","ded_number_3","ded_number_4","trucheck_on","email","trubroker","rating","no_of_reviews","property_of_the_week" are newly added fields.
+
+2.line 80670- "broker_display_name":"ROYAL AREA REAL ESTATE", broker display name is in capitals. url: https://www.bayut.com/property/details-11919795.html
+
+3.missing for 45 rows
+
+4.package type premium, hot, superhot only
+
+5.line 419118- "agent_name":"6459923"
+
+6."brn_registration_number":"=" for 1158 rows
+"brn_registration_number":"N/A" for 102 rows
+"brn_registration_number":"nothing" for 29 rows
+"brn_registration_number":"---" for 7 rows
+"brn_registration_number":"." for 59 rows
+
+
+DataHut_AT_Mueller_FullDump_20250619.CSV
+---------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are also empty
+
+2.promotion price, percentage discount and promotion description taken wrong eg: 5.59,20, Sie sparen 20% in data, but 4.68,33,Sie sparen 33% in site. url: https://www.mueller.at/p/maybelline-new-york-augenkonturen-precise-liner-5957324347/?itemId=459952
+
+3.promotion description present in data, missing in site, promotion price in data only present in site, no regular price. url: https://www.mueller.at/p/mars-mixed-minis-IPN3048417/?itemId=3048417
+
+4.logical error. grammage quantity is 1722l in data and site, but while checking site it should be 1.722l. url: https://www.mueller.at/p/lenor-weichspueler-orchidee-vanille-82wl-PPN3090864/?itemId=3090864
+
+5.product description is paragraph
+
+6.instructions and instructionforuse is , for 12 rows. eg url: https://www.mueller.at/p/dallmayr-capsa-kaffeekapseln-espresso-barista-628589/?itemId=628589
+instructions and instructionforuse is ,, for 41 rows. eg url: https://www.mueller.at/p/seeberger-edel-nuss-mix-geroestet-gesalzen-994643/?itemId=994643
+
+7.allergens is /. url: https://www.mueller.at/p/alnatura-bio-streichcreme-paprika-chili-2063040/?itemId=2063040
+
+8.instock True and False
+
+9.image urls are present, file names are empty
+
+
+DataHut_AT_Fressnapf_FullDump_20250619.CSV
+-----------------------------------------
+1.dimensions is not empty.
+file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6, netcontent are empty.
+
+2.product name is contain dot in data, comma in site. eg url: https://www.fressnapf.at/p/acana-classic-red-2x97-kg-1268321/
+
+3.grammage quantity taken wrong. eg: 1 000 kg in data, but price per unit is €4.49/kg and price is 4.49. That grammage quantity is 1kg. url: https://www.fressnapf.at/p/vitakraft-menu-vital-meerschweinchen-1000-kg-1004435/
+
+4.grammage quantity taken wrong. eg: 56l in data, 500g in site. url: https://www.fressnapf.at/p/multifit-kleintierstreu-56-l--heu-mit-loewenzahn-500-g-1310109/
+
+5.capacity of product is taken as grammage quantity eg: 50kg. url: https://www.fressnapf.at/p/flexi-new-classic-gurt-schwarz-l-5-m-50-kg-1267777/
+
+6.grammage quantity taken wrong. eg: 9X12g in data, 7X9X12g in site and price is taken for 7X9X12g url: https://www.fressnapf.at/p/sheba-beutel-creamy-snacks-7x-9x12g-huhn-und-lachs-1706488/
+
+7.feeding recommendation given as dictionary.eg: {'': '', 'feeding_suggestions': '2 Snack am Tag. Fr Hunde ab dem 9. Lebensmonat. Bitte immer ausreichend frisches Trinkwasser bereitstellen. Beaufsichtigt deinen Hund beim Kauen. Bitte whle die richtige Gre fr deinen Hund.'} eg url: https://www.fressnapf.at/p/whimzees-antler-dental-treats-m-1410716/
+
+8.image in png format. eg: https://media.os.fressnapf.com/products-v2/6/8/f/2/68f2dde3e8d4134528c7a8ff3e9ac3ba10816a9e_d25cb243e8ac91bdde02ef1003b2c4cc53cf802f.png?t=prod_l
+image urls are present, file names are empty.
+
+
+DataHut_AT_Interspar_FullDump_20250619.CSV
+----------------------------------------
+1.age recommendations is not empty
+file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.instock True and False
+
+3.image urls are present, file names are empty.
+
+4.grammage quantity taken wrong. eg: 15X3 l. price is 2.49 and price per unit is 2.49 €/Stück, hence grammage quatity should be 1 stuck. url: https://www.interspar.at/shop/lebensmittel/spar-gefrierbeutel-15-x-3-l/p/2020003912603
+same issue: https://www.interspar.at/shop/lebensmittel/s-budget-gefrierbeutel-41-x-6-l/p/2020003912566
+
+5.grammage quantity taken wrong. eg: 5+1 stuck in data, but price is taken for 1 stuck. url: same issue: https://www.interspar.at/shop/lebensmittel/scholl-blasenpflaster-fersen-5-1-stueck/p/2020004188854
+same issue: https://www.interspar.at/shop/lebensmittel/tempo-taschentuecher-mini-pack-neon-lights-9-x-5-stueck/p/2020000865926
+
+6.regular price and selling price is 0.00. url: https://www.interspar.at/shop/haushalt/miraplast-ablagekorb-a5/p/2020004229380
+ 
+7.promotion valid upto expired, but prices remains same. 17.06.2025. eg url: https://www.interspar.at/shop/haushalt/barbecue-garden-grill-xl-kugelgrill/p/2020005559943
+
+8.promotion valid upto and promotion price taken wrong. eg: 18.06.2025 in data, but 25.06.2025 in site, 39.90 in data but 29.93 in site. url: https://www.interspar.at/shop/haushalt/hsp-wohlfuehldecke-150x200cm/p/2020004570512
+
+9.'|' replaced with '\\|' in nutritional information. eg url: https://www.interspar.at/shop/lebensmittel/doppelherz-kollagen-1000-biotin-q10-30-tabletten/p/2020003915048
+
+10.site shown uom contain number only. eg:10. url: https://www.interspar.at/shop/lebensmittel/jolly-wachsmalkreiden-superwaxies-aqua-10-wachsmalkreiden/p/2245478
+
+
+DataHut_IT_Esselunga_FullDump_20250618.CSV
+---------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2. promotion valid upto expired. eg: 17/06/2025 eg url: https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/606310/a-pizza-margherita-surgelata-430-g
+promotion valid upto expired. eg: 16/06/2025 eg url:https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/720166/kioene-burger-vegetale-ai-carciofi-e-pomodori-secchi-200-g
+
+3.instock True and False
+
+========================
