@@ -1,0 +1,107 @@
+
+Quality Assurance (QA)
+========================
+
+DataHut_IT_Easycoop_FullDump_20250618.CSV
+--------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.image urls are present, file names are empty.
+
+3.promotion valid upto expired, but promotion prices are still present for 11 rows.  2025-06-11. url: https://www.easycoop.com/fileni-fileni-bio-salsiccia-con-pollo-e-tacchino-biologica-0-300-kg-4496946.html
+
+promotion valid upto expired, hence price changes found. 
+2025-06-16 for 99 rows, 2025-06-17 for 385 rows and 2025-06-18 for 12023 rows. eg url: https://www.easycoop.com/coop-bocconcini-di-fesa-di-tacchino-400-g-4516297.html
+
+4.promotion valid upto date format different. eg: 2025-06-30 is data, 30/06 in site. eg url: https://www.easycoop.com/tortino-di-ricotta-cf-reggio-delizie-320-g-3062931.html
+
+5.promotion description and promotion valid upto are present in site, missing in data, hence price change found. eg url: https://www.easycoop.com/zymil-zymil-alta-digeribilita-senza-lattosio-yogurt-alla-greca-zero-grassi-bianco-150-g-7207113.html
+
+6.pdp url wrong. eg url: https://www.easycoop.com/martini-spiedini-di-suino-1-096-kg-3909400.html
+
+
+DataHut_IT_Conad_FullDump_20250618.CSV
+------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.image urls are present, file names are empty.
+
+3.promotion description present in data, missing in site, hence price change found. eg url: https://spesaonline.conad.it/p/conad-percorso-qualita-albicocca-faralia-italia-cal-40-45-1000-g--10578388
+same issue: https://spesaonline.conad.it/p/pril-tutto-in-1-gel-limone-3x630ml--11442102
+
+4.price taken wrong. eg: 5.24 in data, 5.50 in site. url: https://spesaonline.conad.it/p/enervit-gel-tropical-fruits-flavour-3-x-25-ml--11423314
+
+5.promotion description present in site, missing in data. Hence price change also found. eg url:https://spesaonline.conad.it/p/magnum-mini-pistacchio-hazelnut-6-gelati-2565-g--11693709
+same issue: https://spesaonline.conad.it/p/nescafe-dolce-gusto-cappuccino-30-capsule-3495g--11712832
+
+6.price change found. eg: price is 6.76 and price per unit is 16.90 € / Kg in data, but 8.76 and 21,90 € / Kg in site. url: https://spesaonline.conad.it/p/farro-alla-pescatora-finezze-15kg--V_35329201_C
+
+7.percentage discount is 0. but promotion price present in data, missing in site. eg url: https://spesaonline.conad.it/p/valeriana-biologica-70-g-verso-natura-conad--10578943
+
+8.logical error. price per unit is 0.00 €/Kg, grammage quantity is 375g and price is 1.79. url eg: https://spesaonline.conad.it/p/purina-friskies-gatto-junior-con-un-gustoso-mix-di-pollo-e-tacchino-con-latte-e-con-verdure-375-g--0827708
+
+
+DataHut_SI_Mercator_FullDump_20250619.CSV
+----------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.image urls are present, file names are empty.
+
+3.instock True only
+
+4.grammage quantity taken wrong eg: 0.3kg in data, 1 kg in site and price for 1 kg is taken. url: https://mercatoronline.si/izdelek/17365193/trdi-sir-kramar-cca-0-3-kg-pakirano-cena-za-kg
+
+5.logical error. eg: price per unit is 5384.62€ / 1kg and grammage quantity is 3.25kg but regular price is 34.99. url: https://mercatoronline.si/izdelek/19779150/detergent-za-pranje-perila-uni-ariel-50-pranj-3-25-kg
+
+
+DataHut_CH_Coop_FullDump_20250619.CSV
+---------------------------------
+1.file_name_4, image_url_4, file_name_5, image_url_5, file_name_6, image_url_6 fields are also present.
+
+2.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+3.'|' replaced with '\|' in data values, product name, producthierarchylevels and breadcrumb. eg url: https://www.coop.ch/de/lebensmittel/vorraete/brotaufstrich/konfituere/konfitueren-portionen/hero-konfituere-portionen-assortiert-6x20g/p/7386598
+
+4.site shown uom missing for 4322 rows
+
+5.logical error. eg: price per unit is 0.05/1ST and grammage quantity is 1104 stuck but price is 49.95 instead of 55.2. url: https://www.coop.ch/de/baby-kind/pflege/pflegetuecher-fuer-baby-kind/feuchttuecher-fuer-baby-kind/pampers-harmonie-new-baby-24x46-stueck/p/7102134
+
+6.image urls are present, file names are empty.
+
+7.Product comes under Fleisch&Flsch, but site shown uom, grammage quantity an dunit are not taken from price per unit eg: site sown uom is 1.1kg. url: https://www.coop.ch/de/lebensmittel/fleisch-fisch/charcuterie-wurstwaren/speck-schinkli/schinkli-schuefeli/naturafarm-quick-nuss-schinkli-ca/p/4865033
+
+8.promotion description and percentage discount taken wrong. eg: 62% and 62 in data, 61% in site. url: https://www.coop.ch/de/aktionen/aktuelle-trophy/betty-bossi-heissluft-fritteuse/p/7302636
+same issue: taken 61 in data instead of 60 for 2 rows.
+
+7.promotion price present in data, missing in site. eg url: https://www.coop.ch/de/aktionen/aktuelle-trophy/glaeser-2-stueck/p/7370689
+
+
+DataHut_SI_Dm_FullDump_20250619.CSV
+---------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.breadcrumb taken wrong. eg: Domov > Nega in dišave > Nega za moške > Moški deodoranti in data, Domov in site. url: https://www.dm.si/balea-men-antiperspirant-v-spreju-ultimate-dry-p4067796217759.html
+
+3.instock True only
+
+4.logical error. price per unit is 0.00 € za 1 kos grammage quantity is taken as 1000 kos, price is 2.75. url: https://www.dm.si/trend-t-up-maska-za-ustnice-care-about-you-010-citrus-vanilla-p4067796072747.html
+
+
+DataHut_SI_Spar_FullDump_20250619.CSV
+----------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6, producthierarch_level7 are empty.
+
+2.breadcrumb contain small letters in data, capital letters in site. eg: Domov > SHRAMBA > Omake, prelivi in priloge jedem > Pripravljene omake > VEGANSKA ZELENJAVNA OMAKA, ALLA LUIGI, 325G in data, DOMOV > SHRAMBA > OMAKE, PRELIVI IN PRILOGE JEDEM > PRIPRAVLJENE OMAKE > VEGANSKA ZELENJAVNA OMAKA, ALLA LUIGI, 325G in site.
+
+3.instock True only
+
+4.logical error. price per unit is 1880.00€/kg, grammage quantity is 1.3g, but price is 1.88 instead of 2.44. url: https://www.spar.si/online/zafran-maestro-0125g/p/528736
+
+5.logical error. price per unit is 34.95€/m both in dite and site, all other measures are in ml. url: https://www.spar.si/online/mleko-za-soncenje-sensitiv-zf50-sun-kiss-250ml/p/647036
+
+6.grammage quantity taken wrong. eg: price per unit is 5.99€/kos and price is 5.99, but grammage quantity and unit is 630ml, instead of 1 kos. url: https://www.spar.si/online/posoda-za-shranjevanje-okrogla-keepn-box-luminarc-630ml/p/424536
+
+7.image urls are present, file names are empty.
+
+8.netweight is comma separated. eg:0,01l
+========================
