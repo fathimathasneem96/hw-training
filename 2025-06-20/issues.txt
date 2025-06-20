@@ -50,3 +50,102 @@ DataHut_SI_Dm_PriceExtractions_20250620.CSV
 
 2.grammage quantity taken wrong eg: 1.200g in data, but price taken is for approximately 1200g. url: https://www.dm.si/dein-bestes-popolna-hrana-za-odrasle-macke-v-zeleju-p4058172100642.html
 same issue for grammage quantities 1.000g, 1.020g, 1.400g, 1.500g
+
+machinerytrader_2025_06_20.csv
+-----------------------------
+1.pcid is empty
+
+2.two category columns, "category" and "Category"
+
+3.phone number format different. eg: (210) 661-3344 in data, +1 210-661-3344 in site. url: https://www.machinerytrader.com/listing/for-sale/244220731/2022-atlas-copco-xas950cd8-air-compressors
+
+4.currency are "USD" and "CAD"
+
+5.company location is present in data, missing in site. eg url: https://www.machinerytrader.com/listing/for-sale/245449237/2024-toro-mbtx2500s-track-concrete-buggies-concrete-equipment
+
+6.phone number is "+1 905-857-6200 ext. 1" for 8 rows. eg url: https://www.machinerytrader.com/listing/for-sale/243327995/2005-ford-f550-xl-sd-dump-trucks
+
+7.url do not redirect to correct page. url: https://www.machinerytrader.com/listing/for-sale/242413933/2005-ingersoll-rand-sd116dx-tf-smooth-drum-compactors
+
+8.Vin and VIN columns found.
+
+
+DataHut_at_Interspar_PriceExtractions_20250620.CSV
+-------------------------------------------------
+1.File name structure wrong. 'at' is small. DataHut_at_Interspar_PriceExtractions_20250620.CSV
+
+2.product name contain dot in data, comma in site. eg: 6X0.5lt. url: https://www.interspar.at/shop/lebensmittel/egger-radler-zitrus-6x05lt/p/2020005436480
+
+3.grammage unit taken wrong. eg: 1g in data, price is 3.99, price per unit is 3.99 €/Stück, hence grammage unit should be stuck. url: https://www.interspar.at/shop/lebensmittel/puro-mundo-chili-faeden-1g/p/2020004716200
+
+4.logical error. grammage unit and price per unit differs. eg: price per unit is 29.99 €/Stück, price is 29.99, but grammage quantity and unit is 1800ml. url: https://www.interspar.at/shop/lebensmittel/cuitisan-frischhaltedose-1800ml/p/2020003590665
+
+5.grammage quantity taken wrong. eg: 2X1000 stuck in data,but price taken is for 1 stuck. url: https://www.interspar.at/shop/lebensmittel/spar-office-heftklammern-246-verzinkt-2-x-1000-stueck/p/2020001708192
+same issue: https://www.interspar.at/shop/lebensmittel/lovely-lotion-taschentuecher-24-x-10-stueck/p/1388985
+same issue: https://www.interspar.at/shop/lebensmittel/tempo-taschentuecher-mini-pack-neon-lights-9-x-5-stueck/p/2020000865926
+
+6.regular price and selling price is 0.00. url: https://www.interspar.at/shop/haushalt/miraplast-ablagekorb-a5/p/2020004229380
+
+7.logical error. price per unit is 0.01 €/g, grammage quantity is 300g, but price is 1.99. url: https://www.interspar.at/shop/lebensmittel/spar-peterwurzen/p/1407440
+
+8.promotion valid upto found as 09.10.2204, 30.12.9999
+
+9.site shown uom taken wrong, 'x 2' https://www.interspar.at/shop/lebensmittel/sodastream-glasflaschen-duo-1l-x-2/p/2020003525827
+
+
+DataHut_AT_Fressnapf_PriceExtractions_20250620.CSV
+-----------------------------------------------
+1.currency is 'eur' for 1 row, others are 'EUR'
+
+2.'|' replaced with '\|' in breadcrumb. eg: Heimat > Hund > Hundefutter > Snacks > Dogs'n Tiger Fatzke \| Ente 320 g
+
+3.logical error. size of the product is L, grammage quantity and unit is taken as 1l. url: https://www.fressnapf.at/p/anione-nager-holzbruecke-9-in-1-l-1073122003/
+
+4.grammage quantity taken wrong. eg: 1 000 kg in data, but price per unit is €4.49/kg and price is 4.49. It indicates grammage quantity is 1kg. url: https://www.fressnapf.at/p/vitakraft-menu-vital-meerschweinchen-1000-kg-1004435/
+
+5.grammage quantity taken wrong. eg: 10+15kg in data, 15kg in site. url: https://www.fressnapf.at/p/royal-canin-medium-ageing-10-15-kg-1003112018/
+same issues for grammage quantities: 12+1.5 kg, 12+2kg, 12+3.5kg, 12+4kg, 12+400g, 10+2kg, 10+3kg etc
+
+6.product name contain dot in data, comma in site. eg url: https://www.fressnapf.at/p/royal-canin-x-small-ageing-12-15-kg-1002897004/
+
+7.grammage quantity taken wrong. eg: grammage quantity is 9X12g, but price taken is for 7X9X12g url; https://www.fressnapf.at/p/sheba-beutel-creamy-snacks-7x-9x12g-huhn-und-lachs-1706488/
+
+8.grammage quantity taken wrong, that is size included in grammage quantity. eg: 60x90 50 stuck. url: https://www.fressnapf.at/p/anione-training-pads-60x90-50-stueck-1309637/
+
+7.site shown uom contain beutel, grammage unit is not btl. eg: site shown uom contains 2.8 kg beutel,grammage unit is kg. url: https://www.fressnapf.at/p/beneful-purina-kleine-geniesser-mit-rind-und-gartengemuese-28-kg-beutel-1373941/
+
+
+DataHut_AT_Dm_PriceExtraction_20250520.CSV
+--------------------------------------
+1.file name wrong. s missing in PriceExtractions and month taken wrong. DataHut_AT_Dm_PriceExtraction_20250520.CSV
+
+2.site shown uom contains dot separated and comma separated values. eg:1.15ml, 0,075l
+
+3.logical error. grammage quantity and unit is 500l , capacity is 500ml in site. Hence grammage should be ml. url: https://www.dm.at/denkmit-nachfuellflasche-mit-spruehkopf-nature-p4066447706741.html
+
+
+DataHut_AT_Bipa_PriceExtractions_20250620.CSV
+--------------------------------------------
+1.competitor name is 'biAP' for 1 row, others are 'bipa'
+
+2.extraction date is '2025-05-20' for 1 row, others are '2025-06-20'
+
+3.breadcrumb contains '>>' in data, missing in site, Startseite > Pflege > Körper >> Duschgel. url: https://www.bipa.at/p/fa-duschcreme-mystic-moments-passionsbluete/B3-705587
+
+4.2+1 gratis AKTION promotion description present in site with one value, but regular price is not empty and promotion description missing in data. url: https://www.bipa.at/p/somat-excellence-gel-zitroneundlimette/B3-583434
+
+
+DataHut_AT_Mpreis_PriceExtractions_20250620.CSV
+----------------------------------------------
+1.site shown uom is missing for 534 rows
+
+2.competitor name is 'mpris' for 1 row, others are 'mpreis'
+
+3.breadcrumb contain extra words in data. eg: Startseite > Getränke > Bier > alkoholfreies Bier > 0,0 AF 0,5 Liter (Mehrweg) in data, Startseite > Getränke > Bier > alkoholfreies Bier > 0,0 AF 0,5 Liter in site. 
+
+4.site shown uom is number only. eg:'1' url: https://www.mpreis.at/shop/p/tv-media-705800
+
+5.logical error. price per unit is 61.99€ /Stk and price is 61.99, but grammage quantity is 0.7l. url: https://www.mpreis.at/shop/p/zacapa-solera-gran-reserva-no-23-0-122853
+
+6.logical error. price per unit is 0.15€ /l ,grammage quantity is 230100 ml and price is 3.49. url: https://www.mpreis.at/shop/p/soletti-dip-pikant-211199
+========================
