@@ -1,0 +1,52 @@
+Quality Assurance (QA)
+========================
+
+DataHut_HU_Tesco_PriceExtractions_20250620.CSV
+-------------------------------------------
+1.Clubcard promotion present in site missing in data. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005100959342
+
+2.breadcrumb contain extra characters in data and missing in site. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105006004
+
+3.price and price per unit missing in data, present in site. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004020282082
+
+4.logical error. price per unit is 14024Ft/kg, price is 589, grammage quantity is 5X42.5g, but price taken is for 5X8.5g. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004009190852
+
+5.logical error.price per unit is 1099Ft/db and price is 1099, but grammage quantity is taken as 1.3l. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005100600512
+
+6.grammage quantity taken wrong. eg: 1000g in data, but price taken is for 500g. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004007238853
+
+7.logical error. price per unit is 6620Ft/kg, price is 2979, grammage quantity is 970g, price taken is for 450g. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004020296065
+
+8.grammage quantity and unit taken wrong. eg: 1 db in data, 0.1kg in site. eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004003206887
+
+9.grammage quantity is 16 db, price taken is for 1 db. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005100335617
+
+10.grammage quantity and unit taken wrong. eg: size of diaper taken as grammage quantity 15kg eg url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004020313352
+
+DataHut_SI_Mercator_PriceExtractions_20250620.CSV
+---------------------------------------------
+1.product name is taken as site shown uom
+
+2.grammage quantity taken wrong. eg: 0.1l in data, but price is taken for 1l. url: https://mercatoronline.si/izdelek/19192109/gin-pink-beefeater-37-5-alkohola-0-1-l
+same issue: https://mercatoronline.si/izdelek/17365193/trdi-sir-kramar-cca-0-3-kg-pakirano-cena-za-kg
+
+3.logical error. eg: price per unit is 0.24€ / kos and grammage quantity is 1 kos, but price is taken as 2.35. url: https://mercatoronline.si/izdelek/17961253/jajca-l-hlevska-reja-mercator-10-1
+
+
+DataHut_SI_Spar_PriceExtractions_20250620.CSV
+------------------------------------------
+1.site shown uom is 'g' in data, 1kg in site. url: https://www.spar.si/online/zelje-mlado-1kg/p/663521
+
+2.grammage unit taken wrong. eg: kos in data, kg in site. url: https://www.spar.si/online/zelje-mlado-1kg/p/663521
+
+3.logical error. price per unit is 5.99€/kos, price is 5.99, but grammage quantity and unit taken as 630ml. url: https://www.spar.si/online/posoda-za-shranjevanje-okrogla-keepn-box-luminarc-630ml/p/424536
+
+4.logical error. price per unit is 34.95€/m, but all other units are in ml. url: https://www.spar.si/online/mleko-za-soncenje-sensitiv-zf50-sun-kiss-250ml/p/647036
+
+
+DataHut_SI_Dm_PriceExtractions_20250620.CSV
+---------------------------------------
+1.logical error. eg: grammage quantity is 1.000 kos and price per unit is 0.00 € za 1 kos, but price is 2.75. url: https://www.dm.si/trend-t-up-maska-za-ustnice-care-about-you-010-citrus-vanilla-p4067796072747.html
+
+2.grammage quantity taken wrong eg: 1.200g in data, but price taken is for approximately 1200g. url: https://www.dm.si/dein-bestes-popolna-hrana-za-odrasle-macke-v-zeleju-p4058172100642.html
+same issue for grammage quantities 1.000g, 1.020g, 1.400g, 1.500g
