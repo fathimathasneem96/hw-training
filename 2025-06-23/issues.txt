@@ -1,0 +1,55 @@
+
+Quality Assurance (QA)
+========================
+
+DataHut_AT_Mueller_PriceExtractions_20250623.CSV
+-----------------------------------------
+1.File name wrong, csv is capital. DataHut_AT_Mueller_PriceExtractions_20250623.CSV
+
+2.'|' replaced with '\|' in product name and breadcrumb. eg url: https://www.mueller.at/p/mein-megacooles-raetselbuch-rechnen-logik-spass-mit-zahlen-ab-8-jahren-band-1-PPN3099155/?itemId=3099155
+
+3.logical error. grammage quantity and unit is 1722l. but looking image of product it looks like 1.722l. url: https://www.mueller.at/p/lenor-weichspueler-orchidee-vanille-82wl-PPN3090864/?itemId=3090864
+
+
+DataHut_AT_Fressnapf_PriceExtractions_20250623.CSV
+---------------------------------------------
+1.'|' replaced with '\|' in breadcrumb. eg: Heimat > Hund > Hundefutter > Snacks > Dogs'n Tiger Fatzke \| Ente 1,12 kg
+
+2.grammage quantity taken wrong. eg: 1 000 kg in data, but price per unit is €4.49/kg and price is 4.49. It indicates grammage quantity is 1kg. url: https://www.fressnapf.at/p/vitakraft-menu-vital-meerschweinchen-1000-kg-1004435/
+
+3.age is included in grammage quantity eg: 10+3 kg, url: https://www.fressnapf.at/p/royal-canin-medium-ageing-10-3-kg-1002985009/
+
+4.grammage quantity taken wrong, that is size included in grammage quantity. 60x90 50 stuck. url: https://www.fressnapf.at/p/anione-training-pads-60x90-50-stueck-1309637/
+
+5.grammage quantity taken wrong. eg: grammage quantity is 7X15 g, but price taken is for 11X7X15 g url: https://www.fressnapf.at/p/multifit-snack-cream-11x7x15g-lachsund-inulin-1127814/
+
+6.product name contain dot in data, but comma in site. eg url: https://www.fressnapf.at/p/royal-canin-x-small-adult-8-15-kg-1002897003/
+
+7.grammage quantity and unit taken from size of product. size is L, grammage quantity and unit is 1l. url: https://www.fressnapf.at/p/anione-nager-holzbruecke-9-in-1-l-1073122003/
+
+8.site shown uom contains beutel, but grammage unit is not btl. eg url: https://www.fressnapf.at/p/leo-loewenkatz-matatabi-fruechte-silvervine-fruechte-20-gramm-beutel-1729604/
+
+
+DataHut_AT_Dm_PriceExtractions_20250623.CSV
+--------------------------------------
+1.logical error. grammage quantity and unit is 500l , capacity is 500ml in site. Hence grammage should be ml. url: https://www.dm.at/denkmit-nachfuellflasche-mit-spruehkopf-nature-p4066447706741.html
+
+
+DataHut_AT_Bipa_PriceExtractions_20250623.CSV
+----------------------------------------
+1.2+1 GRATIS AKTION tag present in site, missing in data. eg url: https://www.bipa.at/p/B3-566162
+
+
+DataHut_AT_Mpreis_PriceExtractions_20250623.CSV
+-----------------------------------------
+1.breadcrumb contain extra words in data. eg: Startseite > Getränke > Wasser, Limonaden & Energy drinks > Cola & Limonaden > 0,33 Liter (Einweg) in data, Startseite > Getränke > Wasser, Limonaden & Energy drinks > Cola & Limonaden > 0,33 Liter in site.
+
+2.site shown uom missing for 522 rows.
+
+3.logical error, price per unit is 21.99€ /Stk, price is 21.99, but grammage quantity and unit is 2000g. url: https://www.mpreis.at/shop/p/dypsis-goldfruchtpalme-t19-580522
+same issue: https://www.mpreis.at/shop/p/blistex-lippenpflege-daily-lip-care-conditioner-313103
+
+4.logical error. grammage quantity and unit is 1500l, but while checking site and logically it should be 1.500l. url: https://www.mpreis.at/shop/p/jeden-tag-hygienespueler-306126
+same issue: 4500l. url: https://www.mpreis.at/shop/p/voeslauer-balance-juicy-plus-tray-6x-075-liter-410700
+
+========================
