@@ -2,20 +2,6 @@
 Quality Assurance (QA)
 ========================
 
-Found QA tool- ydata profiling tool.
-Advantages:
-	-Quick and Comprehensive Reports
-	-Easy to Use
-	-Interactive Reports
-	-Missing Data Handling Insights
-	-Open Source and Active
-
-Disadvantages:
-	-Limited Support for Non-tabular Data
-	-Occasional Compatibility Issues
-	-Performance Issues with Very Large Datasets 
-
-
 DataHut_CH_Lidl_PriceExtractions_20250624.CSV
 ------------------------------------------
 1.site shown uom present as pro 500g in site, missing in data. url: https://www.lidl.ch/p/de-CH/schweizer-cherryrispentomaten-zum-aktuellen-tagespreis/p10037660
