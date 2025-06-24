@@ -1,0 +1,69 @@
+
+Quality Assurance (QA)
+========================
+
+Found QA tool- ydata profiling tool.
+Advantages:
+	-Quick and Comprehensive Reports
+	-Easy to Use
+	-Interactive Reports
+	-Missing Data Handling Insights
+	-Open Source and Active
+
+Disadvantages:
+	-Limited Support for Non-tabular Data
+	-Occasional Compatibility Issues
+	-Performance Issues with Very Large Datasets 
+
+
+DataHut_CH_Lidl_PriceExtractions_20250624.CSV
+------------------------------------------
+1.site shown uom present as pro 500g in site, missing in data. url: https://www.lidl.ch/p/de-CH/schweizer-cherryrispentomaten-zum-aktuellen-tagespreis/p10037660
+
+2.promotion price and selling price is 0.00 and price valid from not found in site. url: https://sortiment.lidl.ch/de/catalog/product/view/id/17138/s/gianduja-tafel-5112066/category/54/
+
+3.price valid from present in data, missing in site, but promotion valid upto as "24.06.2025" present in site. url: https://sortiment.lidl.ch/de/catalog/product/view/id/18942/s/tela-toilettenpapier-intense-5113277/category/54/
+
+4.Sortiment is repeated twice in breadcrum. eg: Sortiment > Sortiment > 1/2 Walliser Mutschli
+
+
+DataHut_DE_Picnic_PriceExtractions_20250624.CSV
+--------------------------------------------
+1.pdp_url, pack_size, price_valid_from, promotion_valid_from, promotion_valid_upto, region are empty
+
+2.site shown uom contain beutel, but grammage unit is not btl. site shown uom is 4 Beutel, grammage unit is stuck for 3 rows and site shown uom is 4 X 20 Beutel, grammage unit is stuck for 1 row.
+
+3.logical error. price per unit is €10.90/kg, site shown uom and grammage quantity are 10 x 500ml , but price is 1.09.
+
+4.logical error. price per unit is €0.32/Stück, price is 4.85, but grammage quantity and unit is 1 stuck. (site shown uom is 15 WL)
+
+5.grammage quantity and unit taken wrong. site sown uom is 250g • 10 Stück, price taken is for 250g, grammage quantity given is 10 stuck. 
+
+
+DataHut_DE_Knuspr_FullDump_20250624.CSV
+------------------------------------
+1.breadcrumb missing for 2744 rows
+
+2.site shown uom contain Teebeutel, but grammage unit is stuck. eg: 1 Teebeutel. url: https://www.knuspr.de/13551-teekanne-karibische-mango
+
+3.grammage quantity is 0g in data. url: https://www.knuspr.de/102563-sanlucar-birne-forelle-1-stk
+
+4.grammage quantity and price taken wrong. 750l in data, 12X0.75l from product name. price per unit is 0.01€/l, price is taken as 10.59. url: https://www.knuspr.de/103250-deit-limette-glas-12x0-75l-mehrweg
+
+5.grammage quantity taken wrong.750l in data, but price taken is for 12X0.75l. eg url: https://www.knuspr.de/103260-scavi-ray-lugana-d-o-c
+
+
+6.price present in data, missing in site, instock is True in data, but product is out of stock. eg url: https://www.knuspr.de/3329-bio-kiwi-1-stk
+
+7.promotion valid upto present in data, missing in site and price change found. eg 24.6.2025 url: https://www.knuspr.de/30241-traditionsgefluegel-putenbrustfilet
+promotion valid upto present in data, missing in site 25.6.2025 url: https://www.knuspr.de/98731-ludwigsluster-hackfleisch-gemischt-gewolft
+
+8.instock True in data, out of stock in site, promotion details and prices found in data, missing in site. eg url: https://www.knuspr.de/31586-handl-tyrol-ama-tiroler-bergluft-stangerl-mild
+
+9.image in svg format. eg:https://cdn.knuspr.de/images/company/knuspr-placeholder.svg for 13 rows.
+https://www.knuspr.de/97516-ketoconazol-klinge-20-mg-g-shampoo for 7 rows
+
+10.material composition taken wrong. eg: taken pfel instead Äpfel in data. url: https://cdn.knuspr.de/images/grocery/products/29908/29908-1673363802819.jpg
+
+11.promotion description present in site, missing in data, hence price change found. eg: -15%. url: https://www.knuspr.de/14087-bio-zitronen-netz
+========================
