@@ -1,0 +1,13 @@
+Found QA tool- ydata profiling tool.
+Advantages:
+	-Quick and Comprehensive Reports
+	-Easy to Use
+	-Interactive Reports
+	-Missing Data Handling Insights
+	-Open Source and Active
+
+Disadvantages:
+	-Limited Support for Non-tabular Data
+	-Occasional Compatibility Issues
+	-Performance Issues with Very Large Datasets 
+
