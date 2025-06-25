@@ -1,0 +1,121 @@
+
+Quality Assurance (QA)
+========================
+
+DataHut_DE_Flaschenpost_FullDump_20250624.CSV
+---------------------------------------
+1.price per unit contain two dots. eg: 36.900.00 €/kg. url: https://www.flaschenpost.de/p/ostmann/ostmann-safran-gemahlen
+
+2.prices present in data, missing in site and instock is True in data, but product is out of stock. url: https://www.flaschenpost.de/p/sinalco/sinalco-12er-mixkiste
+
+3.prices present in site, missing in data. eg: price is 3.99 in site. url: https://www.flaschenpost.de/p/innocent/innocent-orangensaft-mit-fruchtfleisch
+same issue: https://www.flaschenpost.de/p/henning-broscheit/apfel-pink-lady-01
+
+4.promotion description is 'topangebot' in data, 'Top-Angebot' in site. url eg: https://www.flaschenpost.de/p/sanbitter/sanbitter-alkoholfreier-aperitif
+
+5.price and price per unit taken wrong. eg:3.59 and 28.72 €/kg in data, 3.79 and 30.32 €/kg in site. url: https://www.flaschenpost.de/p/henning-broscheit/himbeeren
+same issue: https://www.flaschenpost.de/p/verschiedene-og-marken/bio-zitronen
+
+
+DataHut_DE_Rewe_FullDump_20250624.CSV
+-----------------------------------
+1.age_of_the_product,age_recommendations,barcode,beer_deg,brand_type,care_instructions,chilled,color,competitor_product_key,cooking_part,dietary_lifestyle,dimensions,distributor_address,dosage_recommendation,environmental,features,file_name_1,file_name_2,file_name_3,file_name_4,file_name_5,file_name_6,fit_guide,food_preservation,frozen,grade,grape_variety,handmade,heel_height,heel_type,importer_address,instructions,label_information,labelling,manufacturer_address,material,material_composition,max_heating_temperature,model_number,multi_buy_item_count,multi_buy_items_price_total,multibuy_items_pricesingle,netcontent,nutritions,occasion,package_sizeof_sellingprice,packaging,per_unit_sizedescription,percentage_discount,perfect_match,preparationinstructions,price_valid_from,price_was,processed_food,producthierarchy_level5,producthierarchy_level6,producthierarchy_level7,promo_limit,promotion_price,promotion_type,promotion_valid_from,random_weight_flag,rating,receipies,recycling_information,region,retail_limit,return_address,review,servings_per_pack,size,special_information,special_nutrition_purpose,standard_drinks,store_addressid,store_addressline1,store_addressline2,store_name,store_state,store_suburb,style,suitable_for,tasting_note,upc,usp,variants,vinification_details,vitamins,warning,warranty are empty.
+
+2.price per unit is included in site shown uom. eg:500g (1 kg = 2,78 €)
+
+3.logical error. price per unit is 1 l = 5.98 €, grammage quantity and unit is 500l, But price taken is for 500ml. url: https://shop.rewe.de/p/sil-fleckenspray-1-fuer-alles-0-5l/8522595
+same issue: https://shop.rewe.de/p/rewe-to-go-ice-tea-minze-zitrone-0-5l/8402210
+
+4.grammage quantity taken wrong.1000kg in data, 1kg in product name and logically. 
+
+5.logical error. price per unit is 1 kg = 9.04 €, price is 9.45, but grammage quantity and unit is 1045 kg, logically it is 1045g. url: https://shop.rewe.de/p/rewe-beste-wahl-weizenmehl-type-405-1kg/1211124
+
+6.grammage unit taken wrong. 750l in data, but price taken is for 750ml. url: https://shop.rewe.de/p/rewe-bio-apfelessig-5-saeure-naturtrueb-0-75l/8107568
+
+7.promotion valid upto data format different. eg:2025-06-29 in data, 29.06.2025 in site. 
+
+8.feeding recommendation is found as "<div id=""responsive_table_wrapper_0"" class=""responsive_table_wrapper""><div id=""responsive_table_0"" class=""responsiveTable table-responsive""><table class=""table table-striped"" cellspacing=""1"" cellpadding=""1"">Gr&ouml;&szlig;e des Hundes&nbsp;Menge pro Tag&nbsp;Sehr kleine Rassen (ca. 4kg)250-340gKleine Rassen (ca. 10kg)500-680gMittlere Rassen (ca. 20kg)840-1150gGro&szlig;e Rassen (ca. 35kg)1280-1750g&nbsp;Diese Angaben sind Richtwerte. Der individuelle Bedarf variiert je nach Alter,Rasse, Haltungsbedingungen und Aktivit&auml;t. Die Tagesration in mindestens 2 Portionen aufteilen und zimmerwarm f&uuml;ttern. Das zus&auml;tzliche F&uuml;ttern von Snacks sollte bei der Tagesration ber&uuml;cksichtigt werden. Stellen Sie stets ausreichend frisches Trinkwasser bereit." url: https://shop.rewe.de/p/zooroyal-mit-rinderherzen-400g/3279221
+
+9.instock True only 
+
+
+DataHut_IT_Conad_PriceExtractions_20250625.CSV
+----------------------------------------
+1.unique id is taken as product name. eg:11398609, url: https://spesaonline.conad.it/p/11398609--11398609
+
+2.grammage unit taken wrong. eg:0.075 ml in data, but price is for 0.075l. url: https://spesaonline.conad.it/p/enervit-gel-tropical-fruits-flavour-3-x-25-ml--11423314
+
+3.site shown uom price per unit taken wrong. eg: 1 Kg and 0.00 €/Kg in data, 300g and 21.90 € / Kg in site. url: https://spesaonline.conad.it/p/pecorino-di-amatrice-flli-petrucci--V_11457101_C
+
+4.price per unit taken wrong. eg: 9.17 € / Kg in site, 0.00 €/Kg in data, url: https://spesaonline.conad.it/p/gocciole-cremoso-gelato-al-gusto-di-vaniglia-con-mini-gocciole-435-g--11672675
+
+
+DataHut_IT_Easycoop_PriceExtractions_20250625.CSV
+----------------------------------------
+1.promotion valid upto format different. eg: 2025-07-02 in data, 02/07 in site. 
+
+2.grammage quantity taken wrong. eg: 1.400 ml in data, but price taken is for 1400ml for 66 rows. eg url: https://www.easycoop.com/perlana-liq-rosa-28lv-1-441l-7794292.html
+same issue: 1.890 ml in data, but price taken is for 1890ml for 22 rows. eg url: https://www.easycoop.com/dixan-liq-42lv-classico-1-89l-7793810.html
+
+3.product name is taken as site shown uom
+
+4.grammage quantity taken wrong. eg: price per unit is 2.32 €/PZ, price is 2.32, but grammage quantity is 1x500 pz. eg url: https://www.easycoop.com/kimono-stuzzicadenti-kimono-bar-500pz-3557800.html
+same issue: price per unit is 2.00 €/PZ, price is 2.00, but grammage quantity is 400 pz. eg url:https://www.easycoop.com/samurai-samurai-l-originale-stuzzicadenti-400-pz-3557790.html
+
+5.price per unit missing in site, but taken as 0.00 €/LT in data. eg url: https://www.easycoop.com/gaza-cola-250ml-7972449.html
+
+6.percentage discount and promotion description taken wrong,but prices are same. eg: 24 and -24% in data, 25 and -25% in site. url eg: https://www.easycoop.com/san-patrime-negramaro-salento-igp-san-patrime-750-ml-6991847.html
+
+7.promtoion valid upto expired and hence price changes found. 
+'2025-06-23'. eg url: https://www.easycoop.com/casa-modena-casa-modena-teneroni-hamburger-con-prosciutto-cotto-e-spinaci-2-x-75-g-4411300.html
+'2025-06-24'. eg url: https://www.easycoop.com/garden-gourmet-garden-gourmet-burger-di-soia-saporito-vegetariano-2-pezzi-150-g-7524654.html
+
+
+DataHut_AT_Interspar_PriceExtractions_20250625.CSV
+------------------------------------------
+1.logical error. price per unit is 0.40 €/Stück, price is 3.99, but grammage quantity is taken as 0.053 stuck. url: https://www.interspar.at/shop/weinwelt/caf-royal-ristretto-10-kapseln/p/7499173SG
+same issue: https://www.interspar.at/shop/weinwelt/nescaf-dolce-gusto-kapseln-grande-16-stueck/p/7103780SG
+
+2.logical error. eg: price per unit is 12.99 €/Stück, price is 12.99, but grammage quantity and unit is 12 X 52 stuck. url: https://www.interspar.at/shop/lebensmittel/pampers-feuchttuecher-fresh-clean-12-x-52-stueck/p/2020003231414
+
+3.capacity of the product is taken as grammage quantity and unit. eg:180kg. url: https://www.interspar.at/shop/haushalt/simpex-professional-koerperanalysewaage-bis-180kg/p/2020001659609
+
+4.regular and selling price is 0.00 for 2 rows
+
+5.site shown uom taken wrong, 'x 2'. url: https://www.interspar.at/shop/lebensmittel/sodastream-glasflaschen-duo-1l-x-2/p/2020003525827
+
+DataHut_AT_Mueller_PriceExtractions_20250625.CSV
+-------------------------------------------
+1.file name wrong, csv is capital. DataHut_AT_Mueller_PriceExtractions_20250625.CSV
+
+2.logical error. price per unit is 0.00 € / 1 l, price is 5.95, grammage quantity and unit is 1722l. url: https://www.mueller.at/p/lenor-weichspueler-orchidee-vanille-82wl-PPN3090864/?itemId=3090864
+
+
+DataHut_AT_Fressnapf_PriceExtractions_20250625.CSV
+---------------------------------------------
+1.grammage quantity taken wrong. 1 000 kg in data, but price per unit is €4.49/kg and price is 4.49. It indicates grammage quantity is 1kg. url: https://www.fressnapf.at/p/vitakraft-menu-vital-meerschweinchen-1000-kg-1004435/
+
+2.age is included in grammage quantity. eg: 12+3.5kg in data, 3.5kg in site and price taken is for 3.5kg. url: https://www.fressnapf.at/p/royal-canin-mini-ageing-12-35-kg-1002985008/
+
+3.grammage quantity taken wrong. 4X250 ml in data, but price taken is for 2X4X250 ml. url: https://www.fressnapf.at/p/smoothiedog-gemuesebeet-4x-250-ml--obstkorb-4x-250-ml-2155987/
+
+4.site shown uom contains beutel, but grammage unit is not btl. eg url: https://www.fressnapf.at/p/leo-loewenkatz-matatabi-fruechte-silvervine-fruechte-20-gramm-beutel-1729604/ 
+
+
+DataHut_AT_Mpreis_PriceExtractions_20250625.CSV
+-------------------------------------------
+1.breadcrumb contain Mehrweg and Einweg tags in data, missing in site. eg:Startseite > Getränke > Wasser, Limonaden & Energy drinks > Cola & Limonaden > Tirola Kola 0,5 Liter (Einweg)
+
+2.site shown uom missing for 525 rows
+
+3.site shown uom contain number only. eg:20. url: https://www.mpreis.at/shop/p/-starterset-cards-em-2024-presse1-808003
+
+4.logical error. price per unit is 0.15€ /l ,grammage quantity is 230100 ml and price is 3.49. url: https://www.mpreis.at/shop/p/soletti-dip-pikant-211199 
+
+5.grammage quantity taken wrong. 4500l in data, but from product name it is 4.500l. url: https://www.mpreis.at/shop/p/voeslauer-balance-juicy-plus-tray-6x-075-liter-410700
+
+
+DataHut_AT_Dm_PriceExtractions_20250625.CSV
+------------------------------------
+logical error. grammage quantity and unit is 500l , capacity is 500ml in site. Hence grammage unit should be ml. url: https://www.dm.at/denkmit-nachfuellflasche-mit-spruehkopf-nature-p4066447706741.html 
+========================
