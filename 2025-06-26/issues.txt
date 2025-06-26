@@ -1,0 +1,115 @@
+
+Quality Assurance (QA)
+========================
+
+DataHut_AT_Bipa_PriceExtractions_20250625.CSV
+-----------------------------------------
+1.2+1 GRATIS AKTION tag present in site, missing in data, but prices ave no difference. eg url: https://www.bipa.at/p/somat-all-in-1-power-gel/B3-348014
+
+2.page not found. url: https://www.bipa.at/p/B3-511700
+
+
+DataHut_AT_Billa_PriceExtractions_20250625.CSV
+---------------------------------------
+1.site shown uom contains beutel, but grammage unit is not btl. eg: 600g Beutel, grammage unit is g. url: https://shop.billa.at/produkte/11er-11-minuten-pommes-00600283
+
+2.site shown uom is not present in site along with product name, but present in data. Also site shows price for 20 piece box of 500ml bottle as 23.60. url: https://shop.billa.at/produkte/zwettler-export-lager-0021979
+
+3.site shown uom contain Waschgang and price per unit is in Waschgang, but grammage unit is not wg. eg: 100 Waschgang Flasche. url: https://shop.billa.at/produkte/ariel-waschmittel-fluessig-color-00478463
+
+4.2+1 AKTION tag is also present in site. eg url: https://shop.billa.at/produkte/vitamin-well-recover-00770293
+
+
+bahrainfinder_bah_2025_07.json
+----------------------------
+1.fields are not in order. 'details' comes after 'amenities'
+
+2.scraped_ts is '2025-06-24'
+
+3.furnished, depth is not empty
+
+4.description is '�ترجم" data-ved="2ahUKEwjVwd2Ruf6HAxWf0AIHHYzTAM8Q3ewLegQIBRAV">شقة فاخرة شبه مفروشة في توبلي، 2 غرف نوم، 2 حمام، صالة وغرفة طعام، 3 شرفات، مكيف سبليت، ستائر، ثلاجة، طباخ، خزائن مجهزة، ستالايت، حارس ومصعد.340 دينار بحريني (شاملة 25 دينار بحريني رسوم الكهرباء والماء).المساحة تقديريةSemi furnished luxury apartment in Tubli , 2 Bedrooms , 2 Bathrooms , sitting and dinning , 3 Balconies , Split AC, Curtains, Fridge, Cooker, Fitted Cupboards, Satelite, Watchman and Elevator.BD 340 ( inclusive BD 25 EWA).' url: https://bahrainfinder.bh/en/property/apartment-for-rent-in-tubli-38/
+
+5.bedrooms number is decimal. eg:1.5, 2.5. url: https://bahrainfinder.bh/en/property/apartment-for-rent-in-juffair-692/
+
+6.last update date taken wrong, 2025-06-23 in data, 2025-06-24 in site. url: https://bahrainfinder.bh/en/property/land-for-sale-in-arad-241/
+same issue for 2025-06-22
+
+
+aqar_ksa_2025_07.json
+-------------------
+1.Two new fields- advertising_license, advertiser
+
+2.Field order difference. 'id' comes after 'reference_number'
+
+3.price taken wrong. 1.8 in data line 30468. 1,350,000 in site. url: https://sa.aqar.fm/فلل-للبيع/عنيزة/حي-الملك-فهد/حي-الملك-فهد-مدينة-عنيزه-منطقة-القصيم-6179132
+
+4.line 58673- "price_per":"يومي" in data, "سنوي" in site (daily in data, annual in site). 
+
+5.scraped_ts is "2025-06-22"
+
+
+machinerytrader_2025_06_25.csv
+------------------------
+1.Two category columns. "Category" and "category"
+
+2.Two columns "Vin" and "VIN"
+
+3.phone number format different in data and site. eg: (816) 286-4102 in data, +1 816-286-4102 in site.url: https://www.machinerytrader.com/listing/for-sale/234789711/2024-volvo-a40g-off-highway-trucks
+
+4.640 fields 
+
+5.company phone is "+1 905-857-6200 ext. 1" for 8 rows.
+
+
+DataHut_HU_Tesco_FullDump_20250626.CSV
+----------------------------------
+1.brand, image_url_5, producthierarchy_level4 are not empty
+file_name_1, file_name_2, file_name_3, file_name_4 are empty
+
+2.brand,producthierarchylevel_4 and product name taken wrong. 'aco' and 'асо étkezési lencse 500 g' in data, 'Paco' and 'Расо étkezési lencse 500 g' in site. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004009862681
+
+3.grammage quantity taken wrong. 12X85 kg in data, 12X85 g in site, also price taken is for 12X85 g. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004020206133
+same issue: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2005105478952
+
+4.grammage quantity taken wrong. 75l in data, but price taken is for 0.75l url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004121222383
+
+5.grammage quantity taken wrong. 800X800 g in data, 800g in site. url: https://bevasarlas.tesco.hu/groceries/hu-HU/products/2004010272233
+
+
+DataHut_CH_Coop_FullDump_20250626.CSV
+---------------------------------
+1.file_name_4, image_url_4, file_name_5, image_url_5, file_name_6, image_url_6 fields are also present.
+
+2.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+3.site shown uom missing for 4343 rows
+
+4.promotion price present in data, missing in site. eg:promotion price 7.95 in data. url: https://www.coop.ch/de/aktionen/aktuelle-trophy/glaeser-2-stueck/p/7370689
+
+5.Product comes under Fleisch&Flsch, but site shown uom, grammage quantity and unit are not taken from price per unit eg: site sown uom is 1000g,price per unit is 1.61/100g. url: https://www.coop.ch/de/lebensmittel/fleisch-fisch/charcuterie-wurstwaren/trockenfleisch-salami/salami-ganz-salsiz/blotti-hirschsalami-ca/p/3064026
+
+6.image urls are present, file names are empty.
+
+
+DataHut_SI_Dm_FullDump_20250626.CSV
+--------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.instock True only
+
+3.breadcrumb taken wrong.eg:Domov > Nega in dišave > Nega za moške > Moški deodoranti in data, Domov in site. url: https://www.dm.si/balea-men-deodorant-v-spreju-fresh-p4067796183887.html
+
+
+DataHut_SI_Spar_FullDump_20250626.CSV
+---------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6, producthierarch_level7 are empty.
+
+2.breadcrumb contains small letters in data, capital letters in site. eg:Domov > SADJE IN ZELENJAVA > Suho sadje in oreščki > Suho sadje > SUHE MARELICE, SPAR, 400G in data, DOMOV > SADJE IN ZELENJAVA > SUHO SADJE IN OREŠČKI > SUHO SADJE > SUHE MARELICE, SPAR, 400G in site
+
+3.instock True only
+
+4.grammage unit taken wrong. eg:700l in data, 700ml in product image. url: https://www.spar.si/online/diplo-cistilo-supercleaner-700ml/p/642703
+
+5.image urls are present, file names are empty.
+========================
