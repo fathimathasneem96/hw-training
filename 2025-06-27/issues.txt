@@ -119,4 +119,12 @@ Field order difference. 'id' comes after 'reference_number'
 
 5.price per taken wrong.يومي in data, سنوي in site. url: https://sa.aqar.fm/%D8%B9%D9%85%D8%A7%D8%A6%D8%B1-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85/%D8%AD%D9%8A-%D8%A7%D9%84%D9%86%D8%B2%D9%87%D8%A9/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%B7%D8%B1%D9%8A%D9%82-%D8%A7%D9%84%D8%A7%D9%85%D9%8A%D8%B1-%D9%86%D8%A7%D9%8A%D9%81-%D8%A8%D9%86-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2-%D8%AD%D9%8A-%D8%A7%D9%84%D9%88%D8%A7%D8%AD%D8%A9-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9-5912746
 
+hepsiemlak_tur_2025_07.json
+------------------------
+1.scraped_ts, date - 22, 23, 24, 25, 26
+
+2.sale completed, hence prices are missing in site. eg url: https://www.hepsiemlak.com/en/proje/tekirdag-suleymanpasa/home-59-projesi-3787
+same issue: https://www.hepsiemlak.com/en/proje/canakkale-canakkale-merkez/solo-dagci-apartmani-projesi-5963
+
+3.price change found. "price": "5450000.0" in data, "5250000.0" in site. url: https://www.hepsiemlak.com/en/izmir-konak-guzelyali-satilik/daire/0-44598890
 ========================
