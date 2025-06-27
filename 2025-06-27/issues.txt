@@ -1,0 +1,122 @@
+Quality Assurance (QA)
+========================
+
+DataHut_SI_Mercator_FullDump_20250626.CSV
+-------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.instock True only
+
+3.image urls are present, file names are empty.
+
+4.grammage unit taken wrong. eg: 4X95 kg in data, but price taken is for 4X95 g. url: https://mercatoronline.si/izdelek/19470462/kokosja-pasteta-argeta-junior-4-x-95-kg
+
+grammage quantity taken wrong. 75l in data, but price taken is for 0.75l. url: https://mercatoronline.si/izdelek/24231/chardonnay-bagueri-vrhunsko-belo-vino-vinska-klet-goriska-brda-0-75-l
+same issue: https://mercatoronline.si/izdelek/19144278/sampanjec-mumm-grand-cordon-0-75-l
+
+
+servicesbahrain_bah_2025_07.json
+----------------------------
+1.mobile number is '32016570', '32153555', '33330390', '37777470', '39443889', '66661500'
+
+2.telephone number is found as '0', '0000000', '(+973)', '+973NA'
+
+3.address is 'Flat 0, Building 0 , Road 0, Block 0' for 2 rows.
+
+
+haraj_ksa_2025_07.json
+---------------------
+1.fields are not in order. order in data is "id", "url","broker_display_name","broker","category","category_url","title","property_type","sub_category_1","sub_category_2","description","location","depth","price","currency","price_per","bedrooms","bathrooms","furnished","rera_permit_number","dtcm_licence","scraped_ts","amenities","details","agent_name","reference_number","number_of_photos","user_id","published_at","phone_number","date","iteration_number","latitude","longitude"
+
+2.phone_number is empty
+
+3.scraped_ts,date is '2025-06-22'
+
+4.category url is in wrong format. eg:/tags/%D8%A7%D8%AF%D9%88%D8%A7%D8%B1%20%D9%84%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1
+
+5.ad is deleted. eg url: https://haraj.com.sa/11159762415/%D8%B9%D9%85%D8%A7%D8%B1%D9%87_%D8%A8%D8%AF%D8%B1%D9%88%D9%85_%D9%88%D8%AF%D9%88%D8%B1_%D8%B9%D8%B6%D9%85_%D9%84%D9%84%D8%A8%D9%8A%D8%B9_%D8%AE%D9%85%D9%8A%D8%B3_%D9%85%D8%B4%D9%8A%D8%B7_%D8%A7%D9%84%D8%B1%D8%B5%D8%B1%D8%A7%D8%B5/
+
+
+bayut_ksa_2025_07.json
+---------------------
+1.fields are not in order. Four additional fields - "completion_status", "advertiser_designation", "ad_license_number", "fal_license_number"
+
+2.depth is not empty.
+advertiser_designation, reference_number are empty.
+
+3.price and currency present in site, missing in data. url: https://www.bayut.sa/en/property/details-87586048.html
+
+4.published at taken wrong. eg: 18 March 2025 in data, 19 March 2025 in site. url: https://www.bayut.sa/en/property/details-87583518.html
+same issue: https://www.bayut.sa/en/property/details-87544555.html
+
+5.scraped_ts, date is '2025-06-24'
+
+6.title and description is found as 'null' for line 7905 and 17920.eg url: https://www.bayut.sa/en/property/details-87496980.html
+
+7.amenities taken wrong. 'Parking Spaces: 1,000' given splitted as 000 and Parking Spaces:1. url: https://www.bayut.sa/en/property/details-87605675.html
+
+8.agent name is - for 13 rows.
+
+
+wasalt_ksa_2025_07.json
+----------------------
+1.fields are not in order. 
+new fields- "project","rega_ad_license_no","fal_license_number"
+
+2."amenities","user_id" also empty
+
+3.price and currency present in site under property description, missing in data. url: https://wasalt.com/en/property/rent/apartment-with-3-bedrooms-5742262
+
+4.scraped_ts, date is 2025-06-22
+
+5.price per change found. سنة in data, Year in site. eg url: https://wasalt.sa/en/property/rent/apartment-426-sqm-with-3-bedrooms-5754002
+
+6.line 13284- "bathrooms":"+9" in data, '9+' in site. url: https://wasalt.sa/en/property/sale/villa-375-sqm-with-3-apartments-facing-north-232765
+
+
+bahrainfinder_bah_2025_07.json
+--------------------------
+1.fields are not in order. 'details' comes after 'amenities'
+
+2.scraped_ts, date is 2025-06-24
+
+3.furnished, depth
+
+4.price variation found. eg:1037 in data, 1036.834  in site. url: https://bahrainfinder.bh/en/property/land-for-rent-in-ras-zuwaid-7/
+
+
+baity_bah_2025_07.json
+---------------------
+no issues
+
+
+ajmanded_uae_2025_07.json
+----------------------
+no issues
+
+
+sedd_uae_2025_07.json
+-------------------
+1.data count-902
+
+2."mobile_number", "email_address", "the_unified_number_of_the_establishment", "street", "city", "region", "district", "building_number", "additional_number" are empty
+
+3.url is same for all entries
+
+4.license number and unique id are same values
+
+
+aqar_ksa_2025_07.json
+-------------------
+1.Two new fields- "advertising_license", "advertiser"
+Field order difference. 'id' comes after 'reference_number'
+
+2.broker is number. eg:'2521443'
+
+3.scraped_ts, date is '2025-06-22'
+
+4.price taken wrong. 1.8 in data . 1,350,000 in site. url: https://sa.aqar.fm/فلل-للبيع/عنيزة/حي-الملك-فهد/حي-الملك-فهد-مدينة-عنيزه-منطقة-القصيم-6179132 
+
+5.price per taken wrong.يومي in data, سنوي in site. url: https://sa.aqar.fm/%D8%B9%D9%85%D8%A7%D8%A6%D8%B1-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85/%D8%AD%D9%8A-%D8%A7%D9%84%D9%86%D8%B2%D9%87%D8%A9/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%B7%D8%B1%D9%8A%D9%82-%D8%A7%D9%84%D8%A7%D9%85%D9%8A%D8%B1-%D9%86%D8%A7%D9%8A%D9%81-%D8%A8%D9%86-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2-%D8%AD%D9%8A-%D8%A7%D9%84%D9%88%D8%A7%D8%AD%D8%A9-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9-5912746
+
+========================
