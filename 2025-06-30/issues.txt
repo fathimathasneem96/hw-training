@@ -82,3 +82,39 @@ iowarealty_2025_07_05.json
 2.description is "Buying and selling real estate is my passion; delivering exceptional client service is my mission. As a sales associate with Iowa Realty, the state's premier real estate brokerage, I provide insightful local sales expertise backed by the brand's statewide marketing engine and deep agent base. Whether you are buying or selling, I would love the opportunity to guide you through the complex property transaction process to achieve your property ownership goals." for 378 entries.
 
 3.line 25- title contain extra characters. "title":"Full-Time Realtor, Counselor &amp; Real Estate Advisor" in data, "Full-Time Realtor, Counselor & Real Estate Advisor" in site.
+
+bhgre_2025_07_05.json
+--------------------
+1.new field - "additional_fields"
+
+2.fields are not in order
+
+3."additional_fields" is empty
+
+4.line 6155- "description":"!!"
+
+5.line 7236- "description":","
+
+6.line 8129- zipcode taken wrong. "zipcode":"07456" in data, 07436 in site. url: https://www.bhgre.com/agent/detail/nj/oakland/agents/rosie-thompson/aid-P00200000GotpjPTx1MaXabZwhDAo9RCtuxZAm5J
+
+7.office phone number contain extra numbers in data. eg:line 2885- "+770414206056463" in data, till 2060 in site. url: https://www.bhgre.com/agent/detail/ga/tucker/agents/johnson-jordan/aid-P00200000FDds6X5krhUkztkFughB9AWEvhoIwPA
+same issue line 9127
+
+8.facebook url is "Facebook.com/dougberry.realtor" in line 9347
+"Facebook.com/inandaroundcharlotte" in line 1909
+
+9.other urls contain non url values. eg: line 5178- "other_urls":["bhghistoric"]
+
+
+longandfoster_2025_07_05.json
+----------------------------
+1.fields are not in order
+
+2.facebook url taken wrong, that is contain unwanted character '?' in line 3868 and 4787. eg: "https://?facebook.com/sandyherrmann21" in data, correct url is "https://www.facebook.com/sandyherrmann21"
+
+3.line 3055- facebook url is "https://wwwfb.me/saralincolnrealtor"
+
+4.line 199- "linkedin_url":"https://hwww.linkedin.com/in/dondrell-wilson-2b1856323/"
+
+
+========================
