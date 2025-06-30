@@ -1,0 +1,84 @@
+
+Quality Assurance (QA)
+========================
+
+emlakjet_tur_2025_07.json
+-----------------------
+1.scraped_ts, date are 23,24,25,26,27
+
+2.ad is removed. eg url: https://www.emlakjet.com/kiralik-daire/manisa-salihli-durasilli-mahallesi?deleted=true
+
+3.agent name, broker, broker display name taken from phone number. eg url: https://www.emlakjet.com/ilan/sahibinden-kiralik-dukkan-17264366/
+
+
+DataHut_AT_Mueller_PriceExtractions_20250630.CSV
+------------------------------------------
+1.File name wrong-csv capital. DataHut_AT_Mueller_PriceExtractions_20250630.CSV
+
+2.logical error. price per unit is 0.00 € / 1 l, price is 5.95, grammage quantity and unit is 1722l. url: https://www.mueller.at/p/lenor-weichspueler-orchidee-vanille-82wl-PPN3090864/?itemId=3090864 
+
+
+DataHut_AT_Mpreis_PriceExtractions_20250630.CSV
+--------------------------------------------
+1.breadcrumb contain Mehrweg and Einweg tags in data, missing in site. eg: Startseite > Getränke > Bier > alkoholfreies Bier > 0,0 AF 0,5 Liter (Mehrweg)
+
+2.site shown uom missing for 525 rows.
+
+3.logical error. grammage quantity taken wrong. 4500l in data, but from product name it is 4.500l. url: https://www.mpreis.at/shop/p/voeslauer-balance-juicy-plus-tray-6x-075-liter-410700
+same issue: 1500l in data, 1.500l from product image. url: https://www.mpreis.at/shop/p/jeden-tag-hygienespueler-306126
+
+
+ebby_2025_07_05.json
+------------------
+1.fields are not in order. "profile_url","first_name","middle_name","last_name","image_url","office_name","address","description","languages","social","website","email","title","country","city","zipcode","state","agent_phone_numbers","office_phone_numbers"
+
+2.email is empty
+
+3.duplicate rows- line 260 and 261. url: https://www.ebby.com/bio/company
+
+4.line 640- "twitter_url":"https://twitter.com/www.twitter.com/jbutcher616/". 
+
+
+firstweber_2025_07_05.json
+-----------------------
+1.fields are not in order
+
+2.description starts with "About Us", "About". eg:line 1,2 etc. eg url: https://www.firstweber.com/bio/5StarTeam
+
+3.description is "About Antonina RizzaCome back for more information". url: https://www.firstweber.com/bio/antoninarizza
+
+4.page not found error. url: https://www.firstweber.com/bio/tonywendorfassociates
+
+5.line 480- "website":"https://www.http://wwwmartastephenson@firstweber.com"
+
+6.line 632- "website":"https://www.https://wisconsin.condos/"
+
+7.title taken wrong. eg: "akumlien@firstweber.com" in data, "REALTOR®" in site. url: https://www.firstweber.com/bio/aprilkumlien
+
+8.line 642- "agent_phone_numbers":["Brittany - 262-573-9083"]
+
+9.line 249 - in social, "other_urls":["https@gerryfudala"]
+
+10.line 55- in social, "other_urls":["https//antoninarizza-first","https//antoninarizza.instagram.com"]
+
+11.line 422- " in site is replaced with \" in data in description
+
+
+ewm_2025_07_05.json
+-----------------
+1.fields are not in order
+
+2.office name missing in data, present in site as "Berkshire Hathaway HomeServices EWM Realty". url: https://www.ewm.com/agents/1801659/Lori+Farber
+
+3.line 486- "title":"COO"
+
+4.line 450-description present in site, missing in data. url: https://www.ewm.com/agents/1777310/RJ+%22Pip%22+Delange
+
+
+iowarealty_2025_07_05.json
+-----------------------
+1.fields are not in order
+
+2.description is "Buying and selling real estate is my passion; delivering exceptional client service is my mission. As a sales associate with Iowa Realty, the state's premier real estate brokerage, I provide insightful local sales expertise backed by the brand's statewide marketing engine and deep agent base. Whether you are buying or selling, I would love the opportunity to guide you through the complex property transaction process to achieve your property ownership goals." for 378 entries.
+
+3.line 25- title contain extra characters. "title":"Full-Time Realtor, Counselor &amp; Real Estate Advisor" in data, "Full-Time Realtor, Counselor & Real Estate Advisor" in site.
