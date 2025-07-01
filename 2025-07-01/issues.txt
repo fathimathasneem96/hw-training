@@ -119,3 +119,13 @@ home_realestate_2025_07_05.json
 8.line 123- agent phone number format different in data and site. (531) 500-3572 in site, 5315003572 in data. url: https://clientcare.homerealestate.com/
 
 9.line 59- "other_urls": ["http://KateBugbee", "http://KatieBugbee"]
+
+
+bayut_uae_project_2025_07_01.json
+------------------------------------------
+project status and progress present in data, missing in site. url: https://www.bayut.com/for-sale/property/dubai/dubai-marina/ciel-tower/
+
+
+dari_ae_2025_07_01.json
+----------------------
+phone number 2 present in data, missing in site. eg url: https://www.dari.ae/en/app/director
