@@ -1,0 +1,121 @@
+
+Quality Assurance (QA)
+========================
+
+coldwellbanker_us_2025_07_05.json
+------------------------------
+1.agent phone number is taken as office number and agent phone number is empty in data for many rows. eg: line 36580. url: https://www.coldwellbanker.com/il/naperville/agents/lesle-koepp/aid-P00200000FSk0VZNMWIVpnrWz4ysASY1GOF1nPDy
+
+2.phone number format differnet in data and site. eg: +19844841138 in data, (984) 484-1138 in site. 
+
+3.line 36573-city and title taken wrong. "city":"SHOREWOOD" and "title":"Sales Associate" in data, "Shorewood" and "Licensed Real Estate Salesperson" in site. url: https://www.coldwellbanker.com/il/city-unavailable/agents/amber-kolodziej/aid-P00200000FDxXj5H2UJe1bAokcyry4td6OEykASW
+
+4."description":"1 2 3 4" for 5 rows 
+
+5.line 55673- title taken wrong."Sales Associate" in data,  "Luxury Property Specialist" in site. url: https://www.coldwellbanker.com/nm/albuquerque/agents/wende-calvert/aid-P00200000FDdrQj5r8YNfft2CVlTjBezQlQU8MhY
+
+6.line 66909- "first_name":"03"
+
+7.line 56478- "first_name":"Abraham M. \"Abraham\" Thomas" ,middle name and last name is empty
+
+8.duplicate data found, except profile url, but while opening urls, both leads to same page. eg: lines 34757 and 73951. same issue for image url repeated entries.
+
+9.line 4167-title present in data, missing in site.
+
+10. office phone number contain extra characters. eg: "+11024619521;ext=6"
+
+11.line 59931- "website":"www.https://JenOlin.com"
+
+
+longandfoster_2025_07_05.json
+--------------------------
+1.office phone number is taken as both agent phone number and office phone number. eg url: https://www.longandfoster.com/AgentSearch/AJUZIEERONDU-11267751
+
+2.last name taken wrong. eg: line 372. "WattsFagan" in data, "Watts-Fagan" in site url: https://www.longandfoster.com/AgentSearch/MyeshaWattsFagan-10918661
+
+3.line 1550- description contain unwanted characters "<span style=font-family:Merriweather;mso-fareast-font-family:&quot;Times New Roman&quot;; mso-bidi-font-family:&quot;Times New Roman&quot;;color:black>" in the beginning in data. url: https://www.longandfoster.com/AgentSearch/RoadstoHome-10447585
+
+4.line 3197- " replaced by &quot; in data in description url: https://www.longandfoster.com/AgentSearch/JaneFairweatherTeam-10724403
+
+5.line 869- description contin unwanted characters ".MsoNormal { color: #2a72b8; }" in the beginning. url: https://www.longandfoster.com/AgentSearch/NancySteorts-10483355
+
+6.image url missing in data, but present in site as "https://www.longandfoster.com/images/recos/35009/NoPhoto-Agent.gif?v=1.2". eg line 17
+
+7.facebook url contain unwanted character '?' in line 4629 and 3735. eg: "https://?facebook.com/marian.fragettieiermann" in data, correct url is "https://www.facebook.com/marian.fragettieiermann"
+
+8.line 5873- facebook url is "https://www//facebook.com/kristie.s.bartley"
+line 2596 - facebook url found as "https://www.facebookwww.facebook.com/.com/home.php#/ricki.gerger?ref=search&sid=1029152061.315"
+
+9.line 199- linkedin url is "https://hwww.linkedin.com/in/dondrell-wilson-2b1856323/"
+
+10.line 2993- other urls found as "https://youtube.deblepper/"
+
+
+bhgre_2025_07_05.json
+-------------------
+1.description taken as "<" in data, blank in site url: https://www.bhgre.com/agent/detail/me/windham/agents/craig-dickson/aid-P00200000FDdrS9YdAW9WXtTwXsvuIWtVpK2HgBM
+
+2.office phone number contain extra numbers in data. eg:line 3885- "+770414206056463" in data, till 2060 in site. url: https://www.bhgre.com/agent/detail/ga/tucker/agents/johnson-jordan/aid-P00200000FDds6X5krhUkztkFughB9AWEvhoIwPA
+same issue line 9127
+
+3.line 7025- twitter url is "www.twitter/@performance_re"
+
+4.other url contains non url values, but empty in site. eg: line 1337- "other_urls": ["homesbymiriamrey"]. url: https://www.bhgre.com/ca/riverside/agents/miriam-rey/aid-P00200000FDdrZiPw8Wk8xjSB7vF3aSnHnAz2rr3
+
+5.zipcode taken wrong. "07456" in data, "07436" in site for 8 rows. eg url: https://www.bhgre.com/nj/oakland/agents/karen-adatto/aid-P00200000GlzvdnZ0UbVwFreNiSP6CQtPYySPNzd
+
+
+firstweber_2025_07_05.json
+----------------------
+1.name is taken as title. eg:"Jeff & Jaclyn - Your Friends in Real Estate" url: https://www.firstweber.com/bio/yourfriendsinrealestate
+
+2.email is taken as title. eg: "akumlien@firstweber.com". url: https://www.firstweber.com/bio/aprilkumlien
+
+3.email is taken along with title. "REALTOR® | Julie.Janowak@FirstWeber.com" -line 352.
+
+4.description begins with "AboutAbout MeAs ", "About " etc. eg: ine 90, url: https://www.firstweber.com/bio/bobwinding
+
+5.line 547,598- image url is "https://content.mediastg.net/media/companyset/fwrgf/noagentphoto.jpg" , but no image in site.
+
+6.line 249- other urls is "https@gerryfudala"
+
+7.line 55- "other_urls": ["https//antoninarizza-first", "https//antoninarizza.instagram.com"]
+
+
+ewm_2025_07_05.json
+------------------
+1.office name present in site as "Berkshire Hathaway HomeServices EWM Realty", missing in data. url: https://www.ewm.com/agents/1801659/Lori+Farber
+
+2.description present in site, missing in data. eg url: https://www.ewm.com/agents/1776814/Catarina+Z.+Teles+Da+Silva
+
+3.office name taken wrong. eg:line 43,7,313,381,544,533,539,89,536 etc. eg:  "Berkshire Hathaway HomeServices EWM Realty - Las Olas" in site, "The Group | RE" in data. url: https://www.ewm.com/agents/1777214/Akos+Straub
+
+4.name is taken as office name. eg url: https://www.ewm.com/agents/1776747/Rodd+Sheradsky%2C+P.A.
+
+5.three image urls directly downloads when clicked on link. eg: https://dtzulyujzhqiu.cloudfront.net/berkshirehathawayhomeservicesewmrealty11930/profiles/1725177189_1777047.jpg
+
+
+iowarealty_2025_07_05.json
+-------------------------
+1.name contains first, middle and last names, but taken as only first name. eg: "Sibley and Co Real Estate Team" url: https://www.iowarealty.com/bio/sibleyandco
+
+
+home_realestate_2025_07_05.json
+--------------------------
+1.description present in site, missing in data -line 35 url: https://chelseadavis.homerealestate.com/
+
+2.line 153- profile url doesn't lead to specified page. url: https://bobtallichet.homerealestate.com/
+
+3.line 62- image url present in data, but that image is not present in site. url: https://amybirkholz.homerealestate.com/
+
+4.description is repeated in data. eg: line 21, description taken thrice in data. url: https://kvcoreuser.homerealestate.com/
+
+5.title present in data, missing in site. eg: line 33. url: https://kimmarieschradereberspacher.homerealestate.com/
+
+6.name is taken as title. eg: line 25,104. url: https://randyandroma.homerealestate.com/
+
+7.city 'Lincoln' only
+
+8.line 123- agent phone number format different in data and site. (531) 500-3572 in site, 5315003572 in data. url: https://clientcare.homerealestate.com/
+
+9.line 59- "other_urls": ["http://KateBugbee", "http://KatieBugbee"]
