@@ -23,7 +23,8 @@ listed_by is empty
 
 DataHut_AU_Coles_FullDump_20250702.CSV
 -----------------------------------
-
+1.file_name_1 is empty
+2.site shown uom missing for 2446 rows
 
 coldwellbanker_us_2025_07_05.json
 ------------------------------
