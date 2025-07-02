@@ -1,0 +1,97 @@
+Quality Assurance (QA)
+========================
+
+nawy_egp_2025_07_01.json
+---------------------
+delivery in taken wrong. eg: 2025 in data, delivered in site. url: https://www.nawy.com/compound/274-zed/property/13749-zed-towers-el-sheikh-zayed-apartment 
+same issue for many rows with delivered in "2025"
+
+
+bayut_egp_2025_07_01.json
+----------------------
+1.Two new fields "completion_status", "ownership"
+
+2.price per is [' ', Monthly, Daily, Yearly, Weekly]
+
+3.id is number found in url, not from reference number
+
+
+dubizzle_uae_2025_07_01.json
+----------------------
+listed_by is empty
+
+
+DataHut_AU_Coles_FullDump_20250702.CSV
+-----------------------------------
+
+
+coldwellbanker_us_2025_07_05.json
+------------------------------
+1.office phone number contain extra characters. eg:+11024619521;ext=6, +12013106560;ext=1. eg url: https://www.coldwellbanker.com/nj/closter/agents/lana-henriques/aid-P00200000FSjzuTJDhERf9ftgBr3VZBMKQYqvo6h
+
+2.city and title taken wrong. "city":"SHOREWOOD" and "title":"Sales Associate" in data, "Shorewood" and "Licensed Real Estate Salesperson" in site. url: https://www.coldwellbanker.com/il/city-unavailable/agents/amber-kolodziej/aid-P00200000FDxXj5H2UJe1bAokcyry4td6OEykASW 
+
+3.line 59931- "website":"www.https://JenOlin.com"
+
+
+intero_realestate_2025_07_05.json
+--------------------------------
+1.fields are not in order
+
+2.runtime error. eg url: https://www.intero.com/directory/agents/brooks-shirk
+https://www.intero.com/directory/agents/salu-joseph
+
+3.line 135 - "languages":["Hebrew","Old French (842—Ca. 1400)"]
+
+4.url does not lead to specified profile page. eg url: https://www.intero.com/directory/agents/patrick-g-adair
+
+5.description taken wrong. url: https://www.intero.com/directory/agents/christopher-chu
+
+6.description present in site, missing in data. url: https://www.intero.com/directory/agents/a-chris-wright
+
+7.website contain extra slashes in data. "http:////awright.intero.com/" in line 517
+
+
+berkshirehathaways_2025_07_05
+----------------------------
+1.line 35792- "description":"About me! 7/24/24", email is small cases in data, capital cases in site. url: https://www.bhhs.com/utah-properties-ut301/salt-lake-city/terrie-johnson/cid-3053412
+
+2.line 15603- image url taken wrong as "https://www.firstrealtorsks.com/topeka/annie-foust/cid-1121712/en3.thumb.800.480.png?ck=1750472956"
+
+3.line 22847- "website":"kathrynearly.verani.com"
+
+
+harrynorman_2025_07_05
+--------------------
+1.email is empty
+
+2.description begins with "UNMATCHED SERVICE AND EXPERTISE" for many entries
+
+3.line 112- website is wrong. "website":"https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fchristianezeh.harrynorman.com%2F&data=05%7C02%7Cchrist"
+line 90- same issue "website":"https://pageandcarlhenry.harrynorman.com/?_gl=1*1ix8bzy*_ga*NDk4MjM0MTc4LjE3NDY2NDA4MDU.*_ga_9P80WDZGKL*czE3NDY3NDA4ODIk"
+
+
+huff_realty_2025_07_05.json
+---------------------------
+1.email is empty
+
+2.line 344- profile url found wrong. "http://app.huff.com/AngelaRose" in data, correct url is "https://angelarose.huff.com/"
+
+3.line 252- description is incomplete. url: https://www.martiniteam.com/
+
+4.line 273- "agent_phone_numbers":["513-502-8248 call or text"]. url: https://www.yourrealestatenerd.com/
+
+5.line 65- "facebook_url":"https://www.facebook.com/?ref=tn_tnmn"
+
+
+rector_hayden_2025_07_05
+-----------------------
+1.email is empty
+
+2.line 98- title present in data, missing in site. "office_phone_numbers":["() -"] url: https://kimberlymullins.rhr.com/
+
+3.line 119- "other_urls":["http://1happyhomegirl"]
+
+4.line 121, 158 and 13 leads to same page of "The Bells group", urls as slight variations like http, https and / at end. 
+
+======================
