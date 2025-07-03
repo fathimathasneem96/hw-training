@@ -1,0 +1,149 @@
+Quality Assurance (QA)
+========================
+
+DataHut_IT_Easycoop_PriceExtractions_20250702.CSV
+---------------------------------------
+1.extraction date is "2025-07-01"
+
+2.grammage unit taken wrong. eg: 1.400 ml in data for 66 rows, but price taken is for 1.400 l logically. eg url: https://www.easycoop.com/perlana-liq-rosa-28lv-1-441l-7794292.html
+same issue for 1.575 ml for 33 rows,1.890 ml for 22 rows.
+
+3.price per unit is taken as 0.00 €/LT in data, missing in site. url: https://www.easycoop.com/gaza-cola-250ml-7972449.html
+
+4.promotion valid upto expired, hence price change found. "2025-07-02" (286 rows). eg url: https://www.easycoop.com/pesto-modenese-per-tigelle-la-zoca-90-g-4991531.html
+same issue: "2025-07-01"(18194 rows). eg url: https://www.easycoop.com/mulino-bianco-mulino-bianco-pagnottelle-classiche-pane-ideale-per-panini-360g-5188780.html
+
+5.url do not lead to product page. url: https://www.easycoop.com/nettarine-bianche-it-b-i-vh750-7985521.html
+
+
+coldwellbankerinternational_2025_07_05.json
+-------------------------------------
+1.fields are not in order
+
+2.line 2388- agent phone number present in site,missing in data. url: https://www.coldwellbankerinternational.com/agent/FrQMbNnb
+
+3.line 1474. description is '-'
+
+4.office phone number is "+34" for 8 rows. 
+
+5.line 2786- "agent_phone_numbers":["+52 +524151523197"] url: https://www.coldwellbankerinternational.com/agent/CwSa4Sydj
+
+houlihanlawrence_2025_07_05.json
+-----------------------------
+1.state "NY","CT" only
+
+2."title":"at Houlihan Lawrence" for 32 rows. eg url:https://www.houlihanlawrence.com/bio/architecturalhomesnewyork
+
+
+alliebeth_2025_07_05.json
+------------------
+1.state 'TX' only
+
+2.line 83- facebook page not found. "facebook_url":"https://www.facebook.com/search/top?q=caroline.goodson.1"
+same issue: line 158- "facebook_url":"https://www.facebook.com/search/top?q=gray%20borcherding"
+
+
+realtysouth_2025_07_05.json
+---------------------
+1.profile url taken wrong for 27 rows. eg url: https://www.realtysouth.com/roster/agents/67
+
+2.description is "Hi, my name is _Default Content Team, and as a professionally trained and licensed agent, I strive to provide my clients with powerful marketing with the use of current technology tools, stay relevant on market trends, and I am strategically prepared to guide my clients to success in the shortest amount of time, with the greatest return. RealtySouth's brand is trusted in the communities in which we serve and trusted in the hearts of their agents. That's why hundreds of agents join the largest real estate company in Alabama - year after year. I look forward to serving you now and through your buying and selling journey over the years to come." for 3 rows
+
+3.line 199- "facebook_url":"httpswww.facebook.com/profile.php?id=61558680755814&mibextid=LQQJ4d" 
+"other_urls":["https//www.youtube.com/@EdScott-HarbiCoRealtySouth"]
+
+
+woodsbros_2025_07_05.json
+----------------------
+1.languages is not empty
+email is empty
+
+2.description present in site, missing in data, eg: line 99. url: http://aprilbohling.com/
+
+3.profile url taken wrong for 4 rows. eg url: https://www.woodsbros.com/roster/agents/0
+
+4.line 102- description taken incomplete. "HELLO" only in data. url: https://davidderun.woodsbros.com/
+
+5.line 109- image in gif format. "https://content.mediastg.net/Dynamic/RealEstate/company/374/account/347552/photo.gif"
+
+6.line 101- title present in data as "Sales Associate", but missing in site and from description, title is REALTOR. url: https://kelbynitz.woodsbros.com/
+same issue for line 8, 138
+
+7.line 142- "linkedin_url":"http://Byknows1"
+
+
+DataHut_AT_Mueller_FullDump_20250703.CSV
+-----------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are also empty
+
+2.image urls are present, file names are empty
+
+3.instock True and False
+
+4.logical error. price per unit is 0.00 € / 1 l, price is 5.95, but grammage quantity is taken as 1722 l. while checking image grammage quantity is 1.722 l. url: https://www.mueller.at/p/lenor-weichspueler-orchidee-vanille-82wl-PPN3090864/?itemId=3090864 
+
+5.instock is True, but product is unavailable. url: https://www.mueller.at/p/gregs-tagebuch-mein-hausaufgabenheft-2025-2026-PPN3099839/?itemId=3099839 
+
+6.instructions and instructionforuse has same values.
+
+7.allergens is '/' url: https://www.mueller.at/p/alnatura-bio-streichcreme-paprika-chili-2063040/?itemId=2063040 
+
+8.color is '-' for 2 rows. eg url: https://www.mueller.at/p/benecos-natural-face-primer-2516858/?itemId=2516858 
+
+
+DataHut_AT_Fressnapf_FullDump_20250703.CSV
+------------------------------------
+1.dimensions is not empty.
+file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6, netcontent are empty.
+
+2.grammage quantity taken wrong. eg: 1 000 kg in data, but price per unit is €4.49/kg and price is 4.49. That is grammage quantity is 1kg. url: https://www.fressnapf.at/p/vitakraft-menu-vital-meerschweinchen-1000-kg-1004435/
+
+3.grammage unit taken from product name. product name is "Lionto Welpenunterlage 6-lagig 50 L",grammage quantity and unit is 50 L. url: https://www.fressnapf.at/p/lionto-welpenunterlage-6-lagig-50-l-1665926/
+
+4.site shown uom contains beutel, but grammage unit is not btl. "LEO LÖWENKATZ Matatabi Früchte (Silvervine Früchte). 20 Gramm Beutel". url: https://www.fressnapf.at/p/leo-loewenkatz-matatabi-fruechte-silvervine-fruechte-20-gramm-beutel-1729604/
+
+5.grammage quantity taken wrong. grammage quantity is 9X12 g in data, but price taken is for 7X9X12 g. url: https://www.fressnapf.at/p/sheba-beutel-creamy-snacks-7x-9x12g-huhn-und-lachs-1706488/
+same issue: grammage quantity 8X5g, price taken for 7X8X5 g for 4 rows.
+ 7X15 g in data, price taken for 11X7X15 g for 2 rows
+
+6.logical error. price per unit is €17.20/l, price is 34.39, but grammage quantity taken is 4X250 ml instead of 2X4X250 ml. url: https://www.fressnapf.at/p/smoothiedog-gemuesebeet-4x-250-ml--obstkorb-4x-250-ml-2155987/
+
+7.variants is given as dictionary. eg:{'variant': ['XS']}
+
+8.special nutrition purpose is - for 35 rows
+
+9.rating and review taken wrong. 4.98 and 137 in data, 5 and 138 in site. url: https://www.fressnapf.at/p/royal-canin-persian-adult-400-g-1002862014/
+
+10.image in png format also. eg: https://media.os.fressnapf.com/products-v2/0/d/0/c/0d0cc2c53fbbc68bf7778aaf1e48ce8f1f12cc0c_e7f90eb7717f5fd563364eddac3189d5cca5f713.png?t=prod_l
+
+
+DataHut_AT_Interspar_FullDump_20250703.CSV
+----------------------------------------
+1.age_recommendations is not empty.
+file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.instock True and False
+
+3.grammage quantity and unit taken from product name.eg product name is "SIMPEX Professional Körperanalysewaage bis 180kg" and grammage quantity is taken as 180kg, logically wrong. url: https://www.interspar.at/shop/haushalt/simpex-professional-koerperanalysewaage-bis-180kg/p/2020001659609
+
+4.logical error. price per unit is 4.49 €/Stück, price is 4.49, but grammage quantity and unit is 0.1 l. url: https://www.interspar.at/shop/lebensmittel/vog-geradehalsflasche-elegance-01l/p/2020001177530
+same error: https://www.interspar.at/shop/lebensmittel/spar-gefrierbeutel-15-x-3-l/p/2020003912603
+
+5.logical error. grammage quantity i taken an 1X850 ml in data, but there is 1X600 ml too. logically grammage quantity and unit should be taken as 2 stuck. url: https://www.interspar.at/shop/haushalt/sodapop-ersatzflaschen-glas-logan-1x-850-ml-1x-600-ml/p/2020004700865
+
+6.regular price and selling price found as 0.00. url: https://www.interspar.at/shop/haushalt/miraplast-ablagekorb-a5/p/2020004229380
+
+7.page not found. url: https://www.interspar.at/shop/weinwelt/lindt-lindor-kugeln-weiss/p/154604SG
+same issue: https://www.interspar.at/shop/weinwelt/lindt-lindor-kugeln-milch/p/154048SG
+
+8.promotion valid upto expired. "02.07.2025" 
+
+9.site shown uom is "x 2". url: https://www.interspar.at/shop/lebensmittel/sodastream-glasflaschen-duo-1l-x-2/p/2020003525827
+
+
+DataHut_AT_Dm_FullDump_20250703.CSV
+-------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+retail_limit is not empty
+
+========================
