@@ -158,4 +158,5 @@ retail_limit is not empty
 
 7.image urls are present, file names are empty
 
+8.image url not working. https://products.dm-static.com/f_auto,q_auto,c_fit,w_1200,h_1200/not-found/ for 10 rows 
 ========================
