@@ -146,4 +146,16 @@ DataHut_AT_Dm_FullDump_20250703.CSV
 1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
 retail_limit is not empty
 
+2.site shown uom contain dot separated and comma separated valus. but dot separated values are missing in site. eg: 9.4 ml. url: https://www.dm.at/l-oreal-paris-mascara-air-volume-30h-mega-black-p30160903.html
+
+3.logical error. grammage unit taken wrong. 500 l in data, but while checking image and logically it is 500 ml. url: https://www.dm.at/denkmit-nachfuellflasche-mit-spruehkopf-nature-p4066447706741.html
+
+4.logical error. grammage unit and price per unit are in l. but product name is in ml. grammage quantity and unit "200 l". url: https://www.dm.at/dr-belter-gesichtstonic-stimula-fresh-p4250276140696.html
+
+5.price per unit is comma separated for 11837 rows. eg: 5,95 € je 1 St. 
+
+6.price per unit contain both comma and dot. eg: 1.292,59 € je 100 ml
+
+7.image urls are present, file names are empty
+
 ========================
