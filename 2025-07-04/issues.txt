@@ -1,0 +1,169 @@
+Quality Assurance (QA)
+========================
+
+DataHut_AT_Billa_FullDump_20250703.CSV
+------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6, retail_limit are empty.
+
+2.product description found as paragraph
+
+3.site shown uom is not taken along with product name in site, grammage quantity in data is 500ml, but in site it is 20 piece box with each 500ml. also price taken wrong, price for 500ml is taken in data, 20X500ml price in site. url: https://shop.billa.at/produkte/zwettler-export-lager-0021979
+ 
+4.site shown uom contains beutel, but grammage unit is not btl.eg: 750ml beutel, grammage unit is ml. url: https://shop.billa.at/produkte/today-fluessigseife-sensitive-nachfueller-00923372
+
+5.grammage quantity and unit taken wrong. eg: 25l in data, but while checking site and netcontent it is 700g. url: https://shop.billa.at/produkte/tierell-wiesenheu-00742633
+same issue: https://shop.billa.at/produkte/tierell-pressstreu-00742627
+
+6.AKTION tag present in site, missing in data. url: https://shop.billa.at/produkte/knorr-bitte-zu-tisch-griessnockerlsuppe-002935
+same issue: https://shop.billa.at/produkte/kotanyi-faschiertes-gewuerzzubereitung-0012008
+
+7.instructions and instructionforuse has same values
+
+8.image present in site, missing in data for 4 rows. eg url: https://shop.billa.at/produkte/ja-natuerlich-kaesesemmel-00701016
+
+9.image urls are present, file names are empty.
+
+
+DataHut_AT_Bipa_FullDump_20250703.CSV
+------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.instock True and False
+
+3.instock is true, but product is not available. url: https://www.bipa.at/p/B3-415683
+
+4.AKTION tag present in site, missing in data. url: https://www.bipa.at/p/B3-909325
+same issue: https://www.bipa.at/p/B3-400144
+
+5.rating and review taken wrong. 4.5833 and 12 in data, 4.7 and 32 in site. url: https://www.bipa.at/p/B3-522442
+
+6.image urls are present, file names are empty.
+
+
+DataHut_AT_Mpreis_FullDump_20250703.CSV
+-------------------------------------
+1.file_name_1 is empty
+
+2.site shown uom missing for 454 rows
+
+3.Einwag,Mehrweg tag is taken in breadcrumb in data, missing in site. eg: "Startseite > Getränke > Säfte & Sirup > Fruchtsäfte & Smoothies > Waldfrüchte BCE 1,0 Liter (Einweg)" in data, "Startseite > Getränke > Säfte & Sirup > Fruchtsäfte & Smoothies > Waldfrüchte BCE 1,0 Liter" in site
+
+4.logical error. grammage quantity and unit is 1 kg, price per unit is 1.59€ /Stk, price is 1.59. url: https://www.mpreis.at/shop/p/kuechenmeister-backmischung-bauernbrot-401616
+
+5.promotion description present in data as ab 2 billiger, missing in site, hence price change found. Also regular price taken wrong. 3.39 in data, 3.19 in site. url: https://www.mpreis.at/shop/p/schaerdinger-spaetzlekaese-gerieben-234598
+
+6.logical error.price per unit is 0.00€ /g, grammage unit taken wrong, kg in data, g logically and checking image.  url: https://www.mpreis.at/shop/p/lorenz-erdnusslocken-classic-xxl-710895
+
+7.logical error. grammage unit is taken as kg instead of g from image and logically. eg url: https://www.mpreis.at/shop/p/hipp-kindermilch-combiotik-24-monat-819383
+same issue: https://www.mpreis.at/shop/p/aptamil-profutura-2-folgemilch-801181
+
+8.grammage quantity is "07". url: https://www.mpreis.at/shop/p/zacapa-solera-gran-reserva-no-23-0-122853
+
+9.grammage unit taken wrong. 4500 l in data, 4500 ml from product name. url: https://www.mpreis.at/shop/p/voeslauer-balance-juicy-plus-tray-6x-075-liter-410700
+
+10.promotion description present in data as "ab 24 billiger", missing in site, hence price changes found. url: https://www.mpreis.at/shop/p/coca-cola-zero-033-liter-106156
+same issue: https://www.mpreis.at/shop/p/fanta-orange-033-liter-106187
+
+"2+1 gratis" promotion description present in data, missing in site, price changes found. url: https://www.mpreis.at/shop/p/fanta-orange-033-liter-106187
+same issue: https://www.mpreis.at/shop/p/kotanyi-avocado-254609
+
+11.site shown uom is dot separated in data, comma separated in site for 6 rows
+
+12.image present, file name is empty.
+images are in jpg format also. eg: https://res.cloudinary.com/saas-ag/image/upload/w_1200,h_630,b_white,c_pad,q_auto,f_auto/v1728090113/mpreis/products/4951936.jpg
+
+
+sutton_2025_07_05.json
+---------------------
+1.page not found error. url: https://sutton.com/ca/agent/helene-gagnon-89475
+
+2.title taken incomplete for many entries. eg: title is "Broker" in data, " Broker, Sales Representative" in site. url: https://www.sutton.com/ca/agent/ashka-agnieszka-mazurczak-101002
+
+3.description is present as "Real Estate Broker" in site, missing in data. url: https://www.sutton.com/ca/agent/mary-sturino-b.sc.-79979
+
+4.middle names are present in data, missing in site for many entries. eg: line 2886- "middle_name": "(Jaedong)". url: https://www.sutton.com/ca/agent/jay-choi-110899
+line 2246- "middle_name": "A". url: https://www.sutton.com/ca/agent/patricia-kost-107139
+
+5.first name taken wrong. eg:"first_name": "Cinthia (Min-Jung)" in data, "Cinthia" in site. url: https://www.sutton.com/ca/agent/cinthia-min-jung-lee-103145
+same issue: https://www.sutton.com/ca/agent/henryk-henry-iwicki-100007
+
+6."address":"," for 9 rows
+
+7.line 3694- "website": "http://.naveenbhopal.com"
+
+8.office phone number is "000-000-0000" in data, missing in site for 3 rows- line 2004,2518,3338
+
+line 5198- office phone number is "000-0000-0000", missing in site
+
+line 234- office phone number is "1111111111", missing in site.
+
+9.agent phone number taken twice in different formats. eg: "agent_phone_numbers": ["604-328-7250", "604 328 7250"], same numbers are present in site. url: https://www.sutton.com/ca/agent/robert-kowalewski-88175
+
+10.line 677- "other_urls": "https://www/athomesandcottages.com"
+
+
+ebby_2025_07_05.json
+-------------------
+1.image urls contain jpg, jpgx, png formats
+
+2.zipcode contain extra character '-'. "zipcode": "76205-" for 25 rows
+
+3.line 26- "facebook_url": "http://https://www.facebook.com/alison.b.bourgeois/", "linkedin_url": "http://https://www.linkedin.com/in/alison-bourgeois-045198291/"
+
+4.line 1035- "facebook_url": "http://https://www.facebook.com/realtor.nicolesellsdallas/"
+
+
+robertsbrothers_2025_07_05.json
+------------------------------
+1.line 31- beginning of description missing in data. url: https://www.robertsbrothers.com/bio/butchblum
+
+2.in site, description contain a quote in last postion, missing in data. url: https://www.robertsbrothers.com/bio/angelajohnson
+
+3.line 33- office phone number is taken as agent phone number. url: https://www.robertsbrothers.com/bio/carenreid
+
+
+DataHut_SI_Mercator_PriceExtractions_20250704.CSV
+---------------------------------------------
+1.grammage quantity and unit taken from product name.product name is "Insekticidna pipeta za pse, 20-40 kg, Vetocanis, 2/1", grammage quantity and unit is 40kg. url: https://mercatoronline.si/izdelek/16447575/insekticidna-pipeta-za-pse-20-40-kg-vetocanis-2-1
+
+2.logical error. price per unit is 1.78€ / 1l, price is 0.89, but grammage quantity and unit is taken as 24 X 0.5 l instead of 0.5 l. url: https://mercatoronline.si/izdelek/1061747/negazirana-voda-roemerquelle-24-x-0-5-l-pet
+
+3.logical error. price per unit is 0.10€ / kos, price is 1.53, but grammage quantity and unit is taken as 45l instead of 15 kos. url: https://mercatoronline.si/izdelek/18289869/vrecke-za-smeti-dax-45-l-15-1
+
+4.grammage quantity taken wrong. 75 l in data, but price taken is for 0.75 l. url: https://mercatoronline.si/izdelek/24231/chardonnay-bagueri-vrhunsko-belo-vino-vinska-klet-goriska-brda-0-75-l
+same issue: https://mercatoronline.si/izdelek/19144278/sampanjec-mumm-grand-cordon-0-75-l
+
+5.logical error. price per unit is 0.24€ / kos, price is 2.39, but grammage quantity is taken as 1 kos. url: https://mercatoronline.si/izdelek/17961253/jajca-l-hlevska-reja-mercator-10-1
+same issue for many rows.
+
+6.logical error. price per unit is 1.09€ / 1l, grammage quantity and unit is 1 l, price is 1.55. url: https://mercatoronline.si/izdelek/292099/trajno-polnomastno-pomursko-mleko-3-5-m-m-pomurske-mlekarne-1-l
+
+
+DataHut_SI_Spar_PriceExtractions_20250704.CSV
+---------------------------------------
+1.logical error. grammage unit taken wrong, 700 l in data, logically and checking image it is 700 ml. url: https://www.spar.si/online/diplo-cistilo-supercleaner-700ml/p/642703
+
+
+DataHut_SI_Dm_PriceExtractions_20250704.CSV
+----------------------------------------
+no issues
+
+
+DataHut_AT_Interspar_PriceExtractions_20250704.CSV
+---------------------------------------------
+1.logical error. price per unit is 6.49 €/Stück, price is 6.49, but grammage quantity and unit is 3 stück. url: https://www.interspar.at/shop/lebensmittel/pilot-frixion-minen-blau-05mm-3-stueck/p/7980480
+
+2.site shown uom contains beutel, but grammage unit is not btl and grammage quantity taken wrong. eg: price per unit is 1.49 €/Stück, price is 1.49, grammage quantity and unit is 80 stuck. url: https://www.interspar.at/shop/lebensmittel/spar-butterbrot-beutel-80-stueck/p/2020004627872
+
+3.logical error.price per unit is 2.49 €/Stück, price is 2.49, grammage quantity and unit is 15 X3 l. url: https://www.interspar.at/shop/lebensmittel/spar-gefrierbeutel-15-x-3-l/p/2020003912603
+
+4.grammage quantity and unit taken from product name.eg: product name is "Garantia Gartentank Cubus betongrau 700l", grammage quantity is 700 l. url: https://www.interspar.at/shop/haushalt/garantia-gartentank-cubus-betongrau-700l/p/2020005666542
+
+5.regular price and selling price is 0.00. url: https://www.interspar.at/shop/haushalt/miraplast-ablagekorb-a5/p/2020004229380
+
+6.breadcrumb present in data, missing in site. eg url: https://www.interspar.at/shop/haushalt/leifheit-kleinteilehalter-2er-set/p/2020004027511
+
+
+DataHut_AT_Billa_PriceExtractions_20250704.CSV
+---------------------------------------------
+========================
