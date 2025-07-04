@@ -166,4 +166,7 @@ DataHut_AT_Interspar_PriceExtractions_20250704.CSV
 
 DataHut_AT_Billa_PriceExtractions_20250704.CSV
 ---------------------------------------------
+1.site shown uom contains beutel, but grammage unit is not btl. eg: 1 kg Beutel, grammage unit is kg. url: https://shop.billa.at/produkte/vegeta-wuerzmischung-00103992
+
+2.grammage quantity and unit taken wrong. eg: 25l in data, but while checking site and netcontent it is 700g. url:https://shop.billa.at/produkte/tierell-wiesenheu-00742633
 ========================
