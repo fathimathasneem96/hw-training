@@ -169,4 +169,6 @@ DataHut_AT_Billa_PriceExtractions_20250704.CSV
 1.site shown uom contains beutel, but grammage unit is not btl. eg: 1 kg Beutel, grammage unit is kg. url: https://shop.billa.at/produkte/vegeta-wuerzmischung-00103992
 
 2.grammage quantity and unit taken wrong. eg: 25l in data, but while checking site and netcontent it is 700g. url:https://shop.billa.at/produkte/tierell-wiesenheu-00742633
+
+3.site shown uom is not taken along with product name in site, grammage quantity in data is 500ml, but in site it is 20 piece box with each 500ml. also price taken wrong, price for 500ml is taken in data, 20X500ml price in site. url: https://shop.billa.at/produkte/zwettler-export-lager-0021979
 ========================
