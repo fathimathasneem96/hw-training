@@ -1,8 +1,11 @@
+import os
+os.environ["WORDCLOUD_FONT_PATH"] = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+
 import pandas as pd
 from ydata_profiling import ProfileReport
 
 # Load the dataset safely
-df = pd.read_csv("DataHut_AT_Interspar_PriceExtractions_20250625.CSV", sep="|", engine="python", on_bad_lines="skip")
+df = pd.read_csv("DataHut_AT_Dm_PriceExtractions_20250624.CSV", sep="|", engine="python", on_bad_lines="skip")
 df.columns = df.columns.str.strip()
 
 # Define only relevant columns
