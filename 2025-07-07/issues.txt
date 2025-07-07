@@ -136,3 +136,6 @@ DataHut_CH_Lidl_PriceExtractions_20250707.CSV
 1.selling price and promotion price is 0.00 for 3 rows. eg url: https://sortiment.lidl.ch/de/catalog/product/view/id/16981/s/cereal-balls-5111947/category/54/
 
 2.breadcrumb contain "Sortiment" 2 times for 2873 rows. eg: Sortiment > Sortiment > Allzweckbeutel
+
+========================
+
