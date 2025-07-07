@@ -1,0 +1,138 @@
+Quality Assurance (QA)
+========================
+
+DataHut_AT_Dm_PriceExtractions_20250704.CSV
+------------------------------------
+1.site shown uom is dot separated in data, missing in site. eg:3.4g. url: https://www.dm.at/essence-lippenstift-meta-glow-colour-changing-p4059729466488.html
+
+2.logical error. grammage quantity and unit is 500 l in data, but while checking images it is 500 ml, also capacity is 500 ml. url: https://www.dm.at/denkmit-nachfuellflasche-mit-spruehkopf-nature-p4066447706741.html
+
+3.logical error. grammage quantity and unit is 200 l in data, but 200 ml in product name and logically. url: https://www.dm.at/dr-belter-gesichtstonic-stimula-fresh-p4250276140696.html
+
+
+DataHut_AT_Mueller_PriceExtractions_20250704.CSV
+--------------------------------------------
+1.file name wrong-csv capital. DataHut_AT_Mueller_PriceExtractions_20250704.CSV
+
+2.promotion description present in site, missing in data. Hence price changes found. url: https://www.mueller.at/p/undercover-unicorn-academy-kreativ-notizbuchset-PPN3126560/?itemId=3126560
+same issue for many rows 
+
+3.promotion description present in data, missing in site. Hence price change found. eg url: https://www.mueller.at/p/purina-felix-deli-moments-lachs-PPN3100276/?itemId=3100276
+
+
+DataHut_AT_Bipa_PriceExtractions_20250704.CSV
+------------------------------------------
+1.1+1 GRATIS, AKTION tag present in site, missing in data. url: https://www.bipa.at/p/gosh-lip-linen-coat/B3-431422
+
+
+DataHut_AT_Mpreis_PriceExtractions_20250707.CSV
+-------------------------------------------
+1.prices are missing in data, present in site. url: https://www.mpreis.at/shop/p/iglo-backfischstaebchen-msc-809317
+
+2.breadcrumb contain Mehrweg and Einweg tags in data, missing in site. eg: Startseite > Getränke > Wasser, Limonaden & Energy drinks > Cola & Limonaden > 0,5 Liter (Einweg) in data, Startseite > Getränke > Wasser, Limonaden & Energy drinks > Cola & Limonaden > 0,5 Liter in site
+
+3.logical error. price per unit 50.00€ /Stk, price is 50.00, but grammage quantity and unit is taken as 0.7 l.url: https://www.mpreis.at/shop/p/zacapa-solera-gran-reserva-no-23-0-122853
+
+4.logical error. price per unit is 0.00€ /l, price is 1.89, but grammage quantity and unit is 1500 l. logically and observing image, it should be 1.500 l. url: https://www.mpreis.at/shop/p/jeden-tag-hygienespueler-306126
+same issue: 4500 l in data, 4.500 l from product name url: https://www.mpreis.at/shop/p/voeslauer-balance-juicy-plus-tray-6x-075-liter-410700
+
+5.logical error. price per unit is 0.01€ /Stk, grammage quantity and unit is 450 stuck, price is 2.29. url: https://www.mpreis.at/shop/p/allespicker-3x-150-stueck-609133
+
+6.site shown uom missing for 544 rows
+
+
+DataHut_AT_Fressnapf_PriceExtractions_20250707.CSV
+------------------------------------------------
+1.grammage quantity taken wrong. eg: 8 tl in data, 2X8 btl from product name and site shown uom. url: https://www.fressnapf.at/p/felix-knabbermix-original--strandspass-katzensnacks-2-x-8-beutel--60g-1364343/
+
+2.site shown uom contains beutel, but grammage unit is not btl. eg: 2.8 kg Beutel, grammage unit is kg. url: https://www.fressnapf.at/p/beneful-purina-kleine-geniesser-mit-rind-und-gartengemuese-28-kg-beutel-1373941/
+
+3.grammage quantity taken wrong, age is included in grammage quantity. eg: 10+15 kg in data, 15kg in site url: https://www.fressnapf.at/p/royal-canin-medium-ageing-10-15-kg-1003112018/
+
+4.size is taken as grammage unit. eg url: https://www.fressnapf.at/p/lionto-welpenunterlage-6-lagig-100-l-1665927/
+
+5.logical error. grammage quantity and unit is 56 l, but price taken is for 500 g. url: https://www.fressnapf.at/p/multifit-kleintierstreu-56-l--heu-mit-loewenzahn-500-g-1310109/
+
+6.grammage quantity taken wrong. eg: 7X15 g in data, but price taken is for 11X7X15 g url: https://www.fressnapf.at/p/multifit-snack-cream-11x7x15g-lachsund-inulin-1127814/
+same issue: https://www.fressnapf.at/p/multifit-snack-cream-11x7x15g-gefluegel-leberund-biotin-1127815/
+
+same issue: 9X12 g in data, price taken is for 7X9X12 g. url: https://www.fressnapf.at/p/sheba-beutel-creamy-snacks-7x-9x12g-huhn-und-lachs-1706488/
+
+7.grammage quantity taken wrong. 6X400 g in data, 6X800 g in site. url: https://www.fressnapf.at/p/aniforte-nassfutter-greenfieldturkey-pute-6-x-400-g-6x800-g-1422189/
+
+8.logical error. price per unit is €19.49/kg, price is 19.49, but grammage quantity is 4 kg. url: https://www.fressnapf.at/p/ardap-spot-on-fuer-kleintiere-von-1-4-kg-1201690/
+
+9.grammage quantity taken wrong. 12X70 g in data, price taken is for 2kg+ 12X70 g. url: https://www.fressnapf.at/p/applaws-adult-mischfuetterungs-set-applaws-adult-huhn-2kg--applaws-multipack-adult-huhn-variation-12x70g-1368754/ 
+same issue: https://www.fressnapf.at/p/applaws-adult-mischfuetterung-applaws-adult-huhn-mit-lachs-2kg--multipack-adult-12x70g-fischauswahl-1368755/
+
+10.grammage quantity taken wrong. 500 g in data, 250g in site and from price taken url: https://www.fressnapf.at/p/aniforte-bierhefe-pulver-500g-250-g-1665877/
+
+
+DataHut_AT_Mueller_PriceExtractions_20250707.CSV
+--------------------------------------------
+1.filename wrong-csv capital. DataHut_AT_Mueller_PriceExtractions_20250707.CSV
+
+2.logical error. price per unti is 0.00 € / 1 l, price is 5.95, grammage quantity is 1722 l. url: https://www.mueller.at/p/lenor-weichspueler-orchidee-vanille-82wl-PPN3090864/?itemId=3090864
+
+
+machinerytrader_2025_07_07.csv
+----------------------------
+1.Two category columns "category" and "Category"
+
+2.Two columns "VIN" and "Vin"
+
+3.url do not lead to specific page. url: https://www.machinerytrader.com/listings/for-sale/crusher-aggregate-equipment
+
+4.phone number format different. eg: "+1 956-567-7443" in data, "(956) 567-7443" in site. 
+
+
+DataHut_AT_Bipa_PriceExtractions_20250707.CSV
+----------------------------------------
+no issues
+
+
+DataHut_SI_Spar_PriceExtractions_20250707.CSV
+------------------------------------------
+1.breadcrumb contain small letters in data, capital letters in site. eg: "Domov > ZAMRZNJENI IZDELKI > Testo, torte in pecivo > Pecivo in zavitki > SKUTNI ZAVITEK S-BUDGET, 600G" in data, "DOMOV > ZAMRZNJENI IZDELKI > TESTO, TORTE IN PECIVO > PECIVO IN ZAVITKI > SKUTNI ZAVITEK S-BUDGET, 600G" in site.
+
+2.logical error. price per unit is 8.99€/kos, price is 8.99, but grammage quantity and unit is 0.65 kg. url: https://www.spar.si/online/lesnikova-rolada-pekarna-spar-065kg/p/418544
+similer issue: https://www.spar.si/online/posoda-za-shranjevanje-okrogla-keepn-box-luminarc-630ml/p/424536
+
+3.logical error. grammage quantity and unit is 700 l in data, but 700 ml in product name and product image. url: https://www.spar.si/online/diplo-cistilo-supercleaner-700ml/p/642703
+
+4.logical error. price per unit is 34.95€/m, price is 6.99, grammage quantity and unit is 250 ml. But logically price per unit is 34.95€/l and grammage quantity and unit is 200 ml from price. url: https://www.spar.si/online/mleko-za-soncenje-sensitiv-zf50-sun-kiss-250ml/p/647036
+
+5.promotion valid upto present in site, missing in data. "15.07.2025" url: https://www.spar.si/online/alu-folija-20m-s-budget-11/p/605106
+same issue: https://www.spar.si/online/sir-mascarpone-s-budget-500g/p/451619
+
+
+DataHut_SI_Mercator_PriceExtractions_20250707.CSV
+--------------------------------------------------
+1.logical error. price per unit is 0.32€ / kos, price is 3.79, grammage quantity and unit is 1 kos. url: https://mercatoronline.si/izdelek/13633580/jajca-izpod-kamniskih-planin-m-hlevska-reja-jata-zgo-12-jajc
+
+2.grammage quantity taken wrong. 0.3kg in data, but price taken is for 1 kg url: https://mercatoronline.si/izdelek/17365193/trdi-sir-kramar-cca-0-3-kg-pakirano-cena-za-kg
+same issue: 10kg in data, price taken fro 1 kg. url: https://mercatoronline.si/izdelek/18311340/prsut-san-daniele-s-kostjo-zorjen-16-mesecev-citterio-cca-10-kg-cena-za-kg
+
+3.grammage quantity and unit taken from product name(size of product). eg:product name is "Pampers hlačne plenice, maxi pack S3 (6-11 kg), 56/1", grammage quantity and unit is 11 kg. url: https://mercatoronline.si/izdelek/19102368/pampers-hlacne-plenice-maxi-pack-s3-6-11-kg-56-1
+same issue for many rows.
+
+4.grammage unit taken wrong. eg: 4X 95 kg in data, price taken is for 4 X 95 g. url: https://mercatoronline.si/izdelek/19470462/kokosja-pasteta-argeta-junior-4-x-95-kg
+
+5.grammage quantity taken wrong. 24 X 0.5 l in data, price taken is for 0.5 l. url: https://mercatoronline.si/izdelek/1061747/negazirana-voda-roemerquelle-24-x-0-5-l-pet
+
+6.grammage quantity taken wrong. 75 l in data, but price taken is for 0.75 l. url: https://mercatoronline.si/izdelek/24231/chardonnay-bagueri-vrhunsko-belo-vino-vinska-klet-goriska-brda-0-75-l 
+same issue: https://mercatoronline.si/izdelek/19144278/sampanjec-mumm-grand-cordon-0-75-l 
+
+7.grammage quantity taken wrong. 0.1 l in data, price taken is for 1 l. url: https://mercatoronline.si/izdelek/19192109/gin-pink-beefeater-37-5-alkohola-0-1-l
+
+
+DataHut_SI_Dm_PriceExtractions_20250707.CSV
+---------------------------------------
+no issues
+
+
+DataHut_CH_Lidl_PriceExtractions_20250707.CSV
+--------------------------------------------
+1.selling price and promotion price is 0.00 for 3 rows. eg url: https://sortiment.lidl.ch/de/catalog/product/view/id/16981/s/cereal-balls-5111947/category/54/
+
+2.breadcrumb contain "Sortiment" 2 times for 2873 rows. eg: Sortiment > Sortiment > Allzweckbeutel
