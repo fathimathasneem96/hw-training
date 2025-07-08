@@ -106,5 +106,11 @@ aqarmap_egp_2025_07_02.json
 
 5.line 293518- bathrooms contain extra character. "bathrooms":"2د"
 
+bayut_uae_2025_07_02.json
+------------------------
+1."orn_number","bln_number","adm_number","3d_live","3d_image","2d_image","ded_number_2","ded_number_3","ded_number_4","trucheck_on","email","trubroker","rating","no_of_reviews","property_of_the_week" are newly added fields.
 
+2."brn_registration_number":"=" for 1984 rows
+
+3.package type premium, hot, superhot only
 ========================
