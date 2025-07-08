@@ -1,0 +1,110 @@
+Quality Assurance (QA)
+========================
+
+DataHut_AT_Bipa_FullDump_20250710.CSV
+----------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6, drained_weight, nutritional_information, preparationinstructions are empty.
+
+2.instock True and False
+
+
+DataHut_AT_Mueller_FullDump_20250710.CSV
+---------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are also empty
+
+2.instock True and False
+
+3.product description is found as paragraph
+
+4.logical error. price per unit is 0.00 € / 1 l, price is 5.95, grammage quantity and unit is 1722 l. but logically and from image grammage quantity is 1.722 l. url: https://www.mueller.at/p/lenor-weichspueler-orchidee-vanille-82wl-PPN3090864/?itemId=3090864
+
+5.allergens is '/'. url: https://www.mueller.at/p/alnatura-bio-streichcreme-paprika-chili-2063040/?itemId=2063040
+
+6.instock is False, product is available. url: https://www.mueller.at/p/beauty-baby-krabbelschuhe-boy-IPN2964342/?itemId=2964342
+same issue: https://www.mueller.at/p/parsa-beauty-sleek-brush-IPN3081707/?itemId=3081707
+
+7.image urls are present, file names are empty
+
+
+DataHut_AT_Dm_FullDump_20250710.CSV
+---------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are also empty
+
+2.image urls are present, file names are empty.
+
+3.site shown uom is dot separated in data, comma separated in site. eg: 0.01 l. url: https://www.dm.at/visiomax-augentropfen-mit-0-3-prozent-hyaluron-ohne-konservierungsmittel-p4058172331848.html
+
+4.logical error. grammage unit and price per unit are in l, same in site. but product name is in ml. grammage quantity and unit "200 l". url: https://www.dm.at/dr-belter-gesichtstonic-stimula-fresh-p4250276140696.html  
+
+5.logical error. grammage unit taken wrong. 500 l in data, but while checking image and logically it is 500 ml. url: https://www.dm.at/denkmit-nachfuellflasche-mit-spruehkopf-nature-p4066447706741.html 
+
+6.product description found as paragraph
+
+7.instructions and instructionforuse is '-'. url: https://www.dm.at/felix-katzenleckerli-knabber-mix-hof-und-wiese-p7613036526029.html
+
+8.tasting note and flavour has same values
+
+9.image url is https://products.dm-static.com/f_auto,q_auto,c_fit,w_1200,h_1200/not-found/ for 10 rows.
+
+
+DataHut_AT_Fressnapf_FullDump_20250710.CSV
+-----------------------------------------
+1.dimensions is not empty.
+file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6, netcontent are empty.
+
+2.grammage quantity taken wrong. eg: 1 000 kg in data, but price per unit is €4.49/kg and price is 4.49. That is grammage quantity is 1kg. url: https://www.fressnapf.at/p/vitakraft-menu-vital-meerschweinchen-1000-kg-1004435/ 
+
+3.capacity of the product is taken as grammage quantity and unit. eg: 25 kg. url: https://www.fressnapf.at/p/flexi-new-classic-gurt-schwarz-m-5-m-25-kg-1267773/
+
+4.grammage quantity and unit taken from product name, logically wrong. product name is "AniForte Zecken Schild (35 bis 50kg) für große Hunde 60 Kapseln", grammage quantity and unit is 50 kg. url: https://www.fressnapf.at/p/aniforte-zecken-schild-35-bis-50kg-fuer-grosse-hunde-60-kapseln-1444358/
+
+5.size is taken as grammage unit. product name is "Lionto Welpenunterlage 6-lagig 50 L",grammage quantity and unit is 50 L. url: https://www.fressnapf.at/p/lionto-welpenunterlage-6-lagig-50-l-1665926/ 
+
+6.logical error. price per unit is in kg, grammage unit is stuck. eg: price per unit is €10.87/kg, grammage unit is stuck. url: https://www.fressnapf.at/p/pedigree-jumbone-riesenknochen-medium-mit-rind-und-gefluegel-12x-2-stueck-1696300/
+
+7.grammage quantity taken wrong. grammage quantity is 9X12 g in data, but price taken is for 7X9X12 g. url: https://www.fressnapf.at/p/sheba-beutel-creamy-snacks-7x-9x12g-huhn-und-lachs-1706488/ 
+same issue: grammage quantity 8X5g, price taken for 7X8X5 g for 4 rows.
+ 7X15 g in data, price taken for 11X7X15 g for 2 rows
+
+8.promotion description present as "-1%" in data, missing in site, but prices are same. url: https://www.fressnapf.at/p/royal-canin-veterinary-urinary-so-small-dogs-8-kg-1302412/
+
+9.feeding recommendation, variants given as dictionary
+
+10.image in png format also. eg: https://media.os.fressnapf.com/products-v2/0/0/0/7/0007488abf2f616bd9ef1fab0a696f0e0a044f5d_1310285_0.PNG?t=prod_l
+
+11.logical error. grammage quantity taken as 4X250 ml, but price taken is for 2X4X250 ml. url: https://www.fressnapf.at/p/smoothiedog-gemuesebeet-4x-250-ml--obstkorb-4x-250-ml-2155987/
+
+12.logical error. price per unit is €21.95/l, price is 43.89, grammage quantity and unit is 6X250 ml. url: https://www.fressnapf.at/p/smoothiedog-mix-6x-250-ml--eisform-1710725/
+
+
+DataHut_AT_Interspar_FullDump_20250710.CSV
+--------------------------------------
+1.age_recommendations is not empty.
+file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.grammage quantity and unit taken from product name. product name is "SIMPEX Professional Körperanalysewaage bis 180kg" and grammage quantity is taken as 180kg, logically wrong. url: https://www.interspar.at/shop/haushalt/simpex-professional-koerperanalysewaage-bis-180kg/p/2020001659609 
+same issue: grammage quantity and unit 4150 l. https://www.interspar.at/shop/haushalt/grundig-bodenstaubsauger-vcc-4150-l/p/2020005597921 
+
+3.regular price and selling price found as 0.00, missing in site url: https://www.interspar.at/shop/haushalt/miraplast-ablagekorb-a5/p/2020004229380
+
+4.promotion valid upto expired. "07.07.2025" eg url: https://www.interspar.at/shop/lebensmittel/splendid-badwunder-blau/p/2020002658137
+
+5.instock True and False
+
+6.site shown uom found as "x 2". url: https://www.interspar.at/shop/lebensmittel/sodastream-glasflaschen-duo-1l-x-2/p/2020003525827
+
+
+aqarmap_egp_2025_07_02.json
+--------------------------
+1."depth","listing_type","seller_role" are empty
+
+2.phone number is "+20" for 7 rows.
+
+3.line 11589- "phone_number":"+undefined1552993258"
+
+4.sites are not reachable
+
+5.line 293518- bathrooms contain extra character. "bathrooms":"2د"
+
+
+========================
