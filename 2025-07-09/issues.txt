@@ -1,0 +1,149 @@
+Quality Assurance (QA)
+========================
+
+DataHut_SI_Spar_FullDump_20250710.CSV
+----------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6, producthierarchy_level7 are empty.
+
+2.breadcrumb contain small letters in data, capital letters in site. eg: Domov > SADJE IN ZELENJAVA > Sveže sadje > Drugo sveže sadje > BIO MELONA SPAR NATUR*PUR, 1KG in data, DOMOV > SADJE IN ZELENJAVA > SVEŽE SADJE > DRUGO SVEŽE SADJE > BIO MELONA SPAR NATUR*PUR, 1KG in site.
+
+3.instock True only
+
+4.image urls present, file names are empty
+
+5.logical error. price per unit is 9.99€/kos, price is 9.99, but grammage quantity and unit is 650 g. url: https://www.spar.si/online/rolada-ajdova-pekarna-spar-650g/p/571452
+
+6.netweight is comma separated values. eg: 0,02kos
+
+
+DataHut_SI_Dm_FullDump_20250710.CSV
+------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.instock True only
+
+3.image urls present, file names are empty
+
+4.breadcrumb taken wrong. eg: "Domov > Nega in dišave > Nega za moške > Moški deodoranti" in data, "Domov" in site. eg url: https://www.dm.si/balea-men-antiperspirant-v-spreju-ultimate-dry-p4067796217759.html
+
+5.logical error. price per unit is 0.01 € za 1 kos, grammage quantity and unit is 72 kos, price is 1.05. url: https://www.dm.si/babylove-otroske-vatirane-zascitne-palcke-za-usesa-vec-razlicic-p4066447750805.html
+
+DataHut_AT_Bipa_PriceExtractions_20250709.CSV
+-----------------------------------------
+1.breadcrumb is "Startseite" for 3 rows, missing in site. url eg: https://www.bipa.at/p/B3-774462
+
+2.1+1 GRATIS AKTION tag present in site, missing in data. url: https://www.bipa.at/p/gosh-lip-linen-coat/B3-431422
+
+
+DataHut_SI_Spar_PriceExtractions_20250709.CSV
+-----------------------------------------
+1.logical error. price per unit is 5.99€/kos, price is 5.99, but grammage quantity and unit is 630 ml.url: https://www.spar.si/online/posoda-za-shranjevanje-okrogla-keepn-box-luminarc-630ml/p/424536
+
+2.logical error. grammage quantity and unit is 700 l in data, but 700 ml in product name and product image. url: https://www.spar.si/online/diplo-cistilo-supercleaner-700ml/p/642703 
+
+3.logical error. price per unit is 34.95€/m, price is 6.99, grammage quantity and unit is 250 ml. But logically price per unit is 34.95€/l and grammage quantity and unit is 200 ml from price. url: https://www.spar.si/online/mleko-za-soncenje-sensitiv-zf50-sun-kiss-250ml/p/647036 
+
+4.promotion valid from missing in site,present in data, promotion valid upto present in site as "15.07.2025", missing in data. url: https://www.spar.si/online/alu-folija-20m-s-budget-11/p/605106
+
+5.promotion valid upto present in site, missing in data. url: https://www.spar.si/online/elektronska-sveca-vestina-herkul-steklena-60-dni-vestina-11/p/498698
+
+
+DataHut_SI_Dm_PriceExtractions_20250709.CSV
+------------------------------------------
+site shown uom taken wrong. eg: 1.200 kos in site, 1200 kos in data. url: https://www.dm.si/pampers-vlazni-robcki-xxl-pakiranje-15-x-80-p8001841078496.html
+
+
+DataHut_IT_Easycoop_PriceExtractions_20250709.CSV
+--------------------------------------------
+1.extraction date is "2025-07-08"
+
+2.grammage quantity taken wrong. eg: 18 pz in data, but price taken is for 1 pz. url: https://www.easycoop.com/stabilo-set-evidenziatori-8-fluo-10-pastel-swing-cool-4933094.html
+same issue: 5 pz in data, price taken for 1 pz.url: https://www.easycoop.com/wilkinson-wilkinson-sword-classic-5-pz-3625750.html
+
+3.logical error. price per unit is 7.50 €/PZ, price is 7.50, but grammage quantity and unit is taken as 7 kg. url: https://www.easycoop.com/scat-panettone-7kg-43x26x36-6793369.html
+similer issue: https://www.easycoop.com/coop-cont-coop-rettangolare-4-lt-4519218.html
+
+4.grammage quantity and unit taken from product name. product name is "ARIETE Forno Elettrico 20 L Bon Cuisine 200 Argento/nero", grammage quantity and unit is 20 l. url: https://www.easycoop.com/forno-elettrico-20-l-bon-cuisine-200-argento-nero-981-7197610.html
+
+5.price per unit is 0.00 €/LT,missing in site url: https://www.easycoop.com/gaza-cola-250ml-7972449.html
+
+6.promotion valid upto expired in data, extended in site. eg: 2025-07-08 in data, 2025-07-11 in site. url: https://www.easycoop.com/grana-padano-dop-riserva-oltre-20-mesi-100-g-4444668.html
+
+7.promotion valid upto expired, hence price change found. "2025-07-08" url: https://www.easycoop.com/buono-come-al-banco-buono-come-al-banco-carpaccio-di-carne-bovina-angus-100-g-7173005.html
+
+8.promotion valid upto change found. "2025-07-08" in data, "2025-07-09" in site. url: https://www.easycoop.com/fileni-fileni-bio-fusi-di-pollo-biologici-4510435.html
+
+
+DataHut_IT_Conad_PriceExtractions_20250709.CSV
+---------------------------------------
+1.price and price per unit taken wrong. 4.59 and 0.02 € / Kg in data, 5.99 and 0.03 € / Kg in site.url: https://spesaonline.conad.it/p/fiorital-cous-cous-di-mare-200-g--10733442
+
+2.logical error. pric eper unit is 1.70 € / conf, price is 1.70,grammage quantity and unit is 50 l. url: https://spesaonline.conad.it/p/sacchi-nettezza-azzurri-55x70-20-pz-50-lt--74849001_I
+
+3.promotion description present in data,missing in site. Also price per unit change found. 0.00 € / Kg in data, 0.01 € / Kg in site. grammage quantity and unit is 380 kg bot in data and site, but 380 g in product name. url: https://spesaonline.conad.it/p/pizza-margherita-megic-380g--V_16464601_C
+
+4.price change found. 1.65 in data, 1.78 in site. url: https://spesaonline.conad.it/p/percorso-qualita-limoni-cal-4-cat-i-rete-500g-conad-argentina--10578538
+
+5.logical error. price per unit is 50.83 € / L, price is 3.05, but grammage quantity and unit is taken as 0.06 ml, but price taken is for 60 ml and product name also contain 60 ml. url: https://spesaonline.conad.it/p/enervit-liquid-gel-lemon-flavour-60-ml--10920133
+same issue: "0.075 ml". url: https://spesaonline.conad.it/p/enervit-gel-orange-flavour-3-x-25-ml--11234017
+
+6.promotion description present in data, missing in site, hence price change found. url: https://spesaonline.conad.it/p/giovanni-rana-duetto-funghi-porcini-asiago-dop-250-g--10931734
+
+
+DataHut_AT_Mueller_PriceExtractions_20250708.csv
+-----------------------------------------
+1.date taken wrong in file name as 20250708
+
+2.logical error. price per unti is 0.00 € / 1 l, price is 5.95, grammage quantity is 1722 l. url: https://www.mueller.at/p/lenor-weichspueler-orchidee-vanille-82wl-PPN3090864/?itemId=3090864 
+
+
+Datahut_AT_Interspar_PriceExtractions_20250709.CSV
+---------------------------------------------
+1.h small in DataHut. Datahut_AT_Interspar_PriceExtractions_20250709.CSV
+
+2.competitor name "intespar" for 1 row, others are "interspar"
+
+3.grammage quantity contain space. eg: 1 980 ml. url: https://www.interspar.at/shop/lebensmittel/zipfer-hops-alkoholfrei-6x033l/p/2020002907471 
+
+4.grammage quantity taken wrong. 9 X 5 stuck in data, price taken is for 1 stuck. url: https://www.interspar.at/shop/lebensmittel/tempo-taschentuecher-mini-pack-neon-lights-9-x-5-stueck/p/2020000865926 
+
+5.regular price and selling price is 0.00 for 2 rows. for 1 row missing in site, another has 0 in site too. url: https://www.interspar.at/shop/haushalt/miraplast-ablagekorb-a5/p/2020004229380
+https://www.interspar.at/shop/lebensmittel/philadelphia-so-leicht-kraeuter/p/6931155
+
+6.grammage qunatity, unit and price taken wrong. 1 kg and 7.98 in data, 500g and 3.99 in site. url: https://www.interspar.at/shop/lebensmittel/aia-chicken-wings-hot/p/2020001920228 
+same issue: https://www.interspar.at/shop/lebensmittel/schenkel-feine-anchovis-in-olivenoel/p/5519583 
+same issue for rows with 'kg' as site shown uom.
+
+7.grammage quantity and price taken wrong. 1 l and 9.98 in data, price is taken is for 0.5 l in site as 4.49. url: https://www.interspar.at/shop/lebensmittel/tann-in-vorarlberg-hausgemacht-rindssuppe/p/2020003986796 
+
+
+DataHut_AT_Billa_PriceExtractions_20250709.CSV
+-------------------------------------------
+1.competitor name "bilila" for 1 row, others are "billa"
+
+2.currency is "eur" for 1 row, others are "EUR". url: https://shop.billa.at/produkte/handl-tyrol-bauchspeck-tiroler-speck-gga-0098202
+
+3.site shown uom contains beutel, but grammage unit is not btl. eg: 75 g Beutel, unit is g url: https://shop.billa.at/produkte/ricola-schweizer-kraeuterbonbon-001404
+
+4.grammage unit is found as "gG". url: https://shop.billa.at/produkte/hutesa-oliven-gruen-ohne-kern-00100767
+
+5.AKTION tag present in site, missing in data. url: https://shop.billa.at/produkte/milka-oreo-sandwich-00926935
+
+
+DataHut_AT_Mpreis_PriceExtractions_20250709.CSV
+-------------------------------------------
+1.competitor name missing for 1 row- line 4.
+
+2.site shown uom missing for 541 rows
+
+3.extraction date is "2025-06-09" for 1 row, others are "2025-07-09"
+
+4.logical error. grammage quantity and unit is 800 kg, but 800 g from image in site. url: https://www.mpreis.at/shop/p/hipp-combiotik-kindermilch-12-monat-819378
+
+5.logical error. grammage quantity and unit is 4500 l, but 4.5 l from product name. url: https://www.mpreis.at/shop/p/voeslauer-balance-juicy-plus-tray-6x-075-liter-410700
+
+6.logical error. grammage unit taken wrong. 240 kg in data, 240g logically and from image. url: https://www.mpreis.at/shop/p/lorenz-erdnusslocken-classic-xxl-710895
+
+7.page not available. url: https://www.mpreis.at/shop/p/bio-vom-berg-bio-himbeeren-konfituere-286293
+
+========================
