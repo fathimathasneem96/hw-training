@@ -1,0 +1,142 @@
+Quality Assurance (QA)
+========================
+
+DataHut_AT_Fresnapf_PriceExtractions_20250709.CSV
+-------------------------------------------
+1.file name wrong. s missing in Fresnapf. DataHut_AT_Fresnapf_PriceExtractions_20250709.CSV
+
+2.logical error. grammage quantity and unit taken from product name. eg:product name is "AniForte Zecken Schild (35 bis 50kg) für große Hunde 60 Kapseln", grammage quantity and unit is taken as 50 kg. url: https://www.fressnapf.at/p/aniforte-zecken-schild-35-bis-50kg-fuer-grosse-hunde-60-kapseln-1444358/
+
+3.grammage quantity taken wrong. 12X100 g in data, but price taken and product name contain is 4X12X100 g. url: https://www.fressnapf.at/p/cesar-multipack-in-gelee-mit-huhn-karotten-rind-und-gemuese-4x12x100g-1394128/
+
+
+DataHut_CH_Coop_FullDump_20250710.CSV
+----------------------------------
+1.file_name_4, image_url_4, file_name_5, image_url_5, file_name_6, image_url_6 fields are also present.
+
+2.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+3.site shown uom missing for 4328 rows
+
+4.one image in site, two image urls in data. url: https://www.coop.ch/de/kiosk/gespraechsguthaben/yallo/yallo-guthaben-wert-chf-50/p/9900524
+
+
+DataHut_AT_Bipa_FullDump_20250710.CSV
+---------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6, drained_weight, nutritional_information, preparationinstructions are empty.
+
+2.image present in site, missing in data. url: https://www.bipa.at/p/B3-446618
+
+3.image urls are present, file names are empty.
+
+4.instock True and False
+
+5.breadcrumb is "Startseite" for 3 rows in data, missing in site.
+
+6.page not available. url: https://www.bipa.at/p/B3-830444
+https://www.bipa.at/p/B3-74117
+
+7.logical error. grammage unit taken wrong. 1.072 ml in data, but netcontent and from site image and details it is 1.072 l. url: https://www.bipa.at/p/B3-348014
+
+8.instock is False, but product is available and "2+1 GRATIS AKTION" tag present in site, missing in data. url: https://www.bipa.at/p/B3-869344
+
+
+DataHut_SI_Dm_FullDump_20250710.CSV
+----------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.instock True only
+
+3.breadcrumb taken wrong. Domov > Nega in dišave > Nega za moške > Moški deodoranti in data, Domov in site. eg url: https://www.dm.si/balea-men-deodorant-v-spreju-fresh-p4067796183887.html
+
+4.ingredients is taken as country of origin. "AQUA, PALMITIC ACID, TRIETHANOLAMINE, OLETH - 20, ISOPENTANE, SORBITOL, LAURETH - 23, ALOE BARBADENSIS LEAF JUICE, COCAMIDE MIPA, ISOBUTANE, ISOPROPYL PALMITATE, HYDROGENATED, HYDROXYETHYLCELLULOSE, PARFUM, PHENOXYETHANOL" url: https://www.dm.si/balea-men-gel-za-britje-sensitive-p4058172925757.html
+
+
+DataHut_SI_Mercator_FullDump_20250710.CSV
+-------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.instock True only
+
+3.ingredients is "-1" for 4 rows. eg url: https://mercatoronline.si/izdelek/18271327/gin-malfy-41-alkohola-0-7-l
+
+4.grammage quantity taken wrong. 96X20 g in data, but price taken is for 20 g. url: https://mercatoronline.si/izdelek/12885552/mesana-marmelada-podravka-96-x-20-g
+same issue: 8X60g in data, price taken for 60g. url;https://mercatoronline.si/izdelek/19555042/hrana-za-pse-ranchos-rezine-govedina-pedigree-8-x-60-g
+
+5.grammage quantity taken wrong. 10 kg in data, price taken is for 1 kg. url: https://mercatoronline.si/izdelek/18311340/prsut-san-daniele-s-kostjo-zorjen-16-mesecev-citterio-cca-10-kg-cena-za-kg
+
+6.grammage quantity and unit taken from product name.product name is "Pampers hlačne plenice, maxi pack S3 (6-11 kg), 56/1", grammage quantity and unit is 11 kg. url: https://mercatoronline.si/izdelek/19102368/pampers-hlacne-plenice-maxi-pack-s3-6-11-kg-56-1
+
+7.grammage quantity taken wrong. 75 l in data, price taken for 0.75 l. url: https://mercatoronline.si/izdelek/24231/chardonnay-bagueri-vrhunsko-belo-vino-vinska-klet-goriska-brda-0-75-l
+same issue: https://mercatoronline.si/izdelek/19144278/sampanjec-mumm-grand-cordon-0-75-l
+
+8.logical error. price per unit is 0.33€ / kos, price 9.19, grammage quantity is 1 kos. url: https://mercatoronline.si/izdelek/19552677/toaletni-papir-deluxe-pure-white-paloma-3-slojni-16-1
+
+
+DataHut_AT_Mpreis_FullDump_20250710.CSV
+--------------------------------------
+1.file_name_1 is empty
+
+2.site shown uom missing for 529 rows
+
+3.grammage quantity taken wrong. 9 stuck in data, price taken for 1 stuck. url:https://www.mpreis.at/shop/p/parsa-zopfhalter-schwarz-9er-packung-809741
+same issue: 3 stuck in data, price taken for 1 stuck. url: https://www.mpreis.at/shop/p/zopfhalter-schwarz-3er-packung-809745
+same issue: https://www.mpreis.at/shop/p/parsa-zopfhalter-duenn-783008
+
+4.logical error. grammage quantity is 200 kg, netcontent is 200 g. logically it will be 200g. url: https://www.mpreis.at/shop/p/schaerdinger-spaetzlekaese-gerieben-234598
+same issue: grammage qantity is 400kg, netcontent is 400g. url: https://www.mpreis.at/shop/p/aptamil-pre-pronutra-anfangsmilch-801086
+
+5.logical error. grammage quantity and unit is 800 kg for 3 rows, but 800 g in product image. eg url: https://www.mpreis.at/shop/p/hipp-combiotik-kindermilch-12-monat-819378
+
+6.promotion description present in data, missing in site, hence price change found. url: https://www.mpreis.at/shop/p/heineken-bier-tray-4x-05-liter-dose-107039
+same issue: https://www.mpreis.at/shop/p/calgon-4-in-1-power-gel-43-waschgaenge-437607
+https://www.mpreis.at/shop/p/calgon-4in1-tabs-437613
+
+7.AKTION tag present in data, missing in site. url: https://www.mpreis.at/shop/p/kaegi-fret-mini-coconut-20er-packung-818036
+
+8.2+1 GRATIS promotion present in data, missing in site url: https://www.mpreis.at/shop/p/samyang-buldak-gebratene-ramen-184053
+
+9.image in jpg format also found. eg: https://res.cloudinary.com/saas-ag/image/upload/w_1200,h_630,b_white,c_pad,q_auto,f_auto/v1745456453/mpreis/products/11122228.jpg
+
+
+DataHut_AT_Fressnapf_FullDump_20250710.CSV
+---------------------------------------
+1.dimensions is not empty.
+file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6, netcontent are empty.
+
+2.size is taken as grammage unit. product name is "Lionto Welpenunterlage 6-lagig 50 L",grammage quantity and unit is 50 L. url: https://www.fressnapf.at/p/lionto-welpenunterlage-6-lagig-50-l-1665926/ 
+
+3.grammage quantity taken wrong. grammage quantity is 9X12 g in data, but price taken is for 7X9X12 g. url: https://www.fressnapf.at/p/sheba-beutel-creamy-snacks-7x-9x12g-huhn-und-lachs-1706488/ 
+similer issue: 11X6X15g. url: https://www.fressnapf.at/p/miamor-cat-snack-lachs-cream-11x6x15g-1265855/
+
+4.image in png format also. eg:https://media.os.fressnapf.com/products-v2/b/1/4/a/b14a519c070a5b7a96bdc936451bb096c2a4f9a0_1335450.PNG?t=prod_l
+
+5.'|' replaced by '\\\\|' in feeding recommendation. url: https://www.fressnapf.at/p/hills-science-plan-perfect-digestion-adult-mit-huhn-12x370g-1391226/
+
+
+DataHut_AT_Interspar_FullDump_20250710.CSV
+--------------------------------------
+1.age_recommendations is not empty.
+file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.instock True and False
+
+3.regular price and selling price is 0.00. url: https://www.interspar.at/shop/haushalt/miraplast-ablagekorb-a5/p/2020004229380
+
+4.page not found. url: https://www.interspar.at/shop/haushalt/stabilo-filzstift-cappi-24-farben/p/2020004422507
+
+5.SIE SPAREN 2.17 € also found in promotion description in site. url: https://www.interspar.at/shop/weinwelt/lenz-moser-servus-rotwein-cuve-2022/p/7699078SG
+
+6.promotion price and promotion valid upto change found. eg: 44.90 and 30.07.2025 in data, 33.68 and 16.07.2025 in site. url: https://www.interspar.at/shop/haushalt/flamingo-by-vossen-bademantel-dunkelgrau-lxl/p/2020005683129
+same issue: https://www.interspar.at/shop/haushalt/flamingo-by-vossen-bademantel-blue-moon-sm/p/2020005558144
+same issue for many entries with -25 % Rabatt promotion description
+same issue for entries with -20 % Rabatt promotion description
+
+7.promotion valid upto and promotion price missing in data, present in site. url: https://www.interspar.at/shop/haushalt/flamingo-by-vossen-bademantel-dunkelgrau-s-m/p/2020004855961
+
+8.promotion price missing in data, present in site. url: https://www.interspar.at/shop/haushalt/format-collegeblock-a4-liniertkariert-80-blatt/p/2020005225114
+
+9.logical error. price per unit is 0.01 €/l, price is 2.99, grammage quantity and unit is 473 l.url: https://www.interspar.at/shop/lebensmittel/calypso-triple-melon-lemonade/p/2020005842014
+
+10.'|' replaced by '\\|' in nutritional information. eg url: https://www.interspar.at/shop/lebensmittel/doppelherz-kollagen-1000-biotin-q10-30-tabletten/p/2020003915048
+========================
