@@ -1,0 +1,136 @@
+Quality Assurance (QA)
+========================
+
+DataHut_AT_Mueller_PriceExtractions_20250711.CSV
+---------------------------------------------
+1.filename wrong. csv is in capital letters. 
+DataHut_AT_Mueller_PriceExtractions_20250711.CSV
+
+2.logical error. price per unti is 0.00 € / 1 l, price is 5.95, grammage quantity is 1722 l. url: https://www.mueller.at/p/lenor-weichspueler-orchidee-vanille-82wl-PPN3090864/?itemId=3090864 
+
+
+DataHut_AT_Billa_PriceExtractions_20250711.CSV
+----------------------------------------------
+1.site shown uom contain beutel, but unit is not btl. eg: 210 g beutel. unit is g. url: https://shop.billa.at/produkte/steiners-backmischung-ruehrkuchen-lower-carb-00775384
+
+2.AKTION tag is also present in site, missing in data. eg url:https://shop.billa.at/produkte/iglo-erdaepfel-dippers-00703668
+
+
+DataHut_AT_Dm_PriceExtractions_20250711.CSV
+---------------------------------------
+1.breadcrumb taken wrong. "Startseite > Styleguide > Vorlagen Landin­g­pages > Nachhaltig inspiriert mit dm > Haushalt" in data, "Startseite > Nachhaltiger leben > Nachhaltig inspiriert mit dm > Haushalt" in site. url: https://www.dm.at/profissimo-klammern-aus-holz-mini-p4058172507182.html
+
+2.site shown uom is dot separated in data, missing in site. eg: 0.004 kg. url: https://www.dm.at/artdeco-blush-stick-l-a-vibes-2-downtown-p4052136254136.html
+
+
+DataHut_AT_Bipa_PriceExtractions_20250711.CSV
+--------------------------------------------
+1.breadcrumb is "Startseite" for 3 rows, missing in site. eg url: https://www.bipa.at/p/B3-439783
+
+2.2+1 GRATIS AKTION tag present in site, missing in data.url: https://www.bipa.at/p/B3-348504
+
+
+DataHut_SI_Dm_PriceExtractions_20250711.CSV
+------------------------------------------
+1.logical error. grammage quantity is taken as 0.75 ml in data, 750 ml in product name. url: https://www.dm.si/kh-7-odstranjevalec-madezev-oxy-effect-p8420822127785.html
+
+
+DataHut_SI_Mercator_PriceExtractions_20250711.CSV
+-----------------------------------------------
+1.logical error. price per unit is 0.24€ / kos, price is 2.39, grammage quantity and unit is 1 kos. url: https://mercatoronline.si/izdelek/17961253/jajca-l-hlevska-reja-mercator-10-1
+
+2.grammage quantity taken wrong. 0.3kg in data, but price taken is for 1 kg url: https://mercatoronline.si/izdelek/17365193/trdi-sir-kramar-cca-0-3-kg-pakirano-cena-za-kg 
+same issue: https://mercatoronline.si/izdelek/18311340/prsut-san-daniele-s-kostjo-zorjen-16-mesecev-citterio-cca-10-kg-cena-za-kg    
+
+3.grammage quantity taken wrong. 0.1 l in data, price taken is for 1 l. url: https://mercatoronline.si/izdelek/19192109/gin-pink-beefeater-37-5-alkohola-0-1-l 
+
+4.grammage quantity taken wrong. 7 l in data, actual qunatity and price taken for 0.7 l. url: https://mercatoronline.si/izdelek/19132396/rum-3yo-havana-club-37-5-alkohola-0-7-l
+same issue: https://mercatoronline.si/izdelek/19014821/whiskey-aberlour-16-let-40-alkohola-0-7-l
+
+5.grammage quantity taken wrong. 24 X 0.5 l in data, price taken is for 0.5 l. url: https://mercatoronline.si/izdelek/1061747/negazirana-voda-roemerquelle-24-x-0-5-l-pet 
+
+
+DataHut_SI_Spar_PriceExtractions_20250711.CSV
+--------------------------------------------
+1.breadcrumb contain small letters in data, capital letters in site. eg url: https://www.spar.si/online/tiramisu-con-savoiardi-spar-premium-500g/p/654275
+
+2.grammage quantity and unit taken wrong. 0.26l in data, 256 ml in product name and price taken for 256 ml. url: https://www.spar.si/online/omaka-tabasco-sweetspicy-mcilhenny-256ml/p/656757
+
+3.logical error. grammage quantity and unit is 700 l in data, but 700 ml in product name and product image. url: https://www.spar.si/online/diplo-cistilo-supercleaner-700ml/p/642703 
+
+4.logical error. price per unit is 34.95€/m, price is 6.99, grammage quantity and unit is 250 ml. But logically price per unit is 34.95€/l and grammage quantity and unit is 200 ml from price. url: https://www.spar.si/online/mleko-za-soncenje-sensitiv-zf50-sun-kiss-250ml/p/647036 
+
+
+DataHut_CH_Lidl_PriceExtractions_20250711.CSV
+--------------------------------------
+1.breadcrumbs contains Sortiment > Sortiment for 2910 rows.
+eg: Sortiment > Sortiment > High Protein Reibkäse
+
+
+DataHut_SI_Dm_FullDump_20250711.CSV
+-------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.extraction date is 2025-07-10
+
+3.date is 11 in filename. DataHut_SI_Dm_FullDump_20250711.CSV
+
+4.instock True only
+
+5.breadcrumb taken wrong. Domov > Nega in dišave > Nega za moške > Moški deodoranti in data, Domov in site. eg url: https://www.dm.si/old-spice-deodorant-v-stiku-deep-sea-p8001841283906.html
+
+6.regular and selling price has 1 decimal place. eg: 2.2 in data, 2.20 in site. url: https://www.dm.si/jordan-zobna-scetka-ultralite-ultra-soft-p7046110058695.html
+
+7.grammage quantity is comma separated for 2 rows. 0,75 l. url: https://www.dm.si/ajax-cistilo-za-steklo-crystal-clean-p8718951048522.html
+same issue: https://www.dm.si/domestos-extended-power-citrus-fresh-tekoce-dezinfekcijsko-vecnamensko-cistilo-p5996037079780.html
+
+8.image urls present, file names are empty
+
+9.price per unit contain unwanted characters. price per unit is "4.70 € za 1 kos  |<lineThrough>". url: https://www.dm.si/catrice-glos-za-ustnice-underwater-secrets-02-got-a-secret-can-you-keep-it-p4059729545411.html
+
+
+DataHut_SI_Spar_FullDump_20250711.CSV
+-----------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6, producthierarchy_level7 are empty.
+
+2.date is 11 in filename. DataHut_SI_Spar_FullDump_20250711.CSV
+
+3.extraction date is 2025-08-10, taken 08 instead of 07.
+
+4.breadcrumb contain small letters in data, capital letters in site. eg url: https://www.spar.si/online/mini-francoski-rogljicki-cokolada-in-lesnik-spar-570g/p/518621
+
+5.instock True only
+
+6.regular and selling price has 1 decimal place. eg: 0.2 in data, 0.20 in site.url: https://www.spar.si/online/rumov-sladkor-kotnyi-10g/p/597869
+some prices are whole numbers. eg:1 in data, 1.00 in site. url: https://www.spar.si/online/rumeno-korenje-1kg/p/253619
+
+7.promotion valid from is present but price valid from missing in data. url: https://www.spar.si/online/sadni-napitek-smoothie-summer-time-spar-enjoy-250g/p/646895
+
+8.contact field present in site. some has field "food item type"
+
+9.site shown uom contain some product name, some grammage quantity and unit
+
+10.image urls present, file names are empty
+
+11."23% CENEJE Trajno znižano" present in promotion description, but promotion price is not empty. url: https://www.spar.si/online/belo-vino-rumeni-muskat-femme-fatale-berce-075l/p/626977
+
+
+DataHut_SI_Mercator_FullDump_20250711.CSV
+------------------------------------
+1.date is 11 in filename. DataHut_SI_Mercator_FullDump_20250711.CSV
+
+2.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+3.regular price and selling price present in data as 3.69 in site. missing in data. url: https://mercatoronline.si/izdelek/18814327/cips-curvies-paprika-brez-glutena-schar-170-g
+
+4.instock True only
+
+5.nutritional information is not dictionary. "energijska vrednost': '1838/440 kj/kcal', 'maščobe': '19 g', '— nasičene maščobe': '5,9 g', 'ogljikovi hidrati': '67 g', '— sladkorji': '2,1 g', 'prehranske vlaknine': '5 g', 'beljakovine': '7,7 g', 'sol': '0,3 g'". url: https://mercatoronline.si/izdelek/17917020/keksi-s-koscki-cokolade-brez-dodanega-sladkorja-misura-290-g
+
+6.logical error. price per unit is 3.72€ / 1l, but grammage unit is g. url: https://mercatoronline.si/izdelek/388991/kefir-krepki-suhec-3-2-m-m-krepko-750-g
+
+7.price has one decimal place and whole number. eg: 9.9, 286. eg url: https://mercatoronline.si/izdelek/509187/ruffino-oriveto-clasic-belo-vino-oriveto-0-75l
+
+8.image urls are present, file names are empty.
+
+========================
