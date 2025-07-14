@@ -1,0 +1,174 @@
+Quality Assurance (QA)
+========================
+
+DataHut_CH_Migros_FullDump_20250711.CSV
+------------------------------------
+1.date is 11 in filename. DataHut_CH_Migros_FullDump_20250711.CSV
+
+2.producthierarchy_level5 is not empty.
+file_name_1 is empty
+
+3.breadcrumb missing for 9 rows.
+
+4.site shown uom missing for 6714 rows
+
+5.competitor name is "migras"
+
+6.month taken wrong in extraction date as "08" instead of "07"
+
+7.grammage quantity contains comma. 55,0. url: https://www.migros.ch/de/product/mo/66267
+
+8.price has one decimal place and whole number. eg: 0.4, 1 eg url: https://www.migros.ch/de/product/263500513200
+
+9.promotion present in data,missing in site. Hence price changes found. eg url: https://www.migros.ch/de/product/120209700000
+same issue: https://www.migros.ch/de/product/120209600000
+
+
+DataHut_CH_Coop_FullDump_20250711.CSV
+----------------------------------
+1.date is 11 in filename. DataHut_CH_Coop_FullDump_20250711.CSV
+
+2.file_name_4, image_url_4, file_name_5, image_url_5, file_name_6, image_url_6 fields are also present.
+
+3.site shown uom missing for 4328 rows
+
+4.image present in site, missing in data. eg url: https://www.coop.ch/de/lebensmittel/milchprodukte-eier/butter-margarine/kochbutter-bratfett/naturaplan-bio-kokosoel/p/7263459
+
+5.repeated unique id "5933508" and one page is not found. url: https://www.coop.ch/de/haushalt-tier/haushalt-kueche/kuechenutensilien/kuechenhelfer/zyliss-trommelreibe-aluminium/p/5933508
+product unique key of one repeated unique id is "7403836P". url: https://www.coop.ch/de/baby-kind/spielwaren/audio/hoerspiele/tonies-die-haeschenschule-die-neue-haeschenschule/p/7403836
+
+6.producthierarchy_level1 present in site and breadcrumb. missing in data. url: https://www.coop.ch/de/lebensmittel/milchprodukte-eier/milch/vegane-alternativen-zu-milchgetraenken/karma-bio-sojadrink/p/6832789
+
+7.price has one decimal place and whole number. eg: 1.9, 10. eg url: https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/hartkaese-halbhartkaese/sbrinz-parmesan-gruyere/gruyere-aop-mittelreif-ca/p/4972425
+
+8.page not found. url: https://www.coop.ch/de/lebensmittel/fleisch-fisch/abgepacktes-frischfleisch/gefluegel/poulet-duo-ca/p/3953856
+
+9.review taken wrong. 73 in data, 74 in site url: https://www.coop.ch/de/lebensmittel/fruechte-gemuese/kohlgemuese/broccoli-blumenkohl/naturaplan-bio-blumenkohl-ca/p/6471640
+
+10.instock is False, but product is available. url: https://www.coop.ch/de/lebensmittel/fruechte-gemuese/fruechte/exotische-fruechte/weitere-exotische-fruechte/passionsfrucht-ca/p/7239485
+
+
+DataHut_CH_Denner_FullDump_20250711.CSV
+--------------------------------------
+1.date is 11 in filename. DataHut_CH_Denner_FullDump_20250711.CSV
+
+2.file_name_1, file_name_2, file_name_3, file_name_4, image_url_4 are also empty. producthierarchy_level7 is not empty
+
+3.breadcrumb missing for 1 row in data. present in site and producthierarchy levels are also present url: https://www.denner.ch/de/aktionen-und-sortiment/steinhaus-pasta-classica-tortelloni-rindfleisch~p901499?variant=7fc9f9bf-72fb-49c0-8a54-417e6aba4f59
+
+4.promotion expired, hence offer is no longer available. Also unique id found as "a451ab9c-f6c6-4ff4-a5ef-3df8e471bbc1", same in site. url: https://www.denner.ch/de/aktionen-und-sortiment/alle-chirat-produkte~pa451ab9c-f6c6-4ff4-a5ef-3df8e471bbc1?variant=99a7ece6-7c6f-40ca-a874-669fa86f015a
+
+5.extraction date for 1 row is "2025-07-11", others are "2025-07-10"
+
+6.site shown uom is dot separated in data, comma separated in site eg: 0.4 Stück. url: https://www.denner.ch/de/aktionen-und-sortiment/zuckermais-frisch~p801557?variant=d09cbacc-40b8-4138-b768-0fdaf846cf15
+
+7.promotion description present in site, missing in data and promotion price is taken as regular price and selling price. url: https://www.denner.ch/de/aktionen-und-sortiment/cailler-tafelschokolade~p024083?variant=c385042c-e2b8-4959-8e58-747e1047e72d
+
+8.grammage unit is "gm" for 1 row,price taken wrong. 1.95 in data, 2.00 in site. url: https://www.denner.ch/de/aktionen-und-sortiment/ip-suisse-bohnen~p818933?variant=47972c45-14e6-4d5e-a39f-e4d8c6c0d837
+
+9.price has one decimal place and whole number. eg: 0.3, 109. eg url: https://www.denner.ch/de/aktionen-und-sortiment/denner-mineralwasser~p058699?variant=f87b1f14-6f76-4ba7-8057-dfab00eb13e6
+
+10.price valid from wrong format. "11/07/25" url: https://www.denner.ch/de/aktionen-und-sortiment/chirat-cornichons~p032131?variant=757348a8-fff0-4591-bf40-d1b54e1f6ab2
+
+11.promotion valid upto expired. "12.07.2025"
+
+DataHut_AT_Mueller_PriceExtractions_20250714.CSV
+----------------------------------------------
+1.filename wrong. csv is in capital letters. DataHut_AT_Mueller_PriceExtractions_20250714.CSV
+
+2.price missing in data, present in site for 2 rows. url: https://www.mueller.at/p/hasbro-transformers-cyberworld-grimlock-chomp-battle-PPN3119747/?itemId=3119747
+https://www.mueller.at/p/hasbro-marvel-water-webs-ahoi-piratenschiff-mit-seifenblasen-PPN3119764/?itemId=3119764
+
+
+DataHut_AT_Billa_PriceExtractions_20250714.CSV
+------------------------------------------
+1.site shown uom contains beutel, but grammage unit is not btl. eg: 1 kg beutel, grammage unit is kg. url: https://shop.billa.at/produkte/vegeta-wuerzmischung-00103992
+
+2.grammage quantity contain white space. eg: 1 200 g. url: https://shop.billa.at/produkte/cleverfisch-menue-in-feiner-sauce-00260843
+
+3.AKTION tag also present in site. url: https://shop.billa.at/produkte/stiegl-alkoholfrei-00774164
+
+
+DataHut_AT_Fressnapf_PriceExtractions_20250714.CSV
+-----------------------------------------------
+1.grammage quantity taken wrong. 7+8 kg in data, but price taken for 8 kg. url: https://www.fressnapf.at/p/royal-canin-veterinary-urinary-so-ageing-7-8-kg-1390503/
+
+2.grammage qunatity and unit taken from product name. product name is "Flexi New Classic Gurt schwarz L. 5 m. 50 kg", grammage qunatity and unit is 50 kg. url: https://www.fressnapf.at/p/flexi-new-classic-gurt-schwarz-l-5-m-50-kg-1267777/
+
+3.grammage quantity taken wrong. eg: 7X15 g in data, but price taken is for 11X7X15 g url: https://www.fressnapf.at/p/multifit-snack-cream-11x7x15g-lachsund-inulin-1127814/ 
+same issue: https://www.fressnapf.at/p/multifit-snack-cream-11x7x15g-gefluegel-leberund-biotin-1127815/ 
+same issue: 9X12 g in data, price taken is for 7X9X12 g. url: https://www.fressnapf.at/p/sheba-beutel-creamy-snacks-7x-9x12g-huhn-und-lachs-1706488/ 
+same issue: 8X5 g in data, price taken for 7 X8X5 g for 4 rows.
+
+
+DataHut_AT_Mpreis_PriceExtractions_20250714.CSV
+--------------------------------------------
+1.site shown uom missing for 549 rows
+
+2.page not found. url: https://www.mpreis.at/shop/p/architektur-wohnen-704928
+
+3.logical error. grammage quantity and unit is 800 kg, but 800 g from image in site. url: https://www.mpreis.at/shop/p/hipp-kindermilch-combiotik-24-monat-819383 
+
+4.logical error. grammage quantity and unit is 4500 l, but 4.5 l from product name. url: https://www.mpreis.at/shop/p/voeslauer-balance-juicy-plus-tray-6x-075-liter-410700 
+
+5.logical error. grammage quantity is 1500 l. but 1.500 l from product image. url: https://www.mpreis.at/shop/p/jeden-tag-hygienespueler-306126
+
+
+DataHut_AT_Interspar_PriceExtractions_20250714.CSV
+----------------------------------------------
+1.site shown uom taken incomplete along product name. eg: site shown uom is "3.000 ML EINWEG mit Pfand", product name is "Zwettler Export Lager 6x0.5lt 3.000 ML  mit Pfand". url: https://www.interspar.at/shop/lebensmittel/zwettler-export-lager-6x05lt/p/2020005436060
+
+2.site shown uom contains dot separated and comma separated values.
+site shown uom is "x 2". url: https://www.interspar.at/shop/lebensmittel/sodastream-glasflaschen-duo-1l-x-2/p/2020003525827
+
+3.logical error. price per unit is 5.99 €/Stück, price is 5.99, but grammage quantity and unit is 4X0.75l. url: https://www.interspar.at/shop/lebensmittel/rotho-domino-gefrierdose-domino-4x075l/p/7473548
+same issue: https://www.interspar.at/shop/lebensmittel/vog-geradehalsflasche-elegance-01l/p/2020001177530
+
+4.regular price and selling price is 0.00 for 2 rows. url: https://www.interspar.at/shop/haushalt/miraplast-ablagekorb-a5/p/2020004229380
+https://www.interspar.at/shop/lebensmittel/spar-naturpur-bio-weichkaese-mit-rotkultur-und-weissschimmel/p/2020002561826
+
+5.logical error. price per unit is 2.99 €/Stück, price is 2.99, but grammage unit is 50 stuck. url: https://www.interspar.at/shop/lebensmittel/spar-servietten-40x40-schwarz-50-stueck/p/2020005308190
+
+6.promotion description is "NORMALMENGENVORTEIL - AB 2 FLASCHEN JE 3,99  SIE SPAREN 1.00 €" in site, "Mengenvorteil - ab 2 Flaschen je 3,99" in data. url: https://www.interspar.at/shop/weinwelt/fentimans-rose-lemonade/p/2020004601858SG
+
+
+DataHut_AT_Dm_PriceExtractions_20250714.CSV
+---------------------------------------
+1.breadcrumb taken wrong. "Startseite > Online-Apotheke > Nahrungsergänzungsmittel > Vitaminpräparate" in data, "Startseite" in site. url: https://www.dm.at/nature-love-pflanzenstoff-komplex-l-tryptophan-rosenwurz-und-gruentee-p4260488135007.html
+similer issue: https://www.dm.at/ebelin-magnet-seifenhalterung-p4066447402667.html
+https://www.dm.at/nature-love-pflanzenstoff-komplex-l-tryptophan-rosenwurz-und-gruentee-p4260488135007.html
+
+2.site showm uom is dot separated in data, missing in site. eg: 3.2g. url: https://www.dm.at/alverde-naturkosmetik-abdeckstift-und-contouring-01-p4066447532074.html
+
+3.logical error. grammage quantity and unit is 500 l in data, but while checking images it is 500 ml, also capacity is 500 ml. url: https://www.dm.at/denkmit-nachfuellflasche-mit-spruehkopf-nature-p4066447706741.html
+logical error. grammage quantity and unit is 200 l in data, but 200 ml in product name and logically. url: https://www.dm.at/dr-belter-gesichtstonic-stimula-fresh-p4250276140696.html
+
+
+DataHut_SI_Spar_PriceExtractions_20250714.CSV
+----------------------------------------
+1.breadcrumb contain small letters in data, capital letters in site. url: https://www.spar.si/online/dog-roll-poli-perutnina-ptuj-660g/p/621003
+
+2.logical error. grammage quantity and unit is 700 l in data, but 700 ml in product name and product image. url: https://www.spar.si/online/diplo-cistilo-supercleaner-700ml/p/642703 
+
+
+DataHut_SI_Mercator_PriceExtractions_20250714.CSV
+--------------------------------------------
+1.logical error. price per unit is 0.21€ / kos, price is 2.09, grammage quantity and unit is 1 kos. url: https://mercatoronline.si/izdelek/17026888/jajca-m-hlevska-reja-mercator-10-jajc 
+
+2.grammage quantity taken wrong. 0.3kg in data, but price taken is for 1 kg url: https://mercatoronline.si/izdelek/17365193/trdi-sir-kramar-cca-0-3-kg-pakirano-cena-za-kg 
+similer issue: 0.5kg in data, price taken for 1 kg url: https://mercatoronline.si/izdelek/8660141/klobasa-za-zar-mercator-pakirano-cca-0-5-kg-cena-za-kg
+
+3.grammage quantity taken wrong. 7 l in data,actual qunatity and  price taken for 0.7 l. url: https://mercatoronline.si/izdelek/19132396/rum-3yo-havana-club-37-5-alkohola-0-7-l 
+
+4.page not found. url: https://mercatoronline.si/izdelek/19727203/mehcalec-gold-orchid-lenor-2-x-1-2-l
+
+5.grammage quantity taken wrong. 75 l in data,actual qunatity and  price taken for 0.75 l. url: https://mercatoronline.si/izdelek/24231/chardonnay-bagueri-vrhunsko-belo-vino-vinska-klet-goriska-brda-0-75-l
+same issue: https://mercatoronline.si/izdelek/19144278/sampanjec-mumm-grand-cordon-0-75-l
+
+
+DataHut_AT_Bipa_PriceExtractions_20250714.CSV
+----------------------------------------
+1.breadcrumb is "Startseite" for 3 rows, missing in site. eg url: https://www.bipa.at/p/B3-774462
+
+========================
+
