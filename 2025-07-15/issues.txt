@@ -1,0 +1,29 @@
+Quality Assurance (QA)
+========================
+
+DataHut_AT_Mueller_PriceExtractions_20250715.CSV
+-------------------------------------------
+1.filename wrong. csv is in capital letters. DataHut_AT_Mueller_PriceExtractions_20250715.CSV
+
+2.product is out of stock. eg url: https://www.mueller.at/p/noch-07144-laub-mittelgruen-profi-366440/?itemId=366440
+
+
+DataHut_AT_Fressnapf_PriceExtractions_20250715.CSV
+-----------------------------------------------
+1.grammage quantity taken wrong. eg: 6X15 g in data, but price taken is for 11X6X15 g url: https://www.fressnapf.at/p/animonda-carny-nassfutter-katze-adult-creamy-mit-taurin-11x-6x15g-lachs-1696309/ 
+similer issue: 6X400 g in data, price taken for 8X6X400 g. url: https://www.fressnapf.at/p/animonda-carny-nassfutter-katze-adult-megapack-8-x-6x400-g-1410714/
+similer issue: 20X2 g in data, price taken for 25X20X2 g. url: https://www.fressnapf.at/p/fitfun-ff-mini-sticks-multifahne-mix-25x20x2g-1322959/
+
+2.size is taken along grammage quantity. 60X90 50 stück. url: https://www.fressnapf.at/p/anione-training-pads-60x90-50-stueck-1309637/
+
+
+DataHut_AT_Mpreis_PriceExtractions_20250715.CSV
+----------------------------------------------
+site shown uom missing for 542 rows
+
+
+DataHut_AT_Billa_PriceExtractions_20250715.CSV
+------------------------------------------
+1.grammage quantity contain white space. eg: 1 300 ml. url:https://shop.billa.at/produkte/eskimo-cremissimo-bourbon-vanille-00465700
+
+2.price change found. grammage quantity is 1l and price also taken for 1l, but site shows price for 4l. url: https://shop.billa.at/produkte/voeslauer-prickelnd-00344561
