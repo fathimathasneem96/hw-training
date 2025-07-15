@@ -81,3 +81,19 @@ feeding recommendation contains "<table class=""tg""> in the beginning. url: htt
 3.ingredients contains values like "./ -", "-", "--"
 
 4.instock True only
+
+
+
+dubizzle_egp_2025_07_03.json
+---------------------
+1.price per present in site, missing in data.(price per is empty). url: https://www.dubizzle.com.eg/en/ad/%D8%B4%D9%82%D8%A9-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B4%D8%B1%D9%88%D9%82-%D8%A3%D9%88%D9%84-%D8%B3%D8%A7%D9%83%D9%86-ID205127552.html
+
+2.description contain unwanted characters. "description":",  , DUPLEX FOR SALE IN UPTOWN CAIRO - VIEW POOL ,  ,  ,  , BUA : 300 SQM,  , GARDEN: 120 SQM ,  , 3BEDROOMS,  , 3BATHROOM,  , MAID'S ROOM,  , VIEW POOL,  , FULLY FINSHED ,  , PRICE: 24,000,000" in data, there is no commas in site.url: https://www.dubizzle.com.eg/en/ad/duplex-for-sale-in-uptown-cairo-view-pool-ID502162832.html
+similer issue line 64259. url: https://www.dubizzle.com.eg/en/ad/own-a-fully-finished-apartment-in-west-view-compound-located-right-in-front-of-belle-vie-with-full-facilities-and-services-ID502060707.html
+
+description contain unwanted characters. line 32969. url: https://www.dubizzle.com.eg/en/ad/apartment-resale-ready-to-move-el-yasmeen-2-villas-ID502049113.html
+
+3.ad is no longer available. url: https://www.dubizzle.com.eg/en/ad/%D8%A7%D8%B1%D8%B6-%D8%B2%D8%B1%D8%A7%D8%B9%D9%8A%D9%87-%D8%A8%D9%86%D9%87%D8%A7-ID201546231.html
+
+========================
+
