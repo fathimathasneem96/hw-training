@@ -27,3 +27,57 @@ DataHut_AT_Billa_PriceExtractions_20250715.CSV
 1.grammage quantity contain white space. eg: 1 300 ml. url:https://shop.billa.at/produkte/eskimo-cremissimo-bourbon-vanille-00465700
 
 2.price change found. grammage quantity is 1l and price also taken for 1l, but site shows price for 4l. url: https://shop.billa.at/produkte/voeslauer-prickelnd-00344561
+
+
+DataHut_CH_Lidl_PriceExtractions_20250715.CSV
+-------------------------------------------
+breadcrumb contains Sortiment > Sortiment for 2870 rows. eg: Sortiment > Sortiment > Zwetschgen
+
+
+DataHut_DE_Picnic_PriceExtractions_20250715.CSV
+----------------------------------------
+logical error. price per unit is €11.27/kg, but grammage unit is stuck.
+
+
+DataHut_DE_Knuspr_FullDump_20250715.CSV
+-----------------------------------
+1.breadcrumb missing for 2705 rows
+
+2.site shown uom,grammage quantity,unit and price taken wrong, ca. 0,5 kg, 0.5 kg and 5.77 in data, ca. 420 g, 420 g and 4.87 in site.also promotion valid from present in data, missing in site. url: https://www.knuspr.de/90218-haehnchenbrustfilet-mit-innenfilet
+
+3.price present in data, missing in site. url: https://www.knuspr.de/91125-ruegenwalder-pommersche-fein-vegan
+same issue: https://www.knuspr.de/102232-sutcha-brisket-beef-north-america
+
+4.instock is True, but product is unavailable. url: https://www.knuspr.de/98319-la-ligne-nagellackentferner-acetonfrei
+
+5.instock is false, but product is available in site. url: https://www.knuspr.de/90218-haehnchenbrustfilet-mit-innenfilet
+
+6.promotion valid upto present in data, missing in site. "16.7.2025", "17.7.2025". eg url: https://www.knuspr.de/25037-gimar-lachs-tartar
+
+7.promotion present in data, missing in site, Hence price changes found. url: https://www.knuspr.de/30607-fehmel-s-lauchzwiebeln-bund
+
+8.image in svg format. https://cdn.knuspr.de/images/company/knuspr-placeholder.svg for 20 rows
+https://cdn.knuspr.de/images/company/preussen-placeholder.svg for 9 rows
+
+
+DataHut_DE_Flaschenpost_FullDump_20250715.CSV
+----------------------------------------
+1.price per unit contain double dots. "36.900.00 €/kg". url: https://www.flaschenpost.de/p/ostmann/ostmann-safran-gemahlen
+2.995.00 €/kg. url: https://www.flaschenpost.de/p/ostmann/ostmann-feine-vanille-stange
+
+2.promotion description is "Top-Angebot" in site, "topangebot" in data. eg url: https://www.flaschenpost.de/p/lolea-no-1/lolea-no-1
+
+DataHut_DE_Rewe_FullDump_20250715.CSV
+------------------------------------
+1.grammage unit taken wrong. 1045 kg in data, price taken for 1045 g. url: https://shop.rewe.de/p/somat-all-in-1-extra-63-spuelmaschinentabs-1040g/9079119
+same issue: 500 l in data, price taken for 500 ml url: https://shop.rewe.de/p/sil-fleckenspray-1-fuer-alles-0-5l/8522595
+https://shop.rewe.de/p/rewe-to-go-ice-tea-minze-zitrone-0-5l/8402210
+same issue: 750l in data, price taken for 750 ml. url; https://shop.rewe.de/p/rewe-bio-apfelessig-5-saeure-naturtrueb-0-75l/8107568
+
+2.feeding recommendation contains "<div id=""responsive_table_wrapper_0"" class=""responsive_table_wrapper""><div id=""responsive_table_0"" class=""responsiveTable table-responsive""><table class=""table table-striped"" cellspacing=""1"" cellpadding=""1""> in the beginning. url: https://shop.rewe.de/p/zooroyal-mit-rinderherzen-400g/3279221
+
+feeding recommendation contains "<table class=""tg""> in the beginning. url: https://shop.rewe.de/p/zooroyal-wildpastete-auf-aspik-100g/2984000
+
+3.ingredients contains values like "./ -", "-", "--"
+
+4.instock True only
