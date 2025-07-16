@@ -1,0 +1,117 @@
+Quality Assurance (QA)
+========================
+
+DataHut_AT_Bipa_PriceExtractions_20250716.CSV
+----------------------------------------
+breadcrumb is "Startseite" for 3 rows, missing in site. eg url: https://www.bipa.at/p/B3-543233
+
+
+DataHut_AT_Dm_PriceExtractions_20250716.CSV
+-----------------------------------------
+1.breadcrumb taken wrong. "Startseite > Styleguide > Vorlagen Landin­g­pages > Nachhaltig inspiriert mit dm > Haushalt" in data, "Startseite > Nachhaltiger leben > Nachhaltig inspiriert mit dm > Haushalt" in site. url: https://www.dm.at/profissimo-klammern-aus-holz-mini-p4058172507182.html 
+
+2.logical error. grammage unit taken wrong. 60 l in data, logically and from image it is 60 ml. url: https://www.dm.at/trend-t-up-fixier-spray-perfect-last-p4067796164862.html
+
+
+DataHut_SI_Spar_PriceExtractions_20250716.CSV
+----------------------------------------
+1.breadcrumb contain small letters in data, capital letters in site. eg url: https://www.spar.si/online/cebula-spar-15kg/p/521567
+
+2.logical error. price per unit is 2.49€/kos, price is 2.49, but grammage quantity and unit is 1 kg. url: https://www.spar.si/online/morska-sol-groba-nemleta-nerafinirana-nejodirana-piranske-soline-1kg/p/274154
+
+
+
+DataHut_SI_Mercator_PriceExtractions_20250716.CSV
+-------------------------------------------
+1.logical error. price per unit is 0.24€ / kos, price is 2.39, grammage quantity and unit is 1 kos. url: https://mercatoronline.si/izdelek/17961253/jajca-l-hlevska-reja-mercator-10-1
+
+2.grammage qunatity taken wrong. 0.5 kg in data, price taken for 1 kg. eg url: https://mercatoronline.si/izdelek/8660141/klobasa-za-zar-mercator-pakirano-cca-0-5-kg-cena-za-kg
+
+3.grammage quantity and unit taken from product name. product name is "Insekticidna pipeta za pse, 20-40 kg, Vetocanis, 2/" , grammage quantity and unit is 40 kg. url: https://mercatoronline.si/izdelek/16447575/insekticidna-pipeta-za-pse-20-40-kg-vetocanis-2-1
+
+4.grammage quantity taken wrong. 7 l in data,actual qunatity and  price taken for 0.7 l for 2 rows. url: https://mercatoronline.si/izdelek/19132396/rum-3yo-havana-club-37-5-alkohola-0-7-l
+https://mercatoronline.si/izdelek/19014821/whiskey-aberlour-16-let-40-alkohola-0-7-l
+
+5.grammage quantity taken wrong. 75 l in data,actual qunatity and  price taken for 0.75 l. url: https://mercatoronline.si/izdelek/24231/chardonnay-bagueri-vrhunsko-belo-vino-vinska-klet-goriska-brda-0-75-l 
+same issue: https://mercatoronline.si/izdelek/19144278/sampanjec-mumm-grand-cordon-0-75-l 
+
+6.logical error. price per unit is 4.67€ / 1l, price is 6.99, grammage quantity and unit is 750 ml. url: https://mercatoronline.si/izdelek/1348899/sijaj-tekocina-za-strojno-pomivanje-posode-somat-750-ml
+
+
+DataHut_SI_Dm_PriceExtractions_20250716.CSV
+----------------------------------
+breadcrumb taken wrong. "Domov > Nega in dišave > Nega za moške > Moški deodoranti" in data, "Domov" in site. url: https://www.dm.si/axe-deodorant-v-stiku-black-vanilla-p59004660.html
+
+
+DataHut_SI_Spar_FullDump_20250717.CSV
+-----------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6, producthierarchy_level7 are empty.
+
+2.extraction date is 2025-07-16.
+
+3.breadcrumb contain small letters in data, capital letters in site. eg url: https://www.spar.si/online/bio-javorjev-sirup-naturpur-250ml/p/440662
+
+4.instock True only
+
+5.contact field is found in site
+
+
+DataHut_SI_Dm_FullDump_20250717.CSV
+-----------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.extraction date is "2025-07-16"
+
+3.breadcrumb taken wrong. "Domov > Nega in dišave > Nega za moške > Moški deodoranti" in data, "Domov" in site. eg url: https://www.dm.si/balea-men-antiperspirant-v-spreju-ultimate-dry-p4067796217759.html
+
+4.instock True only
+
+5.tasting note and flavour ave same values
+
+6.image urls present, file names are empty
+
+
+DataHut_IT_Easycoop_FullDump_20250716.CSV
+------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.extraction date is "2025-07-15"
+
+3.logical error. price per unit is 7.50 €/PZ, price 7.50, grammage quantity and unit is 7 kg. url: https://www.easycoop.com/scat-panettone-7kg-43x26x36-6793369.html
+
+4.promotion valid upro expired, hence price changes found. "2025-07-14" for 44 rows.
+
+5.promotion valid upto present in data, missing in site. eg url: https://www.easycoop.com/amadori-amadori-tagliata-di-petto-di-pollo-0-280-kg-7045935.html
+
+6.price per unit is 0.00 €/LT in data, missing in site. url: https://www.easycoop.com/gaza-cola-250ml-7972449.html
+
+7.image urls are present, file names are empty.
+
+
+DataHut_IT_Conad_FullDump_20250716.CSV
+-------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.image urls are present, file names are empty.
+
+3.promotion present in site,missing in data, hence promotion price also present in site. url: https://spesaonline.conad.it/p/pizza-capricciosa-megic-400g--V_16464501_C
+
+4.grammage quantity and unit taken as 250 kg in data, 250 g in product name. url: https://spesaonline.conad.it/p/tagliatelle-piccin250g--V_13291801_C
+
+5.promotion description present in data, missing in site. url: https://spesaonline.conad.it/p/filetto-di-salmone-senza-pelle-0180-kg--50291523
+
+
+DataHut_AT_Billa_FullDump_20250717.CSV
+-------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6, retail_limit are empty.
+
+2.site shown uom is not taken along with product name in site, grammage quantity in data is 500ml, but in site it is 20 piece box with each 500ml. also price taken wrong, price for 500ml is taken in data, 20X500ml price in site. url: https://shop.billa.at/produkte/zwettler-export-lager-0021979 
+
+3.site shown uom contains beutel,but grammage unit is not btl. eg: 1 kg beutel, grammage unit is kg. url: https://shop.billa.at/produkte/vegeta-wuerzmischung-00103992
+
+4.AKTION tag also present in site. url: https://shop.billa.at/produkte/kellys-erdnuss-snips-0023212
+
+5.instructions and instructionforuse has same values.
+
+6.alcohol by volume found in different form. eg: 39.0 % in data, 39% in site url: https://shop.billa.at/produkte/fernet-branca-0016672
+========================
