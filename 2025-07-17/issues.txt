@@ -1,0 +1,150 @@
+Quality Assurance (QA)
+========================
+
+DataHut_CH_Denner_FullDump_20250717.CSV
+-----------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, image_url_4 are also empty.
+producthierarchy_level7 is not empty
+
+
+DataHut_CH_Coop_FullDump_20250717.CSV
+----------------------------------
+1.file_name_4, image_url_4, file_name_5, image_url_5, file_name_6, image_url_6 fields are also present.
+
+file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.site shown uom missing for 4380 rows
+
+3.image present in site, missing in data. url: https://www.coop.ch/de/lebensmittel/milchprodukte-eier/desserts-creme/creme-mousse/high-protein-creme-choco-coco/p/7369016
+
+https://www.coop.ch/de/lebensmittel/milchprodukte-eier/butter-margarine/kochbutter-bratfett/naturaplan-bio-ghee-geklaerte-butter/p/4618942
+
+4.6promotion description present in data, missing in site. Hence price change found url: https://www.coop.ch/de/aktionen/aktuelle-trophy/rueda-verdejo-misiva-6x75cl/p/710798
+same issue: https://www.coop.ch/de/aktionen/aktuelle-trophy/betty-bossi-heissluft-fritteuse/p/7302636
+same issue: https://www.coop.ch/de/aktionen/aktuelle-trophy/schaelchen-2-stueck/p/7370685
+same issue: https://www.coop.ch/de/aktionen/aktuelle-trophy/glaeser-2-stueck/p/7370689
+
+5.instock is False, but product is available in site. url: https://www.coop.ch/de/lebensmittel/milchprodukte-eier/milch/frische-milch/naturaplan-bio-regio-vollmilch-39-milchfett-past-aargau/p/3517038
+
+6.image urls are present, file names are empty.
+
+
+DataHut_CH_Lidl_FullDump_20250717.CSV
+--------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are also empty
+
+2.image is present as https://sortiment.lidl.ch/media/catalog/product/placeholder/default/LidlCH-Sortiment-Base-DE-680x510.jpg in site, not product image, missing in data. eg url: https://sortiment.lidl.ch/de/catalog/product/view/id/19162/s/huehnerfilet-entenfilet-snack-0223984/category/54/
+
+3.extraction date is "2025-07-16"
+
+4.breadcrumb contain "Sortiment > Sortiment" for 2865 rows. eg:Sortiment > Sortiment > Trauben hell kernlos 500g
+
+5.page not found. url: https://www.lidl.ch/p/de-CH/varta-longlife-batterien-big-box-aktion-nur-in-der-deutsch-und-westschweiz-gueltig/p10038713
+https://www.lidl.ch/p/de-CH/powerbank/p10038525
+many pages are not found whose url starting as https://www.lidl.ch/p/de-CH
+
+6.promotion present in data, missing in site, hence price changes found. url: https://sortiment.lidl.ch/de/catalog/product/view/id/13295/s/schweizer-pouletbrust-5104609/category/54/
+https://sortiment.lidl.ch/de/catalog/product/view/id/12790/s/trauben-hell-kernlos-500g-0080505/category/54/
+
+7.promotion valid upto expired. "16.7.2025" for 91 rows
+
+8.instock True only
+
+9.image urls are present, file names are empty.
+
+
+DataHut_SI_Dm_FullDump_20250717.CSV
+--------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.breadcrumb taken wrong. "Domov > Nega in dišave > Nega za moške > Moški deodoranti" in data, "Domov" in site. eg url: https://www.dm.si/old-spice-dezodorant-v-stiku-whitewater-p4084500490581.html
+
+3.instock True only. 
+
+4.rating and review taken wrong. 3.5 and 27 in data, 3.4 and 28 in site. url: https://www.dm.si/balea-men-revolution-5-1-nadomestne-britvice-s-5-rezili-p4067796153927.html
+
+5.country of origin is "AQUA, PALMITIC ACID, TRIETHANOLAMINE, OLETH - 20, ISOPENTANE, SORBITOL, LAURETH - 23, ALOE BARBADENSIS LEAF JUICE, COCAMIDE MIPA, ISOBUTANE, ISOPROPYL PALMITATE, HYDROGENATED, HYDROXYETHYLCELLULOSE, PARFUM, PHENOXYETHANOL". url: https://www.dm.si/balea-men-gel-za-britje-sensitive-p4058172925757.html
+
+6.image urls are present, file names are empty.
+
+
+DataHut_SI_Mercator_FullDump_20250717.CSV
+---------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.instock True only
+
+3.grammage qunatity taken wrong. 0.5 kg in data, 1kg in site and price taken for 1 kg. url: https://mercatoronline.si/izdelek/8660141/klobasa-za-zar-mercator-pakirano-cca-0-5-kg-cena-za-kg
+same issue: https://mercatoronline.si/izdelek/8199184/pecenica-mercator-pakirano-cca-0-5-kg-cena-za-kg
+
+4.grammage qunatity and unit taken from product name. url: https://mercatoronline.si/izdelek/18518374/plenice-lumpi-extra-large-6-16-30-kg-64-1
+
+5.grammage quantity taken wrong. 75 l in data, price taken for 0.75 l. url: https://mercatoronline.si/izdelek/24231/chardonnay-bagueri-vrhunsko-belo-vino-vinska-klet-goriska-brda-0-75-l 
+same issue: https://mercatoronline.si/izdelek/19144278/sampanjec-mumm-grand-cordon-0-75-l 
+
+6.logical error. price per unit is 0.24€ / kos, price is 2.39, grammage quantity and unit is 1 kos. url: https://mercatoronline.si/izdelek/18342686/jajca-l-hlevska-reja-mercator-10-1
+
+7.image urls are present, file names are empty.
+
+
+DataHut_IT_Esselunga_FullDump_20250716.CSV
+----------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.extraction date is "2025-07-14"
+
+3.promotion valid from present, price valid from missing. eg url: https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/804448/oral-b-sensitive-clean-testine-di-ricambio-per-spazzolino-elettrico-denti-ricaricabile-8-pezzi
+
+4.promotion valid upto expired in data, but promotion valid from and valid upto changed  to 16/07/2025 and 30/07/2025 in site. eg url: https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/676374/dash-power-detersivo-lavatrice-in-polvere-37-lavaggi
+same issue: https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/677069/deox-ammorbidente-concentrato-vaniglia-e-argan-45-lavaggi
+
+5.page no longer available. url: https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/739017/framon-prosciutto-san-daniele-dop-taglio-sottile-conf-2x90-g
+
+6.promotion valid upto found as "15/07/2025" for 349 rows, "16/07/2025" for 25202 rows.
+
+7.'|' replaced by '\\|' in country of origin. eg url: https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/721886/granarolo-mascarpone-250-g
+
+8.instock is False, but product is available in site url: https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/881508/esselunga-bicchieri-acqua-10pz-25cl
+
+9.image urls are present, file names are empty.
+
+
+DataHut_IT_Easycoop_FullDump_20250716.CSV
+------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.extraction date is "2025-07-15"
+
+3.promotion valid upto expired, hence price changes found. "2025-07-14" for 44 rows. eg url: https://www.easycoop.com/ragu-romagnolo-180g-spadoni-7818536.html
+"2025-07-16" for 7337 rows. eg url: https://www.easycoop.com/mulino-bianco-gran-cereale-biscotti-gran-cereale-riso-e-cornflakes-biscotti-tubo-230-g-3396730.html
+
+4.logical error. price per unit is in kg, grammage qnatity and unit are in kos, but price taken for 750g. eg url: https://www.easycoop.com/fagiolini-boby-g-750-7306471.html
+
+5.price per unit is 0.00 €/LT,logically wrong and missing in site. url: https://www.easycoop.com/gaza-cola-250ml-7972449.html
+
+6.image urls are present, file names are empty.
+
+7.page not found. url: https://www.easycoop.com/cabrioni-cabrioni-ciocofroll-650-g-3401510.html
+same for many pages that ave instock False
+
+
+indeed_2025_07_17.CSV
+--------------------
+1.data count is 21233
+
+2.phone numbers are separated using semi colon. eg: + 49 0 171 5511009; + 49 0 172 5674663
+
+3." repalced by \" in company name. eg:\"Waldfüchse\" Naturkindergarten Schonungen. url: https://de.indeed.com/Zeige-Job?jk=1372a2587633d1d3&from=serp&vjs=3
+
+4.date is taken as company name. "11. Juli 2025". url: https://de.indeed.com/Zeige-Job?jk=b00dbf80c19558a5&from=serp&vjs=3
+
+5.phone number taken incomplete for 2 rows. "+49 09822 – 60" in data, "+49 (0)9822 – 60 99 470" in site. url: https://de.indeed.com/Zeige-Job?jk=85d4e50d20c96a7b&from=serp&vjs=3
+https://de.indeed.com/Zeige-Job?jk=3e2a92d94910cde0&from=serp&vjs=3
+
+same issue: "+49 201 – 825" in data, "+49 201 – 825 2795" in site. url: https://de.indeed.com/Zeige-Job?jk=4d91278ffd760f55&from=serp&vjs=3
+https://de.indeed.com/Zeige-Job?jk=fabb5073f004bcfe&from=serp&vjs=3
+
+phone number is "+49 7042 915 192; +49 7042 915 0 +49" for 2 rows. url: https://de.indeed.com/Zeige-Job?jk=dc5c6aee2c0ebc97&from=serp&vjs=3
+https://de.indeed.com/Zeige-Job?jk=d087a841b715f60e&from=serp&vjs=3
+
+========================
