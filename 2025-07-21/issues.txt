@@ -1,0 +1,177 @@
+Quality Assurance (QA)
+========================
+
+DataHut_AT_Bipa_PriceExtractions_20250721.CSV
+-----------------------------------------
+1.breadcrumb is "Startseite" for 3 rows, missing in site. eg url:  https://www.bipa.at/p/B3-439783 
+
+2.2+1 GRATIS AKTION tag present in site, missing in data, prices are same. url: https://www.bipa.at/p/B3-543233
+https://www.bipa.at/p/B3-439783
+
+
+DataHut_AT_Dm_PriceExtractions_20250721.CSV
+-----------------------------------------
+1.breadcrumb taken wrong. "Startseite > Styleguide > Vorlagen Landin­g­pages > Nachhaltig inspiriert mit dm > Haushalt" in data, "Startseite > Nachhaltiger leben > Nachhaltig inspiriert mit dm > Haushalt" in site. url: https://www.dm.at/profissimo-klammern-aus-holz-mini-p4058172507182.html 
+
+
+DataHut_SI_Dm_PriceExtractions_20250721.CSV
+---------------------------------------
+1.breadcrumb taken wrong. "Domov > Male živali > Hrana za glodavce in drugo > Prigrizki za glodalce" in data, "Domov" in site for 3 rows. eg url: https://www.dm.si/dein-bestes-dopolnilna-hrana-za-glodavce-in-pritlikave-kunce-blazinice-za-grizljanje-z-ovsom-in-jabolki-p4066447716825.html
+
+"Domov > Nega in dišave > Nega za moške > Moški geli za tuširanje" in data, "Domov" in site. eg url: https://www.dm.si/seinz-gel-za-prhanje-sport-3-v-1-z-magnezijem-in-kumaro-p4058172586934.html
+
+"Domov > Nega in dišave > Nega za moške > Moški deodoranti" in data, "Domov" in site. eg url: https://www.dm.si/old-spice-deodorant-v-stiku-deep-sea-p8001841283906.html
+
+
+DataHut_SI_Mercator_PriceExtractions_20250721.CSV
+----------------------------------------------
+1.grammage quantity taken wrong. 7 l in data,actual qunatity and  price taken for 0.7 l for 2 rows. url: https://mercatoronline.si/izdelek/19132396/rum-3yo-havana-club-37-5-alkohola-0-7-l 
+https://mercatoronline.si/izdelek/19014821/whiskey-aberlour-16-let-40-alkohola-0-7-l 
+
+2.grammage quantity taken wrong. 75 l in data,actual qunatity and  price taken for 0.75 l. url: https://mercatoronline.si/izdelek/24231/chardonnay-bagueri-vrhunsko-belo-vino-vinska-klet-goriska-brda-0-75-l 
+same issue: https://mercatoronline.si/izdelek/19144278/sampanjec-mumm-grand-cordon-0-75-l 
+
+3.logical error. price per unit is 1.79€ / 1kg, pric eis 1.79, grammage quantity and unit is 1 l. product name also contain  1l. url: https://mercatoronline.si/izdelek/16611409/navadni-jogurt-2-8-m-m-z-bregov-1-l
+similer issue: https://mercatoronline.si/izdelek/18370101/tekoci-jogurt-borovnica-mu-1-l
+
+4.logical error. price per unit is 4225.00€ / 1l, price is 1.69, grammage quantity and unit is 0.4 l for 2 rows. url: https://mercatoronline.si/izdelek/19976473/gazirana-pijaca-bezeg-lemonish-0-4-l
+https://mercatoronline.si/izdelek/19976440/gazirana-pijaca-klasik-lemonish-0-4-l
+
+
+autoteiledirekt_2025_07_18.csv
+--------------------------
+1.Catalogue price is empty
+
+2.description contains comma in site, no comma in data. eg: Herstellereinschränkung: KOSTAL ELA 52 KOSTAL LKS 15 KOSTAL SLK 28 Durchmesser von [mm]: 56 Durchmesser bis [mm]: 59 Querschnitt [mm²] von: 15 Querschnitt [mm²] bis: 25 Länge [mm]: 75 Farbe: braun Temperaturbereich von [°C]: -40 Temperaturbereich bis [°C]: +170 Material: MVQ (Silikon-Kautschuk) Zustand: Brandneu in data, Herstellereinschränkung:
+KOSTAL ELA 5,2, KOSTAL LKS 1,5, KOSTAL SLK 2,8 Durchmesser von [mm]: 5,6 Durchmesser bis [mm]: 5,9 Querschnitt [mm²] von: 1,5 Querschnitt [mm²] bis: 2,5 Länge [mm]: 7,5 Farbe: braun in site. eg url: https://www.autoteiledirekt.de/herthbuss-elparts-1674198.html
+
+3.Net price change found. 0.24 in data, 0.22 in site for 11 rows. eg url: https://www.autoteiledirekt.de/elring-206350.html
+9.96 in data, 9.16 in site. eg url: https://www.autoteiledirekt.de/febi-bilstein-18753293.html
+1.24 in data, 1.14 in site. eg url: https://www.autoteiledirekt.de/febi-bilstein-1887832.html
+1.72 in data, 1.58 in site. eg url: https://www.autoteiledirekt.de/febi-bilstein-20477082.html
+1.96 in data, 1.80 in site. eg url: https://www.autoteiledirekt.de/elring-988049.html
+1017.72 in data, 1017.59 in site. url: https://www.autoteiledirekt.de/hella-7006694.html
+999.24 in data, 919.30 in site. url: https://www.autoteiledirekt.de/febi-bilstein-22791421.html
+Net price change found for many rows
+
+
+mister_auto_2025_07_18.csv
+------------------------
+1.Catalogue price is empty
+
+2.for out of stock products, price is missing in site. eg url: https://www.mister-auto.be/fr/joint-d-etancheite-du-thermostat-febi-bilstein-101-17964-p/
+
+3.Net price change found. 975.90 in data, 997.90 in site. url: https://www.mister-auto.be/fr/pompe-d-injection-bosch-030-0445010583-p/
+36.51 in data, 77.90 in site. url: https://www.mister-auto.be/fr/liquide-de-refroidissement-febi-bilstein-101-37401-p/
+818.90 in data, 787.90 in site. url: https://www.mister-auto.be/fr/turbocompresseur-continental-926-2800013003280-p/
+14.50 in data, 14.90 in site. url: https://www.mister-auto.be/fr/durite-de-turbocompresseur-gates-033-090245-p/
+63.90 in data, 64.90 in site url: https://www.mister-auto.be/fr/durite-de-turbocompresseur-gates-033-090302-p/
+
+4.date are 2025-07-17 (20947 rows) and 2025-07-18 (3048 rows)
+
+
+autoonderdelen24_2025_07_18.csv
+-------------------------------
+1.Catalogue price is empty
+
+2.description contain comma in site, missing in data, eg: 0,22 in site, 022 in data. eg url: https://www.autoonderdelen24.be/blue-print-8198054.html
+
+3.Net price change found. 1048.96 in data, 1038.48 in site. url: https://www.autoonderdelen24.be/sachs-23270437.html
+1049.72 in data, 1039.24 in site. url: https://www.autoonderdelen24.be/sachs-24463245.html
+224.72 in data, 218.24 in site. url: https://www.autoonderdelen24.be/bosch-7616819.html
+202.48 in data, 202.96 in site. url: https://www.autoonderdelen24.be/varta-7623152.html
+23.96 in data, 23.48 in site. url: https://www.autoonderdelen24.be/bosch-17866474.html
+
+4.product is out of stock in data, instock in site. url: https://www.autoonderdelen24.be/herthbuss-elparts-7937407.html
+
+
+auto5be_towing_hitches_2025_07_21.csv
+----------------------------------
+Catalogue price is also empty
+
+
+auto5be_floormats_2025_07_21.csv
+-------------------------------
+Position is not empty
+
+
+auto5be_bike_carriers_2025_07_21.csv
+-----------------------------
+no issues
+
+
+auto5be_skiboxes_2025_07_21.csv
+------------------------
+Net price contain white space. 1 007.90. url: https://www.auto5.be/nl/p/thule-trail-l-dakrek-2210307.html
+
+
+auto5be_crossbar_2025_07_21.csv
+----------------------------
+Catelogue price present in site, empty in data. url: https://www.auto5.be/nl/p/compleet-pakket-2-dakdragers-met-bevestigingen-thule-wingbar-edge-evo-aluminium-2398354.html
+
+
+auto5be_trunkliners_2025_07_21.csv
+----------------------------------
+Catalogue price is not empty
+
+
+rameder_towing_hitches_2025_07_21.csv
+---------------------------------
+1.Net price found as 0.00 for 6 rows. 
+https://www.rameder.be/brink-trekhaak-stijf-145040-11282-2.html
+https://www.rameder.be/brink-trekhaak-stijf-met-aangeschroefde-kogelkop-145040-10459-2.html
+https://www.rameder.be/erich-jaeger-elektrische-aansluitset-155856-38843-1.html?force_sid=ao1duic389fapoen73ap1rtt31
+
+2.product is out of stock in data, instock in site url: https://www.rameder.be/brink-trekhaak-afneembaar-incl-trail-tec-elektrische-set-7polig-specifiek-199747-10126-1.html
+https://www.rameder.be/brink-trekhaak-afneembaar-kogelstang-van-achteren-gestoken-200288-10126-1.html
+https://www.rameder.be/bosstow-trekhaak-afneembaar-incl-trail-tec-elektrische-set-7polig-universeel-194074-14302-1.html
+https://www.rameder.be/westfalia-trekhaak-afneembaar-incl-trail-tec-elektrische-set-7polig-universeel-203604-14350-1.html
+
+3.new line is denoted by ";" in description. eg url: https://www.rameder.be/bosstow-trekhaak-stijf-incl-trail-tec-elektrische-set-7polig-specifiek-185565-09734-1.html
+
+
+rameder_crossbar_2025_07_21.csv
+----------------------------
+1.Catalogue price is also empty
+
+2.model selected is "IBIZA V (KJ1, KJG)" in site, "Ibiza V (KJ1) 01.17 -" in data, url: https://www.rameder.be/dakdrager-thule-slidebar-142235-37916-1.html
+
+3.product is out of stock in data, instock in site url: https://www.rameder.be/dakdrager-menabo-203276-39208-1.html
+https://www.rameder.be/dakdrager-f-lli-menabo-delta-146995-39208-1.html
+https://www.rameder.be/dakdrager-menabo-203312-09734-1.html
+
+4.new line is denoted by ";" in description.eg url: https://www.rameder.be/dakdrager-thule-squarebar-153057-38190-1.html
+
+
+rameder_bike_carriers_2025_07_21.csv
+-------------------------------
+1.model selected is wrong. "VW CADDY IV MPV (SAB, SAJ)" in site, "Caddy IV Stationwagen (SAB  SAJ) 05.15 -" in data. url: https://www.rameder.be/fietsendrager-menabo-shadow-204615-14302-1.html
+similer issue: https://www.rameder.be/fietsendrager-thule-outway-179429-38144-1.html
+
+2.new line is denoted by ";" in description.eg url: https://www.rameder.be/fietsendrager-f-lli-menabo-logic-136158-14158-90.html
+
+
+rameder_trunkliners_2025_07_21.csv
+---------------------------
+model selected found as "Arona (KJ7) 07.17 -" in data, "ARONA (KJ7, KJP)" in site. url: https://www.rameder.be/kofferbakbeschermer-198588-38144-1.html
+
+
+dakkofferstore_skiboxes_2025_07_21.csv
+-------------------------------
+product is in stock in data, out of stock in site. url: https://www.dakkofferstore.com/thule-touring-m-200-titan-aeroskin-dakkoffer
+
+
+dakkofferstore_crossbar_2025_07_21.csv
+------------------------------------
+no issues
+
+
+autoonderdelen24_bike_carriers_2025_07_21.csv
+----------------------------------------
+1.model selected is not found in site. eg url: https://www.autoonderdelen24.be/fabbri-16895960.html
+
+2.description contains comma in site, missing in data. eg: 3,4 in site, 3 4 in data url: https://www.autoonderdelen24.be/thule-19132101.html
+
+3.Load capacity is comma separated in site, space separated in data. eg: 45, 1150 in site, 45 1150 in data url: https://www.autoonderdelen24.be/fabbri-16895960.html
+
+========================
