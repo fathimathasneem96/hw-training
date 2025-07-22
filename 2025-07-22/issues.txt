@@ -1,0 +1,150 @@
+Quality Assurance (QA)
+========================
+
+autoonderdelen24_crossbar_2025_07_21.csv
+---------------------------------
+1.Net price change found. 87.70 in data, 82.96 in site. url: https://www.autoonderdelen24.be/modula-14431796.html
+
+
+autoonderdelen24_floormats_2025_07_21.csv
+--------------------------------------
+no issues
+
+
+autoonderdelen24_skiboxes_2025_07_21.csv
+------------------------------------
+1.Net price change found. 152.72 in data, 152.96 in site. eg url: https://www.autoonderdelen24.be/magneti-marelli-18222744.html
+
+2.product instock in data, out of stock in site. url: https://www.autoonderdelen24.be/thule-24444605.html
+
+3.Input category found as Roofboxes
+
+
+autoonderdelen24_towing_hitches_2025_07_21.csv
+----------------------------------------
+1.description contain comma in site, missing in data. eg url: https://www.autoonderdelen24.be/brink-16428762.html
+
+2.Net price and stock change found. 109.96 and in stock in data, 98.48 and out of stock in site url: https://www.autoonderdelen24.be/westfalia-1369095.html
+
+3.Net price change found. 183.96 in data, 184.24 in site. url: https://www.autoonderdelen24.be/brink-12830033.html
+same issue: https://www.autoonderdelen24.be/steinhof-18200358.html
+https://www.autoonderdelen24.be/steinhof-19297135.html
+
+
+autoonderdelen24_trunkliners_2025_07_21.csv
+-------------------------------------
+no issues
+
+
+DataHut_AT_Bipa_FullDump_20250724.CSV
+--------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are empty.
+
+2.breadcrumb is "Startseite" for 3 rows in data, missing in site.
+eg url: https://www.bipa.at/p/B3-439783
+
+3.instock True and False
+
+4.instructions and instructionforuse has same values
+
+5.image url 1 and image url 2 taken same, same image dispalyed 2 times in site. url: https://www.bipa.at/p/B3-557898
+
+
+DataHut_AT_Dm_FullDump_20250724.CSV
+---------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are also empty
+
+2.breadcrumb taken wrong. "Startseite > Styleguide > Vorlagen Landin­g­pages > Nachhaltig inspiriert mit dm > Haushalt" in data, "Startseite > Nachhaltiger leben > Nachhaltig inspiriert mit dm > Haushalt" in site. url: https://www.dm.at/profissimo-klammern-aus-holz-mini-p4058172507182.html 
+
+breadcrumb taken wrong."Startseite" in data, "Startseite > Pflege & Parfum > Gesichtsreinigung > Toner fürs Gesicht" in site. url: https://www.dm.at/inao-toner-spray-hydration-p4059729519719.html
+
+breadcrumb taken wrong."Startseite" in data, "Startseite > Pflege & Parfum > Gesichtsreinigung > Reinigungsöl" in site. url: https://www.dm.at/balea-reinigungsoel-mit-arganoel-p4066447592108.html
+
+3.site shown uom dot separated in data, comma separated in site. eg: 0.1 kg. url: https://www.dm.at/biogourmet-backerbsen-mit-kraeutern-p4039057419813.html
+
+4.instructions and instructionforuse has same values.
+
+5.nutritions and nutritional information has same data, taken in different manner.
+
+
+DataHut_AT_Mueller_FullDump_20250724.CSV
+--------------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6 are also empty
+
+2.instructions and instructionforuse has same values.
+
+3.organictype Non-organic only
+
+4.product instock False in data, available in site. url:https://www.mueller.at/p/kosmos-dusty-dein-saugstarker-robo-helfer-PPN3121766/?itemId=3121766
+
+5.instock True and False
+
+
+DataHut_AT_Mpreis_FullDump_20250724.CSV
+----------------------------------------
+1.file_name_1 is empty
+
+2.site shown uom missing for 537 rows
+
+3.gross weight is taken as label information. eg url: https://www.mpreis.at/shop/p/cosy-toilettenpapier-vanille-edition-10x-150-blatt-3-lagig-416265
+
+4.image found in jpg format also. eg: https://res.cloudinary.com/saas-ag/image/upload/w_1200,h_630,b_white,c_pad,q_auto,f_auto/v1731549743/mpreis/products/4129786.jpg
+
+5.netcontent contain comma separated values. eg: 48.9 Gramm 3 x 16,300 g. url: https://www.mpreis.at/shop/p/dr-oetker-backpulver-3er-packung-160313
+
+
+bayut_egp_2025_07_04.json
+------------------------
+1.Two new fields "completion_status", "ownership"
+
+2.depth, broker_display_name, broker are not empty
+
+3.id is number found in url, not from reference number
+
+4.3 phone numbers found in data, 2 numbers found in site. url: https://www.bayut.eg/en/property/details-502263555.html
+
+5. price per is ' ', Monthly, Daily, Yearly, Weekly
+
+6.published date is 20 June 2025 in data, 21 June 2025 in site. url: https://www.bayut.eg/en/property/details-205018809.html
+https://www.bayut.eg/en/property/details-205018931.html
+
+
+bayut_uae_2025_07_04.json
+------------------------
+1."orn_number","bln_number","adm_number","3d_live","3d_image","2d_image","ded_number_2","ded_number_3","ded_number_4","trucheck_on","email","trubroker","rating","no_of_reviews","property_of_the_week" are additional fieds 
+
+2.property_of_the_week is also included in boolean fields
+
+3."brn_registration_number":"=" for 1702 rows
+
+4."published_at":"7 July 2025" in data, 8 July 2025 in site. url: https://www.bayut.com/property/details-12159246.html
+
+
+5.line 291301. listing availability is true in data, ad not available in site. url: https://www.bayut.com/property/details-11131350.html
+
+6.package_type premium, hot, superhot only
+
+
+aqarmap_egp_2025_07_04.json
+-----------------------
+1.depth, listing_type, seller_role are also empty
+
+2.line 265075- "bathrooms":"2د". url: https://aqarmap.com.eg/en/listing/5727128-for-sale-cairo-mokattam-lhdb-l-ly-shareaa-9/
+
+3.latitude is negative number. "-0.061841879139713". url: https://aqarmap.com.eg/en/listing/2674342-for-sale-cairo-heliopolis-el-orouba/
+
+4.phone number is "+20" for 9 rows.
+
+5.line 8594- "phone_number":"+undefined1552993258". url: https://aqarmap.com.eg/en/listing/5819945-for-rent-cairo-ain-shams-ain-shams-el-sharkia-el-eshrein-stt/
+
+
+nawy_egp_2025_07_04.json
+-----------------------
+no issues
+
+
+dari_ae_2025_07_04.json
+--------------------
+no issues
+
+========================
