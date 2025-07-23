@@ -1,0 +1,120 @@
+Quality Assurance (QA)
+========================
+
+DataHut_AT_Mueller_PriceExtractions_20250723.CSV
+---------------------------------------------
+no issues
+
+
+DataHut_AT_Billa_PriceExtractions_20250723.CSV
+-------------------------------------------
+1.site shown uom contains beutel, but grammage unit is not btl. eg: 0.5 kg Beutel, grammage unit is kg. url: https://shop.billa.at/produkte/al-amier-rote-linsen-00937491
+
+2.site shown uom contains Waschgang, but grammage unit is not wg. eg: 100 Waschgang Packung, grammage unit is stuck. url: https://shop.billa.at/produkte/ariel-color-pulver-waschmittel-grosspackung-00360202
+
+3.site shown uom is dot separated in data, comma separated in site. eg: 0.05 liter Flasche
+
+
+DataHut_AT_Fressnapf_PriceExtractions_20250723.CSV
+---------------------------------------------
+1.product name taken wrong. "Trixie Futterautomat TX-C Smart 45L Pro" in data, "Trixie Futterautomat TX-C Smart 4.5L Pro" in site. url: https://www.fressnapf.at/p/trixie-futterautomat-tx-c-smart-45l-pro-1500849/ 
+
+grammage quantity taken wrong. 1 000 kg in data, but price per unit is €4.49/kg and price is 4.49. It indicates grammage quantity is 1kg. url: https://www.fressnapf.at/p/vitakraft-menu-vital-meerschweinchen-1000-kg-1004435/ 
+
+
+DataHut_AT_Mpreis_PriceExtractions_20250723.CSV
+--------------------------------------
+1.site shown uom missing for 531 rows.
+
+2.logical error. price per unit is 0.15€ /l, price is 3.49, grammage quantity and unit is 230100 ml. url: https://www.mpreis.at/shop/p/soletti-dip-pikant-211199
+
+
+DataHut_CH_Lidl_PriceExtractions_20250723.CSV
+---------------------------------------
+breadcrumb contains Sortiment > Sortiment for 2895 rows. eg: Sortiment > Sortiment > Pouletflügeli
+
+
+DataHut_AT_Bipa_PriceExtractions_20250723.CSV
+---------------------------------------
+1.breadcrumb is "Startseite" for 3 rows, missing in site. eg url: https://www.bipa.at/p/B3-543233
+
+2.AKTION tag present in data, missing in site. url: https://www.bipa.at/p/B3-469181
+same issue: https://www.bipa.at/p/B3-469882
+
+
+DataHut_AT_Dm_PriceExtractions_20250723.CSV
+--------------------------------------
+1.breadcrumb taken wrong. "Startseite > Styleguide > Vorlagen Landin­g­pages > Nachhaltig inspiriert mit dm > Haushalt" in data, "Startseite > Nachhaltiger leben > Nachhaltig inspiriert mit dm > Haushalt" in site. url: https://www.dm.at/profissimo-klammern-aus-holz-mini-p4058172507182.html 
+
+breadcrumb taken wrong. "Startseite > Baby & Kind > Ausstattung für Baby & Kind > Babyphones" in data, "Startseite" in site. url: https://www.dm.at/philips-avent-babyphone-dect-p8710103839545.html 
+
+"Startseite > Pflege & Parfum > Badaccessoires > Duschablagen & Duschvorhänge" in data, "Startseite" in site. url: https://www.dm.at/ebelin-magnet-seifenhalterung-p4066447402667.html
+
+"Startseite > Online-Apotheke > Nahrungsergänzungsmittel > Vitaminpräparate" in data, "Startseite" in site. url: https://www.dm.at/nature-love-pflanzenstoff-komplex-l-tryptophan-rosenwurz-und-gruentee-p4260488135007.html
+
+
+DataHut_SI_Spar_PriceExtractions_20250723.CSV
+-------------------------------------
+1.breadcrumb contain small letters in data, capital letters in site. eg url: https://www.spar.si/online/gobica-za-brisanje-madezev-splendid-41/p/534620
+
+2.logical error. price per unit is 22.78€/kos, price is 22.78, grammage qunatity and unit is 1 l. url: https://www.spar.si/online/jajcni-liker-bombardino-1l/p/359844
+similer issue: https://www.spar.si/online/posoda-za-shranjevanje-okrogla-keepn-box-luminarc-630ml/p/424536
+https://www.spar.si/online/lesnikova-rolada-pekarna-spar-065kg/p/418544
+
+
+DataHut_SI_Dm_PriceExtractions_20250723.CSV
+----------------------------------------
+1.breadcrumb taken wrong. "Domov > Gospodinjstvo > Insekticidi" in data, "Domov" in site. url: https://www.dm.si/orphea-pasti-za-scurke-in-srebrne-ribice-p8001365881152.html
+
+"Domov > Gospodinjstvo > Dekoracija > Jesenska dekoracija" in data, "Domov" in site. url: https://www.dm.si/profissimo-dekoracija-v-obliki-buce-iz-papirja-p4066447608748.html
+
+"Domov > Nega in dišave > Nega za moške > Moški deodoranti" in data, "Domov" in site. eg url: https://www.dm.si/dove-men-care-antiperspirant-v-spreju-clean-comfort-p8720181284335.html
+
+"Domov > Nega in dišave > Nega za moške > Moški geli za tuširanje" in data, "Domov" in site. eg url: https://www.dm.si/balea-men-gel-za-tusiranje-z-oljem-planinskega-bora-in-metinim-kompleksom-p4067796168365.html
+
+2.grammage quantity taken wrong. 1500 l in data, 1.5l in product name and 1.500l is site shown uom for 2 rows. eg url: https://www.dm.si/denkmit-higienski-mehcalec-za-perilo-p4066447790399.html
+
+
+DataHut_AT_Fressnapf_FullDump_20250724.CSV
+--------------------------------------
+1.dimensions is not empty.
+file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6, netcontent are empty.
+
+2.price change found. 14.90 in data, 9.99 in site. url: https://www.fressnapf.at/p/wild-hazel---schmutzbeutel-1796045/
+same issue: 19.90 in data, 14.99 in site. url: https://www.fressnapf.at/p/wild-hazel---poo-pouch-kotbeutelspender-textil-taupe-1796037/
+https://www.fressnapf.at/p/wild-hazel---poo-pouch-kotbeutelspender-textil-schwarz-1796034/
+https://www.fressnapf.at/p/wild-hazel---poo-pouch-kotbeutelspender-textil-navy-1796036/
+https://www.fressnapf.at/p/wild-hazel---poo-pouch-kotbeutelspender-textil-braun-1796035/
+59.90 in data, 49.99 in site. url: https://www.fressnapf.at/p/wild-hazel---mini-hazel-gassitasche-navy-1796022/
+https://www.fressnapf.at/p/wild-hazel---mini-hazel-gassitasche-braun-1796021/
+same issue for many product under brand "Wild Hazel"
+
+3.grammage quantity taken wrong. eg: 1 000 kg in data, but price per unit is €4.49/kg and price is 4.49. That is grammage quantity is 1kg. url: https://www.fressnapf.at/p/vitakraft-menu-vital-meerschweinchen-1000-kg-1004435/ 
+
+grammage qunatity taken wrong. 3X 250 ml in data, price taken for 2X3X 250 ml. url: https://www.fressnapf.at/p/smoothiedog-sensitivo-3x-250-ml--immunio-3x-250-ml-1707466/
+
+4.'|' replaced by '\\\\|' in feeding recommendation. url: https://www.fressnapf.at/p/hills-science-plan-perfect-digestion-adult-mit-huhn-12x370g-1391226/ 
+
+replaced by '\\|' in special_nutrition_purpose for 10 rows .eg url: https://www.fressnapf.at/p/wolfsbacher-natur-gelenke--knochen-leckerli-2x-2077210/ 
+
+5.promotion present in site, missing in data, Hence price changes found. url: https://www.fressnapf.at/p/anione-wildlederimitation-pferd-1414110/
+
+6.review mismatch found. 10179 in data, 10178 in site. url: https://www.fressnapf.at/p/felix-crispies-8x45g-lachs-und-forelle-1101444/
+
+7.image found in png format also. eg: https://media.os.fressnapf.com/products-v2/0/d/0/c/0d0cc2c53fbbc68bf7778aaf1e48ce8f1f12cc0c_e7f90eb7717f5fd563364eddac3189d5cca5f713.png?t=prod_l
+
+
+DataHut_AT_Billa_FullDump_20250724.CSV
+---------------------------------
+1.file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6, retail_limit are empty.
+
+2.site shown uom is not taken along with product name in site, grammage quantity in data is 500ml, but in site it is 20 piece box with each 500ml. also price taken wrong, price for 500ml is taken in data, 20X500ml price in site. url: https://shop.billa.at/produkte/zwettler-export-lager-0021979 
+
+3.site shown uom contains beutel, grammage unit is not btl. eg: 1 kg Beutel. grammage unit is kg. url: https://shop.billa.at/produkte/vegeta-wuerzmischung-00103992
+
+4.site shown uom dot separated in data, comma separated in site. eg: 0.05 liter Flasche
+
+5.product description found as paragraph
+
+6.alchol by volume is 10.0% in data, 10% in site eg url: https://shop.billa.at/produkte/la-gioiosa-prosecco-frizzante-doc-00304679
+alchol by volume is dot separated in data, comma separated in site. eg: 10.5% in data, 10,5% in site. url: https://shop.billa.at/produkte/kattus-frizzante-0019840
