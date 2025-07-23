@@ -118,3 +118,51 @@ DataHut_AT_Billa_FullDump_20250724.CSV
 
 6.alchol by volume is 10.0% in data, 10% in site eg url: https://shop.billa.at/produkte/la-gioiosa-prosecco-frizzante-doc-00304679
 alchol by volume is dot separated in data, comma separated in site. eg: 10.5% in data, 10,5% in site. url: https://shop.billa.at/produkte/kattus-frizzante-0019840
+
+
+DataHut_AT_Dm_FullDump_20250724.CSV
+----------------------------------
+1.breadcrumb taken wrong. "Startseite" in data, "Startseite > Pflege & Parfum > Gesichtsreinigung > Waschgel" in site. url: https://www.dm.at/balea-med-waschgel-ultra-sensitive-p4067796106725.html
+
+"Startseite" in data, "Startseite > Pflege & Parfum > Gesichtsreinigung > Toner fürs Gesicht" in site. url: https://www.dm.at/inao-toner-spray-hydration-p4059729519719.html
+
+"Startseite" in data, "Startseite > Pflege & Parfum > Gesichtsreinigung > Mizellenwasser" in site. url: https://www.dm.at/nivea-mizellenwasser-derma-skin-clear-p9005800390130.html
+
+"Startseite" in data, "Startseite > Pflege & Parfum > Gesichtsreinigung > Reinigungsöl" in site. url: https://www.dm.at/balea-reinigungsoel-mit-arganoel-p4066447592108.html
+
+breadcrumb taken wrong. "Startseite > Styleguide > Vorlagen Landin­g­pages > Nachhaltig inspiriert mit dm > Haushalt" in data, "Startseite > Nachhaltiger leben > Nachhaltig inspiriert mit dm > Haushalt" in site. url: https://www.dm.at/profissimo-klammern-aus-holz-mini-p4058172507182.html 
+
+2.instructions and instructionforuse has same values.
+
+3.site shown uom dot separated in data, comma separated in site. eg: 0.1 kg. url: https://www.dm.at/biogourmet-backerbsen-mit-kraeutern-p4039057419813.html 
+
+4.flavour and tasting note has same values
+
+5.logical error. grammage unit and price per unit are in l, same in site. but product name is in ml. grammage quantity and unit "200 l". url: https://www.dm.at/dr-belter-gesichtstonic-stimula-fresh-p4250276140696.html  
+logical error. grammage unit taken wrong. 500 l in data, but while checking image and logically it is 500 ml. url: https://www.dm.at/denkmit-nachfuellflasche-mit-spruehkopf-nature-p4066447706741.html 
+
+6.image url found, file names are empty
+
+
+DataHut_UK_Tesco_PriceExtractions_20250723.CSV
+---------------------------------------------
+1.data count is 14
+
+2.unique id is not unique.
+
+3.competitor name is "tesco clubcard" for 4 rows. Others are "tesco"
+
+4.percentage_discount, pack_size, region are empty
+
+5.pdp url not unique. 
+https://www.tesco.com/groceries/en-GB/products/251938134
+https://www.tesco.com/groceries/en-GB/products/256458008
+https://www.tesco.com/groceries/en-GB/products/308103494
+https://www.tesco.com/groceries/en-GB/products/321540941
+each of these urls has rows with one clubcard promotion and one without.
+
+6.promotion present in site, missing in data, hence price change found. "Was £300.00 Now £64.99". promotion price is 64.99. url: https://www.tesco.com/groceries/en-GB/products/325653456
+
+7.currency is GBP
+
+========================
