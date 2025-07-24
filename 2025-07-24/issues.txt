@@ -1,0 +1,137 @@
+Quality Assurance (QA)
+========================
+
+DataHut_CH_Coop_FullDump_20250724.CSV
+----------------------------------
+1.filenames are empty
+
+2.image present in site, missing in data. eg url: https://www.coop.ch/de/lebensmittel/milchprodukte-eier/quark/quark-mit-geschmack/fruechtequark-aprikose-2x125g/p/4214663
+
+3.site shown uom missing for 4407 rows
+
+4.breadcrumb contains > > . 
+Startseite > > Unik Pro Carry Bag BE LOVE [NSW/NSW Lite]. url: https://www.coop.ch/de//unik-pro-carry-bag-be-love-nswnsw-lite/p/6702742
+Startseite > > Super Smash Bros. Ultimate [NSW]. url: https://www.coop.ch/de//super-smash-bros-ultimate-nsw/p/6789056
+
+5.price per unit contains '. eg: 5’050.00/100kg. url: https://www.coop.ch/de/lebensmittel/fleisch-fisch/abgepacktes-frischfleisch/rind/naturafarm-rindsbraten-stotzen-ca/p/5845607
+
+6.promotion description and percentage discount present in data, missing in site. url: https://www.coop.ch/de/lebensmittel/milchprodukte-eier/milch/uht-milch/milchdrink-uht-15-ip-suisse-6x1l/p/7060880
+https://www.coop.ch/de/aktionen/aktuelle-trophy/servierplatte/p/7370684
+
+promotion description present in data, missing in site. url: https://www.coop.ch/de/lebensmittel/milchprodukte-eier/joghurt/joghurt-mit-geschmack/himbeer/skyr-joghurt-himbeere/p/6622072
+
+7.product instock is false in data, but product available in site. url: https://www.coop.ch/de/lebensmittel/fruechte-gemuese/fruechte/beeren/erdbeeren-mara-des-bois/p/3346187
+
+
+DataHut_CH_Denner_FullDump_20250724.CSV
+------------------------------------
+1.producthierarchy_level7 is not empty
+
+2.site shown uom is dot separated in data, comma separated in site. eg: 90 Waschgänge. 4.95 kg. url: https://www.denner.ch/de/aktionen-und-sortiment/persil-waschpulver-universal-freshness~p041386?variant=f3810cd0-d2be-4b09-8b92-806a1e97cb81
+
+3.promotion description taken wrong. 20% in data, 20% ab 2 stuck in site. url: https://www.denner.ch/de/aktionen-und-sortiment/cirio-bohnen-cannellini~p032187?variant=f969337e-8928-4262-8a03-c0469937b29a
+
+
+DataHut_CH_Lidl_FullDump_20250724.CSV
+--------------------------------
+1.extraction date is "2025-07-23"
+
+2.page not found. url: https://www.lidl.ch/p/de-CH/l-oreal-gesichtscreme/p10038948
+https://www.lidl.ch/p/de-CH/l-oreal-gesichtscreme-anti-falten/p10038949
+
+3.instock True only
+
+4.promotion description present in data, missing in site, hence price change found url: https://sortiment.lidl.ch/de/catalog/product/view/id/13193/s/aigle-aoc-chablais-0002035/category/54/
+https://sortiment.lidl.ch/de/catalog/product/view/id/13210/s/treize-vents-villette-lavaux-aoc-0001966/category/54/#/
+https://sortiment.lidl.ch/de/catalog/product/view/id/13647/s/petite-arvine-aoc-0001006/category/54/
+
+5.promotion valid upto expired. "23.7.2025" for 94 rows
+
+
+DataHut_SI_Dm_FullDump_20250724.CSV
+-----------------------------------
+1.instock True only
+
+2.country of origin is "AQUA, PALMITIC ACID, TRIETHANOLAMINE, OLETH - 20, ISOPENTANE, SORBITOL, LAURETH - 23, ALOE BARBADENSIS LEAF JUICE, COCAMIDE MIPA, ISOBUTANE, ISOPROPYL PALMITATE, HYDROGENATED, HYDROXYETHYLCELLULOSE, PARFUM, PHENOXYETHANOL". url: https://www.dm.si/balea-men-gel-za-britje-sensitive-p4058172925757.html
+
+
+DataHut_SI_Spar_FullDump_20250724.CSV
+------------------------------------
+1.producthierarchy_level7 is empty
+
+2.breadcrumb contain small letters in data, capital letters in site. eg url: https://www.spar.si/online/sir-ementalec-iz-surovega-senenega-mleka-spar-250g/p/645780
+
+3.logical error. price per unit is 8.99€/kos, price is 8.99, but grammage quantity and unit is 0.65 kg. url: https://www.spar.si/online/lesnikova-rolada-pekarna-spar-065kg/p/418544
+similer issue: https://www.spar.si/online/cokoladno-karamelna-torta-pekarna-spar-13kg/p/399374
+https://www.spar.si/online/torta-lesnik-vanilija-pekarna-spar-14kg/p/596429
+
+4.site shown uom contain some product name, some grammage quantity and unit
+
+5.netweight is comma separated. eg: 0,75l
+
+6.instock True only
+
+
+DataHut_SI_Mercator_FullDump_20250724.CSV
+---------------------------------------
+1.logical error. price per unit is 7.99€ / 1kg, price is 7.99, grammage quantity and unit is 1 kos. url: https://mercatoronline.si/izdelek/18858954/cevapcici-postrezno
+same issue: https://mercatoronline.si/izdelek/18858959/pleskavice-postrezno
+https://mercatoronline.si/izdelek/19617379/goveji-cevapcici-postrezeno
+
+2.logical error. price per unit is 0.34€ / kos, price is 3.39, grammage quantity and unit is 1 kos. url: https://mercatoronline.si/izdelek/18320073/debela-jajca-l-hlevska-reja-mercator-10-1
+
+3.grammage quantity taken wrong. 75 l in data, price taken for 0.75 l. url: https://mercatoronline.si/izdelek/24231/chardonnay-bagueri-vrhunsko-belo-vino-vinska-klet-goriska-brda-0-75-l 
+same issue: https://mercatoronline.si/izdelek/19144278/sampanjec-mumm-grand-cordon-0-75-l 
+
+4.instock True only
+
+
+DataHut_AT_Mueller_FullDump_20250724.CSV
+-----------------------------------
+1.price present in site, missing in data. Also instock False in data, product is available in site. url: https://www.mueller.at/p/funko-pop-star-wars-revenge-of-the-sith-mace-windu-electricity-glow-vinyl-PPN3132455/?itemId=3132455
+
+2.instock True and False
+
+3.organictype Non-organic only
+
+
+DataHut_AT_Fressnapf_FullDump_20250724.CSV
+-----------------------------------------
+1.dimensions is not empty, netcontent is empty
+
+2.grammage qunatity taken wrong. 400g in data, price taken for 2X400 g. url: https://www.fressnapf.at/p/beaphar-multi-frisch-fuer-katzentoiletten-400g-2xfrische-brise-2x-1332868/
+
+3.'|' replaced by '\\|' in special nutrition purpose in 10 rows. eg url: https://www.fressnapf.at/p/wolfsbacher-natur-gelenke--knochen-leckerli-2x-2077210/
+
+4.review taken wrong. 1037 in data, 1038 in site. url: https://www.fressnapf.at/p/gourmet-perle-genuss-in-sauce-26x85g-rind-in-rinderbratensauce-1297957/
+
+
+DataHut_AT_Interspar_FullDump_20250724.CSV
+-------------------------------------
+1.age_recommendations is not empty.
+
+2.drained weight is comma separated. eg:0,02g
+
+3.promotion price present in site, missing in data. url: https://www.interspar.at/shop/haushalt/american-tourister-soundbox-koffer-hartschale-golden-yellow-mini-47cm/p/2020005723719
+
+4.instock True and False.
+
+5.instock is True, but product is not available in site. url: https://www.interspar.at/shop/haushalt/3d-lexi-zoo-globus-25-cm/p/2020003893896
+
+6.promotion valid upto expired. "23.07.2025" for 1 row
+
+7.promotion price and selling price mismatch. 329.00 in data, 299.00 in site. url: https://www.interspar.at/shop/haushalt/gorenje-waschmaschine-w3ngpi72sbsat-7-kg/p/2020005717763
+
+8.promotion valid upto and promotion price present in site, missing in data. url: https://www.interspar.at/shop/haushalt/berndorf-kaese-u-buttermesser-2tlg/p/2020004840172
+same issue: https://www.interspar.at/shop/haushalt/berndorf-besteckset-jana-60-tlg/p/2020003301179
+
+9.'|' replaced by '\\|' in nutritional information. url: https://www.interspar.at/shop/lebensmittel/doppelherz-kollagen-1000-biotin-q10-30-tabletten/p/2020003915048
+
+
+DataHut_AT_Dm_FullDump_20250724.CSV
+--------------------------------
+1.retail_limit is not empty. file names are empty
+
+2.review taken wrong. 1081 in data, 1078 in site. url:https://www.dm.at/nivea-koerpermilch-72h-feuchtigkeit-p4006000083162.html
+
+========================
