@@ -1,0 +1,20 @@
+optimization in qa
+----------------
+Methods to optimize QA:
+- Focus on previously noted issues and check them
+- identify and note extra characters and unwanted characters in datasets
+- Automate validation 
+- profile data regularly to understand
+- Design clear and Reusable data quality Rules
+- Remove duplicate records
+- Remove empty field column to make memory efficient
+- use regex to simplify and easy 
+- define range of values like price>0
+- define date formats
+- Profile each columns for missing values, duplicates and spelling mistakes
+- Track QA results and failures over time and do QA based on that 
+- improve codes to check individual column requirements
+- Do QA stage by stage
+	> Initially do overall checking like accuracy and completeness of data.
+	> Then go for detailed checking like values and checking urls
+========================
