@@ -1,0 +1,92 @@
+Quality Assurance (QA)
+========================
+
+DataHut_AT_Bipa_PriceExtractions_20250725.CSV
+-----------------------------------------
+no issues
+
+
+DataHut_AT_Dm_PriceExtractions_20250725.CSV
+---------------------------------------
+no issues
+
+
+DataHut_SI_Dm_PriceExtractions_20250725.CSV
+------------------------------------
+no issues
+
+
+DataHut_SI_Mercator_PriceExtractions_20250725.CSV
+----------------------------------------
+1.product name is taken as site shown uom
+
+2.logical error. price per unit is 0.21€ / kos, price is 2.09, grammage quantity and unit is 1 kos. url: https://mercatoronline.si/izdelek/17026888/jajca-m-hlevska-reja-mercator-10-jajc
+
+3.grammage quantity taken wrong. 0.1 l in data, price taken for 1 l. url: https://mercatoronline.si/izdelek/19192109/gin-pink-beefeater-37-5-alkohola-0-1-l
+
+4.grammage quantity taken wrong. 20 g in data, price taken for 120g. url: https://mercatoronline.si/izdelek/16585168/narezek-savinjski-zelodec-z-apos-dezele-pakirano-100-g-20-g-gratis-maxx
+https://mercatoronline.si/izdelek/16585180/domaca-salama-z-apos-dezele-pakirano-100-g-20-g-gratis-maxx
+
+5.grammage quantity taken wrong. 75 l in data,actual qunatity and  price taken for 0.75 l. url: https://mercatoronline.si/izdelek/24231/chardonnay-bagueri-vrhunsko-belo-vino-vinska-klet-goriska-brda-0-75-l 
+same issue: https://mercatoronline.si/izdelek/19144278/sampanjec-mumm-grand-cordon-0-75-l 
+
+
+DataHut_CH_Lidl_PriceExtractions_20250725.CSV
+----------------------------------------
+1.promotion valid from, price valid from, promotion valid upto present in data, missing in site. eg url: https://sortiment.lidl.ch/de/catalog/product/view/id/15493/s/kikkoman-sojasauce-0182509/category/54/
+https://sortiment.lidl.ch/de/catalog/product/view/id/15754/s/apfelsaft-5111229/category/54/
+https://sortiment.lidl.ch/de/catalog/product/view/id/12337/s/schweizer-mozzarella-0003195/category/54/
+
+
+DataHut_AT_Mueller_PriceExtractions_20250725.CSV
+-------------------------------------------
+1.wrong name-csv capital.
+DataHut_AT_Mueller_PriceExtractions_20250725.CSV
+
+
+DataHut_AT_Interspar_PriceExtractions_20250725.CSV
+------------------------------------------------
+1.logical error. price per unit is 0.01 €/l, price is 2.99, grammage qunatity and unit is 473 l. url: https://www.interspar.at/shop/lebensmittel/calypso-triple-melon-lemonade/p/2020005842014
+
+2.logical error. price per unit is 2.49 €/Stück, price is 2.49, grammage quantity and unit is 15X3 l. url: https://www.interspar.at/shop/lebensmittel/spar-gefrierbeutel-15-x-3-l/p/2020003912603
+
+
+DataHut_AT_Fressnapf_PriceExtractions_20250725.CSV
+---------------------------------------------
+product name taken wrong. "Trixie Futterautomat TX-C Smart 45L Pro" in data, "Trixie Futterautomat TX-C Smart 4.5L Pro" in site. url: https://www.fressnapf.at/p/trixie-futterautomat-tx-c-smart-45l-pro-1500849/ 
+
+
+DataHut_AT_Billa_PriceExtractions_20250725.CSV
+--------------------------------------------
+1."jö Preis" promotion description present in site, missing in data. url: https://shop.billa.at/produkte/hofstaedter-bratenspeck-00240478
+https://shop.billa.at/produkte/pantene-prov-color-protect-shampoo-00242679
+https://shop.billa.at/produkte/pantene-prov-glatt-und-seidig-shampoo-00325271
+https://shop.billa.at/produkte/pantene-prov-3in1-repair-und-care-shampoo-00927789
+https://shop.billa.at/produkte/pantene-prov-3in1-volumen-pur-shampoo-00933578
+
+2.site shown uom is dot separated in data, comma separated in site. eg: 0.25 liter Flasche
+
+
+DataHut_AT_Mpreis_PriceExtractions_20250725.CSV
+----------------------------------------------
+1.site shown uom missing for 550 rows
+
+2.logical error. price per unit is 2.99€ /Stk, price is 2.99. grammage quantity and unit is 150 g. url: https://www.mpreis.at/shop/p/almsenner-almsenner-kraeuterkaese-50-scheiben-812429
+
+
+machinerytrader_2025_07_25.csv
+-----------------------------
+1.631 fields
+
+2.Two columns VIN and Vin
+
+3.Two columns Category and category
+
+4.phone number format different. eg: (260) 638-5032 in data, +1 260-638-5032 in site. url: https://www.machinerytrader.com/listing/for-sale/222700523/2015-bobcat-toolcat-5600-utility-utility-vehicles
+
+
+DataHut_SI_Spar_PriceExtractions_20250725.CSV
+-------------------------------------------
+1.breadcrumb contain small letters in data, capital letters in site. eg url: https://www.spar.si/online/testo-za-pizze-pecjak-1kg/p/253372
+
+2.logical error. price per unit is 17.99€/kos, price is 17.99. grammage quantity and unit is 1.4 kg. url: https://www.spar.si/online/torta-lesnik-vanilija-pekarna-spar-14kg/p/596429
