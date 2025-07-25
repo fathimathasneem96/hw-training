@@ -14,6 +14,7 @@ Methods to optimize QA:
 - Profile each columns for missing values, duplicates and spelling mistakes
 - Track QA results and failures over time and do QA based on that 
 - improve codes to check individual column requirements
+- Focus on promotions in TCS datasets that have promotions
 - Do QA stage by stage
 	> Initially do overall checking like accuracy and completeness of data.
 	> Then go for detailed checking like values and checking urls
