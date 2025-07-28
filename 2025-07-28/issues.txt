@@ -1,0 +1,77 @@
+Quality Assurance (QA)
+========================
+
+DataHut_AT_Mueller_PriceExtractions_20250728.CSV
+----------------------------------------
+no issues
+
+
+DataHut_AT_Dm_PriceExtractions_20250728.CSV
+------------------------------------------
+no issues
+
+
+DataHut_AT_Bipa_PriceExtractions_20250728.CSV
+------------------------------------------
+no issues
+
+
+DataHut_AT_Billa_PriceExtractions_20250728.CSV
+------------------------------------------
+1.price taken wrong. price taken only for 1 l in data, price visible for 4 l in site. url: https://shop.billa.at/produkte/voeslauer-flavour-zitrone-00344563
+similer issue: https://shop.billa.at/produkte/edelweiss-hefetrueb-6x05l-00405598
+
+2.promotion price present in data, but promotion description present in site, missing in data for 5 rows. eg url: https://shop.billa.at/produkte/pantene-prov-color-protect-shampoo-00242679
+
+
+DataHut_AT_Fressnapf_PriceExtractions_20250728.CSV
+------------------------------------------------
+1.age is taken along with grammage qunatity. 7+8 kg. url: https://www.fressnapf.at/p/royal-canin-veterinary-urinary-so-ageing-7-8-kg-1390503/
+
+2.product name and grammage qunatity taken wrong. 1.04 kg in product name in site, 104 kg in data. grammage qunatity is 104 kg in data, price not taken for that. url: https://www.fressnapf.at/p/dogsn-tiger-leckere-stueckchen--huhn-huhn-104-kg-1733883/
+
+
+DataHut_AT_Mpreis_PriceExtractions_20250728.CSV
+------------------------------------------
+1.site shown uom missing for 550 rows
+
+
+servicesbahrain_bah_2025_08.json
+-----------------------------
+1.telephone_number is "(+973)" for 45 rows
+0000000 for 3 rows
+0 for 213 rows
+
+2.address is "Flat 0, Building 0 , Road 0, Block 0" for 2 rows
+
+3.scraped_ts, date is 2025-07-25
+
+
+wasalt_ksa_2025_08.json
+----------------------
+1."project","rega_ad_license_no","fal_license_number" are newly added fields
+
+2."user_id", "amenities" are also empty
+
+3.price_per is سنة in data, Year in site. eg url: https://wasalt.com/en/property/rent/apartment-3871-sqm-with-1-bedroom-5748452
+
+
+haraj_ksa_2025_08.json
+----------------------
+1.phone_number is also empty
+
+2.url do not lead to specified page. url: https://haraj.com.sa/11162300857/%D8%A7%D8%A8%D8%AD%D8%AB_%D8%B9%D9%86_%D8%B3%D9%83%D9%86_%D9%85%D8%B4%D8%AA%D8%B1%D9%83_%D9%85%D8%B9_%D8%A7%D8%B4%D8%AE%D8%A7%D8%B5
+same issue: https://haraj.com.sa/11161316450/%D8%B4%D8%A7%D9%84%D9%8A%D9%87%D8%A7%D8%AA_%D8%B3%D9%83%D8%A7%D9%8A_%D9%84%D8%A7%D9%86%D8%AF_%D8%AC%D8%A8%D8%B1%D9%87/
+
+
+aqar_ksa_2025_08.json
+--------------------
+1."advertising_license","advertiser" are new fields
+
+2.ad closed. url: https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A7%D9%84%D9%82%D9%8A%D8%B1%D9%88%D8%A7%D9%86/%D8%B4%D8%A7%D8%B1%D8%B9-%D9%85%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D8%AA%D9%88%D9%86%D8%B3%D9%8A-%D8%AD%D9%8A-%D8%A7%D9%84%D9%82%D9%8A%D8%B1%D9%88%D8%A7%D9%86-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6170740
+
+3.price taken wrong. 1.8 in data, 1350000 in site. url: https://sa.aqar.fm/%D9%81%D9%84%D9%84-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D8%B9%D9%86%D9%8A%D8%B2%D8%A9/%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D9%84%D9%83-%D9%81%D9%87%D8%AF/%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D9%84%D9%83-%D9%81%D9%87%D8%AF-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%B9%D9%86%D9%8A%D8%B2%D9%87-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85-6179132
+
+4.price per taken wrong.يومي in data, سنوي in site. url: https://sa.aqar.fm/%D8%B9%D9%85%D8%A7%D8%A6%D8%B1-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85/%D8%AD%D9%8A-%D8%A7%D9%84%D9%86%D8%B2%D9%87%D8%A9/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%B7%D8%B1%D9%8A%D9%82-%D8%A7%D9%84%D8%A7%D9%85%D9%8A%D8%B1-%D9%86%D8%A7%D9%8A%D9%81-%D8%A8%D9%86-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2-%D8%AD%D9%8A-%D8%A7%D9%84%D9%88%D8%A7%D8%AD%D8%A9-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9-5912746 
+
+5.price per present in site as سنوي, missing in data. url: https://sa.aqar.fm/%D9%81%D9%84%D9%84-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B1/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%AE%D8%B2%D8%A7%D8%B1-%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B1-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6239699
