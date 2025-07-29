@@ -1,0 +1,125 @@
+Quality Assurance (QA)
+========================
+
+DataHut_AT_Mueller_PriceExtractions_20250729.CSV
+---------------------------------------------
+no issues
+
+
+DataHut_AT_Mpreis_PriceExtractions_20250729.CSV
+------------------------------------------
+1.site shown uom missing for 560 rows
+
+
+DataHut_AT_Fressnapf_PriceExtractions_20250729.CSV
+------------------------------------------
+1.logical error.price per unit is €56.93/kg, price is 40.99, grammage quantity and unit is 104 kg. product name and grammage qunatity taken wrong. url: https://www.fressnapf.at/p/dogsn-tiger-leckere-stueckchen--huhn-huhn-104-kg-1733883/
+
+2.age is taken along with grammage qunatity. 7+8 kg. url: https://www.fressnapf.at/p/royal-canin-veterinary-urinary-so-ageing-7-8-kg-1390503/ 
+
+3.product name and grammage quantity taken wrong. 45 l in data, 4.5 l in site url: https://www.fressnapf.at/p/trixie-futterautomat-tx-c-smart-45l-pro-1500849/
+
+
+DataHut_AT_Billa_PriceExtractions_20250729.CSV
+-------------------------------------------
+price taken wrong. price taken only for 1 l in data, price visible for 4 l in site. url:  https://shop.billa.at/produkte/voeslauer-prickelnd-00344561 
+
+
+DataHut_AT_Dm_PriceExtractions_20250729.CSV
+---------------------------------------
+no issues
+
+
+DataHut_AT_Bipa_PriceExtractions_20250729.CSV
+------------------------------------------
+no issues
+
+
+DataHut_AT_Mpreis_FullDump_20250731.CSV
+----------------------------------
+1.file_name_1 is empty
+
+2.site shown uom missing for 549 rows.
+
+3.grammage qunatity taken wrong. 4500l in data, 4.500 l from product name. url: https://www.mpreis.at/shop/p/voeslauer-balance-juicy-plus-tray-6x-075-liter-410700
+
+4.image found in jpg format also. eg: https://res.cloudinary.com/saas-ag/image/upload/w_1200,h_630,b_white,c_pad,q_auto,f_auto/v1731808845/mpreis/products/5066126.jpg
+
+
+evrealestate_2025_08_05.json
+--------------------------
+1.office name taken wrong. "Engel & Völkers Sandy Springs" in data, "Engel & Völkers Atlanta" in site. url: https://www.evrealestate.com/en/our-advisors/kristen-skebe/d4156f73-18b4-4210-a018-2008d87ed4da?userId=d4156f73-18b4-4210-a018-2008d87ed4da
+same issue: https://www.evrealestate.com/en/our-advisors/ashley-guarnotta/2750b671-b4f8-472c-8840-c5fa3f7ea61e?userId=2750b671-b4f8-472c-8840-c5fa3f7ea61e
+https://www.evrealestate.com/en/our-advisors/nick-wilson/0cdc19a9-5ccd-4d29-850f-a65c5f32a693?userId=0cdc19a9-5ccd-4d29-850f-a65c5f32a693
+
+2.line 1752- "facebook_url": "Www.facebook.com/axisgroupre". other urls are "Www.TikTok.com/@axisgroupre", "Www.instagram.com/@axisgroupre"
+
+3.line 3874- other url is "Www.youtube.com/@naprltr"
+
+
+ewm_2025_08_05.json
+--------------------
+1.office name present in site as "Berkshire Hathaway HomeServices EWM Realty", missing in data- line 174, 325
+https://www.ewm.com/agents/1994482/Erica+Adams
+https://www.ewm.com/agents/1801659/Lori+Farber
+
+2.office name taken wrong.Giulietta Ulloa Group in data, Berkshire Hathaway HomeServices EWM Realty - Key Biscayne in site. url: https://www.ewm.com/agents/1776841/Alessandra+Lante+della+Rovere
+same issue: https://www.ewm.com/agents/1777198/Adelaide+Engler
+https://www.ewm.com/agents/1777001/Alina+Gonzalez
+
+3.title is taken from middle name. url: https://www.ewm.com/agents/1777294/David+Dajani+P.A.
+
+
+home_realestate_2025_08_05
+---------------------
+1.description present in site, missing in data. url: https://chelseadavis.homerealestate.com/
+
+2.url do not lead to profile. url: https://bobtallichet.homerealestate.com
+
+3.city Lincoln only
+
+4.first name is taken as title. url: https://abbyandtiffany.homerealestate.com/
+https://randyandroma.homerealestate.com/
+
+5.title taken along first name. url: https://randyamundson.homerealestate.com/
+
+6.same content repeated in description more than 1 time. eg url: https://jaspersearcy.homerealestate.com/
+
+
+aqarmap_egp_2025_07_05.json
+--------------------------
+1.'depth', 'seller_role', 'listing_type' are empty
+
+2.bathrooms contain extra charcter. "bathrooms":"2د". url: https://aqarmap.com.eg/en/listing/5727128-for-sale-cairo-mokattam-lhdb-l-ly-shareaa-9/
+line 152525- "bathrooms":"001". url: https://aqarmap.com.eg/en/listing/6124006-for-sale-cairo-el-sheikh-zayed-city-compounds-rytzy-blz-mwl-tybh-llstthmr-l-qry/
+
+3.line 389303- "bedrooms":"01","bathrooms":"01". url: https://aqarmap.com.eg/en/listing/6154036-for-sale-cairo-new-cairo-bait-el-watan-shml-byt-lwtn/
+
+4.line 164968- "bedrooms":"01". url: https://aqarmap.com.eg/en/listing/5782276-for-sale-cairo-new-cairo-madinaty-bryfdw/
+
+5.phone number is "+20" for 9 rows
+phone number is "+undefined1552993258" -line 51910
+
+6.sites are not reachable
+
+
+baity_bah_2025_08.json
+---------------------
+1.phone number present in site, missing in data. url: https://baity.bh/properties/villa-in-damistan-32653
+https://baity.bh/properties/land-in-hamala-32672
+
+2.not available. url: https://baity.bh/properties/apartment-in-al-juffair-34514
+https://baity.bh/properties/villa-in-maqabah-33057
+
+
+emlakjet_tur_2025_08.json
+------------------------
+1.user_id missing for 122 rows.
+
+2.agent name is ....................................................................... for 8 rows.
+agent name contain phone numbers.
+agent name is , for 7 rows
+
+3.price contain double dots. eg: "price": "120.000.000"
+
+4.broker and broker display name is phone number. eg: +905071825109
