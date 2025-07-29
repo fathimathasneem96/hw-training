@@ -123,3 +123,23 @@ agent name is , for 7 rows
 3.price contain double dots. eg: "price": "120.000.000"
 
 4.broker and broker display name is phone number. eg: +905071825109
+
+DataHut_AT_Interspar_FullDump_20250731.CSV
+-----------------------------------------
+1.age_recommendations is not empty.
+
+2.instock True and False
+
+3.grammage qunatity and unit taken from product name. url: https://www.interspar.at/shop/haushalt/simpex-professional-koerperanalysewaage-bis-180kg/p/2020001659609
+
+4.logical error. price per unit is 3.69 €/Stück, price is 3.69, but grammage qunatity and unit is 0.2 l. url: https://www.interspar.at/shop/lebensmittel/bormioli-rocco-einkochglas-fido-02l/p/8208194
+similer issue: https://www.interspar.at/shop/lebensmittel/simpex-basic-flasche-mit-spangenverschluss-025l/p/2020000961659
+https://www.interspar.at/shop/lebensmittel/spar-gefrierbeutel-15-x-3-l/p/2020003912603
+
+5.promotion valid upto expired in data. "28.07.2025" for 47 rows. 
+
+6.promotion valid upto is "28.07.2025" in data, but "27.08.2025" in site. eg url: https://www.interspar.at/shop/haushalt/alle-marken/bormioli-rocco-einkochglas-fido-075l/p/8208262SG
+
+7.'|' replaced by '\\|' in nutritional information. eg url: https://www.interspar.at/shop/lebensmittel/doppelherz-kollagen-1000-biotin-q10-30-tabletten/p/2020003915048
+
+========================
