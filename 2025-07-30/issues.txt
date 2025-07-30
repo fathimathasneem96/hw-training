@@ -1,0 +1,170 @@
+Quality Assurance (QA)
+========================
+
+DataHut_AT_Mueller_PriceExtractions_20250730.CSV
+------------------------------------------
+no issues
+
+
+DataHut_AT_Mpreis_PriceExtractions_20250730.CSV
+-------------------------------------------
+1.site shown uom missing for 557 rows
+
+2.logical error. price per unit is 0.01€ /kg, price is 0.89, grammage qunatity and unit is 175 kg url: https://www.mpreis.at/shop/p/milram-griess-dessert-kirsche-874796
+
+
+DataHut_AT_Bipa_PriceExtractions_20250730.CSV
+--------------------------------------
+1.promotion description present as "AB 2 STUCK AKTION" in site missing in data. url: https://www.bipa.at/p/B3-459729
+
+
+DataHut_AT_Dm_PriceExtractions_20250730.CSV
+----------------------------------------
+site shown uom is dot separated in data, comma separated in site. eg: 4.2g url: https://www.dm.at/trend-t-up-lippenstift-the-shine-295-p4067796168150.html
+
+
+DataHut_AT_Fressnapf_PriceExtractions_20250730.CSV
+-----------------------------------------
+1.logical error.price per unit is €56.93/kg, price is 40.99, grammage quantity and unit is 104 kg. product name and grammage qunatity taken wrong. url: https://www.fressnapf.at/p/dogsn-tiger-leckere-stueckchen--huhn-huhn-104-kg-1733883/ 
+
+2.logical error.price per unit is €999.67/kg, price is 29.99, grammage quantity and unit is 50 kg. url: https://www.fressnapf.at/p/aniforte-zecken-schild-35-bis-50kg-fuer-grosse-hunde-60-kapseln-1444358/
+
+3.grammage qunatity and unit taken from product name. url: https://www.fressnapf.at/p/lionto-welpenunterlage-6-lagig-100-l-1665927/
+
+4.logical error. price per unit is €1.15/kg, price is 22.99, grammage quantity and unit is 500 l.url: https://www.fressnapf.at/p/multifit-kleintierstreu-presspack-500-l-1006966/
+
+5.product name and grammage quantity taken wrong. 45 l in data, 4.5 l in site url: https://www.fressnapf.at/p/trixie-futterautomat-tx-c-smart-45l-pro-1500849/
+
+
+DataHut_AT_Billa_PriceExtractions_20250730.CSV
+--------------------------------------------
+1.promotion description found as "jö price" in site, missing in data for 5 rows. eg url: https://shop.billa.at/produkte/pantene-prov-glatt-und-seidig-shampoo-00325271
+
+2.price taken wrong. price taken only for 1 l in data, price visible for 4 l in site. url:  https://shop.billa.at/produkte/voeslauer-prickelnd-00344561 
+
+
+DataHut_AT_Interspar_PriceExtractions_20250730.CSV
+----------------------------------------------
+1.grammage qunatity taken wrong. 3 X 150 stuck in data, price taken for 1 stuck url: https://www.interspar.at/shop/lebensmittel/spar-zahnstocherdosen-set-3-x-150-stk/p/2020001529605
+
+2.regular price and selling price is 0.00 for 4 rows
+
+
+sutton_2025_08_05.json
+---------------------
+1.fields are not in order
+
+2.page not found. url: https://sutton.com/ca/agent/rose-mcdonald-90584
+https://www.sutton.com/ca/agent/paul-zettler-116218
+https://www.sutton.com/ca/agent/george-kentris-121377
+
+3.address is , for 8 rows. eg url: https://www.sutton.com/ca/agent/vincent-ladouceur-88518
+
+4.middle name present in data, missing in site for many entries. eg url: https://www.sutton.com/ca/agent/jay-choi-110899
+https://www.sutton.com/ca/agent/arthur-abad-122663
+
+5.office phone numbers found as "000-000-0000", "000-0000-0000", "00000000", "0000000000" in data, missing in site
+
+6.same number taken in different formats in agent phone numbers. eg: line 631. "agent_phone_numbers":["6478932566","647-893-2566"]
+
+7.email is taken as agent phone number. "Edison@edisonchua.com". url: https://www.sutton.com/ca/agent/edison-chua-117478
+
+
+longandfoster_2025_08_05.json
+-----------------------------
+1.fields are not in order
+
+2.url do not lead to profile. url: https://www.longandfoster.com/AgentSearch/ArletteSchmuel-13962432
+
+3.office phone number is taken as both agent and office phone numbers. eg url: https://www.longandfoster.com/AgentSearch/YasminAbadian-10480733
+
+4.description found in data, missing in site. url: https://www.longandfoster.com/AgentSearch/YasminAbadian-10480733
+
+5.description contain extra characters in the beginning. "<span style="font-family:Merriweather;mso-fareast-font-family:&quot;Times New Roman&quot;; mso-bidi-font-family:&quot;Times New Roman&quot;;color:black">" url: https://www.longandfoster.com/AgentSearch/RoadstoHome-10447585
+
+6.line 2944 facebook url is found as "https://wwwfb.me/saralincolnrealtor"
+
+
+royallepage_2025_08_05.json
+------------------------
+1.fields are not in order
+
+2.description is - for 4 rows
+
+3.title is taken as last name. url: https://www.royallepage.ca/en/agent/british-columbia/courtenay/jodie-lewis-personal-real-estate-corporation/76416/
+
+4.line 16300- website found as http://0. url: https://www.royallepage.ca/en/agent/ontario/georgetown/finn-poulstrup/43093/
+
+5.agent phone number contain extra numbers as "123" for many rows. eg: "agent_phone_numbers":["416.654.1010","123"]. url: https://www.royallepage.ca/en/agent/ontario/toronto/robert-volpentesta/91166/
+
+agent phone number contain website. eg: www.dubiens.com. profile url: https://www.royallepage.ca/en/agent/ontario/collingwood/rob-angiline-dubien/40382/
+www.jocelynefreeman.ca. profile url: https://www.royallepage.ca/en/agent/quebec/kirkland/jocelyne-freeman/15871/
+
+
+emlakjet_tur_2025_08.json
+-----------------------
+1.line 47378- "description": " ". url: https://www.emlakjet.com/ilan/umraniye-camlik-da-nezih-butik-site-ici-31-genis-arakat-firsat-17557356
+"description": "" -line 225886, 226452, 290006
+
+2.price and details contain double dots. eg:  "price": "22.000.000", "details": "1.000.008 m²". url: https://www.emlakjet.com/ilan/arti-emlak-tan-cumhuriyet-mah-satilik-villalik-arsa-17050447/
+
+3.agent name is ....................................................................... for 8 rows.
+agent name contain phone numbers.
+agent name is , for 7 rows.
+
+4.page not found. url: https://www.emlakjet.com/ilan/bu-ilan-kontrol-amacli-yayinlanmistir-lutfen-dikkate-almayiniz-16450271
+
+5.broker and broker display name is phone number. eg: +905071825109
+
+
+sedd_uae_2025_08.json
+-------------------
+1. "mobile_number", "email_address", "the_unified_number_of_the_establishment", "street", "city", "region", "district", "building_number", "additional_number" are empty.
+
+2.same url for all data
+
+3.license_number and unique_id has same values.
+
+4.broker_type professional and trading
+
+5.license expiry date taken wrong. 10/06/2025 in data, 10/06/2026 in site. license number: 909320
+same issue: 29/07/2025 in data, 29/07/2028 in site. license number: 16635
+
+
+bayut_bah_2025_08.json
+---------------------
+1."rera_permit_number","dtcm_licence", "rera_registration_number","ded_license_number", "brn_registration_number","orn_number","bln_number","adm_number", "ded_number_2","ded_number_3","ded_number_4", "trucheck_on","email", "rating","no_of_reviews","ad_type","verified","sub_category_2","user_id","depth" are empty
+
+2.id and listing_id has same values.
+
+3.id is taken from reference number without Bayut-ID.
+
+4.published at taken wrong. 9 June 2025 in data, 10 June 2025 in site. url: https://www.bayut.bh/en/property/details-105401263.html
+same issue: https://www.bayut.bh/en/property/details-104861416.html
+
+
+DataHut_IT_Easycoop_PriceExtractions_20250730.CSV
+-------------------------------------------------
+1.extraction date is 2025-07-29
+
+2.grammage qunatity taken wrong. 12 kg in data, price taken for 10 kg. url: https://www.easycoop.com/monge-all-breeds-adult-trota-con-riso-e-patate-monge-12-kg-4756409.html
+
+3.logical error. price per unit is 5.14 €/PZ, price is 5.14, grammage qunatity and unit is 150 l. url: https://www.easycoop.com/domopak-domopak-spazzy-maxi-strong-condominiali-neri-150lt-10-sacchi-nettezza-2874397.html
+
+4.grammage quantity taken wrong. 1X500 pz in data, price taken for 1 pz. url: https://www.easycoop.com/kimono-stuzzicadenti-kimono-bar-500pz-3557800.html
+similer issue: https://www.easycoop.com/samurai-samurai-l-originale-stuzzicadenti-400-pz-3557790.html
+
+5.promotion valid upto taken wrong. 2025-07-31 in data, 2025-07-30 in site. eg url: https://www.easycoop.com/nutella-nutella-950-g-7640680.html
+2025-08-06 in data, 2025-08-05 in site.eg url: https://www.easycoop.com/coop-pollo-grill-900-g-ca-7532685.html
+2025-08-03 in data, 2025-08-02 in site.eg url: https://www.easycoop.com/philadelphia-philadelphia-benessere-light-formaggio-fresco-spalmabile-175-g-7594022.html
+promotion valid upto expired in data 2025-07-29, extended in site as 2025-07-31. eg url: https://www.easycoop.com/coop-pesche-gialle-6-frutti-kg-1-7678947.html
+promotion valid upto expired in data 2025-07-30, extended in site as 2025-07-31. eg url: https://www.easycoop.com/uva-s-semi-bianca-g-500-6359600.html
+promotion valid upto found as 2025-08-01 in data, 2025-07-31 in site. url: https://www.easycoop.com/philadelphia-philadelphia-light-formaggio-fresco-spalmabile-80-g-6348463.html
+promotion valid upto found as 2025-08-04 in data, 2025-08-03 in site.eg url: https://www.easycoop.com/aia-aia-carne-al-fuoco-lenta-cottura-ribs-con-rosmarino-600-g-4865337.html
+promotion valid upto found as 2026-05-27 in data, 2026-05-26 in site.url: https://www.easycoop.com/forno-ludovico-focaccia-genovese-croccante-classica-150-g-4787972.html
+
+6.url do not lead to product page. url: https://www.easycoop.com/fesa-tacchin-fette-sq-abf-400g-7754165.html
+
+7.price per unit is 0.00 €/LT,missing in site url: https://www.easycoop.com/gaza-cola-250ml-7972449.html 
+
+========================
