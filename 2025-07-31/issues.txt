@@ -1,0 +1,193 @@
+Quality Assurance (QA)
+========================
+DataHut_SI_Dm_FullDump_20250731.CSV
+---------------------------------
+1.extraction date is 2025-07-30
+
+2.instock True only
+
+3.grammage quantity taken wrong.site shown uom and product name has 1.5 l, grammage qunatity is 1500 l. url: https://www.dm.si/denkmit-higienski-mehcalec-za-perilo-p4066447790399.html
+
+
+DataHut_UK_Tesco_FullDump_20250730.CSV
+-----------------------------------
+1.data count is 455835
+
+2.There is an extra field loyalty_price
+
+3.empty fields are store_name|store_addressline1|store_addressline2|store_suburb|store_state|store_postcode|store_addressid|brand|brand_type|drained_weight|producthierarchy_level7|promotion_type|percentage_discount|package_sizeof_sellingprice|per_unit_sizedescription|multi_buy_item_count|multi_buy_items_price_total|variants|instructions|instructionforuse|age_of_the_product|age_recommendations|nutritions|vitamins|labelling|grade|region|packaging|receipies|processed_food|barcode|frozen|chilled|organictype|cooking_part|handmade|max_heating_temperature|special_information|label_information|dimensions|special_nutrition_purpose|feeding_recommendation|warranty|color|model_number|material|usp|dosage_recommendation|tasting_note|food_preservation|size|file_name_1|file_name_2|file_name_3|file_name_4|file_name_5|file_name_6|competitor_product_key|fit_guide|occasion|material_composition|style|care_instructions|heel_type|heel_height|upc|features|dietary_lifestyle|importer_address|vinification_details|recycling_information|beer_deg|netweight|random_weight_flag|promo_limit|multibuy_items_pricesingle|perfect_match|servings_per_pack|suitable_for|standard_drinks|environmental|retail_limit|loyalty_price
+
+4.competitor names are tesco clubcard, tesco
+
+5.product instock is true in data, out of stock in site. url: https://www.tesco.com/groceries/en-GB/products/326060434
+
+6.price and price per unit change found. 121.49 and £121.49/each in data, 121.75 and £121.75/each in site. url: https://www.tesco.com/groceries/en-GB/products/325341067
+
+7.grammage qunatity and unit taken from product name as "00801 l". url: https://www.tesco.com/groceries/en-GB/products/325834264
+similer issue: https://www.tesco.com/groceries/en-GB/products/325381523
+https://www.tesco.com/groceries/en-GB/products/325833898
+similer issue for many rows
+
+8.grammage qunatity found as 0 for 2 rows. eg: 0 g url: https://www.tesco.com/groceries/en-GB/products/325991871
+
+9.grammage unit contains liter and l.
+
+10.page missing. url: https://www.tesco.com/groceries/en-GB/products/330671328
+
+11.promotion valid upto expired. 30/07/2025 - 532 rows
+29/07/2025 - 41 rows
+28/07/2025 - 228 rows
+27/07/2025 -338 rows
+26/07/2025 - 11 rows
+25/07/2025 - 18 rows
+
+12.currency is GBP
+
+13.breadcrumb found as "tesco >" for 2 rows eg url: https://www.tesco.com/groceries/en-GB/products/325989230
+
+14.ingredients found as N/A. eg url: https://www.tesco.com/groceries/en-GB/products/326197680
+
+15.instock True and False
+
+
+royallepage_2025_08_05.json
+------------------------
+1.middle name taken wrong. eg:(Dung) in data, Dung in site. profile url: https://www.royallepage.ca/en/agent/nova-scotia/halifax/alice-dung-nguyen/94702/
+
+2.title is taken as last name. profile url: https://www.royallepage.ca/en/agent/british-columbia/courtenay/jodie-lewis-personal-real-estate-corporation/76416/ 
+
+3.website found as http://149.137.206.49/. profile url: https://www.royallepage.ca/en/agent/british-columbia/victoria/paula-brown/3528/
+
+4.agemt phone numbers contain extra numbers as "123" for many rows. eg: "agent_phone_numbers": ["123", "403.338.2200"]. profile url: https://www.royallepage.ca/en/agent/alberta/calgary/mackenzie-hare/94099/
+
+5.facebook url found as "https://wwwfacebook.com/manitobamikeclark". profile url: https://www.royallepage.ca/en/agent/manitoba/brandon/mike-clark/72367/
+facebook url found as "https://www.facebook/#^com/pages/fred-aitken-real-estate-in-muskoka". profile url: https://www.royallepage.ca/en/agent/ontario/bracebridge/fred-aitken/40489/
+facebook url found as "https://www.https//www.facebook.com/wandam.RLP". profile url: https://www.royallepage.ca/en/agent/british-columbia/dawson-creek/wanda-maundrell/71186/
+
+6.linkedin url found as "https://www.linkedin.com/www#^linkedin.com". profile url: https://www.royallepage.ca/en/agent/ontario/newmarket/tim-graham/6748/
+linkedin url found as "https://www.linkedin.com/ww.linkedin.com/pub/rebecca-schorr/37/b03/8b3". profile url: https://www.royallepage.ca/en/agent/ontario/oakville/rebecca-schorr/43728/
+
+
+longandfoster_2025_08_05.json
+-----------------------
+1.url do not lead to profile. url: https://www.longandfoster.com/AgentSearch/ArletteSchmuel-13962432 
+
+2.description found in data, missing in site. url: https://www.longandfoster.com/AgentSearch/YasminAbadian-10480733 
+
+3.office phone number is taken as both agent and office phone numbers. eg url: https://www.longandfoster.com/AgentSearch/SandraJackson-11013959
+
+4.image url is https://www.longandfoster.com/images/recos/35009/NoPhoto-Agent.gif?v=1.2 in site, missing in data. eg url: https://www.longandfoster.com/AgentSearch/LizaZimbalardi-14211928
+
+5.facebook url found as "https://ttps//www.facebook.com/RhondaOGuinnNorthropTeam". profile url: https://www.longandfoster.com/AgentSearch/RhondaOGuinn-10478764
+
+facebook url found as "https://www//facebook.com/kristie.s.bartley". profile url: https://www.longandfoster.com/AgentSearch/KristieBartley-11549211
+
+facebook url found as "https://www.facebookwww.facebook.com/.com/home.php#/ricki.gerger?ref=search&sid=1029152061.315". profile url: https://www.longandfoster.com/AgentSearch/SharonMcCraney-10541786
+
+facebook url found as "https://www.facebook.leighslaughterrealtor/". profile url: https://www.longandfoster.com/AgentSearch/LeighSlaughter-10478590
+
+6.linkedin url found as "https://hwww.linkedin.com/in/dondrell-wilson-2b1856323/". profile url: https://www.longandfoster.com/AgentSearch/DondrellWilson-14154395
+
+7.urls contain '////' instead of '//'. eg: https:////www.instagram.com/jeannie_annapolis_realtor/
+
+
+sutton_2025_08_05.json
+-----------------
+1.image url present as "https://sutton.com/storage/agents/api/108988.jpg" in site, missing in data. profile url: https://www.sutton.com/ca/agent/randy-kahn-108988
+
+2.page not found. url: https://sutton.com/ca/agent/rose-mcdonald-90584 
+https://www.sutton.com/ca/agent/paul-zettler-116218 
+https://www.sutton.com/ca/agent/george-kentris-121377 
+
+3.middle name present in data, missing in site for many entries. eg url: https://sutton.com/ca/agent/arthur-abad-122663
+
+4.website found as http://.naveenbhopal.com/. profile url: https://www.sutton.com/ca/agent/naveen-bhopal-121785
+
+5.office phone numbers found as "000-000-0000", "000-0000-0000", "00000000", "0000000000" in data, missing in site.
+
+6.same number taken in different formats in agent phone numbers. eg: line 631. "agent_phone_numbers":["6478932566","647-893-2566"]
+
+7.facebook url found as "http://www.faceboohttps//www.facebook.com/macvicarmccomb/k.com/". profile url: https://www.sutton.com/ca/agent/rob-macvicar-112810
+
+
+iowarealty_2025_08_05.json
+----------------------
+1.name contains first, middle and last names, but taken as only first name. eg: "Krzysztof (Chris K.) Chrzaszcz" url: https://www.iowarealty.com/bio/krzysztofchrzaszcz
+
+2.facebook url found as "https:facebook.com/carpenterbrandsgardteam". profile url: https://www.iowarealty.com/bio/jillcarpenter
+
+
+semonin_realtors_2025_08_05.json
+---------------------------
+1.other urls found as "http://rburns2112/". profile url: https://www.semonin.com/bio/robertburns
+
+
+robertsbrothers_2025_08_05.json
+---------------------------
+1.office_phone_numbers is not empty
+
+
+hepsiemlak_tur_2025_08.json
+--------------------------
+1.url do not lead to specified page. url: https://www.hepsiemlak.com/en/samsun-atakum-meyvali-satilik/imarli-konut/153891-36
+
+2.category are For Sale, For Rent, Projects, Seasonal Rental
+
+3.ad is not live. url: https://www.hepsiemlak.com/en/kibris-lefke-gemikonagi-kiralik/daire/148745-113
+https://www.hepsiemlak.com/en/aydin-didim-camlik-satilik/dukkan-magaza/134858-131
+
+4.scraped_ts,date is 23,24,25,26,30
+
+5."latitude": "-0.015598818396882". url: https://www.hepsiemlak.com/en/mugla-milas-bogazici-satilik/yazlik/0-38949259
+
+6.sale completed and hence price not present in site url: https://www.hepsiemlak.com/en/proje/kocaeli-basiskele/bitinya-homes-projesi-2452
+https://www.hepsiemlak.com/en/proje/ankara-yenimahalle/ned-anadolupark-projesi-5397
+https://www.hepsiemlak.com/en/proje/istanbul-kadikoy/torkam-fikirtepe-projesi-2636
+
+7.price per unit found as 18.571 TRY/m² in site, 18571.43 in data. url: https://www.hepsiemlak.com/en/proje/izmir-cigli/velena-trio-projesi-3920
+
+8.user id empty for 1488 rows
+
+9.page not found. url: https://www.hepsiemlak.com/en/proje/bucak-alaattin-projeleri
+
+
+dubizzle_qat_2025_08.json
+------------------------
+1.depth is not empty
+
+2.ad no longer available. url: https://www.dubizzle.qa/en/ad/monthly-rental-1bhk-kahramaa-wifi-and-clean-ID120315379.html
+https://www.dubizzle.qa/en/ad/ff-2bdrm-in-al-wakra-all-inclusive-ID120115424.html
+https://www.dubizzle.qa/en/ad/94-big-room-for-rent-6x4-ID120278857.html
+https://www.dubizzle.qa/en/ad/elegant-room-with-private-toilet-ID120315377.html
+https://www.dubizzle.qa/en/ad/ff-1bhk-apartments-available-in-thumama-all-inclusive-short-term-ID100891192.html
+https://www.dubizzle.qa/en/ad/one-bhk-rent-in-al-wakrah-ID120315380.html
+https://www.dubizzle.qa/en/ad/fully-furnished-rooms-with-private-toilet-for-monthly-stay-ID120315384.html
+
+3.url do not lead to specified page. url: https://www.dubizzle.qa/en/ad/executive-1bhk-bachelor-bed-space-luqta-near-sidra-hospital-ID120318510.html
+
+
+dubizzle_bah_2025_08.json
+-----------------------
+1.Data count is 3746
+
+2.agent_name, price_per, dtcm_licence, reference_number, rera_permit_number, sub_category_2, user_id are empty
+
+3.currency is BHD
+
+4.ad no longer available. url: https://www.dubizzle.com.bh/en/ad/work-in-bahrain-united-tower-or-anywhere-else-in-our-global-network-ID104141010.html
+https://www.dubizzle.com.bh/en/ad/unlimited-office-access-in-bahrain-financial-harbour-ID104141078.html
+https://www.dubizzle.com.bh/en/ad/unlimited-workspace-access-in-bahrain-almoayyed-tower-ID104138948.html
+https://www.dubizzle.com.bh/en/ad/-your-space-address-in-sanabis-call-now-99-bd-ID101972294.html
+
+5.listing avilability is false in data, available in site. url: https://www.dubizzle.com.bh/en/ad/staff-accommodation-for-rent-in-salmabad-5-bedroom-3-bathroom-ID105180614.html
+https://www.dubizzle.com.bh/en/ad/2-bedroom-flat-for-rent-in-jid-ali-ID105174688.html
+https://www.dubizzle.com.bh/en/ad/per-month-75bd-get-now-your-commercial-office-lease-in-sanabis-fakhro-ID105154753.html
+https://www.dubizzle.com.bh/en/ad/storage-space-for-rent-best-deals-call-39689555-ID101309119.html
+
+6.url do not lead to specified page. url: https://www.dubizzle.com.bh/en/ad/renovated-2-bhk-apartment-for-rent-150bd-including-ewa-35905991-ID105501476.html
+https://www.dubizzle.com.bh/en/ad/2-bed-space-available-for-executive-bachelor-bd-60-inclusive-ewa-ID105506303.html
+
+7.listing availability is true in data, not available in site. url: https://www.dubizzle.com.bh/en/ad/special-price-monthly-for-rent-commercial-office-address-only-75-bhd-ID104968613.html
+
+
+========================
