@@ -1,0 +1,140 @@
+Quality Assurance (QA)
+========================
+
+ebby_2025_08_05.json
+--------------------
+1.name is taken as title. profile url: https://www.ebby.com/bio/mccroryteam
+
+2.facebook url found as "http://https//www.facebook.com/alison.b.bourgeois/", linkedin url found as "http://https//www.linkedin.com/in/alison-bourgeois-045198291/". profile url: https://www.ebby.com/bio/alisonbourgeois
+
+facebook url found as "http://https//www.facebook.com/realtor.nicolesellsdallas/". profile url: https://www.ebby.com/bio/nicolewestrich
+
+3.twitter url found as "https://twitter.com/www.twitter.com/jbutcher616/". profile url: https://www.ebby.com/bio/johnbutcher
+
+4.linkedin url found as "http://https//www.linkedin.com/in/gary-nelson-61286737/". profile url: https://www.ebby.com/bio/garynelson
+
+
+firstweber_2025_08_05.json
+------------------------
+1.office name taken wrong. profile url: https://www.firstweber.com/bio/5StarTeam
+https://www.firstweber.com/bio/AnnaEbner
+
+2.title taken from name. profile url: https://www.firstweber.com/bio/TheZTeam
+
+3.facebook url found as "https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100091434759149%26mibextid%3DLQQJ4d&data=05%7C01%7Cjanine.gurske%40firstweber.com%7C3546768d61004bb723ef08db6ea999ad%7Ccc5f60f604914d53a27572723f5e4fd5%7C1%7C0%7C638225447291268946%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=Upl1NWOdN6bFh3XflV3x4O5RUMo61Ngmc3C41P0EVp4%3D&reserved=0". profile url: https://www.firstweber.com/bio/janinegurske
+
+facebook url found as "https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61564016884668%26mibextid%3DLQQJ4d&data=05%7C02%7Ckatie.wilcox%40firstweber.com%7Ce65ba14978af4e890bd408dcd110a932%7Ccc5f60f604914d53a27572723f5e4fd5%7C1%7C0%7C638615118583859129%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=WWmdTUA0eSea8y%2FIS%2FWr2vuLgCEpkxa8ppKRNRs5%2BDg%3D&reserved=0". profile url: https://www.firstweber.com/bio/katiewilcox
+
+4.linkedin url found as "https://www.linkedin.com/in/", linkedin page not found when clicked link from profile url. profile url: https://www.firstweber.com/bio/jessicahart
+
+5.other urls found as "https@gerryfudala". profile url: https://www.firstweber.com/bio/gerryfudala
+
+other urls found as "https//antoninarizza-first", "https//antoninarizza.instagram.com". profile url: https://www.firstweber.com/bio/antoninarizza
+
+
+longrealty_2025_08_05.json
+-------------------------
+1.address, city, state, zipcode missing for 1 row. profile url: https://rcornell.longrealty.com/
+
+2.more than one office name present in site, one in data. eg profile url: https://cplaner.longrealty.com/
+
+3.facebook url found as "https:www.facebook.com/EdgarHuertaRealtor". profile url: https://edgarhuerta.longrealty.com/
+
+facebook url found as "https//Facebook.com/katieswansonRealEstateWorld" .profile url: https://katieswanson.longrealty.com/
+
+4.other urls taken wrong for many rows. eg: "http://#SirKaz1". profile url: https://juancazares.longrealty.com/
+
+5.more than one image urls found separated by ; . eg profile url: https://theurbanhometeam.longrealty.com/
+
+
+DataHut_AT_Billa_PriceExtractions_20250801.CSV
+----------------------------------------
+price taken wrong. price taken only for 1 l in data, price visible for 4 l in site. url:  https://shop.billa.at/produkte/voeslauer-prickelnd-00344561 
+https://shop.billa.at/produkte/voeslauer-flavour-zitrone-00344563
+
+
+DataHut_AT_Interspar_PriceExtractions_20250801.CSV
+-------------------------------------------------
+1.grammage quantity taken wrong. eg: 15 stuck in data. price taken for 1 stuck. url: https://www.interspar.at/shop/lebensmittel/simpex-basic-celebration-holz-messer-15-stk/p/2020003666292
+
+2.regular price and selling price is 0.00 for 4 rows.
+
+
+DataHut_AT_Mueller_PriceExtractions_20250801.CSV
+--------------------------------------------
+no issues
+
+
+machinerytrader_2025_08_01.csv
+-----------------------------
+1.company phone number format different. eg: (260) 638-5032 in data, +1 260-638-5032 in site. url: https://www.machinerytrader.com/listing/for-sale/222700523/2015-bobcat-toolcat-5600-utility-utility-vehicles
+
+2.company phone found as "+1 905-857-6200 ext. 1" for 4 rows. eg url: https://www.machinerytrader.com/listing/for-sale/243327995/2005-ford-f550-xl-sd-dump-trucks
+
+
+DataHut_SI_Dm_PriceExtractions_20250801.CSV
+---------------------------------------
+no issues
+
+
+DataHut_SI_Spar_PriceExtractions_20250801.CSV
+--------------------------------------------
+1.promotion description is "PAKIRANI SIRI Popust ne velja za izdelke vključene v promocijo TRAJNO ZNIŽANO.",but promotion price is not empty for 25 rows eg url: https://www.spar.si/online/mascarpone-brez-laktoze-minusl-250g/p/515055
+
+promotion description is"PAKIRANI SIRI Popust ne velja za izdelke vključene v promocijo TRAJNO ZNIŽANO. Promocija velja ob nakupu nad 0,10 EUR.",but promotion price is not empty for 236 rows eg url: https://www.spar.si/online/francoski-sir-brie-spar-180g/p/534512
+
+
+DataHut_SI_Mercator_PriceExtractions_20250801.CSV
+---------------------------------------------
+1.grammage quantity taken wrong. 20 g in data, price taken for 120g. url: https://mercatoronline.si/izdelek/16585180/domaca-salama-z-apos-dezele-pakirano-100-g-20-g-gratis-maxx 
+
+2.logical error. price per unit is 0.32€ / kos, price is 3.79, grammage quantity and unit is 1 kos. url: https://mercatoronline.si/izdelek/13633580/jajca-izpod-kamniskih-planin-m-hlevska-reja-jata-zgo-12-jajc
+
+3.logical error. price per unit is 30.99€ / 1kg, price is 30.99, grammage quantity and unit is 1 kos. url: https://mercatoronline.si/izdelek/18318790/bio-trdi-sir-tonko-kmetija-zgajnar-pakirano-cena-za-kg
+
+
+DataHut_CH_Lidl_PriceExtractions_20250801.CSV
+--------------------------------------------
+site shown uom found as Pro Stück in site, missing in data. eg url: https://www.lidl.ch/p/de-CH/tischkreissaege-ptks-2-200-a1/p10039139
+
+
+huff_realty_2025_08_05.json
+--------------------------
+1.email is empty
+
+2.first name found as "Corporate Relocation, Sheena Parton". profile url: https://sheenaparton.huff.com/
+
+3.title present in data, missing in site profile url: https://www.cindybruner.com/
+
+4.profile url found wrong. profile url: http://app.huff.com/AngelaRose
+
+5.website and profile urls are same
+
+6.beginning of description missing in data. profile url: https://jpmartinezlugo.huff.com/
+
+7."facebook_url":"https://www.facebook.com/?ref=tn_tnmn". profile url: https://jcarr.huff.com/
+
+
+woodsbros_2025_08_05.json
+----------------------
+1.languages is not empty
+email is empty
+
+2.description present in site, missing in data, eg url: http://aprilbohling.com/ 
+
+3.title present in data, missing in site. profile url: https://denisespry.woodsbros.com/
+https://louisekirkbride.woodsbros.com/
+
+4.url do not lead to profile page. profile url: https://www.woodsbros.com/roster/agents/9
+https://www.woodsbros.com/roster/agents/0
+https://www.woodsbros.com/roster/agents/12
+https://www.woodsbros.com/roster/agents/8
+
+5.same data repeated except url. profile urls are: https://www.woodsbros.com/roster/agents/0
+https://www.woodsbros.com/roster/agents/8
+
+6. title present in data as "Sales Associate", but missing in site, from description, title is REALTOR. url: https://kelbynitz.woodsbros.com/
+
+7."linkedin_url":"http://Byknows1". profile url: https://byronyurth.woodsbros.com/
+
+========================
