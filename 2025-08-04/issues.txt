@@ -1,0 +1,102 @@
+Quality Assurance (QA)
+========================
+
+DataHut_AT_Mueller_PriceExtractions_20250804.CSV
+--------------------------------------------
+no issues
+
+
+DataHut_AT_Bipa_PriceExtractions_20250804.CSV
+-------------------------------------------
+no issues
+
+
+DataHut_AT_Billa_PriceExtractions_20250804.CSV
+-------------------------------------------
+price taken wrong. price taken only for 1 l in data, price visible for 4 l in site. url:  https://shop.billa.at/produkte/voeslauer-prickelnd-00344561  
+https://shop.billa.at/produkte/voeslauer-flavour-zitrone-00344563
+
+
+DataHut_AT_Dm_PriceExtractions_20250804.CSV
+--------------------------------------
+site shown uom is dot separated in data, comma separated in site. eg: 6.1g url: https://www.dm.at/essence-hightlighter-polly-pocket-01-tiny-und-cute-p4059729539731.html 
+
+
+DataHut_AT_Mpreis_PriceExtractions_20250804.CSV
+---------------------------------------------
+site shown uom missing for 557 rows
+
+
+century21_us_2025_08_05.json
+-------------------------
+1.agent phone number and office phone number present in site, missing in data. eg profile url: https://www.century21.com/real-estate-agent/profile/monica-jordan-P25136583
+https://www.century21.com/real-estate-agent/profile/roxanne-barron-P25384194
+
+2.office phone number present in site, missing in data. eg profile url: https://www.century21.com/real-estate-agent/profile/mary-bradley-P80083402
+
+3.same data repeated except profile url for 3 rows.
+https://www.century21.com/real-estate-agent/profile/michele-panico-of-3-sisters-realty-of-3-sisters-realty-P400992402
+https://www.century21.com/real-estate-agent/profile/marlene-laurich-of-3-sisters-realty-of-3-sisters-realty-P400992401
+https://www.century21.com/real-estate-agent/profile/maureen-brehmer-of-3-sisters-realty-of-3-sisters-realty-P400992403
+same issue for many rows
+
+4.title taken along with office name. profile url: https://www.century21.com/real-estate-agent/profile/michelene-mi-unger-P25287495
+
+5.office name taken wrong. "AllPoints of CENTURY" in data, "AllPoints Realty" in site for 3 rows. eg profile url: https://www.century21.com/real-estate-agent/profile/danny-torres-of-danny-torres-team-at-century-21-allpoints-of-danny-torres-team-at-century-21-allpoints-P25075132
+
+office name taken wrong. "Adams Real Estate Broker of CENTURY" in data, "Adams Real Estate" in site.profile url: https://www.century21.com/real-estate-agent/profile/century-21-adams-P25343414
+same issue: https://www.century21.com/real-estate-agent/profile/century-21-adams-P25412274
+"Row of CENTURY" in data, "Professionals" in site. profile url: https://www.century21.com/real-estate-agent/profile/century-21-row-P80106576
+
+6.description taken wrong. ", , . , . , - 7 . . ' , , , , . ' . . ' - , , , , !--" in data. profile url: https://www.century21.com/real-estate-agent/profile/julidiris-then-P80135484
+similer issue: https://www.century21.com/real-estate-agent/profile/tasha-willden-P80084810
+
+7.agent phone numbers found as "(000) 000-0000", "0", "0889","123456789","7" etc
+
+
+compass_2025_08_05.json
+------------------------
+1.description taken wrong. profile url: https://www.compass.com/agents/lisa-liu/
+
+2.title contain extra characters. "REALTOR® | RB-20132". eg profile url: https://www.compass.com/agents/james-chan/
+
+3.description begins with "&;amp" in data, missing in sie for 186 rows. eg url: https://www.compass.com/agents/david-worters/
+description begins with "&;lt;br&;gt" for 125 rows. eg url: https://www.compass.com/agents/ginge-calhoun/
+
+4.first name is taken as title. profile url: https://www.compass.com/agents/ohana-real-estate-team/
+
+5.websie is aken as image url: https://www.compass.com/. profile url: https://www.compass.com/agents/test-test1/
+
+6.image in webp format also. eg; https://www.compass.com/m/13/0004139f-ee9c-4ade-a4a8-fee7f47e8715/300x300.webp
+
+7.linkedin url found as "target=https://www.linkedin.com/in/liliana-liliana-kaszuba-sres%C2%AE-csa%C2%AE-26517919/”_blank". profile url: https://www.compass.com/agents/liliana-kaszuba/
+linkedin url found as "https:https://www.linkedin.com/in/ellen-martinez-a537061b6/". profile url: https://www.compass.com/agents/ellen-martinez/
+
+8.other urls contain unwanted characters in the beginning and end like ”,“,” etc. eg; ”https://davispemstein.com/”. profile url: https://www.compass.com/agents/davis-pemstein/
+other urls found as <https://www.instagram.com/eastbaysage/<b. profile url: https://www.compass.com/agents/tracy-mcbride/
+
+9.agent phone numbers is "123456789". profile url: https://www.compass.com/agents/storedxss/
+
+
+bhgre_2025_08_05.json
+----------------------
+1.state present in site, missing in data. profile url: https://www.bhgre.com/ca/berkeley/agents/yvette-glaves/aid-P00200000G3lWJ3gURSZ6WagRnibV7IXJDP05bae
+
+2.office phone number contain extra digits in data, missing in site. profile url; https://www.bhgre.com/pa/stroudsburg/agents/katherine-skillman/aid-P00200000FDdsZmbdVxojr2uyc9VqvZV3RkG3kTK
+
+3.other urls conain non url values. eg;"BHGRE.bannonandhebert". profile url: https://www.bhgre.com/ct/middlebury/agents/mary-ann-hebert/aid-P00200000FDdtGjNM4HY6fraQRZUeAzj1JcFhaPz
+
+
+sothebysrealty_2025_08_05.json
+--------------------------
+1.city and state missing in data, present in site as "Dublin". Also zipcode taken wrong. "DO2 PH42" in data, "D04 TN84" in site. profile url: https://www.sothebysrealty.com/eng/associate/180-a-82371-69146470/david-ashmore
+
+2.title contain extra chartacters. eg:"Broker Associate, DRE# 01304923" profile url: https://www.sothebysrealty.com/eng/associate/180-a-df24081420301028142521/michele-sparks
+
+3.first name, last name, office name, title, email, phone numbers taken wrong. name is "Marko Pazanin" in data, "Lulu Pallier" in site. profile url: https://www.sothebysrealty.com/eng/associate/180-a-df19041023461025071/lulu-pallier
+
+4.website found as "http://01071901". profile url: https://www.sothebysrealty.com/eng/associate/180-a-df190819201110851202/adam-isaacson
+"http://06181979". profile url: https://www.sothebysrealty.com/eng/associate/180-a-df240102130910829052/mike-roschke
+"http://12023214928". profile url: https://www.sothebysrealty.com/eng/associate/180-a-df2003301425109051/ashlee-white
+
+5.facebook url contains "https://http//". eg: https://http//www.facebook.com/BienekProperties/. profile url: https://www.sothebysrealty.com/eng/associate/180-a-3176-66368357/mary-bienek
