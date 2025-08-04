@@ -100,3 +100,39 @@ sothebysrealty_2025_08_05.json
 "http://12023214928". profile url: https://www.sothebysrealty.com/eng/associate/180-a-df2003301425109051/ashlee-white
 
 5.facebook url contains "https://http//". eg: https://http//www.facebook.com/BienekProperties/. profile url: https://www.sothebysrealty.com/eng/associate/180-a-3176-66368357/mary-bienek
+
+nawy_egp_2025_08_01.json
+---------------------
+no issues
+
+
+bayut_uae_project_2025_08_01.json
+---------------------------------
+1.date is 2025-08-05
+
+2.project status present in data, missing in site. url: https://www.bayut.com/for-sale/off-plan/property/dubai/jumeirah-park/district-9/sunrise-living
+https://www.bayut.com/for-sale/off-plan/property/abu-dhabi/yas-island/noya
+same issue for many rows
+
+3.project status and progress present in data, missing in site. url: https://www.bayut.com/for-sale/off-plan/property/dubai/damac-hills/trump-estates/belair-the-trump-estates
+https://www.bayut.com/for-sale/off-plan/property/dubai/jumeirah-village-triangle-jvt/jvt-district-7/tranquil-wellness-tower 
+same issue for many rows
+
+
+dari_ae_2025_08_01.json
+--------------------
+phone number 2 present in data, missing in site eg url: https://www.dari.ae/en/app/directory/profession?id=7061
+
+
+aqarmap_egp_2025_08_01.json
+------------------------
+1.depth, listing_type, seller_role are also empty
+
+2."bathrooms":"2د". url: https://aqarmap.com.eg/en/listing/5727128-for-sale-cairo-mokattam-lhdb-l-ly-shareaa-9/
+
+3.sites can't be reached
+
+4."phone_number":"+20" for 9 rows
+
+5.broker an dbroker display name has values ??-???????, .., ...
+========================
